@@ -1,0 +1,360 @@
+{
+  "title": "NFD-js",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "bf89b57d0a9d6133",
+      "text": "After prototyping [[NDN-BrowserKit]] I am ready to make a second attempt, in parallel with the NFD project."
+    },
+    {
+      "type": "paragraph",
+      "id": "ba457b1a66edd511",
+      "text": "The main difference between this and the browserkit project is the use of Webworkers to avoid blocking the UI thread in the browser."
+    },
+    {
+      "type": "paragraph",
+      "id": "59a1b496ceb496d5",
+      "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups. For more, see "
+    },
+    {
+      "type": "pagefold",
+      "id": "7cd7a23110415836",
+      "text": "Design Thoughts"
+    },
+    {
+      "type": "paragraph",
+      "id": "186ff42d2d27e11e",
+      "text": "[[NFD-js Web Workers]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "8488ea03cd66dfd8",
+      "text": "[[NFD-js Build Process]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "d8ff15e2822cec19",
+      "text": "[[NFD-js Component Modules]] "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NFD-js",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1390858789816,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bf89b57d0a9d6133"
+      },
+      "id": "bf89b57d0a9d6133",
+      "type": "add",
+      "date": 1390858791082
+    },
+    {
+      "type": "edit",
+      "id": "bf89b57d0a9d6133",
+      "item": {
+        "type": "paragraph",
+        "id": "bf89b57d0a9d6133",
+        "text": "After prototyping [[NDN-BrowserKit]] I am ready to make a second attempt, in parallel with the NFD project."
+      },
+      "date": 1390858844404
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ba457b1a66edd511",
+        "text": ""
+      },
+      "id": "ba457b1a66edd511",
+      "type": "add",
+      "after": "bf89b57d0a9d6133",
+      "date": 1390858844915
+    },
+    {
+      "type": "edit",
+      "id": "ba457b1a66edd511",
+      "item": {
+        "type": "paragraph",
+        "id": "ba457b1a66edd511",
+        "text": "The main difference between this and the browserkit project is the use of Webworkers to avoid blocking the UI thread in the browser."
+      },
+      "date": 1390858881927
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "186ff42d2d27e11e",
+        "text": ""
+      },
+      "id": "186ff42d2d27e11e",
+      "type": "add",
+      "after": "ba457b1a66edd511",
+      "date": 1390858882434
+    },
+    {
+      "type": "edit",
+      "id": "186ff42d2d27e11e",
+      "item": {
+        "type": "paragraph",
+        "id": "186ff42d2d27e11e",
+        "text": "[[NFD-js Web Worker]]"
+      },
+      "date": 1390858901421
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": ""
+      },
+      "id": "59a1b496ceb496d5",
+      "type": "add",
+      "after": "ba457b1a66edd511",
+      "date": 1390858905675
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups"
+      },
+      "date": 1390858945324
+    },
+    {
+      "type": "edit",
+      "id": "186ff42d2d27e11e",
+      "item": {
+        "type": "paragraph",
+        "id": "186ff42d2d27e11e",
+        "text": "[[NFD-js Web Workers]]"
+      },
+      "date": 1390858954853
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8488ea03cd66dfd8"
+      },
+      "id": "8488ea03cd66dfd8",
+      "type": "add",
+      "after": "186ff42d2d27e11e",
+      "date": 1390861087760
+    },
+    {
+      "type": "edit",
+      "id": "8488ea03cd66dfd8",
+      "item": {
+        "type": "paragraph",
+        "id": "8488ea03cd66dfd8",
+        "text": "[[NFD-js Build Process]]"
+      },
+      "date": 1390861098505
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d8ff15e2822cec19",
+        "text": ""
+      },
+      "id": "d8ff15e2822cec19",
+      "type": "add",
+      "after": "8488ea03cd66dfd8",
+      "date": 1390861618163
+    },
+    {
+      "type": "edit",
+      "id": "d8ff15e2822cec19",
+      "item": {
+        "type": "paragraph",
+        "id": "d8ff15e2822cec19",
+        "text": "[[NFD-js Component Modules]] "
+      },
+      "date": 1390861709938
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7cd7a23110415836"
+      },
+      "id": "7cd7a23110415836",
+      "type": "add",
+      "after": "d8ff15e2822cec19",
+      "date": 1390861715560
+    },
+    {
+      "type": "edit",
+      "id": "7cd7a23110415836",
+      "item": {
+        "type": "pagefold",
+        "id": "7cd7a23110415836",
+        "text": "Design Thoughts"
+      },
+      "date": 1390861726754
+    },
+    {
+      "type": "move",
+      "order": [
+        "bf89b57d0a9d6133",
+        "ba457b1a66edd511",
+        "59a1b496ceb496d5",
+        "7cd7a23110415836",
+        "186ff42d2d27e11e",
+        "8488ea03cd66dfd8",
+        "d8ff15e2822cec19"
+      ],
+      "id": "7cd7a23110415836",
+      "date": 1390861728468
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "38b97b18230d8e95"
+      },
+      "id": "38b97b18230d8e95",
+      "type": "add",
+      "after": "d8ff15e2822cec19",
+      "date": 1390863079536
+    },
+    {
+      "type": "remove",
+      "id": "38b97b18230d8e95",
+      "date": 1390863080737
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups."
+      },
+      "date": 1390863928680
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ef6bdb6ec394df98",
+        "text": ""
+      },
+      "id": "ef6bdb6ec394df98",
+      "type": "add",
+      "after": "59a1b496ceb496d5",
+      "date": 1390863929193
+    },
+    {
+      "type": "remove",
+      "id": "ef6bdb6ec394df98",
+      "date": 1390863936772
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups, as well as [[Hybrid Named Data]]"
+      },
+      "date": 1390863962314
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups, as well as [[Hybrid Named Data ]]"
+      },
+      "date": 1390863979615
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups, as well as [[Dynamic Named Data Overlay Networks]]"
+      },
+      "date": 1390864075059
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups. For more on this line of thinking [[Dynamic Named Data Overlay Networks]]"
+      },
+      "date": 1390864112063
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups. For more on this, see [[Dynamic Named Data Overlay Networks]]"
+      },
+      "date": 1390864141186
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups. For more, see [[Dynamic Named Data Overlay Networks]]"
+      },
+      "date": 1390864148903
+    },
+    {
+      "type": "fork",
+      "date": 1390864222266
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1391015771263
+    },
+    {
+      "type": "edit",
+      "id": "59a1b496ceb496d5",
+      "item": {
+        "type": "paragraph",
+        "id": "59a1b496ceb496d5",
+        "text": "In addition, I hope this project can facilitate experiments in scaleable webrtc communication between large peer groups. For more, see "
+      },
+      "site": "rosewiki.org",
+      "date": 1391015771263
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0540c04e51059f12",
+        "text": "[[Dynamic Named Data Overlay Networks]]"
+      },
+      "id": "0540c04e51059f12",
+      "type": "add",
+      "after": "59a1b496ceb496d5",
+      "date": 1391015771783
+    },
+    {
+      "type": "remove",
+      "id": "0540c04e51059f12",
+      "date": 1391015774786
+    },
+    {
+      "type": "fork",
+      "date": 1391019264802
+    }
+  ]
+}

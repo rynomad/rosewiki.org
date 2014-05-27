@@ -1,0 +1,487 @@
+{
+  "title": "Wik Transport",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "09282fc27dee970f",
+      "text": "Wik should be able to handle multiple transport mechanisms"
+    },
+    {
+      "type": "paragraph",
+      "id": "9a08b5bad6800d1a",
+      "text": "Federated Wiki began with http, but some people want to use SSL/TLS, Ryan wants to use [[NDN]], maybe Jeremie wants to use [[Telehash]] or Zooko [[Tahoe-LAFS]]. Heck, one could even envision wiking over WebSocket, WebRTC, Bluetooth, Bittorrent, or any number of protocols."
+    },
+    {
+      "type": "paragraph",
+      "id": "47573f62e5543b81",
+      "text": "To allow for this diversity, Wik uses a transport class inspired by [[NDN-js]]. We define a set of required methods and their expected API's to be used under the hood of wik."
+    },
+    {
+      "type": "paragraph",
+      "id": "774b0d296b71afec",
+      "text": "Wik will parse all uri's and attempt to use the appropriate transport module to interperet and generate them."
+    },
+    {
+      "type": "paragraph",
+      "id": "76aa418246cccb99",
+      "text": "Transports should manage their own connection(s)"
+    },
+    {
+      "type": "pagefold",
+      "id": "52301b613ed3c2df",
+      "text": "Example"
+    },
+    {
+      "type": "paragraph",
+      "id": "5bdc2fe4ee1b8f28",
+      "text": "We give an example of an http transport module"
+    },
+    {
+      "type": "code",
+      "id": "7e1a3002ae803b23",
+      "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].announce(uri, whenAcked, whenNotAcked)\n\nwik.transport['http'].listen(uri, onAnnouncementReceived)\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "3765592218fbb7da",
+      "text": "whenGotten should receive the options object and the retrieved item as arguments, whenNotGotten should receive the options object"
+    },
+    {
+      "type": "paragraph",
+      "id": "0f94c7ef72b61e62",
+      "text": "Publish callbacks should both receive the opts object as the only argument. Transport.fetch() is called whenever fetching a URI of the relevant protocol. The transport.publish() method is only used at the discretion of the active [[Wik Storage]] Module."
+    },
+    {
+      "type": "paragraph",
+      "id": "eaa0b0fd46cfd6fb",
+      "text": "The Listen method listens for update messages from the relevant transport in the relative namespace. onAnnouncementReceived Method gets a patch URI as it's argument when it hears about an update in the specified namespace"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Transport",
+        "story": []
+      },
+      "date": 1394772606717
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "09282fc27dee970f"
+      },
+      "id": "09282fc27dee970f",
+      "type": "add",
+      "date": 1394772608040
+    },
+    {
+      "type": "edit",
+      "id": "09282fc27dee970f",
+      "item": {
+        "type": "paragraph",
+        "id": "09282fc27dee970f",
+        "text": "Wik should be able to handle multiple transport mechanisms"
+      },
+      "date": 1394772632597
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9a08b5bad6800d1a",
+        "text": ""
+      },
+      "id": "9a08b5bad6800d1a",
+      "type": "add",
+      "after": "09282fc27dee970f",
+      "date": 1394772633173
+    },
+    {
+      "type": "edit",
+      "id": "9a08b5bad6800d1a",
+      "item": {
+        "type": "paragraph",
+        "id": "9a08b5bad6800d1a",
+        "text": "Federated Wiki began with http, but some people want to use SSL/TLS, Ryan wants to use [[NDN]], maybe Jeremie wants to use [[Telehash]] or Zooko [[Tahoe-LAFS]]. Heck, one could even envision wiking over Bluetooth, Bittorrent, or any number of protocols."
+      },
+      "date": 1394772879482
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "47573f62e5543b81",
+        "text": ""
+      },
+      "id": "47573f62e5543b81",
+      "type": "add",
+      "after": "9a08b5bad6800d1a",
+      "date": 1394772880098
+    },
+    {
+      "type": "edit",
+      "id": "47573f62e5543b81",
+      "item": {
+        "type": "paragraph",
+        "id": "47573f62e5543b81",
+        "text": "To allow for this diversity, Wik uses a transport class inspired by [[NDN-js]]"
+      },
+      "date": 1394772923807
+    },
+    {
+      "type": "edit",
+      "id": "47573f62e5543b81",
+      "item": {
+        "type": "paragraph",
+        "id": "47573f62e5543b81",
+        "text": "To allow for this diversity, Wik uses a transport class inspired by [[NDN-js]]. We define a set of required methods and their expected API's to be used under the hood of wik."
+      },
+      "date": 1394773063811
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "52301b613ed3c2df"
+      },
+      "id": "52301b613ed3c2df",
+      "type": "add",
+      "after": "47573f62e5543b81",
+      "date": 1394773066136
+    },
+    {
+      "type": "edit",
+      "id": "52301b613ed3c2df",
+      "item": {
+        "type": "pagefold",
+        "id": "52301b613ed3c2df",
+        "text": "Methods"
+      },
+      "date": 1394773077907
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7e1a3002ae803b23"
+      },
+      "id": "7e1a3002ae803b23",
+      "type": "add",
+      "after": "52301b613ed3c2df",
+      "date": 1394773084730
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = re"
+      },
+      "date": 1394773125039
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require()"
+      },
+      "date": 1394773146858
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "774b0d296b71afec",
+        "text": ""
+      },
+      "id": "774b0d296b71afec",
+      "type": "add",
+      "after": "47573f62e5543b81",
+      "date": 1394773148992
+    },
+    {
+      "type": "edit",
+      "id": "774b0d296b71afec",
+      "item": {
+        "type": "paragraph",
+        "id": "774b0d296b71afec",
+        "text": "Wik will parse all uri's and attempt to use the appropriate transport module to interperet and generate them."
+      },
+      "date": 1394773202272
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n"
+      },
+      "date": 1394773222553
+    },
+    {
+      "type": "edit",
+      "id": "9a08b5bad6800d1a",
+      "item": {
+        "type": "paragraph",
+        "id": "9a08b5bad6800d1a",
+        "text": "Federated Wiki began with http, but some people want to use SSL/TLS, Ryan wants to use [[NDN]], maybe Jeremie wants to use [[Telehash]] or Zooko [[Tahoe-LAFS]]. Heck, one could even envision wiking over WebSocket, Bluetooth, Bittorrent, or any number of protocols."
+      },
+      "date": 1394773311367
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch(uri, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish(uri, whenGotten, whenNotGotten)\n"
+      },
+      "date": 1394773415058
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({uri: \"string\", type: \"object|blob|file\"}, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish({uri: \"string\", type: \"object|blob|file\", thing: thingToPublish}, whenAcked, whenNotAcked)\n"
+      },
+      "date": 1394773631540
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish({\n  uri: \"string\", \n  type: \"object|blob|file\", \n  thing: thingToPublish\n}, whenAcked, whenNotAcked)\n"
+      },
+      "date": 1394773671559
+    },
+    {
+      "type": "edit",
+      "id": "52301b613ed3c2df",
+      "item": {
+        "type": "pagefold",
+        "id": "52301b613ed3c2df",
+        "text": "Example"
+      },
+      "date": 1394773679513
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3765592218fbb7da"
+      },
+      "id": "3765592218fbb7da",
+      "type": "add",
+      "after": "7e1a3002ae803b23",
+      "date": 1394773702750
+    },
+    {
+      "type": "edit",
+      "id": "3765592218fbb7da",
+      "item": {
+        "type": "paragraph",
+        "id": "3765592218fbb7da",
+        "text": "whenGotten should receive the options object and the retrieved item as arguments, whenNotGotten should receive the options object"
+      },
+      "date": 1394773845125
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0f94c7ef72b61e62",
+        "text": ""
+      },
+      "id": "0f94c7ef72b61e62",
+      "type": "add",
+      "after": "3765592218fbb7da",
+      "date": 1394773845841
+    },
+    {
+      "type": "edit",
+      "id": "0f94c7ef72b61e62",
+      "item": {
+        "type": "paragraph",
+        "id": "0f94c7ef72b61e62",
+        "text": "Publish callbacks should both receive the opts object as the only argument. The transport.publish method is only called if storage is set to remote, in which case it uses  "
+      },
+      "date": 1394774052005
+    },
+    {
+      "type": "edit",
+      "id": "9a08b5bad6800d1a",
+      "item": {
+        "type": "paragraph",
+        "id": "9a08b5bad6800d1a",
+        "text": "Federated Wiki began with http, but some people want to use SSL/TLS, Ryan wants to use [[NDN]], maybe Jeremie wants to use [[Telehash]] or Zooko [[Tahoe-LAFS]]. Heck, one could even envision wiking over WebSocket, WebRTC, Bluetooth, Bittorrent, or any number of protocols."
+      },
+      "date": 1394774088636
+    },
+    {
+      "type": "edit",
+      "id": "0f94c7ef72b61e62",
+      "item": {
+        "type": "paragraph",
+        "id": "0f94c7ef72b61e62",
+        "text": "Publish callbacks should both receive the opts object as the only argument. The transport.publish method is only used at the discretion of the active [[Wik Storage]] Module."
+      },
+      "date": 1394774208772
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5bdc2fe4ee1b8f28"
+      },
+      "id": "5bdc2fe4ee1b8f28",
+      "type": "add",
+      "after": "0f94c7ef72b61e62",
+      "date": 1394775276445
+    },
+    {
+      "type": "move",
+      "order": [
+        "09282fc27dee970f",
+        "9a08b5bad6800d1a",
+        "47573f62e5543b81",
+        "774b0d296b71afec",
+        "52301b613ed3c2df",
+        "7e1a3002ae803b23",
+        "5bdc2fe4ee1b8f28",
+        "3765592218fbb7da",
+        "0f94c7ef72b61e62"
+      ],
+      "id": "5bdc2fe4ee1b8f28",
+      "date": 1394775278262
+    },
+    {
+      "type": "move",
+      "order": [
+        "09282fc27dee970f",
+        "9a08b5bad6800d1a",
+        "47573f62e5543b81",
+        "774b0d296b71afec",
+        "52301b613ed3c2df",
+        "5bdc2fe4ee1b8f28",
+        "7e1a3002ae803b23",
+        "3765592218fbb7da",
+        "0f94c7ef72b61e62"
+      ],
+      "id": "5bdc2fe4ee1b8f28",
+      "date": 1394775281522
+    },
+    {
+      "type": "edit",
+      "id": "5bdc2fe4ee1b8f28",
+      "item": {
+        "type": "paragraph",
+        "id": "5bdc2fe4ee1b8f28",
+        "text": "We give an example of an http transport module"
+      },
+      "date": 1394775303655
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "76aa418246cccb99",
+        "text": ""
+      },
+      "id": "76aa418246cccb99",
+      "type": "add",
+      "after": "774b0d296b71afec",
+      "date": 1394775321264
+    },
+    {
+      "type": "edit",
+      "id": "76aa418246cccb99",
+      "item": {
+        "type": "paragraph",
+        "id": "76aa418246cccb99",
+        "text": "Transports should manage their own connection(s)"
+      },
+      "date": 1394775391489
+    },
+    {
+      "type": "edit",
+      "id": "0f94c7ef72b61e62",
+      "item": {
+        "type": "paragraph",
+        "id": "0f94c7ef72b61e62",
+        "text": "Publish callbacks should both receive the opts object as the only argument. Transport.fetch() is called whenever fetching a URI of the relevant protocol. The transport.publish() method is only used at the discretion of the active [[Wik Storage]] Module."
+      },
+      "date": 1394820007924
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish({\n  uri: \"string\", \n  type: \"object|blob|file\", \n  thing: thingToPublish\n}, whenAcked, whenNotAcked)\n\nwik.transport['http'].announce()\n"
+      },
+      "date": 1394820499943
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish({\n  uri: \"string\", \n  type: \"object|blob|file\", \n  thing: thingToPublish\n}, whenAcked, whenNotAcked)\n\nwik.transport['http'].listen(onAnnouncementReceived)\n"
+      },
+      "date": 1394820566245
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eaa0b0fd46cfd6fb",
+        "text": ""
+      },
+      "id": "eaa0b0fd46cfd6fb",
+      "type": "add",
+      "after": "0f94c7ef72b61e62",
+      "date": 1394820567770
+    },
+    {
+      "type": "edit",
+      "id": "eaa0b0fd46cfd6fb",
+      "item": {
+        "type": "paragraph",
+        "id": "eaa0b0fd46cfd6fb",
+        "text": "The onAnnouncementReceived Method gets a patch URI as it's argument"
+      },
+      "date": 1394820612313
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].publish({\n  uri: \"string\", \n  type: \"object|blob|file\", \n  thing: thingToPublish\n}, whenAcked, whenNotAcked)\n\nwik.transport['http'].listen(uri, onAnnouncementReceived)\n"
+      },
+      "date": 1394820644761
+    },
+    {
+      "type": "edit",
+      "id": "eaa0b0fd46cfd6fb",
+      "item": {
+        "type": "paragraph",
+        "id": "eaa0b0fd46cfd6fb",
+        "text": "The Listen method listens for update messages from the relevant transport in the relative namespace. onAnnouncementReceived Method gets a patch URI as it's argument when it hears about an update in the specified namespace"
+      },
+      "date": 1394820765013
+    },
+    {
+      "type": "edit",
+      "id": "7e1a3002ae803b23",
+      "item": {
+        "type": "code",
+        "id": "7e1a3002ae803b23",
+        "text": "wik.transport['http'] = require('wik-http-transport')\n\nwik.transport['http'].fetch({\n  uri: \"string\", \n  type: \"object|blob|file\"\n}, whenGotten, whenNotGotten)\n\nwik.transport['http'].announce(uri, whenAcked, whenNotAcked)\n\nwik.transport['http'].listen(uri, onAnnouncementReceived)\n"
+      },
+      "date": 1394820867412
+    }
+  ]
+}

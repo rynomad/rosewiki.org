@@ -1,0 +1,259 @@
+{
+  "title": "demo wiki",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "97830efcf574fd0c",
+      "text": "it'll work here"
+    },
+    {
+      "type": "paragraph",
+      "id": "45e2941adcbdc648",
+      "text": "it'll work here in chromium"
+    },
+    {
+      "type": "paragraph",
+      "id": "a8c01bac832742e8",
+      "text": "because bullshit"
+    },
+    {
+      "type": "paragraph",
+      "id": "cbbf0af8639f58a8",
+      "text": "multiple edits"
+    },
+    {
+      "type": "paragraph",
+      "id": "eaecf156d7ba1486",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "003ec7b5ec81bda8",
+      "text": "adsflahydf"
+    },
+    {
+      "type": "paragraph",
+      "id": "82a6da0d0337b74e",
+      "text": "adgihdla"
+    },
+    {
+      "type": "paragraph",
+      "id": "e80f4f6068b5298e",
+      "text": "ahyergwae"
+    },
+    {
+      "type": "paragraph",
+      "id": "17127cb9449a82f1",
+      "text": "dguadighag"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "demo wiki",
+        "story": []
+      },
+      "date": 1386719286152
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "97830efcf574fd0c"
+      },
+      "id": "97830efcf574fd0c",
+      "type": "add",
+      "date": 1386719287281
+    },
+    {
+      "type": "edit",
+      "id": "97830efcf574fd0c",
+      "item": {
+        "type": "paragraph",
+        "id": "97830efcf574fd0c",
+        "text": "it'll work here"
+      },
+      "date": 1386719292286
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "45e2941adcbdc648",
+        "text": "it'll work here in chromium"
+      },
+      "after": "97830efcf574fd0c",
+      "id": "45e2941adcbdc648",
+      "date": 1386719374576
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1386719430177
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "cbbf0af8639f58a8",
+        "text": "multiple edits"
+      },
+      "after": "45e2941adcbdc648",
+      "id": "cbbf0af8639f58a8",
+      "site": "rosewiki.org",
+      "date": 1386719430177
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "eaecf156d7ba1486",
+        "text": "wont work"
+      },
+      "after": "cbbf0af8639f58a8",
+      "id": "eaecf156d7ba1486",
+      "date": 1386719432671
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "a8c01bac832742e8",
+        "text": "because bullshit"
+      },
+      "after": "eaecf156d7ba1486",
+      "id": "a8c01bac832742e8",
+      "date": 1386719434790
+    },
+    {
+      "type": "remove",
+      "id": "eaecf156d7ba1486",
+      "date": 1386719439364
+    },
+    {
+      "type": "fork",
+      "date": 1386719448605
+    },
+    {
+      "type": "move",
+      "order": [
+        "97830efcf574fd0c",
+        "45e2941adcbdc648",
+        "a8c01bac832742e8",
+        "cbbf0af8639f58a8",
+        "eaecf156d7ba1486"
+      ],
+      "id": "a8c01bac832742e8",
+      "date": 1386719487920
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1386720289495
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "003ec7b5ec81bda8"
+      },
+      "id": "003ec7b5ec81bda8",
+      "type": "add",
+      "after": "eaecf156d7ba1486",
+      "site": "rosewiki.org",
+      "date": 1386720289495
+    },
+    {
+      "type": "edit",
+      "id": "003ec7b5ec81bda8",
+      "item": {
+        "type": "paragraph",
+        "id": "003ec7b5ec81bda8",
+        "text": "adsflahydf"
+      },
+      "date": 1386720290522
+    },
+    {
+      "type": "edit",
+      "id": "82a6da0d0337b74e",
+      "item": {
+        "type": "paragraph",
+        "id": "82a6da0d0337b74e",
+        "text": "adgihdla"
+      },
+      "date": 1386720291001
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "82a6da0d0337b74e",
+        "text": "adgihdla"
+      },
+      "id": "82a6da0d0337b74e",
+      "type": "add",
+      "after": "003ec7b5ec81bda8",
+      "date": 1386720291158
+    },
+    {
+      "type": "edit",
+      "id": "17127cb9449a82f1",
+      "item": {
+        "type": "paragraph",
+        "id": "17127cb9449a82f1",
+        "text": "dguadighag"
+      },
+      "date": 1386720291471
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "17127cb9449a82f1",
+        "text": "dguadighag"
+      },
+      "id": "17127cb9449a82f1",
+      "type": "add",
+      "after": "82a6da0d0337b74e",
+      "date": 1386720291513
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e80f4f6068b5298e",
+        "text": ""
+      },
+      "id": "e80f4f6068b5298e",
+      "type": "add",
+      "after": "17127cb9449a82f1",
+      "date": 1386720291992
+    },
+    {
+      "type": "edit",
+      "id": "e80f4f6068b5298e",
+      "item": {
+        "type": "paragraph",
+        "id": "e80f4f6068b5298e",
+        "text": "ahyergwae"
+      },
+      "date": 1386720292806
+    },
+    {
+      "type": "fork",
+      "date": 1386720322722
+    },
+    {
+      "type": "move",
+      "order": [
+        "97830efcf574fd0c",
+        "45e2941adcbdc648",
+        "a8c01bac832742e8",
+        "cbbf0af8639f58a8",
+        "eaecf156d7ba1486",
+        "003ec7b5ec81bda8",
+        "82a6da0d0337b74e",
+        "e80f4f6068b5298e",
+        "17127cb9449a82f1"
+      ],
+      "id": "e80f4f6068b5298e",
+      "date": 1386720331096
+    }
+  ]
+}

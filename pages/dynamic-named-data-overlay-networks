@@ -1,0 +1,357 @@
+{
+  "title": "Dynamic Named Data Overlay Networks",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "4253ca2d478682d0",
+      "text": "The principal Ethos in [[Named Data Networking]] is a focus on an immutable binding between a data packet and it's name, in such a way as to be effectively cached and delivered over the network with minimal retransmission of identicle data over the same link. This is in contrast to today's IP based networking where packets are primarily tied to a source and destination"
+    },
+    {
+      "type": "paragraph",
+      "id": "db5d45a0b93f3b9a",
+      "text": "While a pure Named Data approach gives an advantage in the case of networks constrained by physical nodes whos topology is either partially or completely out of user control, Overlay networks, as made possible by WebRTC, are at liberty to construct themselves upon logical nodes rather than physical."
+    },
+    {
+      "type": "paragraph",
+      "id": "334c7b2cd93a0e2f",
+      "text": "the HTML5 [[WebRTC]] specification opens the door to serverless web applications operating peer to peer in the browser, but can handle only 256 simpultaneous connections. What's more, the limited nature of residential internet connections create a challenging landscaoe for rich media applications"
+    },
+    {
+      "type": "paragraph",
+      "id": "26f4110bd460ec9a",
+      "text": "Here we explore the notion of a Hybrid between Named Data and Named Endpoints, using Named data to increase distribution efficiency withing subgroups of the global network, without burdening those for whom the specific data is irrelevant."
+    },
+    {
+      "type": "paragraph",
+      "id": "be7e1b1d9a370840",
+      "text": "It is our hope that a hybrid strategy will be usefull in allowing large scale rich web applications to be deployed using peer to peer web technologies."
+    },
+    {
+      "type": "paragraph",
+      "id": "4f2fe49f3ecaf3b3",
+      "text": "To abstract our interaction with WebRTC datachannels, we will use [[Telehash]], which exposes a websocket style interface in the browser, transparently encrypted and managing NAT and "
+    },
+    {
+      "type": "pagefold",
+      "id": "f912a0df1261193d",
+      "text": "Questions"
+    },
+    {
+      "type": "paragraph",
+      "id": "71dcb4f3b5b16fc7",
+      "text": "What are the available [[Network growth Strategies]] to bootstrap an overlay network of logical nodes?"
+    },
+    {
+      "type": "paragraph",
+      "id": "ea9b82acfce0699e",
+      "text": "How do we achieve [[Persistence of Data in Highly Volatile Networks?]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Dynamic Named Data Overlay Networks",
+        "story": []
+      },
+      "date": 1390865537390
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4253ca2d478682d0"
+      },
+      "id": "4253ca2d478682d0",
+      "type": "add",
+      "date": 1390865538559
+    },
+    {
+      "type": "edit",
+      "id": "4253ca2d478682d0",
+      "item": {
+        "type": "paragraph",
+        "id": "4253ca2d478682d0",
+        "text": "The principal Ethos in [[Named Data Networking]] is a focus on an immutable binding between a data packet and it's name, in such a way as to be effectively cached and delivered over the network with minimal retransmission of identicle data over the same link."
+      },
+      "date": 1390865622466
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "db5d45a0b93f3b9a",
+        "text": ""
+      },
+      "id": "db5d45a0b93f3b9a",
+      "type": "add",
+      "after": "4253ca2d478682d0",
+      "date": 1390865622984
+    },
+    {
+      "type": "edit",
+      "id": "db5d45a0b93f3b9a",
+      "item": {
+        "type": "paragraph",
+        "id": "db5d45a0b93f3b9a",
+        "text": "While a pure Named Data approach is "
+      },
+      "date": 1390865689221
+    },
+    {
+      "type": "edit",
+      "id": "4253ca2d478682d0",
+      "item": {
+        "type": "paragraph",
+        "id": "4253ca2d478682d0",
+        "text": "The principal Ethos in [[Named Data Networking]] is a focus on an immutable binding between a data packet and it's name, in such a way as to be effectively cached and delivered over the network with minimal retransmission of identicle data over the same link. This is in contrast to today's IP based networking where packets are primarily tied to a source and destination"
+      },
+      "date": 1390865712463
+    },
+    {
+      "type": "edit",
+      "id": "db5d45a0b93f3b9a",
+      "item": {
+        "type": "paragraph",
+        "id": "db5d45a0b93f3b9a",
+        "text": "While a pure Named Data approach gives an advantage in the case of networks constrained by well defined network topologies, Overlay networks may be designed and implimented according to any topology desired. "
+      },
+      "date": 1390866240463
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "26f4110bd460ec9a",
+        "text": ""
+      },
+      "id": "26f4110bd460ec9a",
+      "type": "add",
+      "after": "db5d45a0b93f3b9a",
+      "date": 1390866240987
+    },
+    {
+      "type": "edit",
+      "id": "26f4110bd460ec9a",
+      "item": {
+        "type": "paragraph",
+        "id": "26f4110bd460ec9a",
+        "text": "Here we explore the notion of a Hybrid between Named Data and Named Endpoints, using Named data to increase distribution efficiency withing subgroups of the global network, without burdening those for whom the specific data is irrelevant."
+      },
+      "date": 1390866360012
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "be7e1b1d9a370840",
+        "text": ""
+      },
+      "id": "be7e1b1d9a370840",
+      "type": "add",
+      "after": "26f4110bd460ec9a",
+      "date": 1390866360525
+    },
+    {
+      "type": "edit",
+      "id": "be7e1b1d9a370840",
+      "item": {
+        "type": "paragraph",
+        "id": "be7e1b1d9a370840",
+        "text": "It is our hope that a hybrid strategy will be usefull in allowing large scale rich web applications to be deployed using peer to peer web technologies."
+      },
+      "date": 1390866683086
+    },
+    {
+      "type": "edit",
+      "id": "db5d45a0b93f3b9a",
+      "item": {
+        "type": "paragraph",
+        "id": "db5d45a0b93f3b9a",
+        "text": "While a pure Named Data approach gives an advantage in the case of networks constrained by physical nodes whos topology is either partially or completely out of user control, Is it sufficient to ignore topology completely in an Overlay network scenario?"
+      },
+      "date": 1391015248836
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "88587013672d44eb",
+        "text": ""
+      },
+      "id": "88587013672d44eb",
+      "type": "add",
+      "after": "26f4110bd460ec9a",
+      "date": 1391015253603
+    },
+    {
+      "type": "remove",
+      "id": "88587013672d44eb",
+      "date": 1391015299660
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "334c7b2cd93a0e2f",
+        "text": ""
+      },
+      "id": "334c7b2cd93a0e2f",
+      "type": "add",
+      "after": "db5d45a0b93f3b9a",
+      "date": 1391015301127
+    },
+    {
+      "type": "edit",
+      "id": "334c7b2cd93a0e2f",
+      "item": {
+        "type": "paragraph",
+        "id": "334c7b2cd93a0e2f",
+        "text": "the HTML5 [[WebRTC]]"
+      },
+      "date": 1391015324824
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1391015765927
+    },
+    {
+      "type": "edit",
+      "id": "334c7b2cd93a0e2f",
+      "item": {
+        "type": "paragraph",
+        "id": "334c7b2cd93a0e2f",
+        "text": "the HTML5 [[WebRTC]] specification opens the door to serverless web applications operating peer to peer in the browser, but can handle only 256 simpultaneous connections. What's more, the limited nature of residential internet connections create a challenging landscaoe for rich media applications"
+      },
+      "site": "rosewiki.org",
+      "date": 1391015765927
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "4f2fe49f3ecaf3b3",
+        "text": ""
+      },
+      "id": "4f2fe49f3ecaf3b3",
+      "type": "add",
+      "after": "be7e1b1d9a370840",
+      "date": 1391016838351
+    },
+    {
+      "type": "edit",
+      "id": "4f2fe49f3ecaf3b3",
+      "item": {
+        "type": "paragraph",
+        "id": "4f2fe49f3ecaf3b3",
+        "text": "To abstract our interaction with WebRTC datachannels, we will use [[Telehash]]"
+      },
+      "date": 1391016864311
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f912a0df1261193d"
+      },
+      "id": "f912a0df1261193d",
+      "type": "add",
+      "after": "4f2fe49f3ecaf3b3",
+      "date": 1391017376576
+    },
+    {
+      "type": "edit",
+      "id": "f912a0df1261193d",
+      "item": {
+        "type": "pagefold",
+        "id": "f912a0df1261193d",
+        "text": "Questions"
+      },
+      "date": 1391017384649
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "71dcb4f3b5b16fc7"
+      },
+      "id": "71dcb4f3b5b16fc7",
+      "type": "add",
+      "after": "f912a0df1261193d",
+      "date": 1391017387678
+    },
+    {
+      "type": "edit",
+      "id": "71dcb4f3b5b16fc7",
+      "item": {
+        "type": "paragraph",
+        "id": "71dcb4f3b5b16fc7",
+        "text": "[[]]"
+      },
+      "date": 1391017413009
+    },
+    {
+      "type": "edit",
+      "id": "db5d45a0b93f3b9a",
+      "item": {
+        "type": "paragraph",
+        "id": "db5d45a0b93f3b9a",
+        "text": "While a pure Named Data approach gives an advantage in the case of networks constrained by physical nodes whos topology is either partially or completely out of user control, Overlay networks, as made possible by WebRTC, are at liberty to construct themselves upon logical nodes rather than physical."
+      },
+      "date": 1391017468183
+    },
+    {
+      "type": "edit",
+      "id": "4f2fe49f3ecaf3b3",
+      "item": {
+        "type": "paragraph",
+        "id": "4f2fe49f3ecaf3b3",
+        "text": "To abstract our interaction with WebRTC datachannels, we will use [[Telehash]], which exposes a websocket style interface in the browser, transparently encrypted and managing NAT and "
+      },
+      "date": 1391017594495
+    },
+    {
+      "type": "edit",
+      "id": "71dcb4f3b5b16fc7",
+      "item": {
+        "type": "paragraph",
+        "id": "71dcb4f3b5b16fc7",
+        "text": "What are the available [[Network growth Strategies]] to bootstrap an overlay network of logical nodes?"
+      },
+      "date": 1391017845766
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c86fd3be75860e13",
+        "text": ""
+      },
+      "id": "c86fd3be75860e13",
+      "type": "add",
+      "after": "71dcb4f3b5b16fc7",
+      "date": 1391017846277
+    },
+    {
+      "type": "remove",
+      "id": "c86fd3be75860e13",
+      "date": 1391017854743
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ea9b82acfce0699e",
+        "text": ""
+      },
+      "id": "ea9b82acfce0699e",
+      "type": "add",
+      "after": "71dcb4f3b5b16fc7",
+      "date": 1391017860107
+    },
+    {
+      "type": "edit",
+      "id": "ea9b82acfce0699e",
+      "item": {
+        "type": "paragraph",
+        "id": "ea9b82acfce0699e",
+        "text": "How do we achieve [[Persistence of Data in Highly Volatile Networks?]]"
+      },
+      "date": 1391017878735
+    },
+    {
+      "type": "fork",
+      "date": 1391019247283
+    }
+  ]
+}

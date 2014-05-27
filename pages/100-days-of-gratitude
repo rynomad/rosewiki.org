@@ -1,0 +1,217 @@
+{
+  "title": "100 Days of Gratitude",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "4ae099627a085f7c",
+      "text": "The practice of gratitude is often espoused as a healthy way to improve one's mood and outlook on the world. Here we start an experiment of sorts... 100 days of gratitude; towards people, organizations, or even aspects of nature. "
+    },
+    {
+      "type": "paragraph",
+      "id": "86583c5e42d4cdfd",
+      "text": ""
+    },
+    {
+      "type": "pagefold",
+      "id": "dc01145d647f3e14",
+      "text": "Motivations"
+    },
+    {
+      "type": "paragraph",
+      "id": "7b2f019b977cf00f",
+      "text": "I have a tendency to focus on the negatives in life. This is simply a pointed exercise in celebrating the positives, and giving thanks for those that have, with or without knowing it, helped me in ways both great and small."
+    },
+    {
+      "type": "pagefold",
+      "id": "669ccb8cb4502e6b",
+      "text": "Invitation"
+    },
+    {
+      "type": "paragraph",
+      "id": "bb9ad94fbaecc88d",
+      "text": "By putting this on a [[Federated Wiki]], I invite all readers to join this experiment; simply click on 'Day 1' below, and create a link "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "100 Days of Gratitude",
+        "story": []
+      },
+      "date": 1398896807899
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4ae099627a085f7c"
+      },
+      "id": "4ae099627a085f7c",
+      "type": "add",
+      "date": 1398896810493
+    },
+    {
+      "type": "edit",
+      "id": "4ae099627a085f7c",
+      "item": {
+        "type": "paragraph",
+        "id": "4ae099627a085f7c",
+        "text": "The practice of gratitude is often espoused as a healthy way to improve one's mood and outlook on the world. "
+      },
+      "date": 1398897013247
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "827cc6a758d7f362",
+        "text": ""
+      },
+      "id": "827cc6a758d7f362",
+      "type": "add",
+      "after": "4ae099627a085f7c",
+      "date": 1398897013756
+    },
+    {
+      "type": "remove",
+      "id": "827cc6a758d7f362",
+      "date": 1398897014972
+    },
+    {
+      "type": "edit",
+      "id": "4ae099627a085f7c",
+      "item": {
+        "type": "paragraph",
+        "id": "4ae099627a085f7c",
+        "text": "The practice of gratitude is often espoused as a healthy way to improve one's mood and outlook on the world. Here we start an experiment of sorts..."
+      },
+      "date": 1398897030195
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "05b62d27b31fadfc",
+        "text": ""
+      },
+      "id": "05b62d27b31fadfc",
+      "type": "add",
+      "after": "4ae099627a085f7c",
+      "date": 1398897030700
+    },
+    {
+      "type": "remove",
+      "id": "05b62d27b31fadfc",
+      "date": 1398897038761
+    },
+    {
+      "type": "edit",
+      "id": "4ae099627a085f7c",
+      "item": {
+        "type": "paragraph",
+        "id": "4ae099627a085f7c",
+        "text": "The practice of gratitude is often espoused as a healthy way to improve one's mood and outlook on the world. Here we start an experiment of sorts... 100 days of gratitude; towards people, organizations, or even aspects of nature. "
+      },
+      "date": 1398897072348
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "86583c5e42d4cdfd",
+        "text": ""
+      },
+      "id": "86583c5e42d4cdfd",
+      "type": "add",
+      "after": "4ae099627a085f7c",
+      "date": 1398897072855
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dc01145d647f3e14"
+      },
+      "id": "dc01145d647f3e14",
+      "type": "add",
+      "after": "86583c5e42d4cdfd",
+      "date": 1398897136158
+    },
+    {
+      "type": "edit",
+      "id": "dc01145d647f3e14",
+      "item": {
+        "type": "pagefold",
+        "id": "dc01145d647f3e14",
+        "text": "Motivations"
+      },
+      "date": 1398897144705
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7b2f019b977cf00f"
+      },
+      "id": "7b2f019b977cf00f",
+      "type": "add",
+      "after": "dc01145d647f3e14",
+      "date": 1398897154431
+    },
+    {
+      "type": "edit",
+      "id": "7b2f019b977cf00f",
+      "item": {
+        "type": "paragraph",
+        "id": "7b2f019b977cf00f",
+        "text": "I have a tendency to focus on the negatives in life. This is simply a pointed exercise in celebrating the positives, and giving thanks for those that have, with or without knowing it, helped me in ways both great and small."
+      },
+      "date": 1398897219356
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "669ccb8cb4502e6b"
+      },
+      "id": "669ccb8cb4502e6b",
+      "type": "add",
+      "after": "7b2f019b977cf00f",
+      "date": 1398897224088
+    },
+    {
+      "type": "edit",
+      "id": "669ccb8cb4502e6b",
+      "item": {
+        "type": "pagefold",
+        "id": "669ccb8cb4502e6b",
+        "text": "Invitation"
+      },
+      "date": 1398897234921
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bb9ad94fbaecc88d"
+      },
+      "id": "bb9ad94fbaecc88d",
+      "type": "add",
+      "after": "669ccb8cb4502e6b",
+      "date": 1398897236453
+    },
+    {
+      "type": "edit",
+      "id": "bb9ad94fbaecc88d",
+      "item": {
+        "type": "paragraph",
+        "id": "bb9ad94fbaecc88d",
+        "text": "By putting this on a [[Federated Wiki]], I invite all readers to join this experiment; simply click on 'Day 1' below, and add a link to "
+      },
+      "date": 1398897338808
+    },
+    {
+      "type": "edit",
+      "id": "bb9ad94fbaecc88d",
+      "item": {
+        "type": "paragraph",
+        "id": "bb9ad94fbaecc88d",
+        "text": "By putting this on a [[Federated Wiki]], I invite all readers to join this experiment; simply click on 'Day 1' below, and create a link "
+      },
+      "date": 1398897355406
+    }
+  ]
+}

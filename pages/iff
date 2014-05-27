@@ -1,0 +1,39 @@
+{
+  "title": "iff",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "7e798978ec511743",
+      "text": "iff == \"if and only if\""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "iff",
+        "story": []
+      },
+      "date": 1391015342812
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7e798978ec511743"
+      },
+      "id": "7e798978ec511743",
+      "type": "add",
+      "date": 1391015343891
+    },
+    {
+      "type": "edit",
+      "id": "7e798978ec511743",
+      "item": {
+        "type": "paragraph",
+        "id": "7e798978ec511743",
+        "text": "iff == \"if and only if\""
+      },
+      "date": 1391015353416
+    }
+  ]
+}

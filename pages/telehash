@@ -1,0 +1,65 @@
+{
+  "title": "Telehash",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "adb6b02e0dc2023f",
+      "text": "JSON + DHT + UDP = Freedom"
+    },
+    {
+      "type": "paragraph",
+      "id": "6c75fd68d3794cb9",
+      "text": "An overlay protocol for stuff"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Telehash",
+        "story": []
+      },
+      "date": 1386720735166
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "adb6b02e0dc2023f"
+      },
+      "id": "adb6b02e0dc2023f",
+      "type": "add",
+      "date": 1386720740668
+    },
+    {
+      "type": "edit",
+      "id": "adb6b02e0dc2023f",
+      "item": {
+        "type": "paragraph",
+        "id": "adb6b02e0dc2023f",
+        "text": "JSON + DHT + UDP = Freedom"
+      },
+      "date": 1386720768016
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "6c75fd68d3794cb9",
+        "text": "very true indeedadf"
+      },
+      "after": "adb6b02e0dc2023f",
+      "id": "6c75fd68d3794cb9",
+      "date": 1386721422635
+    },
+    {
+      "type": "edit",
+      "id": "6c75fd68d3794cb9",
+      "item": {
+        "type": "paragraph",
+        "id": "6c75fd68d3794cb9",
+        "text": "An overlay protocol for stuff"
+      },
+      "date": 1386721996386
+    }
+  ]
+}

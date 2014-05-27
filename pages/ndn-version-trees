@@ -1,0 +1,39 @@
+{
+  "title": "NDN Version trees",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f1897e9d57a95d15",
+      "text": "Question: is there some naming convention in NDN that allows for a procedural "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Version trees",
+        "story": []
+      },
+      "date": 1389503302213
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f1897e9d57a95d15"
+      },
+      "id": "f1897e9d57a95d15",
+      "type": "add",
+      "date": 1389503304376
+    },
+    {
+      "type": "edit",
+      "id": "f1897e9d57a95d15",
+      "item": {
+        "type": "paragraph",
+        "id": "f1897e9d57a95d15",
+        "text": "Question: is there some naming convention in NDN that allows for a procedural "
+      },
+      "date": 1389503653000
+    }
+  ]
+}

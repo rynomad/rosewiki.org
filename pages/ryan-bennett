@@ -1,0 +1,170 @@
+{
+  "title": "Ryan Bennett",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "77ebffd9742b93b2",
+      "text": "Currently developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+    },
+    {
+      "type": "paragraph",
+      "id": "42be645008d54661",
+      "text": "I also play bass in a band currently named [[Besos for Pesos.]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "74a92e6d0b1fa2b2",
+      "text": "Ryan hates Safari - [http://stackoverflow.com/questions/14108536/how-do-i-append-two-video-files-data-to-a-source-buffer-using-media-source-api manual video buffering]"
+    },
+    {
+      "type": "paragraph",
+      "id": "81caacfe9c5889f9",
+      "text": "[[100 days of gratitude]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "d794993cefcdb48c",
+      "text": "[[100 Days of Gratitude]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Ryan Bennett",
+        "story": []
+      },
+      "date": 1384969488505
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "77ebffd9742b93b2"
+      },
+      "id": "77ebffd9742b93b2",
+      "type": "add",
+      "date": 1384969489668
+    },
+    {
+      "type": "edit",
+      "id": "77ebffd9742b93b2",
+      "item": {
+        "type": "paragraph",
+        "id": "77ebffd9742b93b2",
+        "text": "Currently developing demo apps using [[Named Data Networking]], building [[ndnr-js]] for eventual use with a more robust version of Wiki-NDN"
+      },
+      "date": 1384969550762
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "42be645008d54661",
+        "text": ""
+      },
+      "id": "42be645008d54661",
+      "type": "add",
+      "after": "77ebffd9742b93b2",
+      "date": 1384969551275
+    },
+    {
+      "type": "edit",
+      "id": "42be645008d54661",
+      "item": {
+        "type": "paragraph",
+        "id": "42be645008d54661",
+        "text": "I also play bass in a band currently named Besos for Pesos."
+      },
+      "date": 1384969575632
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org",
+      "date": 1386232729148
+    },
+    {
+      "type": "edit",
+      "id": "42be645008d54661",
+      "item": {
+        "type": "paragraph",
+        "id": "42be645008d54661",
+        "text": "I also play bass in a band currently named [[Besos for Pesos.]]"
+      },
+      "date": 1386232729148
+    },
+    {
+      "type": "edit",
+      "id": "77ebffd9742b93b2",
+      "item": {
+        "type": "paragraph",
+        "id": "77ebffd9742b93b2",
+        "text": "Currently developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+      },
+      "date": 1386232795364
+    },
+    {
+      "type": "fork",
+      "date": 1386234039956
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "74a92e6d0b1fa2b2",
+        "text": "Ryan hates Safari - http://stackoverflow.com/questions/14108536/how-do-i-append-two-video-files-data-to-a-source-buffer-using-media-source-api"
+      },
+      "after": "42be645008d54661",
+      "id": "74a92e6d0b1fa2b2",
+      "date": 1386725846997
+    },
+    {
+      "type": "edit",
+      "id": "74a92e6d0b1fa2b2",
+      "item": {
+        "type": "paragraph",
+        "id": "74a92e6d0b1fa2b2",
+        "text": "Ryan hates Safari - [http://stackoverflow.com/questions/14108536/how-do-i-append-two-video-files-data-to-a-source-buffer-using-media-source-api manual video buffering]"
+      },
+      "date": 1386725883876
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d794993cefcdb48c"
+      },
+      "id": "d794993cefcdb48c",
+      "type": "add",
+      "after": "74a92e6d0b1fa2b2",
+      "date": 1398896785670
+    },
+    {
+      "type": "edit",
+      "id": "d794993cefcdb48c",
+      "item": {
+        "type": "paragraph",
+        "id": "d794993cefcdb48c",
+        "text": "[[100 Days of Gratitude]]"
+      },
+      "date": 1398896803151
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "81caacfe9c5889f9"
+      },
+      "id": "81caacfe9c5889f9",
+      "type": "add",
+      "after": "74a92e6d0b1fa2b2",
+      "date": 1398897369026
+    },
+    {
+      "type": "edit",
+      "id": "81caacfe9c5889f9",
+      "item": {
+        "type": "paragraph",
+        "id": "81caacfe9c5889f9",
+        "text": "[[100 days of gratitude]]"
+      },
+      "date": 1398897377985
+    }
+  ]
+}

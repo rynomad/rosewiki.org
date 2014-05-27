@@ -1,0 +1,94 @@
+{
+  "title": "best practices",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "3b864af2a3b26a68",
+      "text": "Best Practices means it's important to follow some contribution guidelines to have a well understandable and moderated wiki."
+    },
+    {
+      "type": "pagefold",
+      "id": "62cd0de154709076",
+      "text": "One-Paragraph Rule"
+    },
+    {
+      "type": "paragraph",
+      "id": "a877ec4b5fd26160",
+      "text": "Each page should contain at least one paragraph to give it a context."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "best practices",
+        "story": []
+      },
+      "date": 1385577519744
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3b864af2a3b26a68"
+      },
+      "id": "3b864af2a3b26a68",
+      "type": "add",
+      "date": 1385577521057
+    },
+    {
+      "type": "edit",
+      "id": "3b864af2a3b26a68",
+      "item": {
+        "type": "paragraph",
+        "id": "3b864af2a3b26a68",
+        "text": "Best Practices means it's important to follow some contribution guidelines to have a well understandable and moderated wiki."
+      },
+      "date": 1385577550447
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "62cd0de154709076"
+      },
+      "id": "62cd0de154709076",
+      "type": "add",
+      "after": "3b864af2a3b26a68",
+      "date": 1385577552369
+    },
+    {
+      "type": "edit",
+      "id": "62cd0de154709076",
+      "item": {
+        "type": "pagefold",
+        "id": "62cd0de154709076",
+        "text": "One-Paragraph Rule"
+      },
+      "date": 1385577561541
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a877ec4b5fd26160"
+      },
+      "id": "a877ec4b5fd26160",
+      "type": "add",
+      "after": "62cd0de154709076",
+      "date": 1385577563072
+    },
+    {
+      "type": "edit",
+      "id": "a877ec4b5fd26160",
+      "item": {
+        "type": "paragraph",
+        "id": "a877ec4b5fd26160",
+        "text": "Each page should contain at least one paragraph to give it a context."
+      },
+      "date": 1385577586007
+    },
+    {
+      "type": "fork",
+      "site": "yala.fed.wiki.org",
+      "date": 1386226160205
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "title": "Wiki /page Namespace",
+  "story": [
+    {
+      "type": "pagefold",
+      "id": "72200c4944db907e",
+      "text": "Page Prefix"
+    },
+    {
+      "type": "code",
+      "id": "cc14b3fc54d65eb2",
+      "text": "ndn://<global-prefix>/wiki/page/"
+    },
+    {
+      "type": "paragraph",
+      "id": "f3958f602d3a7636",
+      "text": "Pages are each prefixed with the slug of their title, each contain three subnames: head, story, and journal."
+    },
+    {
+      "type": "pagefold",
+      "id": "886d955b1da1a42f",
+      "text": "head"
+    },
+    {
+      "type": "paragraph",
+      "id": "cc9246efa2060b2b",
+      "text": "Head contains a json object containing the necessary information to build the page header; the domain/hash name of the custodian, the date of the page, synopsis of the page and the unslugged Title of the page. perhaps someday it will hold header javascript shared between page plugins"
+    },
+    {
+      "type": "pagefold",
+      "id": "60f611d71cbc32d7",
+      "text": "story"
+    },
+    {
+      "type": "paragraph",
+      "id": "da83ce081cc5b17d",
+      "text": "Story is an ordered list of page items, expressed as objects with various subcomponents depending on the type. the story item type dictates the plugin used to render it."
+    },
+    {
+      "type": "pagefold",
+      "id": "988901e381a513c6",
+      "text": "journal"
+    },
+    {
+      "type": "paragraph",
+      "id": "310b94fcce7d8e9d",
+      "text": "The journal contains the revision history of the page, enough to reconstruct previous editions, and index a chain of contributors to a page. contributors are denoted as domain/hash names."
+    },
+    {
+      "type": "pagefold",
+      "id": "afaca309177bcba8",
+      "text": "Page Suffix"
+    },
+    {
+      "type": "paragraph",
+      "id": "647b7ef26a734172",
+      "text": "Page data is suffixed with it's custodians domain or hashname, and a single version number"
+    },
+    {
+      "type": "code",
+      "id": "01fa5c383e634163",
+      "text": "ndn:/.../page/<slug>/head/<hash>/<%FD>\nndn:/,,,/page/<slug>/story/<hash>/<%FD>\nndn:/.../page/<slug>/journal/<hash><%FD>"
+    },
+    {
+      "type": "pagefold",
+      "id": "56500fa83dd44617",
+      "text": "Page freshness"
+    },
+    {
+      "type": "paragraph",
+      "id": "5f2f192238572bde",
+      "text": "Pages should stay fresh long enough to utilize ndn caching without in instances of medium to high popularity, but go stale soon enough that unversioned requests will still result in a mostly recent version."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki /page Namespace",
+        "story": []
+      },
+      "date": 1386391473825
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f3958f602d3a7636"
+      },
+      "id": "f3958f602d3a7636",
+      "type": "add",
+      "date": 1386391475190
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "cc14b3fc54d65eb2",
+        "text": "ndn://<global-prefix>/wiki/page/"
+      },
+      "id": "cc14b3fc54d65eb2",
+      "date": 1386391483632
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "pagefold",
+        "id": "72200c4944db907e",
+        "text": "Page Prefix"
+      },
+      "id": "72200c4944db907e",
+      "date": 1386391486719
+    },
+    {
+      "type": "edit",
+      "id": "f3958f602d3a7636",
+      "item": {
+        "type": "paragraph",
+        "id": "f3958f602d3a7636",
+        "text": "Pages are named simply as a slug of their title. see [[page slugs]]"
+      },
+      "date": 1386391527952
+    },
+    {
+      "type": "move",
+      "order": [
+        "f3958f602d3a7636",
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2"
+      ],
+      "id": "f3958f602d3a7636",
+      "date": 1386391996635
+    },
+    {
+      "type": "edit",
+      "id": "f3958f602d3a7636",
+      "item": {
+        "type": "paragraph",
+        "id": "f3958f602d3a7636",
+        "text": "Pages are named simply as a slug of their title. wiki.asSlug() sanitizes and normalizes a string "
+      },
+      "date": 1386392029885
+    },
+    {
+      "type": "edit",
+      "id": "f3958f602d3a7636",
+      "item": {
+        "type": "paragraph",
+        "id": "f3958f602d3a7636",
+        "text": "Pages are named simply as a slug of their title. wiki.asSlug() sanitizes and normalizes a string to a slug"
+      },
+      "date": 1386392035606
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d5630853be443b70"
+      },
+      "id": "d5630853be443b70",
+      "type": "add",
+      "after": "cc14b3fc54d65eb2",
+      "date": 1386392041592
+    },
+    {
+      "type": "edit",
+      "id": "d5630853be443b70",
+      "item": {
+        "type": "paragraph",
+        "id": "d5630853be443b70",
+        "text": "immediately beneath page/ come"
+      },
+      "date": 1386392091497
+    },
+    {
+      "type": "edit",
+      "id": "f3958f602d3a7636",
+      "item": {
+        "type": "paragraph",
+        "id": "f3958f602d3a7636",
+        "text": "Pages are each prefixed with the slug of their title, each contain three subnames: head, story, and journal."
+      },
+      "date": 1386392326536
+    },
+    {
+      "type": "move",
+      "order": [
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "72200c4944db907e",
+        "d5630853be443b70"
+      ],
+      "id": "cc14b3fc54d65eb2",
+      "date": 1386392408551
+    },
+    {
+      "type": "remove",
+      "id": "d5630853be443b70",
+      "date": 1386392409487
+    },
+    {
+      "type": "move",
+      "order": [
+        "cc14b3fc54d65eb2",
+        "72200c4944db907e",
+        "f3958f602d3a7636"
+      ],
+      "id": "72200c4944db907e",
+      "date": 1386392412089
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8cb332b789f94d61"
+      },
+      "id": "8cb332b789f94d61",
+      "type": "add",
+      "after": "f3958f602d3a7636",
+      "date": 1386392416389
+    },
+    {
+      "type": "remove",
+      "id": "8cb332b789f94d61",
+      "date": 1386392429487
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "647b7ef26a734172"
+      },
+      "id": "647b7ef26a734172",
+      "type": "add",
+      "after": "f3958f602d3a7636",
+      "date": 1386392446115
+    },
+    {
+      "type": "edit",
+      "id": "647b7ef26a734172",
+      "item": {
+        "type": "paragraph",
+        "id": "647b7ef26a734172",
+        "text": "head"
+      },
+      "date": 1386392484056
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "955add5d1795edee"
+      },
+      "id": "955add5d1795edee",
+      "type": "add",
+      "after": "647b7ef26a734172",
+      "date": 1386392485991
+    },
+    {
+      "type": "remove",
+      "id": "955add5d1795edee",
+      "date": 1386392490704
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "886d955b1da1a42f"
+      },
+      "id": "886d955b1da1a42f",
+      "type": "add",
+      "after": "647b7ef26a734172",
+      "date": 1386392564211
+    },
+    {
+      "type": "edit",
+      "id": "886d955b1da1a42f",
+      "item": {
+        "type": "pagefold",
+        "id": "886d955b1da1a42f",
+        "text": "head"
+      },
+      "date": 1386392568103
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "60f611d71cbc32d7"
+      },
+      "id": "60f611d71cbc32d7",
+      "type": "add",
+      "after": "886d955b1da1a42f",
+      "date": 1386392569354
+    },
+    {
+      "type": "edit",
+      "id": "60f611d71cbc32d7",
+      "item": {
+        "type": "pagefold",
+        "id": "60f611d71cbc32d7",
+        "text": "story"
+      },
+      "date": 1386392578118
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "988901e381a513c6"
+      },
+      "id": "988901e381a513c6",
+      "type": "add",
+      "after": "60f611d71cbc32d7",
+      "date": 1386392579454
+    },
+    {
+      "type": "edit",
+      "id": "988901e381a513c6",
+      "item": {
+        "type": "pagefold",
+        "id": "988901e381a513c6",
+        "text": "journal"
+      },
+      "date": 1386392584262
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "647b7ef26a734172",
+        "886d955b1da1a42f",
+        "60f611d71cbc32d7",
+        "988901e381a513c6"
+      ],
+      "id": "72200c4944db907e",
+      "date": 1386392593778
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "886d955b1da1a42f",
+        "60f611d71cbc32d7",
+        "988901e381a513c6",
+        "647b7ef26a734172"
+      ],
+      "id": "647b7ef26a734172",
+      "date": 1386392601691
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "afaca309177bcba8"
+      },
+      "id": "afaca309177bcba8",
+      "type": "add",
+      "after": "647b7ef26a734172",
+      "date": 1386392611030
+    },
+    {
+      "type": "edit",
+      "id": "afaca309177bcba8",
+      "item": {
+        "type": "pagefold",
+        "id": "afaca309177bcba8",
+        "text": "Page Suffix"
+      },
+      "date": 1386392616667
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "886d955b1da1a42f",
+        "60f611d71cbc32d7",
+        "988901e381a513c6",
+        "afaca309177bcba8",
+        "647b7ef26a734172"
+      ],
+      "id": "647b7ef26a734172",
+      "date": 1386392620491
+    },
+    {
+      "type": "edit",
+      "id": "647b7ef26a734172",
+      "item": {
+        "type": "paragraph",
+        "id": "647b7ef26a734172",
+        "text": "Page data is suffixed with it's custodians domain or hashname, and a single version number"
+      },
+      "date": 1386392718595
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9bd9efa93de44c53",
+        "text": ""
+      },
+      "id": "9bd9efa93de44c53",
+      "type": "add",
+      "after": "647b7ef26a734172",
+      "date": 1386392719111
+    },
+    {
+      "type": "remove",
+      "id": "9bd9efa93de44c53",
+      "date": 1386392724385
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "01fa5c383e634163"
+      },
+      "id": "01fa5c383e634163",
+      "type": "add",
+      "after": "647b7ef26a734172",
+      "date": 1386392725618
+    },
+    {
+      "type": "edit",
+      "id": "01fa5c383e634163",
+      "item": {
+        "type": "code",
+        "id": "01fa5c383e634163",
+        "text": "ndn:/.../page/<slug>/head/<hash>/<%FD>\nndn:/,,,/page/<slug>/story/<hash>/<%FD>\nndn:/.../page/<slug>/journal/<hash><%FD>"
+      },
+      "date": 1386392942665
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "cc9246efa2060b2b",
+        "text": ""
+      },
+      "id": "cc9246efa2060b2b",
+      "type": "add",
+      "after": "f3958f602d3a7636",
+      "date": 1386392959157
+    },
+    {
+      "type": "edit",
+      "id": "cc9246efa2060b2b",
+      "item": {
+        "type": "paragraph",
+        "id": "cc9246efa2060b2b",
+        "text": "Head contains a json object containing the necessary information to build the page header; namely the flag dataUri of the custodian and the unslugged Title of the page. perhaps someday it will hold header javascript shared between page plugins"
+      },
+      "date": 1386393149755
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "886d955b1da1a42f",
+        "cc9246efa2060b2b",
+        "60f611d71cbc32d7",
+        "988901e381a513c6",
+        "afaca309177bcba8",
+        "647b7ef26a734172",
+        "01fa5c383e634163"
+      ],
+      "id": "cc9246efa2060b2b",
+      "date": 1386393151575
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "da83ce081cc5b17d"
+      },
+      "id": "da83ce081cc5b17d",
+      "type": "add",
+      "after": "01fa5c383e634163",
+      "date": 1386393164646
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "886d955b1da1a42f",
+        "cc9246efa2060b2b",
+        "60f611d71cbc32d7",
+        "da83ce081cc5b17d",
+        "988901e381a513c6",
+        "afaca309177bcba8",
+        "647b7ef26a734172",
+        "01fa5c383e634163"
+      ],
+      "id": "da83ce081cc5b17d",
+      "date": 1386393166710
+    },
+    {
+      "type": "edit",
+      "id": "da83ce081cc5b17d",
+      "item": {
+        "type": "paragraph",
+        "id": "da83ce081cc5b17d",
+        "text": "Story is an ordered list of page items, expressed as objects with various subcomponents depending on the type. the story item type dictates the plugin used to render it."
+      },
+      "date": 1386393247491
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "310b94fcce7d8e9d"
+      },
+      "id": "310b94fcce7d8e9d",
+      "type": "add",
+      "after": "01fa5c383e634163",
+      "date": 1386393251570
+    },
+    {
+      "type": "move",
+      "order": [
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "f3958f602d3a7636",
+        "886d955b1da1a42f",
+        "cc9246efa2060b2b",
+        "60f611d71cbc32d7",
+        "da83ce081cc5b17d",
+        "988901e381a513c6",
+        "310b94fcce7d8e9d",
+        "afaca309177bcba8",
+        "647b7ef26a734172",
+        "01fa5c383e634163"
+      ],
+      "id": "310b94fcce7d8e9d",
+      "date": 1386393253984
+    },
+    {
+      "type": "edit",
+      "id": "310b94fcce7d8e9d",
+      "item": {
+        "type": "paragraph",
+        "id": "310b94fcce7d8e9d",
+        "text": "The journal contains the revision history of the page, enough to reconstruct previous editions, and index a chain of contributors to a page. contributors are denoted as domain/hash names."
+      },
+      "date": 1386393371747
+    },
+    {
+      "type": "edit",
+      "id": "cc9246efa2060b2b",
+      "item": {
+        "type": "paragraph",
+        "id": "cc9246efa2060b2b",
+        "text": "Head contains a json object containing the necessary information to build the page header; the domain/hash name of the custodian and the unslugged Title of the page. perhaps someday it will hold header javascript shared between page plugins"
+      },
+      "date": 1386393702488
+    },
+    {
+      "type": "remove",
+      "id": "01fa5c383e634163",
+      "date": 1386394436010
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "01fa5c383e634163",
+        "text": "ndn:/.../page/<slug>/head/<hash>/<%FD>\nndn:/,,,/page/<slug>/story/<hash>/<%FD>\nndn:/.../page/<slug>/journal/<hash><%FD>"
+      },
+      "after": "647b7ef26a734172",
+      "id": "01fa5c383e634163",
+      "date": 1386394446604
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "56500fa83dd44617"
+      },
+      "id": "56500fa83dd44617",
+      "type": "add",
+      "after": "01fa5c383e634163",
+      "date": 1386394740851
+    },
+    {
+      "type": "edit",
+      "id": "56500fa83dd44617",
+      "item": {
+        "type": "pagefold",
+        "id": "56500fa83dd44617",
+        "text": "Page freshness"
+      },
+      "date": 1386394754517
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5f2f192238572bde"
+      },
+      "id": "5f2f192238572bde",
+      "type": "add",
+      "after": "56500fa83dd44617",
+      "date": 1386394756568
+    },
+    {
+      "type": "edit",
+      "id": "5f2f192238572bde",
+      "item": {
+        "type": "paragraph",
+        "id": "5f2f192238572bde",
+        "text": "Pages should stay fresh long enough to utilize ndn caching without in instances of medium to high popularity, but go stale soon enough that unversioned requests will still result in a mostly recent version."
+      },
+      "date": 1386394941368
+    },
+    {
+      "type": "edit",
+      "id": "cc9246efa2060b2b",
+      "item": {
+        "type": "paragraph",
+        "id": "cc9246efa2060b2b",
+        "text": "Head contains a json object containing the necessary information to build the page header; the domain/hash name of the custodian, the date of the page, synopsis of the page and the unslugged Title of the page. perhaps someday it will hold header javascript shared between page plugins"
+      },
+      "date": 1386395178468
+    }
+  ]
+}

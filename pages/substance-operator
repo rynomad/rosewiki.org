@@ -1,0 +1,55 @@
+{
+  "title": "Substance Operator",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f01f30588d65098d",
+      "text": "Substance Operator is an npm module for operational transformations on strings, arrays, and objects. It is open source by the grace of the good people working on [http://substance.io Substance], another web-collaboration project"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Substance Operator",
+        "story": []
+      },
+      "date": 1394740986096
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f01f30588d65098d"
+      },
+      "id": "f01f30588d65098d",
+      "type": "add",
+      "date": 1394740987773
+    },
+    {
+      "type": "edit",
+      "id": "f01f30588d65098d",
+      "item": {
+        "type": "paragraph",
+        "id": "f01f30588d65098d",
+        "text": "Substance Operator is an npm module for operational transformations on strings, arrays, and objects. It is open source by the grace of the good people working on [http://substance.io Substance], another web-collaboration project"
+      },
+      "date": 1394741063493
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "393b15780d9a60ec",
+        "text": ""
+      },
+      "id": "393b15780d9a60ec",
+      "type": "add",
+      "after": "f01f30588d65098d",
+      "date": 1394741064013
+    },
+    {
+      "type": "remove",
+      "id": "393b15780d9a60ec",
+      "date": 1394741080925
+    }
+  ]
+}

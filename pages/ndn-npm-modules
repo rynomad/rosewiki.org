@@ -1,0 +1,231 @@
+{
+  "title": "NDN npm modules",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c916d11a01946d3f",
+      "text": "Recovering from a harddrive failure... most of my data is still available, but my disorginazation is now evident... Time to do a major refactor"
+    },
+    {
+      "type": "paragraph",
+      "id": "a0861a4c37b62adf",
+      "text": "[[Browser KeyStore]] - generate and store a password encrypted keypair"
+    },
+    {
+      "type": "paragraph",
+      "id": "29c822ffa4f94aeb",
+      "text": "[[NDN-lib]] - rebuild NDN-browser-shim with new updates"
+    },
+    {
+      "type": "paragraph",
+      "id": "6da2ba5e467ade34",
+      "text": "[[NFD-js]] - pure javascript forwarding daemon for node/browser"
+    },
+    {
+      "type": "paragraph",
+      "id": "5de4169189b206c3",
+      "text": "[[NDN-io]] seperate i/o interface from browserkit"
+    },
+    {
+      "type": "paragraph",
+      "id": "c36932ddadd136cf",
+      "text": "[[NDN-repo]] seperate repo from browserkit"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN npm modules",
+        "story": []
+      },
+      "date": 1396403884073
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c916d11a01946d3f"
+      },
+      "id": "c916d11a01946d3f",
+      "type": "add",
+      "date": 1396403885001
+    },
+    {
+      "type": "edit",
+      "id": "c916d11a01946d3f",
+      "item": {
+        "type": "paragraph",
+        "id": "c916d11a01946d3f",
+        "text": "Recovering from a harddrive failure... most of my data is still available, but my disorginazation is now evident... Time to do a major refactor"
+      },
+      "date": 1396403942399
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a0861a4c37b62adf",
+        "text": ""
+      },
+      "id": "a0861a4c37b62adf",
+      "type": "add",
+      "after": "c916d11a01946d3f",
+      "date": 1396403942909
+    },
+    {
+      "type": "edit",
+      "id": "a0861a4c37b62adf",
+      "item": {
+        "type": "paragraph",
+        "id": "a0861a4c37b62adf",
+        "text": "[[Browser KeyStore]] - generate and store a password encrypted keypair"
+      },
+      "date": 1396403976731
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "29c822ffa4f94aeb",
+        "text": ""
+      },
+      "id": "29c822ffa4f94aeb",
+      "type": "add",
+      "after": "a0861a4c37b62adf",
+      "date": 1396403977242
+    },
+    {
+      "type": "edit",
+      "id": "29c822ffa4f94aeb",
+      "item": {
+        "type": "paragraph",
+        "id": "29c822ffa4f94aeb",
+        "text": "[[NDN-lib]] - rebuild NDN-browser-shim with new updates"
+      },
+      "date": 1396404024780
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6da2ba5e467ade34",
+        "text": ""
+      },
+      "id": "6da2ba5e467ade34",
+      "type": "add",
+      "after": "29c822ffa4f94aeb",
+      "date": 1396404025289
+    },
+    {
+      "type": "edit",
+      "id": "6da2ba5e467ade34",
+      "item": {
+        "type": "paragraph",
+        "id": "6da2ba5e467ade34",
+        "text": "[[NFD-js]] - "
+      },
+      "date": 1396404055213
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5de4169189b206c3",
+        "text": ""
+      },
+      "id": "5de4169189b206c3",
+      "type": "add",
+      "after": "6da2ba5e467ade34",
+      "date": 1396404055720
+    },
+    {
+      "type": "edit",
+      "id": "5de4169189b206c3",
+      "item": {
+        "type": "paragraph",
+        "id": "5de4169189b206c3",
+        "text": "[[NDN-io]]"
+      },
+      "date": 1396404061644
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c36932ddadd136cf",
+        "text": ""
+      },
+      "id": "c36932ddadd136cf",
+      "type": "add",
+      "after": "5de4169189b206c3",
+      "date": 1396404062150
+    },
+    {
+      "type": "edit",
+      "id": "c36932ddadd136cf",
+      "item": {
+        "type": "paragraph",
+        "id": "c36932ddadd136cf",
+        "text": "[[NDN-repo]]"
+      },
+      "date": 1396404074681
+    },
+    {
+      "type": "edit",
+      "id": "6da2ba5e467ade34",
+      "item": {
+        "type": "paragraph",
+        "id": "6da2ba5e467ade34",
+        "text": "[[NFD-js]] - pure javascript forwarding daemon for node/browser"
+      },
+      "date": 1396404089215
+    },
+    {
+      "type": "edit",
+      "id": "5de4169189b206c3",
+      "item": {
+        "type": "paragraph",
+        "id": "5de4169189b206c3",
+        "text": "[[NDN-io]] seperate i/o interface from browserkit"
+      },
+      "date": 1396404124914
+    },
+    {
+      "type": "edit",
+      "id": "c36932ddadd136cf",
+      "item": {
+        "type": "paragraph",
+        "id": "c36932ddadd136cf",
+        "text": "[[NDN-repo]] seperate repo from browserkit"
+      },
+      "date": 1396404134440
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c4f030cb46afaa72",
+        "text": ""
+      },
+      "id": "c4f030cb46afaa72",
+      "type": "add",
+      "after": "c36932ddadd136cf",
+      "date": 1396404134949
+    },
+    {
+      "type": "remove",
+      "id": "c4f030cb46afaa72",
+      "date": 1396404138569
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a4699cb0d8410265",
+        "text": ""
+      },
+      "id": "a4699cb0d8410265",
+      "type": "add",
+      "after": "c36932ddadd136cf",
+      "date": 1396404143080
+    },
+    {
+      "type": "remove",
+      "id": "a4699cb0d8410265",
+      "date": 1396404173023
+    }
+  ]
+}

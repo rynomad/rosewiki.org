@@ -1,0 +1,219 @@
+{
+  "title": "NFD-js Build Process",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "1cde94b6e09c72ed",
+      "text": "Due to the large number of threads involved and the complications this introduces in distribution and deployment, we consider here some tools that should enable us to include the NFD daemon in the browser with a single bundled script or call to require as a node module (via browserify)"
+    },
+    {
+      "type": "paragraph",
+      "id": "1a03ac7fa28c49ec",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "87879cc57bbff1ad",
+      "text": "-Browserify will traverse all calls to require and output a single javascript file . For more on the relationship between browserify and the extant NDN-js, see [[NDN Browser Shim]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "5f5d25ef19e78363",
+      "text": "-Workerify is a browserify transform that allows us to inline web workers as blobs, rather than as separate JavaScript files. This will simplify distribution significantly"
+    },
+    {
+      "type": "paragraph",
+      "id": "e36746f19fad8cc5",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "37482d5d2dd99365",
+      "text": "Though outside the scope of our build process, the documentation for NFD-js should highlight the value of running any project dependant on the module through a minifier/compressor such as uglify.js, as the resultant bundle of our work will likely be of significant size."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NFD-js Build Process",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1390861100810,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1cde94b6e09c72ed"
+      },
+      "id": "1cde94b6e09c72ed",
+      "type": "add",
+      "date": 1390861101810
+    },
+    {
+      "type": "edit",
+      "id": "1cde94b6e09c72ed",
+      "item": {
+        "type": "paragraph",
+        "id": "1cde94b6e09c72ed",
+        "text": "Due to the large number of threads involved and the complications this introduces in distribution and deployment, we consider here some tools that should enable us to include the NFD daemon in the browser with a single bundled script or call to require as a node module (via browserify)"
+      },
+      "date": 1390861225667
+    },
+    {
+      "type": "edit",
+      "id": "1a03ac7fa28c49ec",
+      "item": {
+        "type": "paragraph",
+        "id": "1a03ac7fa28c49ec",
+        "text": " "
+      },
+      "date": 1390861225816
+    },
+    {
+      "type": "remove",
+      "id": "5ad5f947b8974a71",
+      "date": 1390861225828
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1a03ac7fa28c49ec",
+        "text": " "
+      },
+      "id": "1a03ac7fa28c49ec",
+      "type": "add",
+      "after": "1cde94b6e09c72ed",
+      "date": 1390861226179
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5ad5f947b8974a71",
+        "text": ""
+      },
+      "id": "5ad5f947b8974a71",
+      "type": "add",
+      "after": "1a03ac7fa28c49ec",
+      "date": 1390861226325
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "87879cc57bbff1ad",
+        "text": ""
+      },
+      "id": "87879cc57bbff1ad",
+      "type": "add",
+      "after": "1a03ac7fa28c49ec",
+      "date": 1390861226373
+    },
+    {
+      "type": "edit",
+      "id": "87879cc57bbff1ad",
+      "item": {
+        "type": "paragraph",
+        "id": "87879cc57bbff1ad",
+        "text": "Browserify will traverse all calls to require and output a single javascript file . For more on the relationship between browserify and the extant NDN-js, see [[NDN Browser Shim]]"
+      },
+      "date": 1390861316190
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5f5d25ef19e78363"
+      },
+      "id": "5f5d25ef19e78363",
+      "type": "add",
+      "after": "87879cc57bbff1ad",
+      "date": 1390861358655
+    },
+    {
+      "type": "edit",
+      "id": "5f5d25ef19e78363",
+      "item": {
+        "type": "paragraph",
+        "id": "5f5d25ef19e78363",
+        "text": "Workerify is a browserify transform that allows us to inline web workers as blobs, rather than as separate JavaScript files. This will simplify distribution significantly"
+      },
+      "date": 1390861614215
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e36746f19fad8cc5"
+      },
+      "id": "e36746f19fad8cc5",
+      "type": "add",
+      "after": "5f5d25ef19e78363",
+      "date": 1390862384244
+    },
+    {
+      "type": "remove",
+      "id": "e36746f19fad8cc5",
+      "date": 1390862386115
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "37482d5d2dd99365"
+      },
+      "id": "37482d5d2dd99365",
+      "type": "add",
+      "after": "e36746f19fad8cc5",
+      "date": 1390862422435
+    },
+    {
+      "type": "edit",
+      "id": "37482d5d2dd99365",
+      "item": {
+        "type": "paragraph",
+        "id": "37482d5d2dd99365",
+        "text": "Though outside the scope of our build process, the documentation for NFD-js should highlight the value of running any project dependant on the module through a minifier/compressor such as uglify.js, as the resultant bundle of our work will likely be of significant size."
+      },
+      "date": 1390862608753
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b2e0534ea8698b58",
+        "text": ""
+      },
+      "id": "b2e0534ea8698b58",
+      "type": "add",
+      "after": "37482d5d2dd99365",
+      "date": 1390862609269
+    },
+    {
+      "type": "remove",
+      "id": "b2e0534ea8698b58",
+      "date": 1390862622072
+    },
+    {
+      "type": "edit",
+      "id": "87879cc57bbff1ad",
+      "item": {
+        "type": "paragraph",
+        "id": "87879cc57bbff1ad",
+        "text": "-Browserify will traverse all calls to require and output a single javascript file . For more on the relationship between browserify and the extant NDN-js, see [[NDN Browser Shim]]"
+      },
+      "date": 1390862625101
+    },
+    {
+      "type": "edit",
+      "id": "5f5d25ef19e78363",
+      "item": {
+        "type": "paragraph",
+        "id": "5f5d25ef19e78363",
+        "text": "-Workerify is a browserify transform that allows us to inline web workers as blobs, rather than as separate JavaScript files. This will simplify distribution significantly"
+      },
+      "date": 1390862627471
+    },
+    {
+      "type": "fork",
+      "date": 1390866694247
+    }
+  ]
+}

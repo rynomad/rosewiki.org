@@ -1,0 +1,39 @@
+{
+  "title": "Federated Wiki as a packaged App",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "69a038cbf10958ab",
+      "text": "As an exercise in extremes, Modifying Wiki to run independent of any server "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Federated Wiki as a packaged App",
+        "story": []
+      },
+      "date": 1386282382365
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "69a038cbf10958ab"
+      },
+      "id": "69a038cbf10958ab",
+      "type": "add",
+      "date": 1386282384182
+    },
+    {
+      "type": "edit",
+      "id": "69a038cbf10958ab",
+      "item": {
+        "type": "paragraph",
+        "id": "69a038cbf10958ab",
+        "text": "As an exercise in extremes, Modifying Wiki to run independent of any server "
+      },
+      "date": 1386282462196
+    }
+  ]
+}

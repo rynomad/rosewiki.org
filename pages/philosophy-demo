@@ -1,0 +1,258 @@
+{
+  "title": "Philosophy Demo",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "51607f08e552f08f",
+      "text": "Why should we do a pilot program for NDN wiki with Philosophy students?"
+    },
+    {
+      "type": "paragraph",
+      "id": "3afe218ff5e5c836",
+      "text": "[[Ethical and Moral Problems]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "d565353d8ee3e604",
+      "text": "[[Important Philosophers]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "42dc469341e72981",
+      "text": "[[Ethics and Innovation]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Philosophy Demo",
+        "story": []
+      },
+      "date": 1389989630638
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3e27ad116ca8b45f"
+      },
+      "id": "3e27ad116ca8b45f",
+      "type": "add",
+      "date": 1389989631581
+    },
+    {
+      "type": "edit",
+      "id": "3e27ad116ca8b45f",
+      "item": {
+        "type": "paragraph",
+        "id": "3e27ad116ca8b45f",
+        "text": "[[Hume]]"
+      },
+      "date": 1389989639067
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "3a9d7bdcbba324b2",
+        "text": ""
+      },
+      "id": "3a9d7bdcbba324b2",
+      "type": "add",
+      "after": "3e27ad116ca8b45f",
+      "date": 1389989639578
+    },
+    {
+      "type": "edit",
+      "id": "3a9d7bdcbba324b2",
+      "item": {
+        "type": "paragraph",
+        "id": "3a9d7bdcbba324b2",
+        "text": "[[Descartes]]"
+      },
+      "date": 1389989653553
+    },
+    {
+      "type": "edit",
+      "id": "3a9d7bdcbba324b2",
+      "item": {
+        "type": "paragraph",
+        "id": "3a9d7bdcbba324b2",
+        "text": "[[Rene Descartes]]"
+      },
+      "date": 1389989673063
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "46f643ba1f027f9e"
+      },
+      "id": "46f643ba1f027f9e",
+      "type": "add",
+      "after": "3a9d7bdcbba324b2",
+      "date": 1389989689917
+    },
+    {
+      "type": "edit",
+      "id": "46f643ba1f027f9e",
+      "item": {
+        "type": "paragraph",
+        "id": "46f643ba1f027f9e",
+        "text": "[[Aristotle]]"
+      },
+      "date": 1389989696885
+    },
+    {
+      "type": "move",
+      "order": [
+        "3a9d7bdcbba324b2",
+        "3e27ad116ca8b45f",
+        "46f643ba1f027f9e"
+      ],
+      "id": "3a9d7bdcbba324b2",
+      "date": 1389989703578
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d565353d8ee3e604"
+      },
+      "id": "d565353d8ee3e604",
+      "type": "add",
+      "after": "46f643ba1f027f9e",
+      "date": 1389989731932
+    },
+    {
+      "type": "edit",
+      "id": "d565353d8ee3e604",
+      "item": {
+        "type": "paragraph",
+        "id": "d565353d8ee3e604",
+        "text": "[[Important Philosophers]]"
+      },
+      "date": 1389989751349
+    },
+    {
+      "type": "move",
+      "order": [
+        "d565353d8ee3e604",
+        "3a9d7bdcbba324b2",
+        "3e27ad116ca8b45f",
+        "46f643ba1f027f9e"
+      ],
+      "id": "d565353d8ee3e604",
+      "date": 1389989753474
+    },
+    {
+      "type": "remove",
+      "id": "3a9d7bdcbba324b2",
+      "date": 1389989760840
+    },
+    {
+      "type": "remove",
+      "id": "3e27ad116ca8b45f",
+      "date": 1389989763595
+    },
+    {
+      "type": "remove",
+      "id": "46f643ba1f027f9e",
+      "date": 1389989765712
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "42dc469341e72981"
+      },
+      "id": "42dc469341e72981",
+      "type": "add",
+      "after": "d565353d8ee3e604",
+      "date": 1389989767669
+    },
+    {
+      "type": "edit",
+      "id": "42dc469341e72981",
+      "item": {
+        "type": "paragraph",
+        "id": "42dc469341e72981",
+        "text": "[[Ethics and Innovation]]"
+      },
+      "date": 1389989784506
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "36bcfb5554f44366",
+        "text": ""
+      },
+      "id": "36bcfb5554f44366",
+      "type": "add",
+      "after": "42dc469341e72981",
+      "date": 1389989785016
+    },
+    {
+      "type": "remove",
+      "id": "36bcfb5554f44366",
+      "date": 1389989795691
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "51607f08e552f08f"
+      },
+      "id": "51607f08e552f08f",
+      "type": "add",
+      "after": "42dc469341e72981",
+      "date": 1389990508672
+    },
+    {
+      "type": "move",
+      "order": [
+        "51607f08e552f08f",
+        "d565353d8ee3e604",
+        "42dc469341e72981"
+      ],
+      "id": "51607f08e552f08f",
+      "date": 1389990510019
+    },
+    {
+      "type": "edit",
+      "id": "51607f08e552f08f",
+      "item": {
+        "type": "paragraph",
+        "id": "51607f08e552f08f",
+        "text": "Why should we do a pilot program for NDN wiki with Philosophy students?"
+      },
+      "date": 1389990531004
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3afe218ff5e5c836"
+      },
+      "id": "3afe218ff5e5c836",
+      "type": "add",
+      "after": "42dc469341e72981",
+      "date": 1389990532505
+    },
+    {
+      "type": "move",
+      "order": [
+        "51607f08e552f08f",
+        "3afe218ff5e5c836",
+        "d565353d8ee3e604",
+        "42dc469341e72981"
+      ],
+      "id": "3afe218ff5e5c836",
+      "date": 1389990533933
+    },
+    {
+      "type": "edit",
+      "id": "3afe218ff5e5c836",
+      "item": {
+        "type": "paragraph",
+        "id": "3afe218ff5e5c836",
+        "text": "[[Ethical and Moral Problems]]"
+      },
+      "date": 1391014949795
+    }
+  ]
+}

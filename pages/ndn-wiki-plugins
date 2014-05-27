@@ -1,0 +1,136 @@
+{
+  "title": "NDN Wiki plugins",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "639970b27b8009f4",
+      "text": "Some plugins making use of NDN within the wiki:"
+    },
+    {
+      "type": "paragraph",
+      "id": "9cbe0906c639619f",
+      "text": "[[About Asset Plugin]] - a plugin that references data held in a discreet location"
+    },
+    {
+      "type": "paragraph",
+      "id": "ec6ac3bf1f8cc4a4",
+      "text": "[[About GoFish Plugin]] - An extension for the standard search"
+    },
+    {
+      "type": "paragraph",
+      "id": "2be3d05db07217bb",
+      "text": "[[About Mime Plugin]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Wiki plugins",
+        "story": []
+      },
+      "date": 1387260132023
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "639970b27b8009f4"
+      },
+      "id": "639970b27b8009f4",
+      "type": "add",
+      "date": 1387260132941
+    },
+    {
+      "type": "edit",
+      "id": "639970b27b8009f4",
+      "item": {
+        "type": "paragraph",
+        "id": "639970b27b8009f4",
+        "text": "Some plugins making use of NDN within the wiki:"
+      },
+      "date": 1387260144639
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9cbe0906c639619f",
+        "text": ""
+      },
+      "id": "9cbe0906c639619f",
+      "type": "add",
+      "after": "639970b27b8009f4",
+      "date": 1387260145145
+    },
+    {
+      "type": "edit",
+      "id": "9cbe0906c639619f",
+      "item": {
+        "type": "paragraph",
+        "id": "9cbe0906c639619f",
+        "text": "[[As]]"
+      },
+      "date": 1387260149582
+    },
+    {
+      "type": "edit",
+      "id": "9cbe0906c639619f",
+      "item": {
+        "type": "paragraph",
+        "id": "9cbe0906c639619f",
+        "text": "[[About Asset Plugin]] - a plugin that references data held in a discreet location"
+      },
+      "date": 1387260277992
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ec6ac3bf1f8cc4a4"
+      },
+      "id": "ec6ac3bf1f8cc4a4",
+      "type": "add",
+      "after": "9cbe0906c639619f",
+      "date": 1387260279363
+    },
+    {
+      "type": "edit",
+      "id": "ec6ac3bf1f8cc4a4",
+      "item": {
+        "type": "paragraph",
+        "id": "ec6ac3bf1f8cc4a4",
+        "text": "[[About GoFish Plugin]] - An extension for the standard search"
+      },
+      "date": 1387260311323
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2be3d05db07217bb",
+        "text": ""
+      },
+      "id": "2be3d05db07217bb",
+      "type": "add",
+      "after": "ec6ac3bf1f8cc4a4",
+      "date": 1387260311829
+    },
+    {
+      "type": "edit",
+      "id": "2be3d05db07217bb",
+      "item": {
+        "type": "paragraph",
+        "id": "2be3d05db07217bb",
+        "text": "[[About]]"
+      },
+      "date": 1387260322840
+    },
+    {
+      "type": "edit",
+      "id": "2be3d05db07217bb",
+      "item": {
+        "type": "paragraph",
+        "id": "2be3d05db07217bb",
+        "text": "[[About Mime Plugin]]"
+      },
+      "date": 1387261157712
+    }
+  ]
+}

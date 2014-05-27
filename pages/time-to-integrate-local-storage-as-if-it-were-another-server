@@ -1,0 +1,1130 @@
+{
+  "journal": [
+    {
+      "date": 1326507921000,
+      "type": "create",
+      "id": "78fe83a20dd70738",
+      "item": {
+        "title": "Time to Integrate Local Storage As if It Were Another Server"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "79f1f7e74c94a611",
+      "item": {
+        "text": "open issue #93 by WardCunningham",
+        "type": "pagefold",
+        "id": "79f1f7e74c94a611"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "d5f516885fd5803f",
+      "item": {
+        "text": "Now that we can claim servers (with OpenID) it is time to make Local Storage in the browser work like a server you've already claimed. This works ok already since we've made editing a claimed site (without login) equivalent to checking the old Local Storage checkbox.",
+        "type": "paragraph",
+        "id": "d5f516885fd5803f"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "773cc6e7290a764d",
+      "item": {
+        "text": "Local Storage is the storage new users will use until they setup servers of their own. Let's help them understand where their edits are going and help them move their edits where they want them when they finally decide where that is. New users will confront two mysteries:",
+        "type": "paragraph",
+        "id": "773cc6e7290a764d"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "ce4a024a109e90a0",
+      "item": {
+        "text": "* I've just edited a federated wiki page and the page turned yellow. What could that possibly mean? What happened to my edit? Who can see my change? Can I undo it?",
+        "type": "paragraph",
+        "id": "ce4a024a109e90a0"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "8d3384e404b487f6",
+      "item": {
+        "text": "* I've been making edits on several federated wiki sites. Now I want to share these changes on the internet as my own. How can I collect these changes and put them up on some new server? How do I get a server? What steps do I follow to move my Local Storage pages there?",
+        "type": "paragraph",
+        "id": "8d3384e404b487f6"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "b844495a4c98bf70",
+      "item": {
+        "text": "I'm going to suggest two big changes that could be two or more issues in their own right. I will describe them here in order to have a high-level discussion. I'll probably have a go at both of these issues soon enough and it I can't get it done I will write the more specific issues. For now, the two big changes are as follows:",
+        "type": "paragraph",
+        "id": "b844495a4c98bf70"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "b53c54aebb061ea2",
+      "item": {
+        "text": "* Model both the origin server and Local Storage as storage devices with a unified API captured as model objects on the client-side. Most of this organization will be invisible to the end user. However, local storage should have its own generated favicon and something useful should happen should the user click it. The favicon for Local Storage should suggest the origin servers favicon modified in some predictable and describable way. I suggest overlaying a cross-hatch pattern over the origin favicon. (See [http://stackoverflow.com/questions/8337570/best-way-to-mask-an-image-in-html5) http://stackoverflow.com/questions/8337570/best-way-to-mask-an-image-in-html5)] ",
+        "type": "paragraph",
+        "id": "b53c54aebb061ea2"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "d0a690e1ed6be14d",
+      "item": {
+        "text": "* Provide a whole-site storage format (in JSON) for moving pages between sites. Add a special page to each server that describes how to move Local Storage pages and offer a 'data' story item that holds all Local Storage pages in that JSON format. (Note: this has to be a client-side mechanism because Local Storage is client side. I'm guessing some \"data url\" trickery can get local storage into the JSON preview window where they (or any other JSON) can be stored to the user's local file system. This means that a user can get a hold of his own pages. Another challenge would be to take a handfull of these sorts of files and upload them in bulk to a brand-new server. ",
+        "type": "paragraph",
+        "id": "d0a690e1ed6be14d"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "7d5f28a1512eb50b",
+      "item": {
+        "text": "We can talk about a new-user funnel that will lead to a critical-mass of federated wiki users. That funnel works something like this:",
+        "type": "paragraph",
+        "id": "7d5f28a1512eb50b"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "4f95add5a7cd985b",
+      "item": {
+        "text": "* user finds a federated wiki page",
+        "type": "paragraph",
+        "id": "4f95add5a7cd985b"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "388c2794f38d42fb",
+      "item": {
+        "text": "* user groks that federated wiki is something special",
+        "type": "paragraph",
+        "id": "388c2794f38d42fb"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "96538c74f9c28e1d",
+      "item": {
+        "text": "* user tries editing, finds that it just works",
+        "type": "paragraph",
+        "id": "96538c74f9c28e1d"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "347a8746cab306a9",
+      "item": {
+        "text": "* user starts curating pages that are personally valuable",
+        "type": "paragraph",
+        "id": "347a8746cab306a9"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "d19789a8464c753c",
+      "item": {
+        "text": "* user learns that existing edits can be moved to a public server",
+        "type": "paragraph",
+        "id": "d19789a8464c753c"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "b10f1a1e98b71614",
+      "item": {
+        "text": "* user moves some edits to a public server, likes the result",
+        "type": "paragraph",
+        "id": "b10f1a1e98b71614"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "c1057c3e1fd6e0a3",
+      "item": {
+        "text": "* user moves remaining local edits to one or more public servers",
+        "type": "paragraph",
+        "id": "c1057c3e1fd6e0a3"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "13d9fdba3cb6e694",
+      "item": {
+        "text": "* user becomes advocate of federated wiki",
+        "type": "paragraph",
+        "id": "13d9fdba3cb6e694"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "6042d055aa8ae13f",
+      "item": {
+        "text": "None of these are big steps. But its time to make sure this path has the minimum of friction.",
+        "type": "paragraph",
+        "id": "6042d055aa8ae13f"
+      }
+    },
+    {
+      "date": 1326507921000,
+      "type": "add",
+      "id": "a344a40c9d7a73ff",
+      "item": {
+        "text": "See issue in [https://github.com/WardCunningham/Smallest-Federated-Wiki/issues/93 github]",
+        "type": "paragraph",
+        "id": "a344a40c9d7a73ff"
+      }
+    },
+    {
+      "date": 1326509573000,
+      "type": "add",
+      "id": "3489935",
+      "item": {
+        "text": "asolove",
+        "type": "pagefold",
+        "id": "3489935"
+      }
+    },
+    {
+      "date": 1326509573000,
+      "type": "add",
+      "id": "0eaddd0d91bc3344",
+      "item": {
+        "text": "This is an excellent idea. Besides providing a good first-time experience and inviting people to create their own federated wiki, these semantics closely conform to what we want to do for the mobile experience of their own site anyways. We should cache the pages they have accessed in localStorage, and then sync edits when they come back. ",
+        "type": "paragraph",
+        "id": "0eaddd0d91bc3344"
+      }
+    },
+    {
+      "date": 1326509573000,
+      "type": "add",
+      "id": "9f147e42d5924ec3",
+      "item": {
+        "text": "I would like to focus on the experience the very first time that someone without an account makes a change. I suspect we can animate the changing favicon, and we should make that favicon a link to a little popup explaining that this is their own edits, and here is how to publish them. I feel like that favicon should have a special treatment, a star or something over it, until they actually publish the changes. ",
+        "type": "paragraph",
+        "id": "9f147e42d5924ec3"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "3490216",
+      "item": {
+        "text": "SvenDowideit",
+        "type": "pagefold",
+        "id": "3490216"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "f5e022e3f59adff4",
+      "item": {
+        "text": "I've wondered about integrating data sources that are not managed within fed.wiki, and I wondered if the best approach would be to write proxies foreach 'source' that separately implement the read only portion of the fed.wiki data API (ie. GET json).",
+        "type": "paragraph",
+        "id": "f5e022e3f59adff4"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "9ca802bfd248ed15",
+      "item": {
+        "text": "similarly, rather than unifying local store and remote store, to treat all remote stores as somewhere all users, including the wiki owner pull into their local store from (and optionally change), and then only the owner (or their authorised delegates) can push to.",
+        "type": "paragraph",
+        "id": "9ca802bfd248ed15"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "5b2fc558ff361045",
+      "item": {
+        "text": "I _think_ the difference to what you're suggesting, is that I'd like to treat the /read/ and non-publish edit interactions of the owner and the guest users in the same way, and then add a publish step, in which the user can publish to any wiki they have commit rights to.",
+        "type": "paragraph",
+        "id": "5b2fc558ff361045"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "31311aa22d48f569",
+      "item": {
+        "text": "this (i think) matches the git workflow more, and in reducing the difference in workflow between users and owners, may simplify supporting it.",
+        "type": "paragraph",
+        "id": "31311aa22d48f569"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "ee33de95d24b7f89",
+      "item": {
+        "text": "I'm really coming back to the idea that for the javascript enabled user, all interaction is with the local store containing mirrors of data requested from all over the web.",
+        "type": "paragraph",
+        "id": "ee33de95d24b7f89"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "11e5b66f36371984",
+      "item": {
+        "text": "whereas i _think_ you're suggesting that the local store is parallel to the remote stores?",
+        "type": "paragraph",
+        "id": "11e5b66f36371984"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "5355dac1e5348728",
+      "item": {
+        "text": "* one side effect of the local store being a copy on change cache, is that _it_ does not have its own favicon, rather , data that have been changed have a new favicon.",
+        "type": "paragraph",
+        "id": "5355dac1e5348728"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "a145cc4ef753585c",
+      "item": {
+        "text": "and as far as push to server, or push to new server goes - i don't think a new storage format is needed - imo we need some more UI's:",
+        "type": "paragraph",
+        "id": "a145cc4ef753585c"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "6ffb67f33523ad0a",
+      "item": {
+        "text": "1 a graph of remotes and relationships between them (ie, data that they share / forked)",
+        "type": "paragraph",
+        "id": "6ffb67f33523ad0a"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "459bead8b98ce9a4",
+      "item": {
+        "text": "2 data on remotes & local",
+        "type": "paragraph",
+        "id": "459bead8b98ce9a4"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "29c2d3a2c55592cd",
+      "item": {
+        "text": "3 ways to see diffs and changelogs, and then to coaless them",
+        "type": "paragraph",
+        "id": "29c2d3a2c55592cd"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "e716bda0e044fdc3",
+      "item": {
+        "text": "4 ways to mirror / transclude with automatic updating",
+        "type": "paragraph",
+        "id": "e716bda0e044fdc3"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "6eb9ef9c441a961b",
+      "item": {
+        "text": "that way, pushing changed data can just drag to a server (including a new one)",
+        "type": "paragraph",
+        "id": "6eb9ef9c441a961b"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "f853842a5a713aba",
+      "item": {
+        "text": "mmm, data, and changesets should be draggable?",
+        "type": "paragraph",
+        "id": "f853842a5a713aba"
+      }
+    },
+    {
+      "date": 1326514454000,
+      "type": "add",
+      "id": "04c9f33cb2eab728",
+      "item": {
+        "text": "(ok, so we might be saying the same thing)",
+        "type": "paragraph",
+        "id": "04c9f33cb2eab728"
+      }
+    },
+    {
+      "date": 1326578443000,
+      "type": "add",
+      "id": "3495393",
+      "item": {
+        "text": "WardCunningham",
+        "type": "pagefold",
+        "id": "3495393"
+      }
+    },
+    {
+      "date": 1326578443000,
+      "type": "add",
+      "id": "7190ce6c55e19e67",
+      "item": {
+        "text": "Adam -- I have just a hint of the little-popup you suggest. Here is a page that includes a plugin to list locally stored pages:",
+        "type": "paragraph",
+        "id": "7190ce6c55e19e67"
+      }
+    },
+    {
+      "date": 1326578443000,
+      "type": "add",
+      "id": "44faaa24c3f0a62c",
+      "item": {
+        "text": "* [http://fed.wiki.org/view/local-editing http://fed.wiki.org/view/local-editing]",
+        "type": "paragraph",
+        "id": "44faaa24c3f0a62c"
+      }
+    },
+    {
+      "date": 1326578443000,
+      "type": "add",
+      "id": "78e33826a91eb501",
+      "item": {
+        "text": "It only shows edits made while fed.wiki.org was origin. Local storage is tied to origin. This was just enough for me to explore local storage. Now I've discovered Chrome has a pretty good local storage browser under Inspect Element's Resource tab.",
+        "type": "paragraph",
+        "id": "78e33826a91eb501"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "3495526",
+      "item": {
+        "text": "WardCunningham",
+        "type": "pagefold",
+        "id": "3495526"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "375c39126090b67f",
+      "item": {
+        "text": "Sven -- Lots of great ideas. Let me just respond to a couple.",
+        "type": "paragraph",
+        "id": "375c39126090b67f"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "261b3c5ed358f803",
+      "item": {
+        "text": "Adding converting proxies for non-wiki-json pages is a cool idea. This is a pull-approach for incorporating foreign data while I've been adopting a push-approach with converter scripts like this one: ",
+        "type": "paragraph",
+        "id": "261b3c5ed358f803"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "b119db552e6e94df",
+      "item": {
+        "text": "* [https://github.com/WardCunningham/ddd/blob/master/scripts/convert.pl https://github.com/WardCunningham/ddd/blob/master/scripts/convert.pl]",
+        "type": "paragraph",
+        "id": "b119db552e6e94df"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "8ffa3f56b2acc51f",
+      "item": {
+        "text": "You suggest all edits should remain in local storage, even when you have write access to the origin server. I can see the logic here. You make changes, review your changes, and then push/sync only the ones you like. Its an extra step, but one that would be appreciated should you have readers depending on logical consistency between pages (the case with software.) I'm going to have to think about this one. I get a bit of the effect by using my laptop as origin.",
+        "type": "paragraph",
+        "id": "8ffa3f56b2acc51f"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "c8b14946d9a48cbe",
+      "item": {
+        "text": "I agree completely that a server should report lots of server-wide or even neighborhood-wide information. Having this sort of information show up as a data-thumbnail has implications I haven't reasoned through.",
+        "type": "paragraph",
+        "id": "c8b14946d9a48cbe"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "b7e6f58f90fab7ed",
+      "item": {
+        "text": "I'm hoping that the visualization work I'm doing with d3.js will factor into server data reporting. I have force-relaxation graph layouts working where you can click on a node to open the associated wiki page.",
+        "type": "paragraph",
+        "id": "b7e6f58f90fab7ed"
+      }
+    },
+    {
+      "date": 1326579977000,
+      "type": "add",
+      "id": "dcaa37fd702b8281",
+      "item": {
+        "text": "I also want to encourage big-data people to spider the whole of the federation and build totally awesome visualizations.",
+        "type": "paragraph",
+        "id": "dcaa37fd702b8281"
+      }
+    },
+    {
+      "date": 1330909262000,
+      "type": "add",
+      "id": "4315208",
+      "item": {
+        "text": "jhulten",
+        "type": "pagefold",
+        "id": "4315208"
+      }
+    },
+    {
+      "date": 1330909262000,
+      "type": "add",
+      "id": "18e983de95052638",
+      "item": {
+        "text": "I like the potential offline aspects of this as well. The only issue I could see is that local storage is per domain, so even if I currated a bunch of pages they would not have access to each other via the browser. With the remote links we could provide a central location for the application cache and then link out from there. We would have to address the points from last weeks hangout about site identification and page identification tho.",
+        "type": "paragraph",
+        "id": "18e983de95052638"
+      }
+    },
+    {
+      "date": 1330916491000,
+      "type": "add",
+      "id": "4316023",
+      "item": {
+        "text": "WardCunningham",
+        "type": "pagefold",
+        "id": "4316023"
+      }
+    },
+    {
+      "date": 1330916491000,
+      "type": "add",
+      "id": "0cbba84044104445",
+      "item": {
+        "text": "I'd like to be able to write an entire site to a local file. This might be a good way to transfer a bunch of Local Storage pages to another location. I haven't quite figured out how to do this. Suggestions?",
+        "type": "paragraph",
+        "id": "0cbba84044104445"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "4317006",
+      "item": {
+        "text": "jhulten",
+        "type": "pagefold",
+        "id": "4317006"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "cc66c958d851f0d1",
+      "item": {
+        "text": "Well if we had a list of all the slugs we could have a sync function that pull the changes that are needed into localStorage:",
+        "type": "paragraph",
+        "id": "cc66c958d851f0d1"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "9a1b25872a314393",
+      "item": {
+        "text": "<b>`</b>javascript",
+        "type": "paragraph",
+        "id": "9a1b25872a314393"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "63fc026ccd055b07",
+      "item": {
+        "text": "localStorage.setItem(\"name\", \"Hello World!\"); //saves to the database, key/value",
+        "type": "paragraph",
+        "id": "63fc026ccd055b07"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "c3b400a539bf3515",
+      "item": {
+        "text": "document.write(localStorage.getItem(\"name\")); //Hello World!",
+        "type": "paragraph",
+        "id": "c3b400a539bf3515"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "34829fce89faad60",
+      "item": {
+        "text": "localStorage.removeItem(\"name\"); //deletes the matching item from the database",
+        "type": "paragraph",
+        "id": "34829fce89faad60"
+      }
+    },
+    {
+      "date": 1330925366000,
+      "type": "add",
+      "id": "8225252abf9a154c",
+      "item": {
+        "text": "<b>`</b>",
+        "type": "paragraph",
+        "id": "8225252abf9a154c"
+      }
+    },
+    {
+      "date": 1330928453000,
+      "type": "add",
+      "id": "4317366",
+      "item": {
+        "text": "jhulten",
+        "type": "pagefold",
+        "id": "4317366"
+      }
+    },
+    {
+      "date": 1330928453000,
+      "type": "add",
+      "id": "956bf555aad92af6",
+      "item": {
+        "text": "You know, if we had every object separate (see my comments in #118) the whole site could be captured in one array. The question is where to put the journal. I think it might need to be in each object with a timestamp that can be sorted...",
+        "type": "paragraph",
+        "id": "956bf555aad92af6"
+      }
+    },
+    {
+      "date": 1330932934000,
+      "type": "add",
+      "id": "4317974",
+      "item": {
+        "text": "WardCunningham",
+        "type": "pagefold",
+        "id": "4317974"
+      }
+    },
+    {
+      "date": 1330932934000,
+      "type": "add",
+      "id": "c349e547e8b05475",
+      "item": {
+        "text": "The wiki page is whole.  All the parts needed to move it are part of the page.  A good whole-site file format would be a json of every page. I think this could be encoded into a data-url which the browser would offer to save-as into the user's filesystem. ",
+        "type": "paragraph",
+        "id": "c349e547e8b05475"
+      }
+    },
+    {
+      "date": 1331163946000,
+      "type": "add",
+      "id": "4381668",
+      "item": {
+        "text": "jhulten",
+        "type": "pagefold",
+        "id": "4381668"
+      }
+    },
+    {
+      "date": 1331163946000,
+      "type": "add",
+      "id": "9a2b898b614953f5",
+      "item": {
+        "text": "I guess part of my thinking on partitioning data below the page level is around forking below the page level (as opposed to copying) and allowing for incremental transfer. It would also allow for data in pages to be addressable in potentially interesting ways. This increases some complexity in that there is more than one type of object, but simplifies it by treating all objects equally.",
+        "type": "paragraph",
+        "id": "9a2b898b614953f5"
+      }
+    },
+    {
+      "date": 1331163946000,
+      "type": "add",
+      "id": "47c4dd2130cc187d",
+      "item": {
+        "text": "I guess this is a question of how fluid the standard is. If the first version is set in stone, thats fine. If it does everything you want as the lead, Ward, okay. I see two elements to this project... One is the federation and the other is the presentation and user experience.",
+        "type": "paragraph",
+        "id": "47c4dd2130cc187d"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "4418637",
+      "item": {
+        "text": "WardCunningham",
+        "type": "pagefold",
+        "id": "4418637"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "6e3ad367766b91c1",
+      "item": {
+        "text": "The protocols are fluid until we start numbering versions.",
+        "type": "paragraph",
+        "id": "6e3ad367766b91c1"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "9126751c5b4c65d3",
+      "item": {
+        "text": "There is a pressure to keep the federation protocol simple so that it can be easily and correctly met. The presentation/ux protocol is only constrained in that we have two server implementations that share common client code.",
+        "type": "paragraph",
+        "id": "9126751c5b4c65d3"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "0bc0ae188fb07fe8",
+      "item": {
+        "text": "I would like to have a protocol that could retrieve the json data from a story item of type == data. Perhaps it could exploit the random id attached to every story item. This would save a bit of unwrapping when using the data in other programs.",
+        "type": "paragraph",
+        "id": "0bc0ae188fb07fe8"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "0272bc53c132cdfc",
+      "item": {
+        "text": "There are other federation protocol enhancements being discussed. Issue #70 suggests extending the federation protocol to support search.",
+        "type": "paragraph",
+        "id": "0272bc53c132cdfc"
+      }
+    },
+    {
+      "date": 1331308574000,
+      "type": "add",
+      "id": "94899d11f35cd3f5",
+      "item": {
+        "text": "Although I don't completely understand every suggestion ever make here, I do take every one seriously. Thanks for participating. ",
+        "type": "paragraph",
+        "id": "94899d11f35cd3f5"
+      }
+    },
+    {
+      "type": "fork",
+      "site": "smallest-federated-wiki.issues.fed.wiki.org",
+      "date": 1386254348178
+    }
+  ],
+  "title": "Time to Integrate Local Storage As if It Were Another Server",
+  "story": [
+    {
+      "text": "open issue #93 by WardCunningham",
+      "type": "pagefold",
+      "id": "79f1f7e74c94a611"
+    },
+    {
+      "text": "Now that we can claim servers (with OpenID) it is time to make Local Storage in the browser work like a server you've already claimed. This works ok already since we've made editing a claimed site (without login) equivalent to checking the old Local Storage checkbox.",
+      "type": "paragraph",
+      "id": "d5f516885fd5803f"
+    },
+    {
+      "text": "Local Storage is the storage new users will use until they setup servers of their own. Let's help them understand where their edits are going and help them move their edits where they want them when they finally decide where that is. New users will confront two mysteries:",
+      "type": "paragraph",
+      "id": "773cc6e7290a764d"
+    },
+    {
+      "text": "* I've just edited a federated wiki page and the page turned yellow. What could that possibly mean? What happened to my edit? Who can see my change? Can I undo it?",
+      "type": "paragraph",
+      "id": "ce4a024a109e90a0"
+    },
+    {
+      "text": "* I've been making edits on several federated wiki sites. Now I want to share these changes on the internet as my own. How can I collect these changes and put them up on some new server? How do I get a server? What steps do I follow to move my Local Storage pages there?",
+      "type": "paragraph",
+      "id": "8d3384e404b487f6"
+    },
+    {
+      "text": "I'm going to suggest two big changes that could be two or more issues in their own right. I will describe them here in order to have a high-level discussion. I'll probably have a go at both of these issues soon enough and it I can't get it done I will write the more specific issues. For now, the two big changes are as follows:",
+      "type": "paragraph",
+      "id": "b844495a4c98bf70"
+    },
+    {
+      "text": "* Model both the origin server and Local Storage as storage devices with a unified API captured as model objects on the client-side. Most of this organization will be invisible to the end user. However, local storage should have its own generated favicon and something useful should happen should the user click it. The favicon for Local Storage should suggest the origin servers favicon modified in some predictable and describable way. I suggest overlaying a cross-hatch pattern over the origin favicon. (See [http://stackoverflow.com/questions/8337570/best-way-to-mask-an-image-in-html5) http://stackoverflow.com/questions/8337570/best-way-to-mask-an-image-in-html5)] ",
+      "type": "paragraph",
+      "id": "b53c54aebb061ea2"
+    },
+    {
+      "text": "* Provide a whole-site storage format (in JSON) for moving pages between sites. Add a special page to each server that describes how to move Local Storage pages and offer a 'data' story item that holds all Local Storage pages in that JSON format. (Note: this has to be a client-side mechanism because Local Storage is client side. I'm guessing some \"data url\" trickery can get local storage into the JSON preview window where they (or any other JSON) can be stored to the user's local file system. This means that a user can get a hold of his own pages. Another challenge would be to take a handfull of these sorts of files and upload them in bulk to a brand-new server. ",
+      "type": "paragraph",
+      "id": "d0a690e1ed6be14d"
+    },
+    {
+      "text": "We can talk about a new-user funnel that will lead to a critical-mass of federated wiki users. That funnel works something like this:",
+      "type": "paragraph",
+      "id": "7d5f28a1512eb50b"
+    },
+    {
+      "text": "* user finds a federated wiki page",
+      "type": "paragraph",
+      "id": "4f95add5a7cd985b"
+    },
+    {
+      "text": "* user groks that federated wiki is something special",
+      "type": "paragraph",
+      "id": "388c2794f38d42fb"
+    },
+    {
+      "text": "* user tries editing, finds that it just works",
+      "type": "paragraph",
+      "id": "96538c74f9c28e1d"
+    },
+    {
+      "text": "* user starts curating pages that are personally valuable",
+      "type": "paragraph",
+      "id": "347a8746cab306a9"
+    },
+    {
+      "text": "* user learns that existing edits can be moved to a public server",
+      "type": "paragraph",
+      "id": "d19789a8464c753c"
+    },
+    {
+      "text": "* user moves some edits to a public server, likes the result",
+      "type": "paragraph",
+      "id": "b10f1a1e98b71614"
+    },
+    {
+      "text": "* user moves remaining local edits to one or more public servers",
+      "type": "paragraph",
+      "id": "c1057c3e1fd6e0a3"
+    },
+    {
+      "text": "* user becomes advocate of federated wiki",
+      "type": "paragraph",
+      "id": "13d9fdba3cb6e694"
+    },
+    {
+      "text": "None of these are big steps. But its time to make sure this path has the minimum of friction.",
+      "type": "paragraph",
+      "id": "6042d055aa8ae13f"
+    },
+    {
+      "text": "See issue in [https://github.com/WardCunningham/Smallest-Federated-Wiki/issues/93 github]",
+      "type": "paragraph",
+      "id": "a344a40c9d7a73ff"
+    },
+    {
+      "text": "asolove",
+      "type": "pagefold",
+      "id": "3489935"
+    },
+    {
+      "text": "This is an excellent idea. Besides providing a good first-time experience and inviting people to create their own federated wiki, these semantics closely conform to what we want to do for the mobile experience of their own site anyways. We should cache the pages they have accessed in localStorage, and then sync edits when they come back. ",
+      "type": "paragraph",
+      "id": "0eaddd0d91bc3344"
+    },
+    {
+      "text": "I would like to focus on the experience the very first time that someone without an account makes a change. I suspect we can animate the changing favicon, and we should make that favicon a link to a little popup explaining that this is their own edits, and here is how to publish them. I feel like that favicon should have a special treatment, a star or something over it, until they actually publish the changes. ",
+      "type": "paragraph",
+      "id": "9f147e42d5924ec3"
+    },
+    {
+      "text": "SvenDowideit",
+      "type": "pagefold",
+      "id": "3490216"
+    },
+    {
+      "text": "I've wondered about integrating data sources that are not managed within fed.wiki, and I wondered if the best approach would be to write proxies foreach 'source' that separately implement the read only portion of the fed.wiki data API (ie. GET json).",
+      "type": "paragraph",
+      "id": "f5e022e3f59adff4"
+    },
+    {
+      "text": "similarly, rather than unifying local store and remote store, to treat all remote stores as somewhere all users, including the wiki owner pull into their local store from (and optionally change), and then only the owner (or their authorised delegates) can push to.",
+      "type": "paragraph",
+      "id": "9ca802bfd248ed15"
+    },
+    {
+      "text": "I _think_ the difference to what you're suggesting, is that I'd like to treat the /read/ and non-publish edit interactions of the owner and the guest users in the same way, and then add a publish step, in which the user can publish to any wiki they have commit rights to.",
+      "type": "paragraph",
+      "id": "5b2fc558ff361045"
+    },
+    {
+      "text": "this (i think) matches the git workflow more, and in reducing the difference in workflow between users and owners, may simplify supporting it.",
+      "type": "paragraph",
+      "id": "31311aa22d48f569"
+    },
+    {
+      "text": "I'm really coming back to the idea that for the javascript enabled user, all interaction is with the local store containing mirrors of data requested from all over the web.",
+      "type": "paragraph",
+      "id": "ee33de95d24b7f89"
+    },
+    {
+      "text": "whereas i _think_ you're suggesting that the local store is parallel to the remote stores?",
+      "type": "paragraph",
+      "id": "11e5b66f36371984"
+    },
+    {
+      "text": "* one side effect of the local store being a copy on change cache, is that _it_ does not have its own favicon, rather , data that have been changed have a new favicon.",
+      "type": "paragraph",
+      "id": "5355dac1e5348728"
+    },
+    {
+      "text": "and as far as push to server, or push to new server goes - i don't think a new storage format is needed - imo we need some more UI's:",
+      "type": "paragraph",
+      "id": "a145cc4ef753585c"
+    },
+    {
+      "text": "1 a graph of remotes and relationships between them (ie, data that they share / forked)",
+      "type": "paragraph",
+      "id": "6ffb67f33523ad0a"
+    },
+    {
+      "text": "2 data on remotes & local",
+      "type": "paragraph",
+      "id": "459bead8b98ce9a4"
+    },
+    {
+      "text": "3 ways to see diffs and changelogs, and then to coaless them",
+      "type": "paragraph",
+      "id": "29c2d3a2c55592cd"
+    },
+    {
+      "text": "4 ways to mirror / transclude with automatic updating",
+      "type": "paragraph",
+      "id": "e716bda0e044fdc3"
+    },
+    {
+      "text": "that way, pushing changed data can just drag to a server (including a new one)",
+      "type": "paragraph",
+      "id": "6eb9ef9c441a961b"
+    },
+    {
+      "text": "mmm, data, and changesets should be draggable?",
+      "type": "paragraph",
+      "id": "f853842a5a713aba"
+    },
+    {
+      "text": "(ok, so we might be saying the same thing)",
+      "type": "paragraph",
+      "id": "04c9f33cb2eab728"
+    },
+    {
+      "text": "WardCunningham",
+      "type": "pagefold",
+      "id": "3495393"
+    },
+    {
+      "text": "Adam -- I have just a hint of the little-popup you suggest. Here is a page that includes a plugin to list locally stored pages:",
+      "type": "paragraph",
+      "id": "7190ce6c55e19e67"
+    },
+    {
+      "text": "* [http://fed.wiki.org/view/local-editing http://fed.wiki.org/view/local-editing]",
+      "type": "paragraph",
+      "id": "44faaa24c3f0a62c"
+    },
+    {
+      "text": "It only shows edits made while fed.wiki.org was origin. Local storage is tied to origin. This was just enough for me to explore local storage. Now I've discovered Chrome has a pretty good local storage browser under Inspect Element's Resource tab.",
+      "type": "paragraph",
+      "id": "78e33826a91eb501"
+    },
+    {
+      "text": "WardCunningham",
+      "type": "pagefold",
+      "id": "3495526"
+    },
+    {
+      "text": "Sven -- Lots of great ideas. Let me just respond to a couple.",
+      "type": "paragraph",
+      "id": "375c39126090b67f"
+    },
+    {
+      "text": "Adding converting proxies for non-wiki-json pages is a cool idea. This is a pull-approach for incorporating foreign data while I've been adopting a push-approach with converter scripts like this one: ",
+      "type": "paragraph",
+      "id": "261b3c5ed358f803"
+    },
+    {
+      "text": "* [https://github.com/WardCunningham/ddd/blob/master/scripts/convert.pl https://github.com/WardCunningham/ddd/blob/master/scripts/convert.pl]",
+      "type": "paragraph",
+      "id": "b119db552e6e94df"
+    },
+    {
+      "text": "You suggest all edits should remain in local storage, even when you have write access to the origin server. I can see the logic here. You make changes, review your changes, and then push/sync only the ones you like. Its an extra step, but one that would be appreciated should you have readers depending on logical consistency between pages (the case with software.) I'm going to have to think about this one. I get a bit of the effect by using my laptop as origin.",
+      "type": "paragraph",
+      "id": "8ffa3f56b2acc51f"
+    },
+    {
+      "text": "I agree completely that a server should report lots of server-wide or even neighborhood-wide information. Having this sort of information show up as a data-thumbnail has implications I haven't reasoned through.",
+      "type": "paragraph",
+      "id": "c8b14946d9a48cbe"
+    },
+    {
+      "text": "I'm hoping that the visualization work I'm doing with d3.js will factor into server data reporting. I have force-relaxation graph layouts working where you can click on a node to open the associated wiki page.",
+      "type": "paragraph",
+      "id": "b7e6f58f90fab7ed"
+    },
+    {
+      "text": "I also want to encourage big-data people to spider the whole of the federation and build totally awesome visualizations.",
+      "type": "paragraph",
+      "id": "dcaa37fd702b8281"
+    },
+    {
+      "text": "jhulten",
+      "type": "pagefold",
+      "id": "4315208"
+    },
+    {
+      "text": "I like the potential offline aspects of this as well. The only issue I could see is that local storage is per domain, so even if I currated a bunch of pages they would not have access to each other via the browser. With the remote links we could provide a central location for the application cache and then link out from there. We would have to address the points from last weeks hangout about site identification and page identification tho.",
+      "type": "paragraph",
+      "id": "18e983de95052638"
+    },
+    {
+      "text": "WardCunningham",
+      "type": "pagefold",
+      "id": "4316023"
+    },
+    {
+      "text": "I'd like to be able to write an entire site to a local file. This might be a good way to transfer a bunch of Local Storage pages to another location. I haven't quite figured out how to do this. Suggestions?",
+      "type": "paragraph",
+      "id": "0cbba84044104445"
+    },
+    {
+      "text": "jhulten",
+      "type": "pagefold",
+      "id": "4317006"
+    },
+    {
+      "text": "Well if we had a list of all the slugs we could have a sync function that pull the changes that are needed into localStorage:",
+      "type": "paragraph",
+      "id": "cc66c958d851f0d1"
+    },
+    {
+      "text": "<b>`</b>javascript",
+      "type": "paragraph",
+      "id": "9a1b25872a314393"
+    },
+    {
+      "text": "localStorage.setItem(\"name\", \"Hello World!\"); //saves to the database, key/value",
+      "type": "paragraph",
+      "id": "63fc026ccd055b07"
+    },
+    {
+      "text": "document.write(localStorage.getItem(\"name\")); //Hello World!",
+      "type": "paragraph",
+      "id": "c3b400a539bf3515"
+    },
+    {
+      "text": "localStorage.removeItem(\"name\"); //deletes the matching item from the database",
+      "type": "paragraph",
+      "id": "34829fce89faad60"
+    },
+    {
+      "text": "<b>`</b>",
+      "type": "paragraph",
+      "id": "8225252abf9a154c"
+    },
+    {
+      "text": "jhulten",
+      "type": "pagefold",
+      "id": "4317366"
+    },
+    {
+      "text": "You know, if we had every object separate (see my comments in #118) the whole site could be captured in one array. The question is where to put the journal. I think it might need to be in each object with a timestamp that can be sorted...",
+      "type": "paragraph",
+      "id": "956bf555aad92af6"
+    },
+    {
+      "text": "WardCunningham",
+      "type": "pagefold",
+      "id": "4317974"
+    },
+    {
+      "text": "The wiki page is whole.  All the parts needed to move it are part of the page.  A good whole-site file format would be a json of every page. I think this could be encoded into a data-url which the browser would offer to save-as into the user's filesystem. ",
+      "type": "paragraph",
+      "id": "c349e547e8b05475"
+    },
+    {
+      "text": "jhulten",
+      "type": "pagefold",
+      "id": "4381668"
+    },
+    {
+      "text": "I guess part of my thinking on partitioning data below the page level is around forking below the page level (as opposed to copying) and allowing for incremental transfer. It would also allow for data in pages to be addressable in potentially interesting ways. This increases some complexity in that there is more than one type of object, but simplifies it by treating all objects equally.",
+      "type": "paragraph",
+      "id": "9a2b898b614953f5"
+    },
+    {
+      "text": "I guess this is a question of how fluid the standard is. If the first version is set in stone, thats fine. If it does everything you want as the lead, Ward, okay. I see two elements to this project... One is the federation and the other is the presentation and user experience.",
+      "type": "paragraph",
+      "id": "47c4dd2130cc187d"
+    },
+    {
+      "text": "WardCunningham",
+      "type": "pagefold",
+      "id": "4418637"
+    },
+    {
+      "text": "The protocols are fluid until we start numbering versions.",
+      "type": "paragraph",
+      "id": "6e3ad367766b91c1"
+    },
+    {
+      "text": "There is a pressure to keep the federation protocol simple so that it can be easily and correctly met. The presentation/ux protocol is only constrained in that we have two server implementations that share common client code.",
+      "type": "paragraph",
+      "id": "9126751c5b4c65d3"
+    },
+    {
+      "text": "I would like to have a protocol that could retrieve the json data from a story item of type == data. Perhaps it could exploit the random id attached to every story item. This would save a bit of unwrapping when using the data in other programs.",
+      "type": "paragraph",
+      "id": "0bc0ae188fb07fe8"
+    },
+    {
+      "text": "There are other federation protocol enhancements being discussed. Issue #70 suggests extending the federation protocol to support search.",
+      "type": "paragraph",
+      "id": "0272bc53c132cdfc"
+    },
+    {
+      "text": "Although I don't completely understand every suggestion ever make here, I do take every one seriously. Thanks for participating. ",
+      "type": "paragraph",
+      "id": "94899d11f35cd3f5"
+    }
+  ]
+}

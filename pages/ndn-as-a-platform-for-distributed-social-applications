@@ -1,0 +1,661 @@
+{
+  "title": "NDN as a platform for Distributed Social Applications",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "ede80059197d3e2b",
+      "text": "Draft for CSU NDN Paper. I'm using this part of the wiki to jot down thoughts as I have them, and refactoring as I go."
+    },
+    {
+      "type": "pagefold",
+      "id": "8339675b4c9500f9",
+      "text": "Abstract"
+    },
+    {
+      "type": "paragraph",
+      "id": "9185155f27ca36a4",
+      "text": "In designing distributed Social Applications, Named Data Networking simplifies the retrieval of discrete content from changing source locations, and increases network efficiency by caching content at intermediary nodes in a mesh. "
+    },
+    {
+      "type": "paragraph",
+      "id": "eb06da75a5bf06e9",
+      "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications through multiple case studies, and introduces [[NDN BrowserKit]], a wrapper library around [[NDN-js]] for building/porting NDN enabled Webapps in the browser."
+    },
+    {
+      "type": "paragraph",
+      "id": "88bf9d8d9f8a96b2",
+      "text": "Also relevant: sections regarding [[NFD-js]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "c00c31be181e0dbe",
+      "text": "Motivations"
+    },
+    {
+      "type": "paragraph",
+      "id": "be8cee2d1573a0f6",
+      "text": "[[Redecentralize]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "9bc02328d1d45868",
+      "text": "Challenges"
+    },
+    {
+      "type": "paragraph",
+      "id": "c42df55508b774db",
+      "text": "[[Defining a Namespace]] - how do structure our names to manage multiple sources and versions"
+    },
+    {
+      "type": "paragraph",
+      "id": "a618cf3d98ec1ad3",
+      "text": "[[Managing the Cache]] - how do we best utilize the ndn cache without it getting in the way"
+    },
+    {
+      "type": "pagefold",
+      "id": "11f471e93f0d2560",
+      "text": "Case Studies"
+    },
+    {
+      "type": "paragraph",
+      "id": "ac5a763d0d9e4498",
+      "text": "[[NDN Wiki]] - Porting Federated Wiki to run on NDN"
+    },
+    {
+      "type": "paragraph",
+      "id": "535a6c46f4099e87",
+      "text": "[[NDN Wiki plugins]] - playing with NDN via plugins"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN as a platform for Distributed Social Applications",
+        "story": []
+      },
+      "date": 1386235401211
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8339675b4c9500f9"
+      },
+      "id": "8339675b4c9500f9",
+      "type": "add",
+      "date": 1386235402513
+    },
+    {
+      "type": "edit",
+      "id": "8339675b4c9500f9",
+      "item": {
+        "type": "pagefold",
+        "id": "8339675b4c9500f9",
+        "text": "Abstract"
+      },
+      "date": 1386235408476
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9185155f27ca36a4"
+      },
+      "id": "9185155f27ca36a4",
+      "type": "add",
+      "after": "8339675b4c9500f9",
+      "date": 1386235409970
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "[http://named-data.net [1]]]"
+      },
+      "date": 1386235450410
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CCsQFjAA&url=http%3A%2F%2Fnamed-data.net%2Fwp-content%2Fuploads%2FJacob.pdf&ei=UUagUqjiK6X52AW3vYGIAg&us [1]]]"
+      },
+      "date": 1386235489717
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "[http://named-data.net/wp-content/uploads/Jacob.pdf [1]]]"
+      },
+      "date": 1386235506107
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "[http://named-data.net/wp-content/uploads/Jacob.pdf [1]]"
+      },
+      "date": 1386235512405
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "[http://named-data.net/wp-content/uploads/Jacob.pdf (1)]"
+      },
+      "date": 1386235527488
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ede80059197d3e2b"
+      },
+      "id": "ede80059197d3e2b",
+      "type": "add",
+      "after": "9185155f27ca36a4",
+      "date": 1386235569814
+    },
+    {
+      "type": "move",
+      "order": [
+        "ede80059197d3e2b",
+        "8339675b4c9500f9",
+        "9185155f27ca36a4"
+      ],
+      "id": "ede80059197d3e2b",
+      "date": 1386235571054
+    },
+    {
+      "type": "edit",
+      "id": "ede80059197d3e2b",
+      "item": {
+        "type": "paragraph",
+        "id": "ede80059197d3e2b",
+        "text": "Draft for CSU NDN Paper"
+      },
+      "date": 1386235595140
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "Named Data Networking allows[http://named-data.net/wp-content/uploads/Jacob.pdf (1)]"
+      },
+      "date": 1386235614301
+    },
+    {
+      "type": "edit",
+      "id": "9185155f27ca36a4",
+      "item": {
+        "type": "paragraph",
+        "id": "9185155f27ca36a4",
+        "text": "In designing distributed Social Applications, Named Data Networking simplifies the retrieval of discrete content from changing source locations, and increases network efficiency by caching content at intermediary nodes in a mesh. "
+      },
+      "date": 1386248507219
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eb06da75a5bf06e9",
+        "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications"
+      },
+      "id": "eb06da75a5bf06e9",
+      "type": "add",
+      "after": "9185155f27ca36a4",
+      "date": 1386248507736
+    },
+    {
+      "type": "edit",
+      "id": "eb06da75a5bf06e9",
+      "item": {
+        "type": "paragraph",
+        "id": "eb06da75a5bf06e9",
+        "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications, and introduces [[NDN BrowserKit]], a javascript library and client node module for building NDN enabled Webapps."
+      },
+      "date": 1386248746124
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "130b8cb7a4ccbec2",
+        "text": ""
+      },
+      "id": "130b8cb7a4ccbec2",
+      "type": "add",
+      "after": "eb06da75a5bf06e9",
+      "date": 1386248746635
+    },
+    {
+      "type": "remove",
+      "id": "130b8cb7a4ccbec2",
+      "date": 1386248753757
+    },
+    {
+      "type": "edit",
+      "id": "eb06da75a5bf06e9",
+      "item": {
+        "type": "paragraph",
+        "id": "eb06da75a5bf06e9",
+        "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications through multiple case studies, and introduces [[NDN BrowserKit]], a javascript library and client node module for building NDN enabled Webapps."
+      },
+      "date": 1386248780270
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "93e6d8ff2cf8caef"
+      },
+      "id": "93e6d8ff2cf8caef",
+      "type": "add",
+      "after": "eb06da75a5bf06e9",
+      "date": 1386248781959
+    },
+    {
+      "type": "remove",
+      "id": "93e6d8ff2cf8caef",
+      "date": 1386248799424
+    },
+    {
+      "type": "edit",
+      "id": "ede80059197d3e2b",
+      "item": {
+        "type": "paragraph",
+        "id": "ede80059197d3e2b",
+        "text": "Draft for CSU NDN Paper. I'm using this part of the wiki to jot down thoughts as I have them, and refactoring as I go."
+      },
+      "date": 1386248829104
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9bc02328d1d45868"
+      },
+      "id": "9bc02328d1d45868",
+      "type": "add",
+      "after": "eb06da75a5bf06e9",
+      "date": 1386248836011
+    },
+    {
+      "type": "edit",
+      "id": "9bc02328d1d45868",
+      "item": {
+        "type": "pagefold",
+        "id": "9bc02328d1d45868",
+        "text": "Sections"
+      },
+      "date": 1386248846517
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6795b97cc59b3d30",
+        "text": ""
+      },
+      "id": "6795b97cc59b3d30",
+      "type": "add",
+      "after": "eb06da75a5bf06e9",
+      "date": 1386248959172
+    },
+    {
+      "type": "remove",
+      "id": "6795b97cc59b3d30",
+      "date": 1386248985992
+    },
+    {
+      "type": "edit",
+      "id": "eb06da75a5bf06e9",
+      "item": {
+        "type": "paragraph",
+        "id": "eb06da75a5bf06e9",
+        "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications through multiple case studies, and introduces [[NDN BrowserKit]], a javascript library and client node module for building/porting NDN enabled Webapps"
+      },
+      "date": 1386249017432
+    },
+    {
+      "type": "edit",
+      "id": "9bc02328d1d45868",
+      "item": {
+        "type": "pagefold",
+        "id": "9bc02328d1d45868",
+        "text": "Challenges"
+      },
+      "date": 1386249123461
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c42df55508b774db"
+      },
+      "id": "c42df55508b774db",
+      "type": "add",
+      "after": "9bc02328d1d45868",
+      "date": 1386249126631
+    },
+    {
+      "type": "edit",
+      "id": "c42df55508b774db",
+      "item": {
+        "type": "paragraph",
+        "id": "c42df55508b774db",
+        "text": "Defining a Namespace"
+      },
+      "date": 1386249155778
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2595035d7104896b",
+        "text": ""
+      },
+      "id": "2595035d7104896b",
+      "type": "add",
+      "after": "c42df55508b774db",
+      "date": 1386249156293
+    },
+    {
+      "type": "remove",
+      "id": "2595035d7104896b",
+      "date": 1386249159208
+    },
+    {
+      "type": "edit",
+      "id": "c42df55508b774db",
+      "item": {
+        "type": "paragraph",
+        "id": "c42df55508b774db",
+        "text": "[[Defining a Namespace]] - "
+      },
+      "date": 1386249182991
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a618cf3d98ec1ad3",
+        "text": ""
+      },
+      "id": "a618cf3d98ec1ad3",
+      "type": "add",
+      "after": "c42df55508b774db",
+      "date": 1386249183500
+    },
+    {
+      "type": "edit",
+      "id": "a618cf3d98ec1ad3",
+      "item": {
+        "type": "paragraph",
+        "id": "a618cf3d98ec1ad3",
+        "text": "[[Managing the Cache]] - how do we best utilize the ndn cache without it getting in the way"
+      },
+      "date": 1386249247587
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d5e1fc1eb340eda0",
+        "text": ""
+      },
+      "id": "d5e1fc1eb340eda0",
+      "type": "add",
+      "after": "a618cf3d98ec1ad3",
+      "date": 1386249248097
+    },
+    {
+      "type": "remove",
+      "id": "d5e1fc1eb340eda0",
+      "date": 1386249249488
+    },
+    {
+      "type": "edit",
+      "id": "c42df55508b774db",
+      "item": {
+        "type": "paragraph",
+        "id": "c42df55508b774db",
+        "text": "[[Defining a Namespace]] - how do structure our names to manage multiple sources of data"
+      },
+      "date": 1386249308320
+    },
+    {
+      "type": "edit",
+      "id": "c42df55508b774db",
+      "item": {
+        "type": "paragraph",
+        "id": "c42df55508b774db",
+        "text": "[[Defining a Namespace]] - how do structure our names to manage multiple sources and versions"
+      },
+      "date": 1386249316519
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e45bfd38f25a4153"
+      },
+      "id": "e45bfd38f25a4153",
+      "type": "add",
+      "after": "a618cf3d98ec1ad3",
+      "date": 1386249428569
+    },
+    {
+      "type": "remove",
+      "id": "e45bfd38f25a4153",
+      "date": 1386249460340
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "11f471e93f0d2560"
+      },
+      "id": "11f471e93f0d2560",
+      "type": "add",
+      "after": "a618cf3d98ec1ad3",
+      "date": 1386249470400
+    },
+    {
+      "type": "edit",
+      "id": "11f471e93f0d2560",
+      "item": {
+        "type": "pagefold",
+        "id": "11f471e93f0d2560",
+        "text": "Case Studies"
+      },
+      "date": 1386249477983
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ac5a763d0d9e4498"
+      },
+      "id": "ac5a763d0d9e4498",
+      "type": "add",
+      "after": "11f471e93f0d2560",
+      "date": 1386249479146
+    },
+    {
+      "type": "edit",
+      "id": "ac5a763d0d9e4498",
+      "item": {
+        "type": "paragraph",
+        "id": "ac5a763d0d9e4498",
+        "text": "[[NDN Wiki]] - Porting Federated Wiki to run on NDN"
+      },
+      "date": 1386249500966
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c00c31be181e0dbe"
+      },
+      "id": "c00c31be181e0dbe",
+      "type": "add",
+      "after": "ac5a763d0d9e4498",
+      "date": 1386249520450
+    },
+    {
+      "type": "edit",
+      "id": "c00c31be181e0dbe",
+      "item": {
+        "type": "pagefold",
+        "id": "c00c31be181e0dbe",
+        "text": "Opportunities"
+      },
+      "date": 1386249527594
+    },
+    {
+      "type": "move",
+      "order": [
+        "ede80059197d3e2b",
+        "8339675b4c9500f9",
+        "9185155f27ca36a4",
+        "eb06da75a5bf06e9",
+        "c00c31be181e0dbe",
+        "9bc02328d1d45868",
+        "c42df55508b774db",
+        "a618cf3d98ec1ad3",
+        "11f471e93f0d2560",
+        "ac5a763d0d9e4498"
+      ],
+      "id": "c00c31be181e0dbe",
+      "date": 1386249532797
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "be8cee2d1573a0f6"
+      },
+      "id": "be8cee2d1573a0f6",
+      "type": "add",
+      "after": "ac5a763d0d9e4498",
+      "date": 1386254078583
+    },
+    {
+      "type": "move",
+      "order": [
+        "ede80059197d3e2b",
+        "8339675b4c9500f9",
+        "9185155f27ca36a4",
+        "eb06da75a5bf06e9",
+        "c00c31be181e0dbe",
+        "be8cee2d1573a0f6",
+        "9bc02328d1d45868",
+        "c42df55508b774db",
+        "a618cf3d98ec1ad3",
+        "11f471e93f0d2560",
+        "ac5a763d0d9e4498"
+      ],
+      "id": "be8cee2d1573a0f6",
+      "date": 1386254081094
+    },
+    {
+      "type": "edit",
+      "id": "be8cee2d1573a0f6",
+      "item": {
+        "type": "paragraph",
+        "id": "be8cee2d1573a0f6",
+        "text": "[[]]"
+      },
+      "date": 1386254176047
+    },
+    {
+      "type": "edit",
+      "id": "c00c31be181e0dbe",
+      "item": {
+        "type": "pagefold",
+        "id": "c00c31be181e0dbe",
+        "text": "Motivations"
+      },
+      "date": 1386254181593
+    },
+    {
+      "type": "edit",
+      "id": "be8cee2d1573a0f6",
+      "item": {
+        "type": "paragraph",
+        "id": "be8cee2d1573a0f6",
+        "text": "[[Redecentralize]]"
+      },
+      "date": 1386254250765
+    },
+    {
+      "type": "edit",
+      "id": "eb06da75a5bf06e9",
+      "item": {
+        "type": "paragraph",
+        "id": "eb06da75a5bf06e9",
+        "text": "This paper examines the challenges and opportunities of using NDN as a platform for Distributed Social Applications through multiple case studies, and introduces [[NDN BrowserKit]], a wrapper library around [[NDN-js]] for building/porting NDN enabled Webapps in the browser."
+      },
+      "date": 1386783546525
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "535a6c46f4099e87"
+      },
+      "id": "535a6c46f4099e87",
+      "type": "add",
+      "after": "ac5a763d0d9e4498",
+      "date": 1387260077309
+    },
+    {
+      "type": "edit",
+      "id": "535a6c46f4099e87",
+      "item": {
+        "type": "paragraph",
+        "id": "535a6c46f4099e87",
+        "text": "[[wiki plugins]] - playing with NDN via plugins"
+      },
+      "date": 1387260095290
+    },
+    {
+      "type": "edit",
+      "id": "535a6c46f4099e87",
+      "item": {
+        "type": "paragraph",
+        "id": "535a6c46f4099e87",
+        "text": "[[NDN plugins]] - playing with NDN via plugins"
+      },
+      "date": 1387260122603
+    },
+    {
+      "type": "edit",
+      "id": "535a6c46f4099e87",
+      "item": {
+        "type": "paragraph",
+        "id": "535a6c46f4099e87",
+        "text": "[[NDN Wiki plugins]] - playing with NDN via plugins"
+      },
+      "date": 1387260129053
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "88bf9d8d9f8a96b2",
+        "text": ""
+      },
+      "id": "88bf9d8d9f8a96b2",
+      "type": "add",
+      "after": "eb06da75a5bf06e9",
+      "date": 1391015092703
+    },
+    {
+      "type": "edit",
+      "id": "88bf9d8d9f8a96b2",
+      "item": {
+        "type": "paragraph",
+        "id": "88bf9d8d9f8a96b2",
+        "text": "Also relevant: sections regarding [[NFD-js]]"
+      },
+      "date": 1391015105214
+    }
+  ]
+}

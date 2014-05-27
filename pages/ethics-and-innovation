@@ -1,0 +1,101 @@
+{
+  "title": "Ethics and Innovation",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "20308ea2fcf069c8",
+      "text": "[[Anonymity]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "d228bf0e936b84bc",
+      "text": "[[Censorship]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "b9f388c8f7bbe9d7",
+      "text": "[[Thought Crime]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Ethics and Innovation",
+        "story": []
+      },
+      "date": 1389989797966
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "20308ea2fcf069c8"
+      },
+      "id": "20308ea2fcf069c8",
+      "type": "add",
+      "date": 1389989799109
+    },
+    {
+      "type": "edit",
+      "id": "20308ea2fcf069c8",
+      "item": {
+        "type": "paragraph",
+        "id": "20308ea2fcf069c8",
+        "text": "[[Anonymity]]"
+      },
+      "date": 1389989808966
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d228bf0e936b84bc",
+        "text": ""
+      },
+      "id": "d228bf0e936b84bc",
+      "type": "add",
+      "after": "20308ea2fcf069c8",
+      "date": 1389989809478
+    },
+    {
+      "type": "edit",
+      "id": "d228bf0e936b84bc",
+      "item": {
+        "type": "paragraph",
+        "id": "d228bf0e936b84bc",
+        "text": "[[censorship]]"
+      },
+      "date": 1389989814016
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b9f388c8f7bbe9d7",
+        "text": ""
+      },
+      "id": "b9f388c8f7bbe9d7",
+      "type": "add",
+      "after": "d228bf0e936b84bc",
+      "date": 1389989814530
+    },
+    {
+      "type": "edit",
+      "id": "b9f388c8f7bbe9d7",
+      "item": {
+        "type": "paragraph",
+        "id": "b9f388c8f7bbe9d7",
+        "text": "[[Thought Crime]]"
+      },
+      "date": 1389989830190
+    },
+    {
+      "type": "edit",
+      "id": "d228bf0e936b84bc",
+      "item": {
+        "type": "paragraph",
+        "id": "d228bf0e936b84bc",
+        "text": "[[Censorship]]"
+      },
+      "date": 1389989833453
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "title": "NDNR-js",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d5559b1abc0e032e",
+      "text": "[http://github.com/rynomad/ndnr-js NDNR-js] is my first attempt at a truly high level abstraction. It wraps the HTML5 Api in a schema specific to storing preEncoded NDN objects, ready to fulfill data requests to the network."
+    },
+    {
+      "type": "paragraph",
+      "id": "601268c581a3928f",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "6f2d8256642c9a2e",
+      "text": "Largely dependant on [[NDN-js]], this library also contains helper function to work with names at a higher level of abstraction, and some basing segmentation and reassembly tools for large files (thusfar tested up to 42 MB in 7k segments)."
+    },
+    {
+      "type": "paragraph",
+      "id": "16e28f1e513904a3",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "58f12440bf9755ec",
+      "text": "[[NDNR-js API]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDNR-js",
+        "story": []
+      },
+      "date": 1384969976880
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d5559b1abc0e032e"
+      },
+      "id": "d5559b1abc0e032e",
+      "type": "add",
+      "date": 1384969978010
+    },
+    {
+      "type": "edit",
+      "id": "d5559b1abc0e032e",
+      "item": {
+        "type": "paragraph",
+        "id": "d5559b1abc0e032e",
+        "text": "[http://github.com/rynomad/ndnr-js NDNR-js] is my first attempt at a truly high level abstraction. It wraps the HTML5 Api in a schema specific to storing preEncoded NDN objects, ready to fulfill data requests to the network."
+      },
+      "date": 1384970084303
+    },
+    {
+      "type": "edit",
+      "id": "601268c581a3928f",
+      "item": {
+        "type": "paragraph",
+        "id": "601268c581a3928f",
+        "text": " "
+      },
+      "date": 1384970084467
+    },
+    {
+      "type": "remove",
+      "id": "16e28f1e513904a3",
+      "date": 1384970084488
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "601268c581a3928f",
+        "text": " "
+      },
+      "id": "601268c581a3928f",
+      "type": "add",
+      "after": "d5559b1abc0e032e",
+      "date": 1384970084818
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "16e28f1e513904a3",
+        "text": ""
+      },
+      "id": "16e28f1e513904a3",
+      "type": "add",
+      "after": "601268c581a3928f",
+      "date": 1384970084980
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6f2d8256642c9a2e",
+        "text": ""
+      },
+      "id": "6f2d8256642c9a2e",
+      "type": "add",
+      "after": "601268c581a3928f",
+      "date": 1384970084996
+    },
+    {
+      "type": "edit",
+      "id": "6f2d8256642c9a2e",
+      "item": {
+        "type": "paragraph",
+        "id": "6f2d8256642c9a2e",
+        "text": "Largely dependant on [[NDN-js]], this library also contains helper function to work with names at a higher level of abstraction, and some basing segmentation and reasembly tools for large files (thusfar tested up to 12 MB in 8k segments)."
+      },
+      "date": 1384970187385
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org"
+    },
+    {
+      "type": "edit",
+      "id": "6f2d8256642c9a2e",
+      "item": {
+        "type": "paragraph",
+        "id": "6f2d8256642c9a2e",
+        "text": "Largely dependant on [[NDN-js]], this library also contains helper function to work with names at a higher level of abstraction, and some basing segmentation and reassembly tools for large files (thusfar tested up to 42 MB in 7k segments)."
+      },
+      "site": "ccndev.org",
+      "date": 1385084256276
+    },
+    {
+      "type": "fork",
+      "date": 1385084275292
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "58f12440bf9755ec"
+      },
+      "id": "58f12440bf9755ec",
+      "type": "add",
+      "after": "16e28f1e513904a3",
+      "date": 1385084280799
+    },
+    {
+      "type": "edit",
+      "id": "58f12440bf9755ec",
+      "item": {
+        "type": "paragraph",
+        "id": "58f12440bf9755ec",
+        "text": "[[NDNR-js API]]"
+      },
+      "date": 1385084288275
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org",
+      "date": 1386227726088
+    },
+    {
+      "type": "fork",
+      "site": "NDN_ndnr-js",
+      "date": 1386229173436
+    },
+    {
+      "type": "fork",
+      "date": 1386233861095
+    }
+  ]
+}

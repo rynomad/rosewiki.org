@@ -1,0 +1,620 @@
+{
+  "title": "NFD-js Component Modules",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "964018e4fb957e1c",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "b32f60ef86e1d05f",
+      "text": "There exist a number of npm modules that may ease the production of NFD-js"
+    },
+    {
+      "type": "pagefold",
+      "id": "b5eae6935a7b07dc",
+      "text": "Worker Thread Management"
+    },
+    {
+      "type": "paragraph",
+      "id": "e46c72796261beb6",
+      "text": "A few modules have cropped up to manage communication channels between threads, though it is uncertain at this time how they would interact with Workerify (intuition suggests this should be trivial, though experience suggests that intuition is idiotic)"
+    },
+    {
+      "type": "paragraph",
+      "id": "c6650f82547c4546",
+      "text": "Note: while the below are interesting for comparison, for our use case see [[Worker Transport]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "a815e06df70301d6",
+      "text": "[https://github.com/EtienneLem/architect Architect] - Worker Management and polyfill for graceful degredation. This would almost certainly manage our use case, but may be more boilerplate than is necessary."
+    },
+    {
+      "type": "paragraph",
+      "id": "7b962a5f03e93a5c",
+      "text": "[https://github.com/padolsey/operative Operative] - a smaller worker management utility with a simpler API, also offering graceful degredation. Potentially makes workerify unneccessary by simply calling require and passing in objects to our operative definitions."
+    },
+    {
+      "type": "paragraph",
+      "id": "0b865e98238f552b",
+      "text": ""
+    },
+    {
+      "type": "pagefold",
+      "id": "6a81020ecb09b650",
+      "text": "Crypto"
+    },
+    {
+      "type": "paragraph",
+      "id": "d00087e3806a456b",
+      "text": "Forge makes us of the jsbn library to generate keypairs and certificates in the browser, it optionally uses webworkers internally, though as a module it references the window object and thus would need to be included in the UI thread  and pass generated keys downward into the daemon on demand"
+    },
+    {
+      "type": "pagefold",
+      "id": "1bf83ce2c8907847",
+      "text": "Caching"
+    },
+    {
+      "type": "paragraph",
+      "id": "a003fdd3e3277e19",
+      "text": "We have a simple exact match cache working out of the box in NDN browserKit by use of  [https://github.com/monsur/jscache jscache], which exposes a modular back end storage object. "
+    },
+    {
+      "type": "paragraph",
+      "id": "1cde96379ff49386",
+      "text": "It should be feasible to modify this back end cache to support NDN compliant longest prefix and interest selector matching."
+    },
+    {
+      "type": "pagefold",
+      "id": "f4b0dcd096fee942",
+      "text": "Repository"
+    },
+    {
+      "type": "paragraph",
+      "id": "9b8ec92627c9e934",
+      "text": "Repository persistence has been achieved in NDN Browserkit by use of the native HTML5 IndexedDB API. For further iterations, it would be advisable to use a robust middleware library to gracefully fail in old browsers. "
+    },
+    {
+      "type": "paragraph",
+      "id": "61118689a8d2c2de",
+      "text": "[https://github.com/jensarps/IDBWrapper IDBWrapper]- Exposes a simple crossbrowser API for IndexedDB, safe from memory leaks"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NFD-js Component Modules",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1390861712407,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "964018e4fb957e1c"
+      },
+      "id": "964018e4fb957e1c",
+      "type": "add",
+      "date": 1390861731510
+    },
+    {
+      "type": "remove",
+      "id": "964018e4fb957e1c",
+      "date": 1390861824511
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b32f60ef86e1d05f"
+      },
+      "id": "b32f60ef86e1d05f",
+      "type": "add",
+      "after": "964018e4fb957e1c",
+      "date": 1390861882029
+    },
+    {
+      "type": "edit",
+      "id": "b32f60ef86e1d05f",
+      "item": {
+        "type": "paragraph",
+        "id": "b32f60ef86e1d05f",
+        "text": "There exist a number of npm modules that may ease the production of NFD-js"
+      },
+      "date": 1390862023309
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b5eae6935a7b07dc"
+      },
+      "id": "b5eae6935a7b07dc",
+      "type": "add",
+      "after": "b32f60ef86e1d05f",
+      "date": 1390862024295
+    },
+    {
+      "type": "edit",
+      "id": "b5eae6935a7b07dc",
+      "item": {
+        "type": "pagefold",
+        "id": "b5eae6935a7b07dc",
+        "text": "Worker Thread Management"
+      },
+      "date": 1390862036449
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "29c189b1f2b673fb"
+      },
+      "id": "29c189b1f2b673fb",
+      "type": "add",
+      "after": "b5eae6935a7b07dc",
+      "date": 1390862037586
+    },
+    {
+      "type": "remove",
+      "id": "29c189b1f2b673fb",
+      "date": 1390862040599
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e46c72796261beb6"
+      },
+      "id": "e46c72796261beb6",
+      "type": "add",
+      "after": "b5eae6935a7b07dc",
+      "date": 1390862045129
+    },
+    {
+      "type": "edit",
+      "id": "e46c72796261beb6",
+      "item": {
+        "type": "paragraph",
+        "id": "e46c72796261beb6",
+        "text": "A few modules have cropped up to manage communication channels between threads, though it is uncertain at this time how they would interact with Workerify (intuition suggests this should be trivial, though experience suggests that intuition is idiotic)"
+      },
+      "date": 1390862130666
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a815e06df70301d6",
+        "text": ""
+      },
+      "id": "a815e06df70301d6",
+      "type": "add",
+      "after": "e46c72796261beb6",
+      "date": 1390862131179
+    },
+    {
+      "type": "edit",
+      "id": "a815e06df70301d6",
+      "item": {
+        "type": "paragraph",
+        "id": "a815e06df70301d6",
+        "text": "[http://github.com/]"
+      },
+      "date": 1390862144007
+    },
+    {
+      "type": "edit",
+      "id": "a815e06df70301d6",
+      "item": {
+        "type": "paragraph",
+        "id": "a815e06df70301d6",
+        "text": "[https://github.com/EtienneLem/architect Architect] - Worker Management and polyfill for graceful degredation"
+      },
+      "date": 1390862239373
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ba49d4c7ae71543f",
+        "text": ""
+      },
+      "id": "ba49d4c7ae71543f",
+      "type": "add",
+      "after": "a815e06df70301d6",
+      "date": 1390862239889
+    },
+    {
+      "type": "remove",
+      "id": "ba49d4c7ae71543f",
+      "date": 1390862242085
+    },
+    {
+      "type": "edit",
+      "id": "a815e06df70301d6",
+      "item": {
+        "type": "paragraph",
+        "id": "a815e06df70301d6",
+        "text": "[https://github.com/EtienneLem/architect Architect] - Worker Management and polyfill for graceful degredation. This would almost certainly manage our use case, but may be more boilerplate than is necessary."
+      },
+      "date": 1390862372101
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0b865e98238f552b",
+        "text": ""
+      },
+      "id": "0b865e98238f552b",
+      "type": "add",
+      "after": "a815e06df70301d6",
+      "date": 1390862372620
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "28eaa758be0e0e4e",
+        "text": ""
+      },
+      "id": "28eaa758be0e0e4e",
+      "type": "add",
+      "after": "a815e06df70301d6",
+      "date": 1390863004099
+    },
+    {
+      "type": "remove",
+      "id": "28eaa758be0e0e4e",
+      "date": 1390863007490
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7b962a5f03e93a5c",
+        "text": ""
+      },
+      "id": "7b962a5f03e93a5c",
+      "type": "add",
+      "after": "a815e06df70301d6",
+      "date": 1390863167501
+    },
+    {
+      "type": "edit",
+      "id": "7b962a5f03e93a5c",
+      "item": {
+        "type": "paragraph",
+        "id": "7b962a5f03e93a5c",
+        "text": "[https://github.com/padolsey/operative Operative] - a smaller worker management utility with a "
+      },
+      "date": 1390863188573
+    },
+    {
+      "type": "edit",
+      "id": "7b962a5f03e93a5c",
+      "item": {
+        "type": "paragraph",
+        "id": "7b962a5f03e93a5c",
+        "text": "[https://github.com/padolsey/operative Operative] - a smaller worker management utility with a simpler API, also offering graceful degredation. Potentially makes workerify unneccessary by simply calling require and passing in objects to our operative definitions."
+      },
+      "date": 1390863364702
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e9698c256f9db128",
+        "text": ""
+      },
+      "id": "e9698c256f9db128",
+      "type": "add",
+      "after": "7b962a5f03e93a5c",
+      "date": 1390863365215
+    },
+    {
+      "type": "remove",
+      "id": "e9698c256f9db128",
+      "date": 1390863366799
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6a81020ecb09b650"
+      },
+      "id": "6a81020ecb09b650",
+      "type": "add",
+      "after": "0b865e98238f552b",
+      "date": 1390863372008
+    },
+    {
+      "type": "edit",
+      "id": "6a81020ecb09b650",
+      "item": {
+        "type": "pagefold",
+        "id": "6a81020ecb09b650",
+        "text": "Crypto"
+      },
+      "date": 1390863387334
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d00087e3806a456b"
+      },
+      "id": "d00087e3806a456b",
+      "type": "add",
+      "after": "6a81020ecb09b650",
+      "date": 1390863390272
+    },
+    {
+      "type": "edit",
+      "id": "d00087e3806a456b",
+      "item": {
+        "type": "paragraph",
+        "id": "d00087e3806a456b",
+        "text": "Forge makes us of the jsbn library to generate keypairs and certificates in the browser, it optionally uses webworkers internally, though as a module it references the window object and thus would need to be included in the UI thread  and pass generated keys downward into the daemon on demand"
+      },
+      "date": 1390863681498
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1bf83ce2c8907847"
+      },
+      "id": "1bf83ce2c8907847",
+      "type": "add",
+      "after": "d00087e3806a456b",
+      "date": 1390863693044
+    },
+    {
+      "type": "edit",
+      "id": "1bf83ce2c8907847",
+      "item": {
+        "type": "pagefold",
+        "id": "1bf83ce2c8907847",
+        "text": "Caching"
+      },
+      "date": 1390863700753
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a003fdd3e3277e19"
+      },
+      "id": "a003fdd3e3277e19",
+      "type": "add",
+      "after": "1bf83ce2c8907847",
+      "date": 1390863733903
+    },
+    {
+      "type": "edit",
+      "id": "a003fdd3e3277e19",
+      "item": {
+        "type": "paragraph",
+        "id": "a003fdd3e3277e19",
+        "text": "We have a simple exact match cache working out of the box in NDN browserKit by use of "
+      },
+      "date": 1390863765586
+    },
+    {
+      "type": "edit",
+      "id": "a003fdd3e3277e19",
+      "item": {
+        "type": "paragraph",
+        "id": "a003fdd3e3277e19",
+        "text": "We have a simple exact match cache working out of the box in NDN browserKit by use of  [https://github.com/monsur/jscache jscache], which exposes a modular back end storage object. It should be feasible to "
+      },
+      "date": 1390863919753
+    },
+    {
+      "type": "fork",
+      "date": 1390864251939
+    },
+    {
+      "type": "edit",
+      "id": "a003fdd3e3277e19",
+      "item": {
+        "type": "paragraph",
+        "id": "a003fdd3e3277e19",
+        "text": "We have a simple exact match cache working out of the box in NDN browserKit by use of  [https://github.com/monsur/jscache jscache], which exposes a modular back end storage object. "
+      },
+      "date": 1390864265029
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1cde96379ff49386",
+        "text": "It should be feasible to "
+      },
+      "id": "1cde96379ff49386",
+      "type": "add",
+      "after": "a003fdd3e3277e19",
+      "date": 1390864265544
+    },
+    {
+      "type": "edit",
+      "id": "1cde96379ff49386",
+      "item": {
+        "type": "paragraph",
+        "id": "1cde96379ff49386",
+        "text": "It should be feasible to modify this back end cache to support NDN compliant longest prefix and interest selector matching."
+      },
+      "date": 1390864367824
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9b8ec92627c9e934"
+      },
+      "id": "9b8ec92627c9e934",
+      "type": "add",
+      "after": "1cde96379ff49386",
+      "date": 1390864379257
+    },
+    {
+      "type": "edit",
+      "id": "9b8ec92627c9e934",
+      "item": {
+        "type": "paragraph",
+        "id": "9b8ec92627c9e934",
+        "text": "Repository"
+      },
+      "date": 1390864385202
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f4b0dcd096fee942"
+      },
+      "id": "f4b0dcd096fee942",
+      "type": "add",
+      "after": "9b8ec92627c9e934",
+      "date": 1390864388000
+    },
+    {
+      "type": "edit",
+      "id": "f4b0dcd096fee942",
+      "item": {
+        "type": "pagefold",
+        "id": "f4b0dcd096fee942",
+        "text": "Repository"
+      },
+      "date": 1390864393390
+    },
+    {
+      "type": "move",
+      "order": [
+        "964018e4fb957e1c",
+        "b32f60ef86e1d05f",
+        "b5eae6935a7b07dc",
+        "e46c72796261beb6",
+        "a815e06df70301d6",
+        "7b962a5f03e93a5c",
+        "0b865e98238f552b",
+        "6a81020ecb09b650",
+        "d00087e3806a456b",
+        "1bf83ce2c8907847",
+        "a003fdd3e3277e19",
+        "1cde96379ff49386",
+        "f4b0dcd096fee942",
+        "9b8ec92627c9e934"
+      ],
+      "id": "f4b0dcd096fee942",
+      "date": 1390864395096
+    },
+    {
+      "type": "edit",
+      "id": "9b8ec92627c9e934",
+      "item": {
+        "type": "paragraph",
+        "id": "9b8ec92627c9e934",
+        "text": "Repository persistence has been achieved in NDN Browserkit by use of the native HTML5 IndexedDB API. For further iterations, it may be advisable to use a robust middleware library to gracefully fail in old browsers. "
+      },
+      "date": 1390864515544
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "61118689a8d2c2de",
+        "text": ""
+      },
+      "id": "61118689a8d2c2de",
+      "type": "add",
+      "after": "9b8ec92627c9e934",
+      "date": 1390864516055
+    },
+    {
+      "type": "edit",
+      "id": "61118689a8d2c2de",
+      "item": {
+        "type": "paragraph",
+        "id": "61118689a8d2c2de",
+        "text": "[]"
+      },
+      "date": 1390864647532
+    },
+    {
+      "type": "edit",
+      "id": "61118689a8d2c2de",
+      "item": {
+        "type": "paragraph",
+        "id": "61118689a8d2c2de",
+        "text": "[http://github.com/jenarps/]"
+      },
+      "date": 1390864681043
+    },
+    {
+      "type": "edit",
+      "id": "61118689a8d2c2de",
+      "item": {
+        "type": "paragraph",
+        "id": "61118689a8d2c2de",
+        "text": "[https://github.com/jensarps/IDBWrapper IDBWrapper]- Exposes a simple crossbrowser API for IndexedDB, safe from memory leaks"
+      },
+      "date": 1390864779167
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "11fb930f5ac96fbe"
+      },
+      "id": "11fb930f5ac96fbe",
+      "type": "add",
+      "after": "61118689a8d2c2de",
+      "date": 1390864780989
+    },
+    {
+      "type": "edit",
+      "id": "11fb930f5ac96fbe",
+      "item": {
+        "type": "paragraph",
+        "id": "11fb930f5ac96fbe",
+        "text": "[http://github.com/]"
+      },
+      "date": 1390864789617
+    },
+    {
+      "type": "remove",
+      "id": "11fb930f5ac96fbe",
+      "date": 1390864867743
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1391016404681
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c6650f82547c4546",
+        "text": ""
+      },
+      "id": "c6650f82547c4546",
+      "type": "add",
+      "after": "e46c72796261beb6",
+      "site": "rosewiki.org",
+      "date": 1391016404681
+    },
+    {
+      "type": "edit",
+      "id": "c6650f82547c4546",
+      "item": {
+        "type": "paragraph",
+        "id": "c6650f82547c4546",
+        "text": "Note: while the below are interesting for comparison, for our use case see [[Worker Transport]]"
+      },
+      "date": 1391016444845
+    },
+    {
+      "type": "edit",
+      "id": "9b8ec92627c9e934",
+      "item": {
+        "type": "paragraph",
+        "id": "9b8ec92627c9e934",
+        "text": "Repository persistence has been achieved in NDN Browserkit by use of the native HTML5 IndexedDB API. For further iterations, it would be advisable to use a robust middleware library to gracefully fail in old browsers. "
+      },
+      "date": 1391016520074
+    },
+    {
+      "type": "fork",
+      "date": 1391019280149
+    }
+  ]
+}

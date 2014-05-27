@@ -1,0 +1,278 @@
+{
+  "title": "Wiki /MIME Namespace",
+  "story": [
+    {
+      "type": "pagefold",
+      "id": "2b2c73cd8f8885ca",
+      "text": "MIME Prefix"
+    },
+    {
+      "type": "code",
+      "id": "7ff003de776da9dd",
+      "text": "ndn:/<global-prefix>/wiki/MIME/"
+    },
+    {
+      "type": "paragraph",
+      "id": "b93fcd0d4fe1b755",
+      "text": "The MIME namespace contains arbitrary blobs prefixed by their major/minor type, followed by a slug of a file supplied, user supplied, or plugin generated name."
+    },
+    {
+      "type": "code",
+      "id": "d82ebccb7c882941",
+      "text": "ndn:/<global-prefix/wiki/MIME/<major>/<minor>/<fileName>"
+    },
+    {
+      "type": "pagefold",
+      "id": "bb679e787f07d11e",
+      "text": "MIME Suffix"
+    },
+    {
+      "type": "paragraph",
+      "id": "1058a9e535d6c08e",
+      "text": "hashname of custodian and version, if possible generated from filereader last modified date."
+    },
+    {
+      "type": "pagefold",
+      "id": "4c804db0bb6abb3e",
+      "text": "MIME freshness"
+    },
+    {
+      "type": "paragraph",
+      "id": "1c80a028a1f4351e",
+      "text": "MIME is posited largely as a name layer for static imported data: pictures, videos, and should not generally change state (if it does, it's name should change)"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki /MIME Namespace",
+        "story": []
+      },
+      "date": 1386395231905
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c26d9e0b8b802e50"
+      },
+      "id": "c26d9e0b8b802e50",
+      "type": "add",
+      "date": 1386395233413
+    },
+    {
+      "type": "remove",
+      "id": "c26d9e0b8b802e50",
+      "date": 1386395251005
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2b2c73cd8f8885ca"
+      },
+      "id": "2b2c73cd8f8885ca",
+      "type": "add",
+      "date": 1386395252061
+    },
+    {
+      "type": "edit",
+      "id": "2b2c73cd8f8885ca",
+      "item": {
+        "type": "pagefold",
+        "id": "2b2c73cd8f8885ca",
+        "text": "MIME Prefix"
+      },
+      "date": 1386395261432
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4a06071974100a38"
+      },
+      "id": "4a06071974100a38",
+      "type": "add",
+      "after": "2b2c73cd8f8885ca",
+      "date": 1386395262911
+    },
+    {
+      "type": "remove",
+      "id": "4a06071974100a38",
+      "date": 1386395271310
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7ff003de776da9dd"
+      },
+      "id": "7ff003de776da9dd",
+      "type": "add",
+      "after": "2b2c73cd8f8885ca",
+      "date": 1386395272217
+    },
+    {
+      "type": "edit",
+      "id": "7ff003de776da9dd",
+      "item": {
+        "type": "code",
+        "id": "7ff003de776da9dd",
+        "text": "ndn"
+      },
+      "date": 1386395280182
+    },
+    {
+      "type": "edit",
+      "id": "7ff003de776da9dd",
+      "item": {
+        "type": "code",
+        "id": "7ff003de776da9dd",
+        "text": "ndn:/<global-prefix>/wiki/MIME/"
+      },
+      "date": 1386395307468
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b93fcd0d4fe1b755"
+      },
+      "id": "b93fcd0d4fe1b755",
+      "type": "add",
+      "after": "7ff003de776da9dd",
+      "date": 1386395309687
+    },
+    {
+      "type": "edit",
+      "id": "b93fcd0d4fe1b755",
+      "item": {
+        "type": "paragraph",
+        "id": "b93fcd0d4fe1b755",
+        "text": "The MIME namespace contains arbitrary blobs prefixed by their major/minor type. "
+      },
+      "date": 1386395356017
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2604ed6cced6f021"
+      },
+      "id": "2604ed6cced6f021",
+      "type": "add",
+      "after": "b93fcd0d4fe1b755",
+      "date": 1386395554369
+    },
+    {
+      "type": "edit",
+      "id": "b93fcd0d4fe1b755",
+      "item": {
+        "type": "paragraph",
+        "id": "b93fcd0d4fe1b755",
+        "text": "The MIME namespace contains arbitrary blobs prefixed by their major/minor type, followed by a slug of a file supplied, user supplied, or plugin generated name."
+      },
+      "date": 1386395592324
+    },
+    {
+      "type": "remove",
+      "id": "2604ed6cced6f021",
+      "date": 1386395614951
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d82ebccb7c882941"
+      },
+      "id": "d82ebccb7c882941",
+      "type": "add",
+      "after": "b93fcd0d4fe1b755",
+      "date": 1386395616773
+    },
+    {
+      "type": "edit",
+      "id": "d82ebccb7c882941",
+      "item": {
+        "type": "code",
+        "id": "d82ebccb7c882941",
+        "text": "ndn:/<global-prefix/wiki/MIME/<major>/<minor>/<fileName>"
+      },
+      "date": 1386395677380
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bb679e787f07d11e"
+      },
+      "id": "bb679e787f07d11e",
+      "type": "add",
+      "after": "d82ebccb7c882941",
+      "date": 1386395678356
+    },
+    {
+      "type": "edit",
+      "id": "bb679e787f07d11e",
+      "item": {
+        "type": "pagefold",
+        "id": "bb679e787f07d11e",
+        "text": "MIME Suffix"
+      },
+      "date": 1386395688256
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1058a9e535d6c08e"
+      },
+      "id": "1058a9e535d6c08e",
+      "type": "add",
+      "after": "bb679e787f07d11e",
+      "date": 1386395689523
+    },
+    {
+      "type": "edit",
+      "id": "1058a9e535d6c08e",
+      "item": {
+        "type": "paragraph",
+        "id": "1058a9e535d6c08e",
+        "text": "hashname of custodian and version, if possible generated from filereader last modified date."
+      },
+      "date": 1386395730006
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4c804db0bb6abb3e"
+      },
+      "id": "4c804db0bb6abb3e",
+      "type": "add",
+      "after": "1058a9e535d6c08e",
+      "date": 1386395766103
+    },
+    {
+      "type": "edit",
+      "id": "4c804db0bb6abb3e",
+      "item": {
+        "type": "pagefold",
+        "id": "4c804db0bb6abb3e",
+        "text": "MIME freshness"
+      },
+      "date": 1386395775803
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1c80a028a1f4351e"
+      },
+      "id": "1c80a028a1f4351e",
+      "type": "add",
+      "after": "4c804db0bb6abb3e",
+      "date": 1386395776621
+    },
+    {
+      "type": "edit",
+      "id": "1c80a028a1f4351e",
+      "item": {
+        "type": "paragraph",
+        "id": "1c80a028a1f4351e",
+        "text": "MIME is posited largely as a name layer for static imported data: pictures, videos, and should not generally change state (if it does, it's name should change)"
+      },
+      "date": 1386395882145
+    }
+  ]
+}

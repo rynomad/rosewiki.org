@@ -1,0 +1,341 @@
+{
+  "title": "NDN Browser Shim",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "9ce56270f1ebe3d0",
+      "text": "ndn browser shim is a brute force packaging of UCLA's NDN-js into a browserifieable npm module. Concerns:"
+    },
+    {
+      "type": "paragraph",
+      "id": "437fdc8fba88457c",
+      "text": "Many Crypto libraries used in the context of globally exposed variables"
+    },
+    {
+      "type": "paragraph",
+      "id": "ef1fe8c62fd95385",
+      "text": "Custom Buffer class normally gets overridden by node buffer browserify module"
+    },
+    {
+      "type": "paragraph",
+      "id": "b18f7300055b789a",
+      "text": "require calls from previous attempt at browserifiability fail when requiring the compiled library"
+    },
+    {
+      "type": "pagefold",
+      "id": "5a71a448c7656f39",
+      "text": "Steps"
+    },
+    {
+      "type": "paragraph",
+      "id": "e17b68595e8e2c88",
+      "text": "remove all calls and definitions of require"
+    },
+    {
+      "type": "paragraph",
+      "id": "9c0979f2480e3c4f",
+      "text": "if require calls a node module instead of a local file, replace with 'ndn'"
+    },
+    {
+      "type": "paragraph",
+      "id": "971cc08175b48d65",
+      "text": "build ndn.js with security libs"
+    },
+    {
+      "type": "paragraph",
+      "id": "7af45cedaa6dfe36",
+      "text": "in addition to replacing the var Buffer function definition,  global replace:"
+    },
+    {
+      "type": "code",
+      "id": "74bdf955a5395881",
+      "text": "new Buffer >> new ndnbuf\nBuffer.proto >> ndnbuf.proto\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "96bfe3f50325d881",
+      "text": "export the new ndnbuf class so it can be accessed by ndn.ndnbuf"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Browser Shim",
+        "story": []
+      },
+      "date": 1387481113988
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9ce56270f1ebe3d0"
+      },
+      "id": "9ce56270f1ebe3d0",
+      "type": "add",
+      "date": 1387481115024
+    },
+    {
+      "type": "edit",
+      "id": "9ce56270f1ebe3d0",
+      "item": {
+        "type": "paragraph",
+        "id": "9ce56270f1ebe3d0",
+        "text": "ndn browser shim is a brute force packaging of UCLA's NDN-js into a browserifieable npm module. Concerns:"
+      },
+      "date": 1387481152482
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "437fdc8fba88457c",
+        "text": ""
+      },
+      "id": "437fdc8fba88457c",
+      "type": "add",
+      "after": "9ce56270f1ebe3d0",
+      "date": 1387481152999
+    },
+    {
+      "type": "edit",
+      "id": "437fdc8fba88457c",
+      "item": {
+        "type": "paragraph",
+        "id": "437fdc8fba88457c",
+        "text": "Many Crypto libraries used in the context of globally exposed variables"
+      },
+      "date": 1387481183898
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ef1fe8c62fd95385",
+        "text": ""
+      },
+      "id": "ef1fe8c62fd95385",
+      "type": "add",
+      "after": "437fdc8fba88457c",
+      "date": 1387481184420
+    },
+    {
+      "type": "edit",
+      "id": "ef1fe8c62fd95385",
+      "item": {
+        "type": "paragraph",
+        "id": "ef1fe8c62fd95385",
+        "text": "Custom Buffer class normally gets overridden by node buffer browserify module"
+      },
+      "date": 1387481217590
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b18f7300055b789a",
+        "text": ""
+      },
+      "id": "b18f7300055b789a",
+      "type": "add",
+      "after": "ef1fe8c62fd95385",
+      "date": 1387481218121
+    },
+    {
+      "type": "edit",
+      "id": "b18f7300055b789a",
+      "item": {
+        "type": "paragraph",
+        "id": "b18f7300055b789a",
+        "text": "require calls from previous attempt at browserifiability fail when requiring the compiled library"
+      },
+      "date": 1387481294108
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "65561aed0f1ea655",
+        "text": ""
+      },
+      "id": "65561aed0f1ea655",
+      "type": "add",
+      "after": "b18f7300055b789a",
+      "date": 1387481294641
+    },
+    {
+      "type": "remove",
+      "id": "65561aed0f1ea655",
+      "date": 1387481509369
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5a71a448c7656f39"
+      },
+      "id": "5a71a448c7656f39",
+      "type": "add",
+      "after": "b18f7300055b789a",
+      "date": 1387481510561
+    },
+    {
+      "type": "edit",
+      "id": "5a71a448c7656f39",
+      "item": {
+        "type": "pagefold",
+        "id": "5a71a448c7656f39",
+        "text": "Steps"
+      },
+      "date": 1387481514996
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e17b68595e8e2c88"
+      },
+      "id": "e17b68595e8e2c88",
+      "type": "add",
+      "after": "5a71a448c7656f39",
+      "date": 1387481516140
+    },
+    {
+      "type": "edit",
+      "id": "e17b68595e8e2c88",
+      "item": {
+        "type": "paragraph",
+        "id": "e17b68595e8e2c88",
+        "text": "remove all calls and definitions of require"
+      },
+      "date": 1387481530007
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9c0979f2480e3c4f",
+        "text": ""
+      },
+      "id": "9c0979f2480e3c4f",
+      "type": "add",
+      "after": "e17b68595e8e2c88",
+      "date": 1387481530542
+    },
+    {
+      "type": "edit",
+      "id": "9c0979f2480e3c4f",
+      "item": {
+        "type": "paragraph",
+        "id": "9c0979f2480e3c4f",
+        "text": "if require calls a node module instead of a local file, replace with 'ndn'"
+      },
+      "date": 1387481571758
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "971cc08175b48d65",
+        "text": ""
+      },
+      "id": "971cc08175b48d65",
+      "type": "add",
+      "after": "9c0979f2480e3c4f",
+      "date": 1387481572282
+    },
+    {
+      "type": "edit",
+      "id": "971cc08175b48d65",
+      "item": {
+        "type": "paragraph",
+        "id": "971cc08175b48d65",
+        "text": "build ndn.js with security libs"
+      },
+      "date": 1387481592707
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7af45cedaa6dfe36",
+        "text": ""
+      },
+      "id": "7af45cedaa6dfe36",
+      "type": "add",
+      "after": "971cc08175b48d65",
+      "date": 1387481593239
+    },
+    {
+      "type": "edit",
+      "id": "7af45cedaa6dfe36",
+      "item": {
+        "type": "paragraph",
+        "id": "7af45cedaa6dfe36",
+        "text": "global replace:"
+      },
+      "date": 1387481599155
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "74bdf955a5395881"
+      },
+      "id": "74bdf955a5395881",
+      "type": "add",
+      "after": "7af45cedaa6dfe36",
+      "date": 1387481600319
+    },
+    {
+      "type": "edit",
+      "id": "74bdf955a5395881",
+      "item": {
+        "type": "code",
+        "id": "74bdf955a5395881",
+        "text": "new Buffer >> new ndnbuf\nBuffer. >> ndnbuf.\n"
+      },
+      "date": 1387481647024
+    },
+    {
+      "type": "edit",
+      "id": "7af45cedaa6dfe36",
+      "item": {
+        "type": "paragraph",
+        "id": "7af45cedaa6dfe36",
+        "text": "in addition to replacing the global replace:"
+      },
+      "date": 1387481669574
+    },
+    {
+      "type": "edit",
+      "id": "74bdf955a5395881",
+      "item": {
+        "type": "code",
+        "id": "74bdf955a5395881",
+        "text": "new Buffer >> new ndnbuf\nBuffer.proto >> ndnbuf.proto\n"
+      },
+      "date": 1387481683599
+    },
+    {
+      "type": "edit",
+      "id": "7af45cedaa6dfe36",
+      "item": {
+        "type": "paragraph",
+        "id": "7af45cedaa6dfe36",
+        "text": "in addition to replacing the var Buffer function definition,  global replace:"
+      },
+      "date": 1387481697903
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "96bfe3f50325d881"
+      },
+      "id": "96bfe3f50325d881",
+      "type": "add",
+      "after": "74bdf955a5395881",
+      "date": 1387481707819
+    },
+    {
+      "type": "edit",
+      "id": "96bfe3f50325d881",
+      "item": {
+        "type": "paragraph",
+        "id": "96bfe3f50325d881",
+        "text": "export the new ndnbuf class so it can be accessed by ndn.ndnbuf"
+      },
+      "date": 1387481735311
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+{
+  "title": "NDN",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c01a12564370adb8",
+      "text": "Ryan's work with [[Named Data Networking]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "bb1b24e0254922e2",
+      "text": "[[NDN as a platform for Distributed Social Applications]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "ddf73ae7ee837e58",
+      "text": "[[NDN Browserkit]] - a repo, daemon, and midlayer in the browser"
+    },
+    {
+      "type": "paragraph",
+      "id": "0f1f9c157fcdf6a3",
+      "text": "[[NDN Wiki]] - Test case for NDN-Browserkit"
+    },
+    {
+      "type": "paragraph",
+      "id": "89ffedb755c9dfa7",
+      "text": "[[NFD-js]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "d491ec677a853121",
+      "text": "Thoughts"
+    },
+    {
+      "type": "paragraph",
+      "id": "0540c04e51059f12",
+      "text": "[[Dynamic Named Data Overlay Networks]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "eb4c25bf01d7250d",
+      "text": "[[Persistence of Data in highly volatile Networks]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "66adcd07e8f60f2c",
+      "text": "[[NDN Patterns]] - Things I find myself doing over and over. Fodder for the browserKit"
+    },
+    {
+      "type": "paragraph",
+      "id": "06251edb4712a679",
+      "text": "[[NDN and Telehash]] - DHT + content names and caching... neato"
+    },
+    {
+      "type": "paragraph",
+      "id": "cd590adfa1b25086",
+      "text": "[[choose plugin]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "50814b08e4bf34dc",
+      "text": "Other Stuff"
+    },
+    {
+      "type": "paragraph",
+      "id": "dac5840ecd09b8fd",
+      "text": "[[NDN Conference Calls]] - notes from NDN group calls"
+    },
+    {
+      "type": "paragraph",
+      "id": "f9c7fddb68275cc0",
+      "text": "[[agenda]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN",
+        "story": []
+      },
+      "site": "localhost:3000",
+      "date": 1386228207321,
+      "fork": "localhost:3000"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3910cba47f6f6c6d"
+      },
+      "id": "3910cba47f6f6c6d",
+      "type": "add",
+      "date": 1386228208855
+    },
+    {
+      "type": "edit",
+      "id": "3910cba47f6f6c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "3910cba47f6f6c6d",
+        "text": "Named Data Networking abstracts data lookup at the network layer"
+      },
+      "date": 1386228236169
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "634454874b641d63",
+        "text": ""
+      },
+      "id": "634454874b641d63",
+      "type": "add",
+      "after": "3910cba47f6f6c6d",
+      "date": 1386228468013
+    },
+    {
+      "type": "edit",
+      "id": "634454874b641d63",
+      "item": {
+        "type": "paragraph",
+        "id": "634454874b641d63",
+        "text": "its nifty"
+      },
+      "date": 1386228470925
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386228484877
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386229108978
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "5167bd1fad34b544",
+        "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser"
+      },
+      "after": "634454874b641d63",
+      "id": "5167bd1fad34b544",
+      "date": 1386229159115
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "0f1f9c157fcdf6a3",
+        "text": "[[NDN Patterns]] - documenting patterns and idioms found to be useful in working with NDN"
+      },
+      "after": "5167bd1fad34b544",
+      "id": "0f1f9c157fcdf6a3",
+      "date": 1386229163784
+    },
+    {
+      "type": "remove",
+      "id": "634454874b641d63",
+      "date": 1386229240159
+    },
+    {
+      "type": "edit",
+      "id": "3910cba47f6f6c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "3910cba47f6f6c6d",
+        "text": "Named Data Networking abstracts data lookup at the network layer [[Wiki-NDN]]"
+      },
+      "date": 1386229250685
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "c01a12564370adb8",
+        "text": "[[Named Data Networking]] provides data name awareness at the network layer, allowing a ubiquitous format for content requests to flow throughout the network until they are fulfilled. This schema lends itself naturally to the Federated Wiki paradigm."
+      },
+      "id": "c01a12564370adb8",
+      "date": 1386229538020
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386229542406
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f508075079dec02d",
+        "text": ""
+      },
+      "id": "f508075079dec02d",
+      "type": "add",
+      "after": "c01a12564370adb8",
+      "date": 1386229558395
+    },
+    {
+      "type": "edit",
+      "id": "f508075079dec02d",
+      "item": {
+        "type": "paragraph",
+        "id": "f508075079dec02d",
+        "text": "Wiki-NDN"
+      },
+      "date": 1386229562972
+    },
+    {
+      "type": "edit",
+      "id": "f508075079dec02d",
+      "item": {
+        "type": "paragraph",
+        "id": "f508075079dec02d",
+        "text": "[[Wiki-NDN]]"
+      },
+      "date": 1386229573666
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386233463717
+    },
+    {
+      "type": "remove",
+      "id": "3910cba47f6f6c6d",
+      "date": 1386233474050
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d491ec677a853121"
+      },
+      "id": "d491ec677a853121",
+      "type": "add",
+      "after": "0f1f9c157fcdf6a3",
+      "date": 1386233481173
+    },
+    {
+      "type": "edit",
+      "id": "d491ec677a853121",
+      "item": {
+        "type": "pagefold",
+        "id": "d491ec677a853121",
+        "text": "Thoughts"
+      },
+      "date": 1386233485856
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "66adcd07e8f60f2c"
+      },
+      "id": "66adcd07e8f60f2c",
+      "type": "add",
+      "after": "d491ec677a853121",
+      "date": 1386233487555
+    },
+    {
+      "type": "edit",
+      "id": "66adcd07e8f60f2c",
+      "item": {
+        "type": "paragraph",
+        "id": "66adcd07e8f60f2c",
+        "text": "[[NDN Patterns]] - Things I find myself doing over and over"
+      },
+      "date": 1386233503399
+    },
+    {
+      "type": "edit",
+      "id": "66adcd07e8f60f2c",
+      "item": {
+        "type": "paragraph",
+        "id": "66adcd07e8f60f2c",
+        "text": "[[NDN Patterns]] - Things I find myself doing over and over. Fodder for the browserKit"
+      },
+      "date": 1386233512421
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "06251edb4712a679"
+      },
+      "id": "06251edb4712a679",
+      "type": "add",
+      "after": "66adcd07e8f60f2c",
+      "date": 1386233513618
+    },
+    {
+      "type": "edit",
+      "id": "06251edb4712a679",
+      "item": {
+        "type": "paragraph",
+        "id": "06251edb4712a679",
+        "text": "[[NDN and Telehash]] - DHT + content names and caching... neato"
+      },
+      "date": 1386233564564
+    },
+    {
+      "type": "edit",
+      "id": "bb1b24e0254922e2",
+      "item": {
+        "type": "paragraph",
+        "id": "bb1b24e0254922e2",
+        "text": "[[NDN as a platform for Distributed Social Applications]]"
+      },
+      "date": 1386233729243
+    },
+    {
+      "type": "edit",
+      "id": "bb1b24e0254922e2",
+      "item": {
+        "type": "paragraph",
+        "id": "bb1b24e0254922e2",
+        "text": "[[NDN as a platform for Distributed Applications]]"
+      },
+      "date": 1386233736528
+    },
+    {
+      "type": "edit",
+      "id": "bb1b24e0254922e2",
+      "item": {
+        "type": "paragraph",
+        "id": "bb1b24e0254922e2",
+        "text": "[[NDN as a platform for Distributed Social Applications]]"
+      },
+      "date": 1386233768331
+    },
+    {
+      "type": "fork",
+      "date": 1386233825756
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "cd590adfa1b25086"
+      },
+      "id": "cd590adfa1b25086",
+      "type": "add",
+      "after": "06251edb4712a679",
+      "date": 1387259834316
+    },
+    {
+      "type": "edit",
+      "id": "cd590adfa1b25086",
+      "item": {
+        "type": "paragraph",
+        "id": "cd590adfa1b25086",
+        "text": "[[]]"
+      },
+      "date": 1387259840032
+    },
+    {
+      "type": "edit",
+      "id": "cd590adfa1b25086",
+      "item": {
+        "type": "paragraph",
+        "id": "cd590adfa1b25086",
+        "text": "[[choose plugins]]"
+      },
+      "date": 1387259849082
+    },
+    {
+      "type": "edit",
+      "id": "cd590adfa1b25086",
+      "item": {
+        "type": "paragraph",
+        "id": "cd590adfa1b25086",
+        "text": "[[about plugins]]"
+      },
+      "date": 1387360236365
+    },
+    {
+      "type": "edit",
+      "id": "cd590adfa1b25086",
+      "item": {
+        "type": "paragraph",
+        "id": "cd590adfa1b25086",
+        "text": "[[choose plugin]]"
+      },
+      "date": 1387360245551
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1387566237944
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "50814b08e4bf34dc"
+      },
+      "id": "50814b08e4bf34dc",
+      "type": "add",
+      "after": "cd590adfa1b25086",
+      "site": "rosewiki.org",
+      "date": 1387566237944
+    },
+    {
+      "type": "edit",
+      "id": "50814b08e4bf34dc",
+      "item": {
+        "type": "pagefold",
+        "id": "50814b08e4bf34dc",
+        "text": "Other Stuff"
+      },
+      "date": 1387566257844
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dac5840ecd09b8fd"
+      },
+      "id": "dac5840ecd09b8fd",
+      "type": "add",
+      "after": "50814b08e4bf34dc",
+      "date": 1387566258994
+    },
+    {
+      "type": "edit",
+      "id": "dac5840ecd09b8fd",
+      "item": {
+        "type": "paragraph",
+        "id": "dac5840ecd09b8fd",
+        "text": "[[NDN Conference Calls]] - notes from NDN group calls"
+      },
+      "date": 1387566286111
+    },
+    {
+      "type": "fork",
+      "date": 1387568089314
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f9c7fddb68275cc0"
+      },
+      "id": "f9c7fddb68275cc0",
+      "type": "add",
+      "after": "dac5840ecd09b8fd",
+      "date": 1388768436110
+    },
+    {
+      "type": "edit",
+      "id": "f9c7fddb68275cc0",
+      "item": {
+        "type": "paragraph",
+        "id": "f9c7fddb68275cc0",
+        "text": "[[agenda]]"
+      },
+      "date": 1388768457255
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1390858777663
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "89ffedb755c9dfa7",
+        "text": ""
+      },
+      "id": "89ffedb755c9dfa7",
+      "type": "add",
+      "after": "0f1f9c157fcdf6a3",
+      "site": "rosewiki.org",
+      "date": 1390858777663
+    },
+    {
+      "type": "edit",
+      "id": "89ffedb755c9dfa7",
+      "item": {
+        "type": "paragraph",
+        "id": "89ffedb755c9dfa7",
+        "text": "[[NFD-js]]"
+      },
+      "date": 1390858783261
+    },
+    {
+      "type": "fork",
+      "date": 1390864217263
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1391015774792
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "0540c04e51059f12",
+        "text": "[[Dynamic Named Data Overlay Networks]]"
+      },
+      "after": "06251edb4712a679",
+      "id": "0540c04e51059f12",
+      "site": "rosewiki.org",
+      "date": 1391015774792
+    },
+    {
+      "type": "move",
+      "order": [
+        "c01a12564370adb8",
+        "bb1b24e0254922e2",
+        "ddf73ae7ee837e58",
+        "0f1f9c157fcdf6a3",
+        "89ffedb755c9dfa7",
+        "d491ec677a853121",
+        "0540c04e51059f12",
+        "66adcd07e8f60f2c",
+        "06251edb4712a679",
+        "cd590adfa1b25086",
+        "50814b08e4bf34dc",
+        "dac5840ecd09b8fd",
+        "f9c7fddb68275cc0"
+      ],
+      "id": "0540c04e51059f12",
+      "date": 1391015778165
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eb4c25bf01d7250d",
+        "text": ""
+      },
+      "id": "eb4c25bf01d7250d",
+      "type": "add",
+      "after": "0540c04e51059f12",
+      "date": 1391015780071
+    },
+    {
+      "type": "edit",
+      "id": "eb4c25bf01d7250d",
+      "item": {
+        "type": "paragraph",
+        "id": "eb4c25bf01d7250d",
+        "text": "[[Persistence of Data in highly volatile Networks]]"
+      },
+      "date": 1391015878524
+    },
+    {
+      "type": "fork",
+      "date": 1391019244281
+    },
+    {
+      "type": "edit",
+      "id": "697c014148bc4d33",
+      "item": {
+        "type": "paragraph",
+        "id": "697c014148bc4d33",
+        "text": "[[NDN npm modules]]"
+      },
+      "date": 1396403877841
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "title": "NDN Browserkit roadmap",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "7e3fe01f76a38a91",
+      "text": "IndexedDB repository - CHECK"
+    },
+    {
+      "type": "paragraph",
+      "id": "df6923b81b4ca640",
+      "text": "WebRTC Faces - CHECK"
+    },
+    {
+      "type": "paragraph",
+      "id": "7684bf1398434bb3",
+      "text": "io API - publish, fetch files and objects CHECK"
+    },
+    {
+      "type": "paragraph",
+      "id": "9681c83b00055077",
+      "text": "Basic Forwarding - Pull from Firefox addon in main NDN-js repo"
+    },
+    {
+      "type": "paragraph",
+      "id": "41d49a8d5d59830d",
+      "text": "Key generation "
+    },
+    {
+      "type": "paragraph",
+      "id": "77e0085848e15084",
+      "text": "Face Registration"
+    },
+    {
+      "type": "paragraph",
+      "id": "0e92ce0442b0f8f9",
+      "text": "cache"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Browserkit roadmap",
+        "story": []
+      },
+      "date": 1388768524408
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7e3fe01f76a38a91"
+      },
+      "id": "7e3fe01f76a38a91",
+      "type": "add",
+      "date": 1388768525399
+    },
+    {
+      "type": "edit",
+      "id": "7e3fe01f76a38a91",
+      "item": {
+        "type": "paragraph",
+        "id": "7e3fe01f76a38a91",
+        "text": "IndexedDB repository - CHECK"
+      },
+      "date": 1388768541874
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "df6923b81b4ca640",
+        "text": ""
+      },
+      "id": "df6923b81b4ca640",
+      "type": "add",
+      "after": "7e3fe01f76a38a91",
+      "date": 1388768542389
+    },
+    {
+      "type": "edit",
+      "id": "df6923b81b4ca640",
+      "item": {
+        "type": "paragraph",
+        "id": "df6923b81b4ca640",
+        "text": "WebRTC Faces - CHECK"
+      },
+      "date": 1388768552736
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9681c83b00055077",
+        "text": ""
+      },
+      "id": "9681c83b00055077",
+      "type": "add",
+      "after": "df6923b81b4ca640",
+      "date": 1388768553252
+    },
+    {
+      "type": "edit",
+      "id": "9681c83b00055077",
+      "item": {
+        "type": "paragraph",
+        "id": "9681c83b00055077",
+        "text": "Basic Forwarding - Pull from Firefox addon in main NDN-js repo"
+      },
+      "date": 1388768576697
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0e92ce0442b0f8f9",
+        "text": ""
+      },
+      "id": "0e92ce0442b0f8f9",
+      "type": "add",
+      "after": "9681c83b00055077",
+      "date": 1388768577211
+    },
+    {
+      "type": "edit",
+      "id": "0e92ce0442b0f8f9",
+      "item": {
+        "type": "paragraph",
+        "id": "0e92ce0442b0f8f9",
+        "text": "cache"
+      },
+      "date": 1388768584137
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "41d49a8d5d59830d",
+        "text": ""
+      },
+      "id": "41d49a8d5d59830d",
+      "type": "add",
+      "after": "0e92ce0442b0f8f9",
+      "date": 1388768584651
+    },
+    {
+      "type": "edit",
+      "id": "41d49a8d5d59830d",
+      "item": {
+        "type": "paragraph",
+        "id": "41d49a8d5d59830d",
+        "text": "Key generation "
+      },
+      "date": 1388768603206
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7684bf1398434bb3",
+        "text": ""
+      },
+      "id": "7684bf1398434bb3",
+      "type": "add",
+      "after": "df6923b81b4ca640",
+      "date": 1388768604718
+    },
+    {
+      "type": "edit",
+      "id": "7684bf1398434bb3",
+      "item": {
+        "type": "paragraph",
+        "id": "7684bf1398434bb3",
+        "text": "io API - publish, fetch files and objects"
+      },
+      "date": 1388768668388
+    },
+    {
+      "type": "edit",
+      "id": "7684bf1398434bb3",
+      "item": {
+        "type": "paragraph",
+        "id": "7684bf1398434bb3",
+        "text": "io API - publish, fetch files and objects CHECK"
+      },
+      "date": 1388768675633
+    },
+    {
+      "type": "move",
+      "order": [
+        "7e3fe01f76a38a91",
+        "df6923b81b4ca640",
+        "7684bf1398434bb3",
+        "9681c83b00055077",
+        "41d49a8d5d59830d",
+        "0e92ce0442b0f8f9"
+      ],
+      "id": "41d49a8d5d59830d",
+      "date": 1388769476431
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "77e0085848e15084",
+        "text": ""
+      },
+      "id": "77e0085848e15084",
+      "type": "add",
+      "after": "41d49a8d5d59830d",
+      "date": 1388769481602
+    },
+    {
+      "type": "edit",
+      "id": "77e0085848e15084",
+      "item": {
+        "type": "paragraph",
+        "id": "77e0085848e15084",
+        "text": "Face Registration"
+      },
+      "date": 1388769493025
+    }
+  ]
+}

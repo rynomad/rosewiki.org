@@ -1,0 +1,287 @@
+{
+  "title": "agenda",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "b5a7213002b05a77",
+      "text": "Laptop - I can has Susmits Laptop?"
+    },
+    {
+      "type": "paragraph",
+      "id": "acb1f39ac261fd3e",
+      "text": "[[NDN Browserkit roadmap]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "62e6df217a7a1f23",
+      "text": "Wiki Status - Interoperable with legacy HTTP wiki back burner until Browserkit more refined."
+    },
+    {
+      "type": "paragraph",
+      "id": "aba9a0f91b7ea919",
+      "text": "As a Student - work/study weight? What would be advisable"
+    },
+    {
+      "type": "paragraph",
+      "id": "4bef79b7395008c1",
+      "text": "Project Ideas - CopyLeft, Apogaea mesh, NDN for Telehash Relays, MIME Name Conventions."
+    },
+    {
+      "type": "paragraph",
+      "id": "debe273909756287",
+      "text": "Unstoppable twitter."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "agenda",
+        "story": []
+      },
+      "date": 1388768459996
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b5a7213002b05a77"
+      },
+      "id": "b5a7213002b05a77",
+      "type": "add",
+      "date": 1388768461102
+    },
+    {
+      "type": "edit",
+      "id": "b5a7213002b05a77",
+      "item": {
+        "type": "paragraph",
+        "id": "b5a7213002b05a77",
+        "text": "Laptop - I can has Susmits Laptop?"
+      },
+      "date": 1388768477064
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "acb1f39ac261fd3e",
+        "text": ""
+      },
+      "id": "acb1f39ac261fd3e",
+      "type": "add",
+      "after": "b5a7213002b05a77",
+      "date": 1388768477580
+    },
+    {
+      "type": "edit",
+      "id": "acb1f39ac261fd3e",
+      "item": {
+        "type": "paragraph",
+        "id": "acb1f39ac261fd3e",
+        "text": "[[NDN Browserkit roadmap]]"
+      },
+      "date": 1388768513601
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "62e6df217a7a1f23",
+        "text": ""
+      },
+      "id": "62e6df217a7a1f23",
+      "type": "add",
+      "after": "acb1f39ac261fd3e",
+      "date": 1388768514118
+    },
+    {
+      "type": "edit",
+      "id": "62e6df217a7a1f23",
+      "item": {
+        "type": "paragraph",
+        "id": "62e6df217a7a1f23",
+        "text": "Wiki Status"
+      },
+      "date": 1388768524330
+    },
+    {
+      "type": "edit",
+      "id": "62e6df217a7a1f23",
+      "item": {
+        "type": "paragraph",
+        "id": "62e6df217a7a1f23",
+        "text": "Wiki Status - Interoperable with legacy HTTP wiki back burner until Browserkit more refined."
+      },
+      "date": 1388768723096
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "aba9a0f91b7ea919",
+        "text": ""
+      },
+      "id": "aba9a0f91b7ea919",
+      "type": "add",
+      "after": "62e6df217a7a1f23",
+      "date": 1388768723611
+    },
+    {
+      "type": "edit",
+      "id": "aba9a0f91b7ea919",
+      "item": {
+        "type": "paragraph",
+        "id": "aba9a0f91b7ea919",
+        "text": "As a Student - work/study weight? What would be advisable"
+      },
+      "date": 1388769210744
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "813c1f535017ec4c",
+        "text": ""
+      },
+      "id": "813c1f535017ec4c",
+      "type": "add",
+      "after": "aba9a0f91b7ea919",
+      "date": 1388769211256
+    },
+    {
+      "type": "remove",
+      "id": "813c1f535017ec4c",
+      "date": 1388769477352
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4bef79b7395008c1"
+      },
+      "id": "4bef79b7395008c1",
+      "type": "add",
+      "after": "aba9a0f91b7ea919",
+      "date": 1388769498333
+    },
+    {
+      "type": "edit",
+      "id": "4bef79b7395008c1",
+      "item": {
+        "type": "paragraph",
+        "id": "4bef79b7395008c1",
+        "text": "App Ideas - CopyLeft, Apogaea mesh, NDN for Telehash Relays"
+      },
+      "date": 1388770141799
+    },
+    {
+      "type": "edit",
+      "id": "4bef79b7395008c1",
+      "item": {
+        "type": "paragraph",
+        "id": "4bef79b7395008c1",
+        "text": "App Ideas - CopyLeft, Apogaea mesh, NDN for Telehash Relays, MIME Name Conventions, strategy layers."
+      },
+      "date": 1388770796458
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2dc6967e421aa07f",
+        "text": ""
+      },
+      "id": "2dc6967e421aa07f",
+      "type": "add",
+      "after": "4bef79b7395008c1",
+      "date": 1388770796976
+    },
+    {
+      "type": "remove",
+      "id": "2dc6967e421aa07f",
+      "date": 1388770797924
+    },
+    {
+      "type": "edit",
+      "id": "4bef79b7395008c1",
+      "item": {
+        "type": "paragraph",
+        "id": "4bef79b7395008c1",
+        "text": "App Ideas - CopyLeft, Apogaea mesh, NDN for Telehash Relays, MIME Name Conventions."
+      },
+      "date": 1388770801610
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c8f5d397b7d65b95",
+        "text": ""
+      },
+      "id": "c8f5d397b7d65b95",
+      "type": "add",
+      "after": "4bef79b7395008c1",
+      "date": 1388770802126
+    },
+    {
+      "type": "remove",
+      "id": "c8f5d397b7d65b95",
+      "date": 1388770929019
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "43f968f5a60e0568",
+        "text": ""
+      },
+      "id": "43f968f5a60e0568",
+      "type": "add",
+      "after": "4bef79b7395008c1",
+      "date": 1388771098688
+    },
+    {
+      "type": "remove",
+      "id": "43f968f5a60e0568",
+      "date": 1388771138217
+    },
+    {
+      "type": "edit",
+      "id": "4bef79b7395008c1",
+      "item": {
+        "type": "paragraph",
+        "id": "4bef79b7395008c1",
+        "text": "Project Ideas - CopyLeft, Apogaea mesh, NDN for Telehash Relays, MIME Name Conventions."
+      },
+      "date": 1388771146928
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1d05c2d1269366b3"
+      },
+      "id": "1d05c2d1269366b3",
+      "type": "add",
+      "after": "4bef79b7395008c1",
+      "date": 1388771187082
+    },
+    {
+      "type": "remove",
+      "id": "1d05c2d1269366b3",
+      "date": 1388771215099
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "debe273909756287",
+        "text": ""
+      },
+      "id": "debe273909756287",
+      "type": "add",
+      "after": "4bef79b7395008c1",
+      "date": 1388771307732
+    },
+    {
+      "type": "edit",
+      "id": "debe273909756287",
+      "item": {
+        "type": "paragraph",
+        "id": "debe273909756287",
+        "text": "Unstoppable twitter."
+      },
+      "date": 1388771343658
+    }
+  ]
+}

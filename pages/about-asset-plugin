@@ -1,0 +1,177 @@
+{
+  "title": "About Asset Plugin",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "52331d028e3e4e90",
+      "text": "Imagine a federated wiki photo journal. We desire the ability to deal with large high resolution files of various types, presented as thumbnails in a page, with the large high resolution object decoupled for explicit retrieval options."
+    },
+    {
+      "type": "paragraph",
+      "id": "68d687bbd15615c1",
+      "text": "asset's contain a the name of the asset they are referencing, as well as a nested type field indicating the type of the referenced asset (paragraph, code, etc)."
+    },
+    {
+      "type": "factory",
+      "id": "128f0c992e9ba705"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About Asset Plugin",
+        "story": []
+      },
+      "date": 1387260376970
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "52331d028e3e4e90"
+      },
+      "id": "52331d028e3e4e90",
+      "type": "add",
+      "date": 1387260378077
+    },
+    {
+      "type": "edit",
+      "id": "52331d028e3e4e90",
+      "item": {
+        "type": "paragraph",
+        "id": "52331d028e3e4e90",
+        "text": "Imagine ten pages containing a photo album, "
+      },
+      "date": 1387260473426
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "abcaf95203e77369",
+        "text": ""
+      },
+      "id": "abcaf95203e77369",
+      "type": "add",
+      "after": "52331d028e3e4e90",
+      "date": 1387260473938
+    },
+    {
+      "type": "remove",
+      "id": "abcaf95203e77369",
+      "date": 1387260474865
+    },
+    {
+      "type": "edit",
+      "id": "52331d028e3e4e90",
+      "item": {
+        "type": "paragraph",
+        "id": "52331d028e3e4e90",
+        "text": "Imagine a federated wiki photo journal. We desire the ability to deal with large high resolution files of various types, presented as thumbnails in a page."
+      },
+      "date": 1387260585154
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c82e86fc2be93009",
+        "text": ""
+      },
+      "id": "c82e86fc2be93009",
+      "type": "add",
+      "after": "52331d028e3e4e90",
+      "date": 1387260585660
+    },
+    {
+      "type": "remove",
+      "id": "c82e86fc2be93009",
+      "date": 1387260621946
+    },
+    {
+      "type": "edit",
+      "id": "52331d028e3e4e90",
+      "item": {
+        "type": "paragraph",
+        "id": "52331d028e3e4e90",
+        "text": "Imagine a federated wiki photo journal. We desire the ability to deal with large high resolution files of various types, presented as thumbnails in a page, with the large high resolution object decoupled for explicit retrieval options."
+      },
+      "date": 1387260785142
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "68d687bbd15615c1",
+        "text": ""
+      },
+      "id": "68d687bbd15615c1",
+      "type": "add",
+      "after": "52331d028e3e4e90",
+      "date": 1387260785650
+    },
+    {
+      "type": "edit",
+      "id": "68d687bbd15615c1",
+      "item": {
+        "type": "paragraph",
+        "id": "68d687bbd15615c1",
+        "text": "Note that forking a page containing an Asset will copy the corresponding asset, "
+      },
+      "date": 1387260874905
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "128f0c992e9ba705"
+      },
+      "id": "128f0c992e9ba705",
+      "type": "add",
+      "after": "68d687bbd15615c1",
+      "date": 1387260876568
+    },
+    {
+      "type": "edit",
+      "id": "68d687bbd15615c1",
+      "item": {
+        "type": "paragraph",
+        "id": "68d687bbd15615c1",
+        "text": "asset's contain a type, "
+      },
+      "date": 1387260949691
+    },
+    {
+      "type": "edit",
+      "id": "68d687bbd15615c1",
+      "item": {
+        "type": "paragraph",
+        "id": "68d687bbd15615c1",
+        "text": "asset's contain a the name of the asset they are referencing, as well as a nested type field indicating the type of the referenced asset (paragraph, code)."
+      },
+      "date": 1387261112798
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8edaa708b64c9ff1",
+        "text": ""
+      },
+      "id": "8edaa708b64c9ff1",
+      "type": "add",
+      "after": "68d687bbd15615c1",
+      "date": 1387261113308
+    },
+    {
+      "type": "remove",
+      "id": "8edaa708b64c9ff1",
+      "date": 1387261117302
+    },
+    {
+      "type": "edit",
+      "id": "68d687bbd15615c1",
+      "item": {
+        "type": "paragraph",
+        "id": "68d687bbd15615c1",
+        "text": "asset's contain a the name of the asset they are referencing, as well as a nested type field indicating the type of the referenced asset (paragraph, code, etc)."
+      },
+      "date": 1387261121357
+    }
+  ]
+}

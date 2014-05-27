@@ -1,0 +1,548 @@
+{
+  "title": "encrypted chat protocols",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "82a628ebd0ebde71",
+      "text": "* [https://otr.cypherpunks.ca/ OTR] Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+    },
+    {
+      "type": "paragraph",
+      "id": "f4a5c62781f6627b",
+      "text": "* [https://pond.imperialviolet.org/ Pond]  by Adam Langley -- original use case was for having an affair with the head of the CIA"
+    },
+    {
+      "type": "paragraph",
+      "id": "dc4d671c4f8615e2",
+      "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker -- it has the property of reasonableness"
+    },
+    {
+      "type": "paragraph",
+      "id": "f6c29417b81a3e8c",
+      "text": "* [http://petmail.lothar.com/ Petmail] by Brian Warner -- not yet published? multiparty?"
+    },
+    {
+      "type": "paragraph",
+      "id": "3caac32715310934",
+      "text": "* [https://whispersystems.org/ TextSecure] by Moxie Marlinspike & co. -- for smartphones, 2-party"
+    },
+    {
+      "type": "paragraph",
+      "id": "5e8714994fe6dc10",
+      "text": "* [https://github.com/DrWhax/mpOTR mpOTR] multiparty Off-The-Record -- for multiparty case. Not yet deployed?"
+    },
+    {
+      "type": "paragraph",
+      "id": "8674d354a1c441fb",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "86133f5c8a20f417",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "786adedd9b1832c5",
+        "text": ""
+      },
+      "id": "786adedd9b1832c5",
+      "type": "add",
+      "date": 1390951568318
+    },
+    {
+      "type": "remove",
+      "id": "786adedd9b1832c5",
+      "date": 1390951576467
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "id": "82a628ebd0ebde71",
+      "type": "add",
+      "date": 1390951636520
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951639131
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "545f3ae165358a3d",
+        "text": ""
+      },
+      "id": "545f3ae165358a3d",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951639646
+    },
+    {
+      "type": "remove",
+      "id": "545f3ae165358a3d",
+      "date": 1390951642129
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951644407
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f45dfe8c756ec221",
+        "text": ""
+      },
+      "id": "f45dfe8c756ec221",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951644917
+    },
+    {
+      "type": "remove",
+      "id": "f45dfe8c756ec221",
+      "date": 1390951646326
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951661187
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "de8edd26da9abefb",
+        "text": ""
+      },
+      "id": "de8edd26da9abefb",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951661698
+    },
+    {
+      "type": "remove",
+      "id": "de8edd26da9abefb",
+      "date": 1390951661733
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951662512
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* Pond by Adam Langley"
+      },
+      "id": "f4a5c62781f6627b",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951663026
+    },
+    {
+      "type": "edit",
+      "id": "f4a5c62781f6627b",
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* Pond by Adam Langley"
+      },
+      "date": 1390951666118
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "093cffe55d9d9441",
+        "text": ""
+      },
+      "id": "093cffe55d9d9441",
+      "type": "add",
+      "after": "f4a5c62781f6627b",
+      "date": 1390951666630
+    },
+    {
+      "type": "remove",
+      "id": "093cffe55d9d9441",
+      "date": 1390951668984
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951677420
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bdaeb11a2efd95dd",
+        "text": ""
+      },
+      "id": "bdaeb11a2efd95dd",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951677946
+    },
+    {
+      "type": "remove",
+      "id": "bdaeb11a2efd95dd",
+      "date": 1390951680130
+    },
+    {
+      "type": "edit",
+      "id": "f4a5c62781f6627b",
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* Pond by Adam Langley"
+      },
+      "date": 1390951685660
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a5377f96ce483292",
+        "text": ""
+      },
+      "id": "a5377f96ce483292",
+      "type": "add",
+      "after": "f4a5c62781f6627b",
+      "date": 1390951686170
+    },
+    {
+      "type": "remove",
+      "id": "a5377f96ce483292",
+      "date": 1390951686866
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951690971
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ea07a5aac82e041f",
+        "text": ""
+      },
+      "id": "ea07a5aac82e041f",
+      "type": "add",
+      "after": "82a628ebd0ebde71",
+      "date": 1390951691483
+    },
+    {
+      "type": "remove",
+      "id": "ea07a5aac82e041f",
+      "date": 1390951691753
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* \"OTR\" Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951701350
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker"
+      },
+      "id": "dc4d671c4f8615e2",
+      "type": "add",
+      "after": "f4a5c62781f6627b",
+      "date": 1390951706312
+    },
+    {
+      "type": "edit",
+      "id": "dc4d671c4f8615e2",
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker"
+      },
+      "date": 1390951738367
+    },
+    {
+      "type": "edit",
+      "id": "dc4d671c4f8615e2",
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker"
+      },
+      "date": 1390951782087
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f6c29417b81a3e8c",
+        "text": "* Petmail by Brian Warner"
+      },
+      "id": "f6c29417b81a3e8c",
+      "type": "add",
+      "after": "dc4d671c4f8615e2",
+      "date": 1390951782595
+    },
+    {
+      "type": "edit",
+      "id": "f6c29417b81a3e8c",
+      "item": {
+        "type": "paragraph",
+        "id": "f6c29417b81a3e8c",
+        "text": "* Petmail by Brian Warner"
+      },
+      "date": 1390951785834
+    },
+    {
+      "type": "edit",
+      "id": "dc4d671c4f8615e2",
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker"
+      },
+      "date": 1390951794830
+    },
+    {
+      "type": "edit",
+      "id": "f6c29417b81a3e8c",
+      "item": {
+        "type": "paragraph",
+        "id": "f6c29417b81a3e8c",
+        "text": "* Petmail by Brian Warner"
+      },
+      "date": 1390951807150
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "86133f5c8a20f417",
+        "text": ""
+      },
+      "id": "86133f5c8a20f417",
+      "type": "add",
+      "after": "f6c29417b81a3e8c",
+      "date": 1390951807660
+    },
+    {
+      "type": "remove",
+      "id": "86133f5c8a20f417",
+      "date": 1390951817135
+    },
+    {
+      "type": "fork",
+      "site": "NDN_eirt0zybblbxjrenbgmrcvuav4dletgiio6th1yk3ifgtwwfdzaqbmcji2xs5mis",
+      "date": 1390951719665
+    },
+    {
+      "type": "edit",
+      "id": "82a628ebd0ebde71",
+      "item": {
+        "type": "paragraph",
+        "id": "82a628ebd0ebde71",
+        "text": "* [https://otr.cypherpunks.ca/ OTR] Off-The-Record -- originally by Nikita Borisov and Ian Goldberg"
+      },
+      "date": 1390951734910
+    },
+    {
+      "type": "edit",
+      "id": "f4a5c62781f6627b",
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* [https://pond.imperialviolet.org/ Pond] by Adam Langley"
+      },
+      "date": 1390951784502
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "3caac32715310934",
+        "text": "* TextSecure by Moxie Marlinspike & co. -- for smartphones, 2-party"
+      },
+      "after": "f6c29417b81a3e8c",
+      "id": "3caac32715310934",
+      "date": 1390951817354
+    },
+    {
+      "type": "edit",
+      "id": "f6c29417b81a3e8c",
+      "item": {
+        "type": "paragraph",
+        "id": "f6c29417b81a3e8c",
+        "text": "* [http://petmail.lothar.com/ Petmail] by Brian Warner"
+      },
+      "date": 1390951843324
+    },
+    {
+      "type": "edit",
+      "id": "3caac32715310934",
+      "item": {
+        "type": "paragraph",
+        "id": "3caac32715310934",
+        "text": "* [https://whispersystems.org/ TextSecure] by Moxie Marlinspike & co. -- for smartphones, 2-party"
+      },
+      "date": 1390951877458
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "5e8714994fe6dc10",
+        "text": "* \"mpOTR\" multiparty Off-The-Record -- for multiparty case. Not yet deployed?"
+      },
+      "after": "3caac32715310934",
+      "id": "5e8714994fe6dc10",
+      "date": 1390951886889
+    },
+    {
+      "type": "edit",
+      "id": "5e8714994fe6dc10",
+      "item": {
+        "type": "paragraph",
+        "id": "5e8714994fe6dc10",
+        "text": "* [https://github.com/DrWhax/mpOTR mpOTR] multiparty Off-The-Record -- for multiparty case. Not yet deployed?"
+      },
+      "date": 1390951914228
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* Pond by Adam Langley -- original use case was for having an affair with the head of the CIA"
+      },
+      "after": "f4a5c62781f6627b",
+      "id": "f4a5c62781f6627b",
+      "date": 1390951929575
+    },
+    {
+      "type": "edit",
+      "id": "f4a5c62781f6627b",
+      "item": {
+        "type": "paragraph",
+        "id": "f4a5c62781f6627b",
+        "text": "* [https://pond.imperialviolet.org/ Pond] "
+      },
+      "date": 1390951939235
+    },
+    {
+      "type": "remove",
+      "id": "f4a5c62781f6627b",
+      "date": 1390951942822
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker -- it has the property of reasonableness"
+      },
+      "after": "dc4d671c4f8615e2",
+      "id": "dc4d671c4f8615e2",
+      "date": 1390951955217
+    },
+    {
+      "type": "remove",
+      "id": "dc4d671c4f8615e2",
+      "date": 1390951959826
+    },
+    {
+      "type": "edit",
+      "id": "dc4d671c4f8615e2",
+      "item": {
+        "type": "paragraph",
+        "id": "dc4d671c4f8615e2",
+        "text": "* [https://github.com/kragen/prate Prate] by Kragen Sitaker -- it has the property of reasonableness"
+      },
+      "date": 1390951962649
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "f6c29417b81a3e8c",
+        "text": "* Petmail by Brian Warner -- not yet published? multiparty?"
+      },
+      "after": "f6c29417b81a3e8c",
+      "id": "f6c29417b81a3e8c",
+      "date": 1390951969923
+    },
+    {
+      "type": "remove",
+      "id": "f6c29417b81a3e8c",
+      "date": 1390951973999
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8674d354a1c441fb",
+        "text": ""
+      },
+      "id": "8674d354a1c441fb",
+      "type": "add",
+      "after": "5e8714994fe6dc10",
+      "date": 1390952008271
+    },
+    {
+      "type": "edit",
+      "id": "8674d354a1c441fb",
+      "item": {
+        "type": "paragraph",
+        "id": "8674d354a1c441fb",
+        "text": "bump"
+      },
+      "date": 1390952010328
+    },
+    {
+      "type": "remove",
+      "id": "8674d354a1c441fb",
+      "date": 1390952013084
+    },
+    {
+      "type": "fork",
+      "date": 1390952493100
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "title": "Secure Wik",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "2be032d4d46d2295",
+      "text": "There's quite a bit of conversation going on about various methods of securing Federated Wiki. What if our version control system helped?"
+    },
+    {
+      "type": "paragraph",
+      "id": "5f589a43e5d8345a",
+      "text": "Relevant discussions:"
+    },
+    {
+      "type": "paragraph",
+      "id": "f0a0eac81a771dac",
+      "text": "[https://github.com/fedwiki/wiki-node-server/issues/53#issuecomment-36519631 SSL/TLS Support]"
+    },
+    {
+      "id": "3b26d32b4224a04c",
+      "type": "reference",
+      "site": "smallest-federated-wiki.issues.fed.wiki.org",
+      "slug": "stories-about-security",
+      "title": "Stories About Security",
+      "text": "Those who have been following #385 will have spotted that we are heading towards what will potentially be a far more wide ranging discussion about what security means in a federated wiki."
+    },
+    {
+      "type": "pagefold",
+      "id": "b392bba5b4001469",
+      "text": "Ryan's Bias"
+    },
+    {
+      "type": "paragraph",
+      "id": "9c7eee0ea9c337ce",
+      "text": "Securing our data directly using cryptographic signatures for public content and data encryption for private content could allow us to breath a little easier, and avoid some of the headaches of SSL certificates. This is the security model assumed in [[NDN]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Secure Wik",
+        "story": []
+      },
+      "date": 1393972310144
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2be032d4d46d2295"
+      },
+      "id": "2be032d4d46d2295",
+      "type": "add",
+      "date": 1393972311323
+    },
+    {
+      "type": "edit",
+      "id": "2be032d4d46d2295",
+      "item": {
+        "type": "paragraph",
+        "id": "2be032d4d46d2295",
+        "text": "There's quite a bit of conversation going on about various methods of securing Federated Wiki. What if our version control system helped?"
+      },
+      "date": 1393972348765
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9c7eee0ea9c337ce",
+        "text": ""
+      },
+      "id": "9c7eee0ea9c337ce",
+      "type": "add",
+      "after": "2be032d4d46d2295",
+      "date": 1393972349283
+    },
+    {
+      "type": "edit",
+      "id": "9c7eee0ea9c337ce",
+      "item": {
+        "type": "paragraph",
+        "id": "9c7eee0ea9c337ce",
+        "text": "Securing our data directly using cryptographic signatures for public content and data encryption for private content could allow us to breath a little easier, and avoid some of the headaches of SSL certificates."
+      },
+      "date": 1393972558704
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5f589a43e5d8345a",
+        "text": ""
+      },
+      "id": "5f589a43e5d8345a",
+      "type": "add",
+      "after": "9c7eee0ea9c337ce",
+      "date": 1393972559224
+    },
+    {
+      "type": "edit",
+      "id": "5f589a43e5d8345a",
+      "item": {
+        "type": "paragraph",
+        "id": "5f589a43e5d8345a",
+        "text": "What are the se"
+      },
+      "date": 1393972567803
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "3b26d32b4224a04c",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "stories-about-security",
+        "title": "Stories About Security",
+        "text": "Those who have been following #385 will have spotted that we are heading towards what will potentially be a far more wide ranging discussion about what security means in a federated wiki."
+      },
+      "after": "9c7eee0ea9c337ce",
+      "id": "3b26d32b4224a04c",
+      "date": 1393972575163
+    },
+    {
+      "type": "move",
+      "order": [
+        "2be032d4d46d2295",
+        "9c7eee0ea9c337ce",
+        "5f589a43e5d8345a",
+        "3b26d32b4224a04c"
+      ],
+      "id": "5f589a43e5d8345a",
+      "date": 1393972579424
+    },
+    {
+      "type": "edit",
+      "id": "5f589a43e5d8345a",
+      "item": {
+        "type": "paragraph",
+        "id": "5f589a43e5d8345a",
+        "text": "Relevant discussions:"
+      },
+      "date": 1393972585893
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "44cdcacf807ce330",
+        "text": ""
+      },
+      "id": "44cdcacf807ce330",
+      "type": "add",
+      "after": "5f589a43e5d8345a",
+      "date": 1393972586407
+    },
+    {
+      "type": "remove",
+      "id": "44cdcacf807ce330",
+      "date": 1393972593970
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f0a0eac81a771dac",
+        "text": ""
+      },
+      "id": "f0a0eac81a771dac",
+      "type": "add",
+      "after": "5f589a43e5d8345a",
+      "date": 1393972606548
+    },
+    {
+      "type": "edit",
+      "id": "f0a0eac81a771dac",
+      "item": {
+        "type": "paragraph",
+        "id": "f0a0eac81a771dac",
+        "text": "[https://github.com/fedwiki/wiki-node-server/issues/53#issuecomment-36519631 SSL/TLS Support]"
+      },
+      "date": 1393972607641
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b392bba5b4001469"
+      },
+      "id": "b392bba5b4001469",
+      "type": "add",
+      "after": "3b26d32b4224a04c",
+      "date": 1393972613186
+    },
+    {
+      "type": "edit",
+      "id": "b392bba5b4001469",
+      "item": {
+        "type": "pagefold",
+        "id": "b392bba5b4001469",
+        "text": "Ryan's Bias"
+      },
+      "date": 1393972626798
+    },
+    {
+      "type": "move",
+      "order": [
+        "2be032d4d46d2295",
+        "5f589a43e5d8345a",
+        "f0a0eac81a771dac",
+        "3b26d32b4224a04c",
+        "b392bba5b4001469",
+        "9c7eee0ea9c337ce"
+      ],
+      "id": "9c7eee0ea9c337ce",
+      "date": 1393972628930
+    },
+    {
+      "type": "edit",
+      "id": "9c7eee0ea9c337ce",
+      "item": {
+        "type": "paragraph",
+        "id": "9c7eee0ea9c337ce",
+        "text": "Securing our data directly using cryptographic signatures for public content and data encryption for private content could allow us to breath a little easier, and avoid some of the headaches of SSL certificates. This is the security model assumed in [[Named Data Networking]]"
+      },
+      "date": 1393972664833
+    },
+    {
+      "type": "edit",
+      "id": "9c7eee0ea9c337ce",
+      "item": {
+        "type": "paragraph",
+        "id": "9c7eee0ea9c337ce",
+        "text": "Securing our data directly using cryptographic signatures for public content and data encryption for private content could allow us to breath a little easier, and avoid some of the headaches of SSL certificates. This is the security model assumed in [[NDN]]"
+      },
+      "date": 1393972673301
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "dec00bc3736459ee",
+        "text": ""
+      },
+      "id": "dec00bc3736459ee",
+      "type": "add",
+      "after": "9c7eee0ea9c337ce",
+      "date": 1393972722682
+    },
+    {
+      "type": "remove",
+      "id": "dec00bc3736459ee",
+      "date": 1393972731072
+    }
+  ]
+}

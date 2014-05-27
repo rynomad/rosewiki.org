@@ -1,0 +1,180 @@
+{
+  "title": "Worker Transport",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f5bb880ce27191c0",
+      "text": "Constructing a worker transport class to send NDN data through threads using structured cloning."
+    },
+    {
+      "type": "paragraph",
+      "id": "1b8a724b349bf2d8",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "9f985ca50d7f3a57",
+      "text": "Ready made solution: [http://stackoverflow.com/questions/14191394/web-workers-communication-using-messagechannel-html5 MessageChannel API] should be relatively trivial to impliment an gives us a reliable way to communicate horizontally between workers (both dedicated and shared)"
+    },
+    {
+      "type": "paragraph",
+      "id": "1f16258f55aa0f54",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Worker Transport",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1390860393574,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f5bb880ce27191c0"
+      },
+      "id": "f5bb880ce27191c0",
+      "type": "add",
+      "date": 1390860394865
+    },
+    {
+      "type": "edit",
+      "id": "f5bb880ce27191c0",
+      "item": {
+        "type": "paragraph",
+        "id": "f5bb880ce27191c0",
+        "text": "Constructing a worker transport class to send NDN data through threads using structured cloning."
+      },
+      "date": 1390860549796
+    },
+    {
+      "type": "edit",
+      "id": "1b8a724b349bf2d8",
+      "item": {
+        "type": "paragraph",
+        "id": "1b8a724b349bf2d8",
+        "text": " "
+      },
+      "date": 1390860549972
+    },
+    {
+      "type": "remove",
+      "id": "c7954e6df3369b30",
+      "date": 1390860549983
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1b8a724b349bf2d8",
+        "text": " "
+      },
+      "id": "1b8a724b349bf2d8",
+      "type": "add",
+      "after": "f5bb880ce27191c0",
+      "date": 1390860550310
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c7954e6df3369b30",
+        "text": ""
+      },
+      "id": "c7954e6df3369b30",
+      "type": "add",
+      "after": "1b8a724b349bf2d8",
+      "date": 1390860550480
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9f985ca50d7f3a57",
+        "text": ""
+      },
+      "id": "9f985ca50d7f3a57",
+      "type": "add",
+      "after": "1b8a724b349bf2d8",
+      "date": 1390860550529
+    },
+    {
+      "type": "edit",
+      "id": "9f985ca50d7f3a57",
+      "item": {
+        "type": "paragraph",
+        "id": "9f985ca50d7f3a57",
+        "text": "we may need two transports for this case one upward calling self.postMessage, and one downward calling <worker>.postMessage"
+      },
+      "date": 1390860736605
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1f16258f55aa0f54",
+        "text": ""
+      },
+      "id": "1f16258f55aa0f54",
+      "type": "add",
+      "after": "9f985ca50d7f3a57",
+      "date": 1390860737118
+    },
+    {
+      "type": "remove",
+      "id": "1f16258f55aa0f54",
+      "date": 1390860738124
+    },
+    {
+      "type": "edit",
+      "id": "9f985ca50d7f3a57",
+      "item": {
+        "type": "paragraph",
+        "id": "9f985ca50d7f3a57",
+        "text": "Ready made solution: [MessageChannel API]"
+      },
+      "date": 1391016241101
+    },
+    {
+      "type": "edit",
+      "id": "9f985ca50d7f3a57",
+      "item": {
+        "type": "paragraph",
+        "id": "9f985ca50d7f3a57",
+        "text": "Ready made solution: [http://stackoverflow.com/questions/14191394/web-workers-communication-using-messagechannel-html5 MessageChannel API]"
+      },
+      "date": 1391016280045
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "93216422a06b45e0",
+        "text": ""
+      },
+      "id": "93216422a06b45e0",
+      "type": "add",
+      "after": "9f985ca50d7f3a57",
+      "date": 1391016285504
+    },
+    {
+      "type": "remove",
+      "id": "93216422a06b45e0",
+      "date": 1391016286008
+    },
+    {
+      "type": "edit",
+      "id": "9f985ca50d7f3a57",
+      "item": {
+        "type": "paragraph",
+        "id": "9f985ca50d7f3a57",
+        "text": "Ready made solution: [http://stackoverflow.com/questions/14191394/web-workers-communication-using-messagechannel-html5 MessageChannel API] should be relatively trivial to impliment an gives us a reliable way to communicate horizontally between workers (both dedicated and shared)"
+      },
+      "date": 1391016360247
+    },
+    {
+      "type": "fork",
+      "date": 1391019274019
+    }
+  ]
+}

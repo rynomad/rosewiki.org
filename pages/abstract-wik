@@ -1,0 +1,75 @@
+{
+  "title": "Abstract Wik",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "82f9c88a285913d2",
+      "text": "If we're going to go through the trouble of building a new DVCS, we should probably modularize it away from our current wiki implementation, allowing both for other applications to be build on top, and other transport protocols to be used on bottom (hint hint, [[NDN]]; [[Telehash]])"
+    },
+    {
+      "type": "paragraph",
+      "id": "a1defdd466012502",
+      "text": "So let's define a good [[Wik API]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Abstract Wik",
+        "story": []
+      },
+      "date": 1393888798778
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "82f9c88a285913d2"
+      },
+      "id": "82f9c88a285913d2",
+      "type": "add",
+      "date": 1393888800676
+    },
+    {
+      "type": "edit",
+      "id": "82f9c88a285913d2",
+      "item": {
+        "type": "paragraph",
+        "id": "82f9c88a285913d2",
+        "text": "If we're going to go through the trouble of building a new DVCS, we should probably modularize it away from our current wiki implementation, allowing both for other applications to be build on top, and other transport protocols to be used on bottom (hint hint, [[NDN]])"
+      },
+      "date": 1393888961413
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a1defdd466012502",
+        "text": ""
+      },
+      "id": "a1defdd466012502",
+      "type": "add",
+      "after": "82f9c88a285913d2",
+      "date": 1393888961930
+    },
+    {
+      "type": "edit",
+      "id": "a1defdd466012502",
+      "item": {
+        "type": "paragraph",
+        "id": "a1defdd466012502",
+        "text": "So let's define a good [[Wik API]]"
+      },
+      "date": 1393888993040
+    },
+    {
+      "type": "edit",
+      "id": "82f9c88a285913d2",
+      "item": {
+        "type": "paragraph",
+        "id": "82f9c88a285913d2",
+        "text": "If we're going to go through the trouble of building a new DVCS, we should probably modularize it away from our current wiki implementation, allowing both for other applications to be build on top, and other transport protocols to be used on bottom (hint hint, [[NDN]]; [[Telehash]])"
+      },
+      "date": 1393983973810
+    }
+  ]
+}

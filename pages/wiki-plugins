@@ -1,0 +1,81 @@
+{
+  "title": "wiki plugins",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "2ddb9c7209aa8da7",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "1192355a5a4bc8ff",
+      "text": "Some "
+    },
+    {
+      "type": "paragraph",
+      "id": "6a8cde778bd82128",
+      "text": "[[About GoFish Plugin]] -"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "wiki plugins",
+        "story": []
+      },
+      "date": 1387260097732
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2ddb9c7209aa8da7"
+      },
+      "id": "2ddb9c7209aa8da7",
+      "type": "add",
+      "date": 1387260099072
+    },
+    {
+      "type": "edit",
+      "id": "2ddb9c7209aa8da7",
+      "item": {
+        "type": "paragraph",
+        "id": "2ddb9c7209aa8da7",
+        "text": " "
+      },
+      "date": 1387260111397
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6a8cde778bd82128",
+        "text": "[[About GoFish Plugin]] -"
+      },
+      "id": "6a8cde778bd82128",
+      "type": "add",
+      "after": "2ddb9c7209aa8da7",
+      "date": 1387260111904
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1192355a5a4bc8ff",
+        "text": ""
+      },
+      "id": "1192355a5a4bc8ff",
+      "type": "add",
+      "after": "2ddb9c7209aa8da7",
+      "date": 1387260111909
+    },
+    {
+      "type": "edit",
+      "id": "1192355a5a4bc8ff",
+      "item": {
+        "type": "paragraph",
+        "id": "1192355a5a4bc8ff",
+        "text": "Some "
+      },
+      "date": 1387260117239
+    }
+  ]
+}

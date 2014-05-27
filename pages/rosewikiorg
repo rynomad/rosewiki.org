@@ -1,0 +1,229 @@
+{
+  "title": "rosewiki.org",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "2475f26fa698704f",
+      "text": "Ryan Bennett is developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+    },
+    {
+      "type": "reference",
+      "id": "74f38a68afbaed59",
+      "site": "rosewiki.org",
+      "slug": "ryan-bennett",
+      "title": "Ryan Bennett",
+      "text": "Currently developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+    },
+    {
+      "type": "pagefold",
+      "id": "f784982596466730",
+      "text": "Sites I watch"
+    },
+    {
+      "type": "paragraph",
+      "id": "54ee68b5f2cd3768",
+      "text": "[wiki://sites.fed.wiki.org sites.fed.wiki.org] - index ahoy!"
+    },
+    {
+      "type": "paragraph",
+      "id": "251d03e7deccfdba",
+      "text": "[wiki://ward.fed.wiki.org ward.fed.wiki.org] - Federated Wiki"
+    },
+    {
+      "type": "paragraph",
+      "id": "268a5452eb154150",
+      "text": "[wiki://yala.fed.wiki.org yala.fed.wiki.org] Jon Richter, great notes on wiki stuff"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "rosewiki.org",
+        "story": []
+      },
+      "date": 1386816936670
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "74f38a68afbaed59"
+      },
+      "id": "74f38a68afbaed59",
+      "type": "add",
+      "date": 1386816941203
+    },
+    {
+      "type": "edit",
+      "id": "74f38a68afbaed59",
+      "item": {
+        "type": "reference",
+        "id": "74f38a68afbaed59",
+        "site": "rosewiki.org",
+        "slug": "ryan-bennett",
+        "title": "Ryan Bennett",
+        "text": "Currently developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+      },
+      "date": 1386816953001
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2475f26fa698704f"
+      },
+      "id": "2475f26fa698704f",
+      "type": "add",
+      "after": "74f38a68afbaed59",
+      "date": 1386816974111
+    },
+    {
+      "type": "edit",
+      "id": "2475f26fa698704f",
+      "item": {
+        "type": "paragraph",
+        "id": "2475f26fa698704f",
+        "text": "Ryan Bennett "
+      },
+      "date": 1386817015611
+    },
+    {
+      "type": "edit",
+      "id": "2475f26fa698704f",
+      "item": {
+        "type": "paragraph",
+        "id": "2475f26fa698704f",
+        "text": "Ryan Bennett is developing [[NDN Wiki]], building [[NDN Browserkit]] as a modular piece for other NDN apps."
+      },
+      "date": 1386817083338
+    },
+    {
+      "type": "move",
+      "order": [
+        "2475f26fa698704f",
+        "74f38a68afbaed59"
+      ],
+      "id": "2475f26fa698704f",
+      "date": 1386817086508
+    },
+    {
+      "type": "fork",
+      "site": "sites.fed.wiki.org",
+      "date": 1386971733750
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f784982596466730"
+      },
+      "id": "f784982596466730",
+      "type": "add",
+      "after": "74f38a68afbaed59",
+      "date": 1386971733750
+    },
+    {
+      "type": "edit",
+      "id": "f784982596466730",
+      "item": {
+        "type": "pagefold",
+        "id": "f784982596466730",
+        "text": "Sites I watch"
+      },
+      "date": 1386971755509
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "54ee68b5f2cd3768"
+      },
+      "id": "54ee68b5f2cd3768",
+      "type": "add",
+      "after": "f784982596466730",
+      "date": 1386971764076
+    },
+    {
+      "type": "edit",
+      "id": "54ee68b5f2cd3768",
+      "item": {
+        "type": "paragraph",
+        "id": "54ee68b5f2cd3768",
+        "text": "[wiki://sites.fed.wiki.org sites.fed.wiki.org]"
+      },
+      "date": 1386971778542
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "251d03e7deccfdba"
+      },
+      "id": "251d03e7deccfdba",
+      "type": "add",
+      "after": "54ee68b5f2cd3768",
+      "date": 1386971782605
+    },
+    {
+      "type": "edit",
+      "id": "54ee68b5f2cd3768",
+      "item": {
+        "type": "paragraph",
+        "id": "54ee68b5f2cd3768",
+        "text": "[wiki://sites.fed.wiki.org sites.fed.wiki.org] - index ahoy!"
+      },
+      "date": 1386971791917
+    },
+    {
+      "type": "edit",
+      "id": "251d03e7deccfdba",
+      "item": {
+        "type": "paragraph",
+        "id": "251d03e7deccfdba",
+        "text": "[wiki://ward.fed.wiki.org ward.fed.wiki.org]"
+      },
+      "date": 1386971835542
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "268a5452eb154150",
+        "text": " "
+      },
+      "id": "268a5452eb154150",
+      "type": "add",
+      "after": "251d03e7deccfdba",
+      "date": 1386971836062
+    },
+    {
+      "type": "edit",
+      "id": "268a5452eb154150",
+      "item": {
+        "type": "paragraph",
+        "id": "268a5452eb154150",
+        "text": "[wiki://yala.fed.wiki.org yala.fed.wiki.org] "
+      },
+      "date": 1386971865464
+    },
+    {
+      "type": "edit",
+      "id": "268a5452eb154150",
+      "item": {
+        "type": "paragraph",
+        "id": "268a5452eb154150",
+        "text": "[wiki://yala.fed.wiki.org yala.fed.wiki.org] Jon Richter, great notes on wiki stuff"
+      },
+      "date": 1386971895257
+    },
+    {
+      "type": "edit",
+      "id": "251d03e7deccfdba",
+      "item": {
+        "type": "paragraph",
+        "id": "251d03e7deccfdba",
+        "text": "[wiki://ward.fed.wiki.org ward.fed.wiki.org] - Federated Wiki"
+      },
+      "date": 1386971952495
+    },
+    {
+      "type": "fork",
+      "date": 1387230355304
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "What is Maximizing act consequentialism?",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d3aae2b873728aa9",
+      "text": "An action is morally permissible [[iff]] it's consequences are maximally morally good"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "What is Maximizing act consequentialism?",
+        "story": []
+      },
+      "date": 1391015328057
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d3aae2b873728aa9"
+      },
+      "id": "d3aae2b873728aa9",
+      "type": "add",
+      "date": 1391015329229
+    },
+    {
+      "type": "edit",
+      "id": "d3aae2b873728aa9",
+      "item": {
+        "type": "paragraph",
+        "id": "d3aae2b873728aa9",
+        "text": "An action is morally permissible [[iff]]"
+      },
+      "date": 1391015340595
+    },
+    {
+      "type": "edit",
+      "id": "d3aae2b873728aa9",
+      "item": {
+        "type": "paragraph",
+        "id": "d3aae2b873728aa9",
+        "text": "An action is morally permissible [[iff]] it's consequences are maximally morally good"
+      },
+      "date": 1391015393151
+    }
+  ]
+}

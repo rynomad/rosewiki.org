@@ -1,0 +1,65 @@
+{
+  "title": "Why WIK is the best name for a DVCS ever",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "ab9460f4e4ccfa6d",
+      "text": "Stepping out of strict objectivism, I think this is a cool name because:"
+    },
+    {
+      "type": "paragraph",
+      "id": "a718c41151b71525",
+      "text": "It's a reverse singular of Wiki ()"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Why WIK is the best name for a DVCS ever",
+        "story": []
+      },
+      "date": 1393884912218
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ab9460f4e4ccfa6d"
+      },
+      "id": "ab9460f4e4ccfa6d",
+      "type": "add",
+      "date": 1393884913971
+    },
+    {
+      "type": "edit",
+      "id": "ab9460f4e4ccfa6d",
+      "item": {
+        "type": "paragraph",
+        "id": "ab9460f4e4ccfa6d",
+        "text": "Stepping out of strict objectivism, I think this is a cool name because:"
+      },
+      "date": 1393884953319
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a718c41151b71525",
+        "text": ""
+      },
+      "id": "a718c41151b71525",
+      "type": "add",
+      "after": "ab9460f4e4ccfa6d",
+      "date": 1393884953837
+    },
+    {
+      "type": "edit",
+      "id": "a718c41151b71525",
+      "item": {
+        "type": "paragraph",
+        "id": "a718c41151b71525",
+        "text": "It's a reverse singular of Wiki ()"
+      },
+      "date": 1393884976216
+    }
+  ]
+}

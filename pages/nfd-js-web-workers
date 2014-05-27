@@ -1,0 +1,622 @@
+{
+  "title": "NFD-js Web Workers",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "8522ab118e437b95",
+      "text": "HTML5 Web Workers allow multi-threaded apps in the browser."
+    },
+    {
+      "type": "paragraph",
+      "id": "776210c893f1e878",
+      "text": "This page outlines the thread structure of [[NFD-js]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "dc556216faeda8fb",
+      "text": "For an exploration of thread managment at a higher level, see the worker management section in [[NFD-js Component Modules]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "0877e25f52b7ed91",
+      "text": "Main (UI) Thread"
+    },
+    {
+      "type": "paragraph",
+      "id": "a93fbe3206d06c96",
+      "text": "Though we desire that as little code be executed in the main thread as possible, the limited scope of Webworkers imposes upon us the need to keep some functions and handlers in userspace:"
+    },
+    {
+      "type": "paragraph",
+      "id": "0a43b45081222e05",
+      "text": "- WebRTC Peerconnections are defined as properties of the window object."
+    },
+    {
+      "type": "paragraph",
+      "id": "76fb45f2fa016e30",
+      "text": "- Forge (used for generation of public and private keys) references the window object. So keys must be generated once and passed into the daemon for persistence (this will necessitate some creative signaling to evaluate the presence of a keypair in the lower thread and generate only when necessary)"
+    },
+    {
+      "type": "pagefold",
+      "id": "7c93e113e76ad390",
+      "text": "NFD thread"
+    },
+    {
+      "type": "paragraph",
+      "id": "1565dec555f9add6",
+      "text": "The main forwarding plane will exist in its own thread, managing multiple facades on the upstream interfaces representing each peerconnection. This will require a [[Worker Transport]] class for use with the [[NDN-js]] Face constructor "
+    },
+    {
+      "type": "paragraph",
+      "id": "38d705293fe6d98c",
+      "text": "The forwarder interperets and forwards Interest and Data packets according to FIB/PIT lookup and interacts with the cache."
+    },
+    {
+      "type": "paragraph",
+      "id": "3802308f1494d99a",
+      "text": "Since the PIT, FIB and cache will potentially hold very large data sets upon which lookups may be computationally expensive compared to the actual forwarding, we will place the PIT, FIB and cache each within their own discreet sub worker and consult them asynchronously"
+    },
+    {
+      "type": "paragraph",
+      "id": "29006382495ea824",
+      "text": "We also require two additional subworkers: One to hold the IndexedDB for the repository, and one to manage content verification, which is very computationaly intensive "
+    },
+    {
+      "type": "pagefold",
+      "id": "48405310b50ff25c",
+      "text": "NFD Sub workers"
+    },
+    {
+      "type": "paragraph",
+      "id": "dde77043097b72f3",
+      "text": "[[Verifier]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "42d83d1d2401bad6",
+      "text": "[[Repository]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "df10c5373a8427c6",
+      "text": "[[PIT]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "a1f445c3e8e23637",
+      "text": "[[FIB]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "d1e9db1d364ac791",
+      "text": "[[Cache]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NFD-js Web Workers",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1390858957087,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8522ab118e437b95"
+      },
+      "id": "8522ab118e437b95",
+      "type": "add",
+      "date": 1390858958497
+    },
+    {
+      "type": "edit",
+      "id": "8522ab118e437b95",
+      "item": {
+        "type": "paragraph",
+        "id": "8522ab118e437b95",
+        "text": "HTML5 Web Workers allow multi-threaded apps in the browser."
+      },
+      "date": 1390858985068
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "776210c893f1e878",
+        "text": ""
+      },
+      "id": "776210c893f1e878",
+      "type": "add",
+      "after": "8522ab118e437b95",
+      "date": 1390858985575
+    },
+    {
+      "type": "edit",
+      "id": "776210c893f1e878",
+      "item": {
+        "type": "paragraph",
+        "id": "776210c893f1e878",
+        "text": "This page outlines the thread structure of [[NFD-js]]"
+      },
+      "date": 1390859045768
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0877e25f52b7ed91"
+      },
+      "id": "0877e25f52b7ed91",
+      "type": "add",
+      "after": "776210c893f1e878",
+      "date": 1390859047173
+    },
+    {
+      "type": "edit",
+      "id": "0877e25f52b7ed91",
+      "item": {
+        "type": "pagefold",
+        "id": "0877e25f52b7ed91",
+        "text": "Main (UI) Thread"
+      },
+      "date": 1390859058142
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a93fbe3206d06c96"
+      },
+      "id": "a93fbe3206d06c96",
+      "type": "add",
+      "after": "0877e25f52b7ed91",
+      "date": 1390859059099
+    },
+    {
+      "type": "edit",
+      "id": "a93fbe3206d06c96",
+      "item": {
+        "type": "paragraph",
+        "id": "a93fbe3206d06c96",
+        "text": "Though we desire that as little code be executed in the main thread as possible, the limited scope of Webworkers imposes upon us the need to keep some functions and handlers in userspace."
+      },
+      "date": 1390859159382
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7c93e113e76ad390"
+      },
+      "id": "7c93e113e76ad390",
+      "type": "add",
+      "after": "a93fbe3206d06c96",
+      "date": 1390859161653
+    },
+    {
+      "type": "edit",
+      "id": "7c93e113e76ad390",
+      "item": {
+        "type": "pagefold",
+        "id": "7c93e113e76ad390",
+        "text": "NFD thread"
+      },
+      "date": 1390859211387
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0a43b45081222e05",
+        "text": ""
+      },
+      "id": "0a43b45081222e05",
+      "type": "add",
+      "after": "a93fbe3206d06c96",
+      "date": 1390859216478
+    },
+    {
+      "type": "edit",
+      "id": "0a43b45081222e05",
+      "item": {
+        "type": "paragraph",
+        "id": "0a43b45081222e05",
+        "text": "- "
+      },
+      "date": 1390859219526
+    },
+    {
+      "type": "edit",
+      "id": "a93fbe3206d06c96",
+      "item": {
+        "type": "paragraph",
+        "id": "a93fbe3206d06c96",
+        "text": "Though we desire that as little code be executed in the main thread as possible, the limited scope of Webworkers imposes upon us the need to keep some functions and handlers in userspace:"
+      },
+      "date": 1390859222166
+    },
+    {
+      "type": "edit",
+      "id": "0a43b45081222e05",
+      "item": {
+        "type": "paragraph",
+        "id": "0a43b45081222e05",
+        "text": "- WebRTC Peerconnections are defined as properties of the window object."
+      },
+      "date": 1390859280125
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "76fb45f2fa016e30",
+        "text": ""
+      },
+      "id": "76fb45f2fa016e30",
+      "type": "add",
+      "after": "0a43b45081222e05",
+      "date": 1390859280640
+    },
+    {
+      "type": "edit",
+      "id": "76fb45f2fa016e30",
+      "item": {
+        "type": "paragraph",
+        "id": "76fb45f2fa016e30",
+        "text": "- Forge (used for generation of public and private keys) references the window object. So keys must be generated once and passed into the daemon for persistence"
+      },
+      "date": 1390859357600
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "903d1317475d35db",
+        "text": ""
+      },
+      "id": "903d1317475d35db",
+      "type": "add",
+      "after": "76fb45f2fa016e30",
+      "date": 1390859358112
+    },
+    {
+      "type": "edit",
+      "id": "903d1317475d35db",
+      "item": {
+        "type": "paragraph",
+        "id": "903d1317475d35db",
+        "text": "-"
+      },
+      "date": 1390859364933
+    },
+    {
+      "type": "edit",
+      "id": "76fb45f2fa016e30",
+      "item": {
+        "type": "paragraph",
+        "id": "76fb45f2fa016e30",
+        "text": "- Forge (used for generation of public and private keys) references the window object. So keys must be generated once and passed into the daemon for persistence (this will necessitate some creative signaling to evaluate the presence of a keypair in the lower thread and generate only when necessary)"
+      },
+      "date": 1390859404554
+    },
+    {
+      "type": "remove",
+      "id": "903d1317475d35db",
+      "date": 1390859413883
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1565dec555f9add6"
+      },
+      "id": "1565dec555f9add6",
+      "type": "add",
+      "after": "7c93e113e76ad390",
+      "date": 1390859428470
+    },
+    {
+      "type": "edit",
+      "id": "1565dec555f9add6",
+      "item": {
+        "type": "paragraph",
+        "id": "1565dec555f9add6",
+        "text": "The main forwarding plane will exist in its own thread, managing "
+      },
+      "date": 1390859476340
+    },
+    {
+      "type": "edit",
+      "id": "1565dec555f9add6",
+      "item": {
+        "type": "paragraph",
+        "id": "1565dec555f9add6",
+        "text": "The main forwarding plane will exist in its own thread, managing multiple facades on the upstream interfaces representing each peerconneciton. This will require a [[Worker Transport]] class for use with the [[NDN-js]] Face constructor "
+      },
+      "date": 1390859541297
+    },
+    {
+      "type": "edit",
+      "id": "1565dec555f9add6",
+      "item": {
+        "type": "paragraph",
+        "id": "1565dec555f9add6",
+        "text": "The main forwarding plane will exist in its own thread, managing multiple facades on the upstream interfaces representing each peerconnection. This will require a [[Worker Transport]] class for use with the [[NDN-js]] Face constructor "
+      },
+      "date": 1390859563013
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "38d705293fe6d98c",
+        "text": ""
+      },
+      "id": "38d705293fe6d98c",
+      "type": "add",
+      "after": "1565dec555f9add6",
+      "date": 1390859585156
+    },
+    {
+      "type": "edit",
+      "id": "38d705293fe6d98c",
+      "item": {
+        "type": "paragraph",
+        "id": "38d705293fe6d98c",
+        "text": "The forwarder interperets and forwards Interest and Data packets according to FIB/PIT lookup"
+      },
+      "date": 1390859633719
+    },
+    {
+      "type": "edit",
+      "id": "38d705293fe6d98c",
+      "item": {
+        "type": "paragraph",
+        "id": "38d705293fe6d98c",
+        "text": "The forwarder interperets and forwards Interest and Data packets according to FIB/PIT lookup and interacts with the cache."
+      },
+      "date": 1390859646520
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "3802308f1494d99a",
+        "text": ""
+      },
+      "id": "3802308f1494d99a",
+      "type": "add",
+      "after": "38d705293fe6d98c",
+      "date": 1390859647032
+    },
+    {
+      "type": "edit",
+      "id": "3802308f1494d99a",
+      "item": {
+        "type": "paragraph",
+        "id": "3802308f1494d99a",
+        "text": "Since the PIT and cache will potentially hold very large data sets upon which lookups may be computationally expensive compared to the actual forwarding, we will place the PIT and cache each within their own discreet sub worker and consult them asynchronously"
+      },
+      "date": 1390859828324
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8bf97cb7d80fd29b",
+        "text": ""
+      },
+      "id": "8bf97cb7d80fd29b",
+      "type": "add",
+      "after": "3802308f1494d99a",
+      "date": 1390859828834
+    },
+    {
+      "type": "remove",
+      "id": "8bf97cb7d80fd29b",
+      "date": 1390859829790
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "29006382495ea824"
+      },
+      "id": "29006382495ea824",
+      "type": "add",
+      "after": "3802308f1494d99a",
+      "date": 1390859832827
+    },
+    {
+      "type": "edit",
+      "id": "29006382495ea824",
+      "item": {
+        "type": "paragraph",
+        "id": "29006382495ea824",
+        "text": "We also require two additional subworkers: One to hold the IndexedDB for the repository, and one to manage content verification, which is very computationaly intensive "
+      },
+      "date": 1390860017384
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "48405310b50ff25c"
+      },
+      "id": "48405310b50ff25c",
+      "type": "add",
+      "after": "29006382495ea824",
+      "date": 1390860021207
+    },
+    {
+      "type": "edit",
+      "id": "48405310b50ff25c",
+      "item": {
+        "type": "pagefold",
+        "id": "48405310b50ff25c",
+        "text": "NFD Sub workers"
+      },
+      "date": 1390860032042
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dde77043097b72f3"
+      },
+      "id": "dde77043097b72f3",
+      "type": "add",
+      "after": "48405310b50ff25c",
+      "date": 1390860035714
+    },
+    {
+      "type": "edit",
+      "id": "dde77043097b72f3",
+      "item": {
+        "type": "paragraph",
+        "id": "dde77043097b72f3",
+        "text": "[[Verifier]]"
+      },
+      "date": 1390860156811
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "42d83d1d2401bad6",
+        "text": ""
+      },
+      "id": "42d83d1d2401bad6",
+      "type": "add",
+      "after": "dde77043097b72f3",
+      "date": 1390860157325
+    },
+    {
+      "type": "edit",
+      "id": "42d83d1d2401bad6",
+      "item": {
+        "type": "paragraph",
+        "id": "42d83d1d2401bad6",
+        "text": "[[]]"
+      },
+      "date": 1390860189533
+    },
+    {
+      "type": "edit",
+      "id": "42d83d1d2401bad6",
+      "item": {
+        "type": "paragraph",
+        "id": "42d83d1d2401bad6",
+        "text": "[[Repository]]"
+      },
+      "date": 1390860270739
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "df10c5373a8427c6",
+        "text": ""
+      },
+      "id": "df10c5373a8427c6",
+      "type": "add",
+      "after": "42d83d1d2401bad6",
+      "date": 1390860271253
+    },
+    {
+      "type": "edit",
+      "id": "df10c5373a8427c6",
+      "item": {
+        "type": "paragraph",
+        "id": "df10c5373a8427c6",
+        "text": "[[PIT]]"
+      },
+      "date": 1390860313488
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a1f445c3e8e23637",
+        "text": ""
+      },
+      "id": "a1f445c3e8e23637",
+      "type": "add",
+      "after": "df10c5373a8427c6",
+      "date": 1390860314002
+    },
+    {
+      "type": "edit",
+      "id": "a1f445c3e8e23637",
+      "item": {
+        "type": "paragraph",
+        "id": "a1f445c3e8e23637",
+        "text": "[[]]"
+      },
+      "date": 1390860320560
+    },
+    {
+      "type": "edit",
+      "id": "3802308f1494d99a",
+      "item": {
+        "type": "paragraph",
+        "id": "3802308f1494d99a",
+        "text": "Since the PIT, FIB and cache will potentially hold very large data sets upon which lookups may be computationally expensive compared to the actual forwarding, we will place the PIT, FIB and cache each within their own discreet sub worker and consult them asynchronously"
+      },
+      "date": 1390860330616
+    },
+    {
+      "type": "edit",
+      "id": "a1f445c3e8e23637",
+      "item": {
+        "type": "paragraph",
+        "id": "a1f445c3e8e23637",
+        "text": "[[FIB]]"
+      },
+      "date": 1390860379461
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d1e9db1d364ac791",
+        "text": ""
+      },
+      "id": "d1e9db1d364ac791",
+      "type": "add",
+      "after": "a1f445c3e8e23637",
+      "date": 1390860379974
+    },
+    {
+      "type": "edit",
+      "id": "d1e9db1d364ac791",
+      "item": {
+        "type": "paragraph",
+        "id": "d1e9db1d364ac791",
+        "text": "[[Cache]]"
+      },
+      "date": 1390860385010
+    },
+    {
+      "type": "edit",
+      "id": "776210c893f1e878",
+      "item": {
+        "type": "paragraph",
+        "id": "776210c893f1e878",
+        "text": "This page outlines the thread structure of [[NFD-js]]."
+      },
+      "date": 1390861839677
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "dc556216faeda8fb",
+        "text": ""
+      },
+      "id": "dc556216faeda8fb",
+      "type": "add",
+      "after": "776210c893f1e878",
+      "date": 1390861840189
+    },
+    {
+      "type": "edit",
+      "id": "dc556216faeda8fb",
+      "item": {
+        "type": "paragraph",
+        "id": "dc556216faeda8fb",
+        "text": "For an exploration of thread managment at a higher level, see the worker management section in [[NFD-js Component Modules]]"
+      },
+      "date": 1390861878712
+    },
+    {
+      "type": "fork",
+      "date": 1390864239924
+    }
+  ]
+}

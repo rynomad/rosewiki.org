@@ -1,0 +1,105 @@
+{
+  "title": "WIK Etymology",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f8ddd571137a6264",
+      "text": "WIK, analogous to 'wick,' the action of drawing up a fluid, commonly fuel to be burned, and suggests a method of drawing relevant information from diverse sources in a way that sheds more light than heat (as opposed to setting flame to a bottle of kerosene)."
+    },
+    {
+      "type": "paragraph",
+      "id": "9ad23fd331117b13",
+      "text": "wik, the reverse singular of wiki (eg \"My Wiki currently contains about thirty wik's\")"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "WIK Etymology",
+        "story": []
+      },
+      "date": 1393884986260
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f8ddd571137a6264"
+      },
+      "id": "f8ddd571137a6264",
+      "type": "add",
+      "date": 1393884987255
+    },
+    {
+      "type": "edit",
+      "id": "f8ddd571137a6264",
+      "item": {
+        "type": "paragraph",
+        "id": "f8ddd571137a6264",
+        "text": "WIK, analagous to 'wick,' the action of drawing up a fluid, commonly fuel to be burned, "
+      },
+      "date": 1393885039830
+    },
+    {
+      "type": "edit",
+      "id": "f8ddd571137a6264",
+      "item": {
+        "type": "paragraph",
+        "id": "f8ddd571137a6264",
+        "text": "WIK, analagous to 'wick,' the action of drawing up a fluid, commonly fuel to be burned, suggests a method of drawing relevant information from diverse sources in a way that sheds more light than heat."
+      },
+      "date": 1393885095931
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9ad23fd331117b13",
+        "text": ""
+      },
+      "id": "9ad23fd331117b13",
+      "type": "add",
+      "after": "f8ddd571137a6264",
+      "date": 1393885096446
+    },
+    {
+      "type": "edit",
+      "id": "9ad23fd331117b13",
+      "item": {
+        "type": "paragraph",
+        "id": "9ad23fd331117b13",
+        "text": "Wik, the reverse singular of wiki (eg \"My Wiki currently contains about thirty wik's\")"
+      },
+      "date": 1393885157318
+    },
+    {
+      "type": "edit",
+      "id": "f8ddd571137a6264",
+      "item": {
+        "type": "paragraph",
+        "id": "f8ddd571137a6264",
+        "text": "WIK, analogous to 'wick,' the action of drawing up a fluid, commonly fuel to be burned, and suggests a method of drawing relevant information from diverse sources in a way that sheds more light than heat (as would happen if you set flame to a bottle of kerosene)."
+      },
+      "date": 1393885218867
+    },
+    {
+      "type": "edit",
+      "id": "f8ddd571137a6264",
+      "item": {
+        "type": "paragraph",
+        "id": "f8ddd571137a6264",
+        "text": "WIK, analogous to 'wick,' the action of drawing up a fluid, commonly fuel to be burned, and suggests a method of drawing relevant information from diverse sources in a way that sheds more light than heat (as opposed to setting flame to a bottle of kerosene)."
+      },
+      "date": 1393885373739
+    },
+    {
+      "type": "edit",
+      "id": "9ad23fd331117b13",
+      "item": {
+        "type": "paragraph",
+        "id": "9ad23fd331117b13",
+        "text": "wik, the reverse singular of wiki (eg \"My Wiki currently contains about thirty wik's\")"
+      },
+      "date": 1394734270150
+    }
+  ]
+}

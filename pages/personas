@@ -1,0 +1,269 @@
+{
+  "title": "Personas",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c3b8bbad4f8a8fc3",
+      "text": "We'll be developing and refining personas who will be the imagined actors as we develop more advanced uses cases. (Shift-click to see multiple personas.)"
+    },
+    {
+      "type": "paragraph",
+      "id": "bde2fd63ff37e4f4",
+      "text": "<li>[[Tom Persona]] manager\n<li>[[Max Persona]] activist\n<li>[[Jeff Persona]] organizer\n<li>[[Otto Persona]] data scientist\n<li>[[Nick Persona]] system administrator\n<li>[[Zoe Persona]] journalist"
+    },
+    {
+      "type": "paragraph",
+      "id": "78600de8acb401de",
+      "text": "We use a persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton] with sketches courtesy [http://www.nancymargulies.com/ Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+    },
+    {
+      "type": "paragraph",
+      "id": "95f945fad3dfc198",
+      "text": "We've drafted some federation use cases in the Cucumber style. See the [https://github.com/WardCunningham/Smallest-Federated-Wiki/wiki/Federation-Details github wiki]. These have yet to be realized as tests or aligned with personas."
+    }
+  ],
+  "journal": [
+    {
+      "type": "remove",
+      "id": "de51daa773e9ecff"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bde2fd63ff37e4f4"
+      },
+      "id": "bde2fd63ff37e4f4",
+      "type": "add"
+    },
+    {
+      "type": "edit",
+      "id": "bde2fd63ff37e4f4",
+      "item": {
+        "type": "paragraph",
+        "id": "bde2fd63ff37e4f4",
+        "text": "<li>[[Tom Persona]] manager\n<li>[[Max Persona]] activist\n<li>[[Jeff Persona]] organizer\n<li>[[Otto Persona]] data scientist\n<li>[[Nick Persona]] system administrator"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c3b8bbad4f8a8fc3"
+      },
+      "id": "c3b8bbad4f8a8fc3",
+      "type": "add",
+      "after": "bde2fd63ff37e4f4"
+    },
+    {
+      "type": "edit",
+      "id": "c3b8bbad4f8a8fc3",
+      "item": {
+        "type": "paragraph",
+        "id": "c3b8bbad4f8a8fc3",
+        "text": "We'll be developing and refining personas who will be the imagined actors as we develop more advanced uses cases."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "95f945fad3dfc198"
+      },
+      "id": "95f945fad3dfc198",
+      "type": "add",
+      "after": "c3b8bbad4f8a8fc3"
+    },
+    {
+      "type": "edit",
+      "id": "95f945fad3dfc198",
+      "item": {
+        "type": "paragraph",
+        "id": "95f945fad3dfc198",
+        "text": "We've drafted some federation use cases in the Cucumber style. See the [https://github.com/WardCunningham/Smallest-Federated-Wiki/wiki/Federation-Details wiki]. These have yet to be realized as tests."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "95f945fad3dfc198",
+      "item": {
+        "type": "paragraph",
+        "id": "95f945fad3dfc198",
+        "text": "We've drafted some federation use cases in the Cucumber style. See the [https://github.com/WardCunningham/Smallest-Federated-Wiki/wiki/Federation-Details github wiki]. These have yet to be realized as tests."
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "c3b8bbad4f8a8fc3",
+        "bde2fd63ff37e4f4",
+        "95f945fad3dfc198"
+      ],
+      "id": "c3b8bbad4f8a8fc3"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "78600de8acb401de"
+      },
+      "id": "78600de8acb401de",
+      "type": "add",
+      "after": "95f945fad3dfc198"
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We'll used a simplified persona template adapted from Jeff Patton. \n\n* job title or responsibility\n* memorable characteristics\n* goals, motivations, pain points \n* primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We'll used a simplified persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton]. \n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "c3b8bbad4f8a8fc3",
+        "78600de8acb401de",
+        "bde2fd63ff37e4f4",
+        "95f945fad3dfc198"
+      ],
+      "id": "78600de8acb401de"
+    },
+    {
+      "type": "move",
+      "order": [
+        "c3b8bbad4f8a8fc3",
+        "78600de8acb401de",
+        "95f945fad3dfc198",
+        "bde2fd63ff37e4f4"
+      ],
+      "id": "95f945fad3dfc198"
+    },
+    {
+      "type": "move",
+      "order": [
+        "bde2fd63ff37e4f4",
+        "c3b8bbad4f8a8fc3",
+        "78600de8acb401de",
+        "95f945fad3dfc198"
+      ],
+      "id": "bde2fd63ff37e4f4"
+    },
+    {
+      "type": "move",
+      "order": [
+        "c3b8bbad4f8a8fc3",
+        "bde2fd63ff37e4f4",
+        "78600de8acb401de",
+        "95f945fad3dfc198"
+      ],
+      "id": "bde2fd63ff37e4f4"
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We'll used a simplified persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton]. Sketches courtesy [Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We'll used a simplified persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton]. Sketches courtesy [http://www.nancymargulies.com/ Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We use a simplified persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton]. Sketches courtesy [http://www.nancymargulies.com/ Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We use a persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton]. Sketches courtesy [http://www.nancymargulies.com/ Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "78600de8acb401de",
+      "item": {
+        "type": "paragraph",
+        "id": "78600de8acb401de",
+        "text": "We use a persona template adapted from [http://agileproductdesign.com/presentations/user_modeling/index.html Jeff Patton] with sketches courtesy [http://www.nancymargulies.com/ Nancy Margulies]\n\n<li> job title or responsibility\n<li> memorable characteristics\n<li> goals, motivations, pain points \n<li> primary activities with the wiki"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "95f945fad3dfc198",
+      "item": {
+        "type": "paragraph",
+        "id": "95f945fad3dfc198",
+        "text": "We've drafted some federation use cases in the Cucumber style. See the [https://github.com/WardCunningham/Smallest-Federated-Wiki/wiki/Federation-Details github wiki]. These have yet to be realized as tests or aligned with personas."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "c3b8bbad4f8a8fc3",
+      "item": {
+        "type": "paragraph",
+        "id": "c3b8bbad4f8a8fc3",
+        "text": "We'll be developing and refining personas who will be the imagined actors as we develop more advanced uses cases. (Shift-click to see multiple personas.)"
+      }
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "bde2fd63ff37e4f4",
+        "text": "<li>[[Tom Persona]] manager\n<li>[[Max Persona]] activist\n<li>[[Jeff Persona]] organizer\n<li>[[Otto Persona]] data scientist\n<li>[[Nick Persona]] system administrator\n<li>[[Zoe Persona]] journalist"
+      },
+      "after": "c3b8bbad4f8a8fc3",
+      "id": "bde2fd63ff37e4f4",
+      "date": 1353014897383
+    },
+    {
+      "type": "remove",
+      "id": "bde2fd63ff37e4f4",
+      "date": 1353014904042
+    },
+    {
+      "type": "remove",
+      "id": "bde2fd63ff37e4f4",
+      "date": 1353014962344
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "bde2fd63ff37e4f4",
+        "text": "<li>[[Tom Persona]] manager\n<li>[[Max Persona]] activist\n<li>[[Jeff Persona]] organizer\n<li>[[Otto Persona]] data scientist\n<li>[[Nick Persona]] system administrator\n<li>[[Zoe Persona]] journalist"
+      },
+      "after": "c3b8bbad4f8a8fc3",
+      "id": "bde2fd63ff37e4f4",
+      "date": 1353014966781
+    },
+    {
+      "type": "fork",
+      "site": "ward.fed.wiki.org",
+      "date": 1386226295154
+    }
+  ]
+}

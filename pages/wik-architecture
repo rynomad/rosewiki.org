@@ -1,0 +1,317 @@
+{
+  "title": "Wik Architecture",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "453be852e74890a8",
+      "text": "This page describes the modules we will use, how they fit together, and how Wik fit's within a greater Wiki ecosystem"
+    },
+    {
+      "type": "pagefold",
+      "id": "43a89b9c0bfeb4eb",
+      "text": "Wik as a Thin Waist"
+    },
+    {
+      "type": "paragraph",
+      "id": "351827fac80594c9",
+      "text": "We take inspiration from the Thin Waist model of IP/NDN based Networks: "
+    },
+    {
+      "type": "paragraph",
+      "id": "907159f530ac559e",
+      "text": "Wik is primarily a data model designed to be used above various network stacks (HTTP(S), [[NDN]], [[Telehash]]...), and below various wiki applications (FedWiki, SensorWiki...), and utilize various types of local and remote storage (indexedDB, ndn-repo levelDB, MongoDB...)"
+    },
+    {
+      "type": "paragraph",
+      "id": "ecbfb8beef8285c2",
+      "text": "For more, see [[Wik Transport]] and [[Wik Storage]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "4c35b28f635e6354",
+      "text": "Component Libraries"
+    },
+    {
+      "type": "paragraph",
+      "id": "6799ae04f78fef79",
+      "text": "Wik makes use of [[Substance Operator]] and [[deep diff]], both npm modules, to generate, transform, and apply patches"
+    },
+    {
+      "type": "paragraph",
+      "id": "8102070fc87d078d",
+      "text": "NDN transport and storage are provided by [[NDN-BrowserKit]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Architecture",
+        "story": []
+      },
+      "date": 1394771050652
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "453be852e74890a8"
+      },
+      "id": "453be852e74890a8",
+      "type": "add",
+      "date": 1394771051774
+    },
+    {
+      "type": "edit",
+      "id": "453be852e74890a8",
+      "item": {
+        "type": "paragraph",
+        "id": "453be852e74890a8",
+        "text": "This page describes the modules we will use, how they fit together, and how Wik fit's within a greater application ecosystem"
+      },
+      "date": 1394771153401
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "43a89b9c0bfeb4eb"
+      },
+      "id": "43a89b9c0bfeb4eb",
+      "type": "add",
+      "after": "453be852e74890a8",
+      "date": 1394771154640
+    },
+    {
+      "type": "edit",
+      "id": "43a89b9c0bfeb4eb",
+      "item": {
+        "type": "pagefold",
+        "id": "43a89b9c0bfeb4eb",
+        "text": "Wik as a Common"
+      },
+      "date": 1394771174435
+    },
+    {
+      "type": "edit",
+      "id": "453be852e74890a8",
+      "item": {
+        "type": "paragraph",
+        "id": "453be852e74890a8",
+        "text": "This page describes the modules we will use, how they fit together, and how Wik fit's within a greater Wiki ecosystem"
+      },
+      "date": 1394771183922
+    },
+    {
+      "type": "edit",
+      "id": "43a89b9c0bfeb4eb",
+      "item": {
+        "type": "pagefold",
+        "id": "43a89b9c0bfeb4eb",
+        "text": "Wik as a Thin Waiste"
+      },
+      "date": 1394771193000
+    },
+    {
+      "type": "edit",
+      "id": "43a89b9c0bfeb4eb",
+      "item": {
+        "type": "pagefold",
+        "id": "43a89b9c0bfeb4eb",
+        "text": "Wik as a Thin Waist"
+      },
+      "date": 1394771200547
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "351827fac80594c9"
+      },
+      "id": "351827fac80594c9",
+      "type": "add",
+      "after": "43a89b9c0bfeb4eb",
+      "date": 1394771212810
+    },
+    {
+      "type": "edit",
+      "id": "351827fac80594c9",
+      "item": {
+        "type": "paragraph",
+        "id": "351827fac80594c9",
+        "text": "We take inspiration from the Thin Waist model of IP/NDN based Networks: Wik is primarily a data model designed to be used above various network stacks (HTTP(S), NDN, Telehash...), and below various wiki applications (FedWiki, SensorWiki...), and utilize various types of local and remote storage (indexedDB, levelDB, MongoDB...)"
+      },
+      "date": 1394771487185
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ecbfb8beef8285c2",
+        "text": ""
+      },
+      "id": "ecbfb8beef8285c2",
+      "type": "add",
+      "after": "351827fac80594c9",
+      "date": 1394771487704
+    },
+    {
+      "type": "edit",
+      "id": "ecbfb8beef8285c2",
+      "item": {
+        "type": "paragraph",
+        "id": "ecbfb8beef8285c2",
+        "text": "For more on this, see [[Wik Transport]] and [[Wik Storage]]"
+      },
+      "date": 1394771508917
+    },
+    {
+      "type": "edit",
+      "id": "ecbfb8beef8285c2",
+      "item": {
+        "type": "paragraph",
+        "id": "ecbfb8beef8285c2",
+        "text": "For more, see [[Wik Transport]] and [[Wik Storage]]"
+      },
+      "date": 1394771519896
+    },
+    {
+      "type": "edit",
+      "id": "351827fac80594c9",
+      "item": {
+        "type": "paragraph",
+        "id": "351827fac80594c9",
+        "text": "We take inspiration from the Thin Waist model of IP/NDN based Networks: "
+      },
+      "date": 1394771538380
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "907159f530ac559e",
+        "text": "Wik is primarily a data model designed to be used above various network stacks (HTTP(S), NDN, Telehash...), and below various wiki applications (FedWiki, SensorWiki...), and utilize various types of local and remote storage (indexedDB, levelDB, MongoDB...)"
+      },
+      "id": "907159f530ac559e",
+      "type": "add",
+      "after": "351827fac80594c9",
+      "date": 1394771538898
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4c35b28f635e6354"
+      },
+      "id": "4c35b28f635e6354",
+      "type": "add",
+      "after": "ecbfb8beef8285c2",
+      "date": 1394771551602
+    },
+    {
+      "type": "edit",
+      "id": "4c35b28f635e6354",
+      "item": {
+        "type": "pagefold",
+        "id": "4c35b28f635e6354",
+        "text": "Component Libraries"
+      },
+      "date": 1394771565416
+    },
+    {
+      "type": "edit",
+      "id": "907159f530ac559e",
+      "item": {
+        "type": "paragraph",
+        "id": "907159f530ac559e",
+        "text": "Wik is primarily a data model designed to be used above various network stacks (HTTP(S), [[NDN]], [[Telehash]]...), and below various wiki applications (FedWiki, SensorWiki...), and utilize various types of local and remote storage (indexedDB, levelDB, MongoDB...)"
+      },
+      "date": 1394771612723
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6799ae04f78fef79"
+      },
+      "id": "6799ae04f78fef79",
+      "type": "add",
+      "after": "4c35b28f635e6354",
+      "date": 1394771692682
+    },
+    {
+      "type": "edit",
+      "id": "6799ae04f78fef79",
+      "item": {
+        "type": "paragraph",
+        "id": "6799ae04f78fef79",
+        "text": "Wik makes use of [[Substance Operator]] and "
+      },
+      "date": 1394771718551
+    },
+    {
+      "type": "edit",
+      "id": "6799ae04f78fef79",
+      "item": {
+        "type": "paragraph",
+        "id": "6799ae04f78fef79",
+        "text": "Wik makes use of [[Substance Operator]] and [[]]"
+      },
+      "date": 1394771771193
+    },
+    {
+      "type": "edit",
+      "id": "6799ae04f78fef79",
+      "item": {
+        "type": "paragraph",
+        "id": "6799ae04f78fef79",
+        "text": "Wik makes use of [[Substance Operator]] and [[deep diff]], both npm modules, to generate, transform, and apply patches"
+      },
+      "date": 1394771816320
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8102070fc87d078d",
+        "text": ""
+      },
+      "id": "8102070fc87d078d",
+      "type": "add",
+      "after": "6799ae04f78fef79",
+      "date": 1394771816841
+    },
+    {
+      "type": "edit",
+      "id": "8102070fc87d078d",
+      "item": {
+        "type": "paragraph",
+        "id": "8102070fc87d078d",
+        "text": "For NDN transport and storage"
+      },
+      "date": 1394771839290
+    },
+    {
+      "type": "edit",
+      "id": "907159f530ac559e",
+      "item": {
+        "type": "paragraph",
+        "id": "907159f530ac559e",
+        "text": "Wik is primarily a data model designed to be used above various network stacks (HTTP(S), [[NDN]], [[Telehash]]...), and below various wiki applications (FedWiki, SensorWiki...), and utilize various types of local and remote storage (indexedDB, ndn-repo levelDB, MongoDB...)"
+      },
+      "date": 1394771845962
+    },
+    {
+      "type": "edit",
+      "id": "8102070fc87d078d",
+      "item": {
+        "type": "paragraph",
+        "id": "8102070fc87d078d",
+        "text": "For NDN transport and storage are provided by [[NDN-BrowserKit]]"
+      },
+      "date": 1394771863895
+    },
+    {
+      "type": "edit",
+      "id": "8102070fc87d078d",
+      "item": {
+        "type": "paragraph",
+        "id": "8102070fc87d078d",
+        "text": "NDN transport and storage are provided by [[NDN-BrowserKit]]"
+      },
+      "date": 1394772292540
+    }
+  ]
+}

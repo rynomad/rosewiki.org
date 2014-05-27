@@ -1,0 +1,349 @@
+{
+  "title": "Redecentralize",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "e9a8dad90ac9a837",
+      "text": "Redecentralize refers to a growing ethos of building distributed architectures for networked software. [http://redecentralize.org official website]"
+    },
+    {
+      "type": "paragraph",
+      "id": "0ebb436b79d91431",
+      "text": "[[encrypted chat protocols]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "817491a29006d124",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "eb256c6f21a594ed",
+      "text": "[[Encryption]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "db3a40f6330898f2",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "96306d3e85b1cc5b",
+      "text": "[[Telehash]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "7c40758ed342885e",
+      "text": "[[Federated Wiki]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "8f3d0b26ecd9e936",
+      "text": "[[NDN as a Platform for Distributed Social Applications]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Redecentralize",
+        "story": []
+      },
+      "date": 1386280589236
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e9a8dad90ac9a837"
+      },
+      "id": "e9a8dad90ac9a837",
+      "type": "add",
+      "date": 1386280590411
+    },
+    {
+      "type": "edit",
+      "id": "e9a8dad90ac9a837",
+      "item": {
+        "type": "paragraph",
+        "id": "e9a8dad90ac9a837",
+        "text": "Redecentralize "
+      },
+      "date": 1386281212625
+    },
+    {
+      "type": "fork",
+      "site": "66.185.108.210",
+      "date": 1386716996012
+    },
+    {
+      "type": "edit",
+      "id": "e9a8dad90ac9a837",
+      "item": {
+        "type": "paragraph",
+        "id": "e9a8dad90ac9a837",
+        "text": "Redecentralize refers to a growing ethos of building distributed architectures for networked software. [http://redecentralize.org official website]"
+      },
+      "site": "66.185.108.210",
+      "date": 1386716996012
+    },
+    {
+      "type": "edit",
+      "id": "e9a8dad90ac9a837",
+      "item": {
+        "type": "paragraph",
+        "id": "e9a8dad90ac9a837",
+        "text": "Redecentralize refers to a growing ethos of building distributed architectures for networked software. [http://redecentralize.org official website]"
+      },
+      "site": "66.185.108.210",
+      "date": 1386716996012
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "db3a40f6330898f2",
+        "text": ""
+      },
+      "id": "db3a40f6330898f2",
+      "type": "add",
+      "after": "e9a8dad90ac9a837",
+      "date": 1386716996528
+    },
+    {
+      "type": "remove",
+      "id": "db3a40f6330898f2",
+      "date": 1386716997648
+    },
+    {
+      "type": "fork",
+      "site": "NDN_cxslcxslcwsbcwcagoeoqgarujqcgshcabfqmogctvkaybuz2dbvsxgkuclkb9mz",
+      "date": 1386717017875
+    },
+    {
+      "type": "fork",
+      "date": 1386717032960
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "74eb37f65615b057"
+      },
+      "id": "74eb37f65615b057",
+      "type": "add",
+      "after": "db3a40f6330898f2",
+      "date": 1386720718988
+    },
+    {
+      "type": "edit",
+      "id": "74eb37f65615b057",
+      "item": {
+        "type": "paragraph",
+        "id": "74eb37f65615b057",
+        "text": "[[Telehash]]"
+      },
+      "date": 1386720728440
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f27239a560816f36"
+      },
+      "id": "f27239a560816f36",
+      "type": "add",
+      "after": "74eb37f65615b057",
+      "date": 1386721689806
+    },
+    {
+      "type": "edit",
+      "id": "f27239a560816f36",
+      "item": {
+        "type": "paragraph",
+        "id": "f27239a560816f36",
+        "text": "This is me here"
+      },
+      "date": 1386721713955
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "74eb37f65615b057",
+        "text": "[[Telehash]] - An overlay protocol for stuff."
+      },
+      "after": "e9a8dad90ac9a837",
+      "id": "74eb37f65615b057",
+      "date": 1386721845559
+    },
+    {
+      "type": "remove",
+      "id": "74eb37f65615b057",
+      "date": 1386721849662
+    },
+    {
+      "type": "remove",
+      "id": "f27239a560816f36",
+      "date": 1386721861648
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "72a0acc000bbc211"
+      },
+      "id": "72a0acc000bbc211",
+      "type": "add",
+      "after": "db3a40f6330898f2",
+      "date": 1386722106904
+    },
+    {
+      "type": "remove",
+      "id": "72a0acc000bbc211",
+      "date": 1386722128040
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "eb256c6f21a594ed",
+        "text": "[[Encryption]]"
+      },
+      "after": "e9a8dad90ac9a837",
+      "id": "eb256c6f21a594ed",
+      "date": 1386727810827
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "96306d3e85b1cc5b"
+      },
+      "id": "96306d3e85b1cc5b",
+      "type": "add",
+      "after": "db3a40f6330898f2",
+      "date": 1386727811883
+    },
+    {
+      "type": "edit",
+      "id": "96306d3e85b1cc5b",
+      "item": {
+        "type": "paragraph",
+        "id": "96306d3e85b1cc5b",
+        "text": "[[Telehash]]"
+      },
+      "date": 1386727817218
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7c40758ed342885e",
+        "text": ""
+      },
+      "id": "7c40758ed342885e",
+      "type": "add",
+      "after": "96306d3e85b1cc5b",
+      "date": 1386727817727
+    },
+    {
+      "type": "edit",
+      "id": "7c40758ed342885e",
+      "item": {
+        "type": "paragraph",
+        "id": "7c40758ed342885e",
+        "text": "[[Federated Wiki]]"
+      },
+      "date": 1386727823153
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8f3d0b26ecd9e936",
+        "text": ""
+      },
+      "id": "8f3d0b26ecd9e936",
+      "type": "add",
+      "after": "7c40758ed342885e",
+      "date": 1386727823665
+    },
+    {
+      "type": "edit",
+      "id": "8f3d0b26ecd9e936",
+      "item": {
+        "type": "paragraph",
+        "id": "8f3d0b26ecd9e936",
+        "text": "[[NDN as ]]"
+      },
+      "date": 1386727832928
+    },
+    {
+      "type": "edit",
+      "id": "8f3d0b26ecd9e936",
+      "item": {
+        "type": "paragraph",
+        "id": "8f3d0b26ecd9e936",
+        "text": "[[NDN as a Platform for Distributed Social Applications]]"
+      },
+      "date": 1386727855169
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1390951536282
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0ebb436b79d91431",
+        "text": "[[encrypted chat protocols]]"
+      },
+      "id": "0ebb436b79d91431",
+      "type": "add",
+      "after": "e9a8dad90ac9a837",
+      "site": "rosewiki.org",
+      "date": 1390951536282
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0ebb436b79d91431",
+        "text": "[[encrypted chat protocols]]"
+      },
+      "id": "0ebb436b79d91431",
+      "type": "add",
+      "after": "e9a8dad90ac9a837",
+      "site": "rosewiki.org",
+      "date": 1390951536282
+    },
+    {
+      "type": "edit",
+      "id": "0ebb436b79d91431",
+      "item": {
+        "type": "paragraph",
+        "id": "0ebb436b79d91431",
+        "text": "[[encrypted chat protocols]]"
+      },
+      "date": 1390951547298
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "817491a29006d124",
+        "text": ""
+      },
+      "id": "817491a29006d124",
+      "type": "add",
+      "after": "0ebb436b79d91431",
+      "date": 1390951547812
+    },
+    {
+      "type": "remove",
+      "id": "817491a29006d124",
+      "date": 1390951554721
+    },
+    {
+      "type": "fork",
+      "site": "NDN_eirt0zybblbxjrenbgmrcvuav4dletgiio6th1yk3ifgtwwfdzaqbmcji2xs5mis",
+      "date": 1390951695948
+    },
+    {
+      "type": "fork",
+      "date": 1390952494241
+    }
+  ]
+}

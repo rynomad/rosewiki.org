@@ -1,0 +1,60 @@
+{
+  "title": "Named Data Networking",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c013c55b1b7a50c0",
+      "text": " provides data name awareness at the network layer, allowing a ubiquitous format for content requests to flow throughout the network until they are fulfilled. This schema lends itself naturally to the Federated [[Wiki]] paradigm."
+    },
+    {
+      "type": "paragraph",
+      "id": "c879265d84d58a23",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Named Data Networking",
+        "story": []
+      },
+      "site": "localhost:3000",
+      "date": 1386230743041,
+      "fork": "localhost:3000"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c879265d84d58a23"
+      },
+      "id": "c879265d84d58a23",
+      "type": "add",
+      "date": 1386230744495
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "c013c55b1b7a50c0",
+        "text": " provides data name awareness at the network layer, allowing a ubiquitous format for content requests to flow throughout the network until they are fulfilled. This schema lends itself naturally to the Federated [[Wiki]] paradigm."
+      },
+      "id": "c013c55b1b7a50c0",
+      "date": 1386230745727
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386233639551
+    },
+    {
+      "type": "remove",
+      "id": "c879265d84d58a23",
+      "date": 1386233639551
+    },
+    {
+      "type": "fork",
+      "date": 1386234006480
+    }
+  ]
+}

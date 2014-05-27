@@ -1,0 +1,548 @@
+{
+  "title": "Wiki Data Naming Abstraction",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "3d2a7d7436fba26b",
+      "text": "Ryan writes about how he names wiki data. we define here an application name convention that may be aliased along any global prefix"
+    },
+    {
+      "type": "pagefold",
+      "id": "8b4e5b8dd93b2cce",
+      "text": "Application Prefix"
+    },
+    {
+      "type": "code",
+      "id": "e514a6d796402f7a",
+      "text": "ndn://<global-prefix>/wiki"
+    },
+    {
+      "type": "paragraph",
+      "id": "eb15baa5c91a0ab7",
+      "text": "wiki serves as the top level application prefix for all wiki related data."
+    },
+    {
+      "type": "paragraph",
+      "id": "e5f53b079ef5ce42",
+      "text": "Beneath wiki are 4 primary namespaces"
+    },
+    {
+      "type": "paragraph",
+      "id": "d90753638e708b04",
+      "text": "[[Wiki /system Namespace]] - sitemaps, flags, etc."
+    },
+    {
+      "type": "paragraph",
+      "id": "0221c9abca52848f",
+      "text": "[[Wiki /page Namespace]] - page json, headers, journals"
+    },
+    {
+      "type": "paragraph",
+      "id": "8a0d3721b81c6792",
+      "text": "[[Wiki /MIME Namespace]] - images. video, audio, any data that is better referenced than bundled in a page"
+    },
+    {
+      "type": "paragraph",
+      "id": "b6c5a633ae6f74ca",
+      "text": "[[Wiki /plugins Namespace]] - plugin javascript"
+    },
+    {
+      "type": "paragraph",
+      "id": "aa792bfb10069a7a",
+      "text": "the page namespace is populated by page slugs corresponding to wiki pages. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki Data Naming Abstraction",
+        "story": []
+      },
+      "date": 1386387283646
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3d2a7d7436fba26b"
+      },
+      "id": "3d2a7d7436fba26b",
+      "type": "add",
+      "date": 1386387287875
+    },
+    {
+      "type": "edit",
+      "id": "3d2a7d7436fba26b",
+      "item": {
+        "type": "paragraph",
+        "id": "3d2a7d7436fba26b",
+        "text": "Ryan writes about how he names wiki data"
+      },
+      "date": 1386387316960
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8b4e5b8dd93b2cce"
+      },
+      "id": "8b4e5b8dd93b2cce",
+      "type": "add",
+      "after": "3d2a7d7436fba26b",
+      "date": 1386387319722
+    },
+    {
+      "type": "edit",
+      "id": "8b4e5b8dd93b2cce",
+      "item": {
+        "type": "pagefold",
+        "id": "8b4e5b8dd93b2cce",
+        "text": "Application Prefix"
+      },
+      "date": 1386387329860
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "eb15baa5c91a0ab7"
+      },
+      "id": "eb15baa5c91a0ab7",
+      "type": "add",
+      "after": "8b4e5b8dd93b2cce",
+      "date": 1386387331139
+    },
+    {
+      "type": "edit",
+      "id": "eb15baa5c91a0ab7",
+      "item": {
+        "type": "paragraph",
+        "id": "eb15baa5c91a0ab7",
+        "text": "wiki serves as the top level application prefix for all wiki related data."
+      },
+      "date": 1386387402344
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "071fe13f95e735b7"
+      },
+      "id": "071fe13f95e735b7",
+      "type": "add",
+      "after": "eb15baa5c91a0ab7",
+      "date": 1386387404147
+    },
+    {
+      "type": "remove",
+      "id": "071fe13f95e735b7",
+      "date": 1386387409605
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e0375881b67dde56"
+      },
+      "id": "e0375881b67dde56",
+      "type": "add",
+      "after": "eb15baa5c91a0ab7",
+      "date": 1386387412384
+    },
+    {
+      "type": "remove",
+      "id": "e0375881b67dde56",
+      "date": 1386387416300
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e514a6d796402f7a"
+      },
+      "id": "e514a6d796402f7a",
+      "type": "add",
+      "after": "eb15baa5c91a0ab7",
+      "date": 1386387424801
+    },
+    {
+      "type": "edit",
+      "id": "e514a6d796402f7a",
+      "item": {
+        "type": "code",
+        "id": "e514a6d796402f7a",
+        "text": "ndn://<global-prefix>/wiki"
+      },
+      "date": 1386387447037
+    },
+    {
+      "type": "edit",
+      "id": "3d2a7d7436fba26b",
+      "item": {
+        "type": "paragraph",
+        "id": "3d2a7d7436fba26b",
+        "text": "Ryan writes about how he names wiki data. we define here an application name convention that may be aliased along any global prefix"
+      },
+      "date": 1386387492811
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "cc14b3fc54d65eb2"
+      },
+      "id": "cc14b3fc54d65eb2",
+      "type": "add",
+      "after": "e514a6d796402f7a",
+      "date": 1386387497246
+    },
+    {
+      "type": "edit",
+      "id": "cc14b3fc54d65eb2",
+      "item": {
+        "type": "code",
+        "id": "cc14b3fc54d65eb2",
+        "text": "ndn://<global-prefix>/wiki"
+      },
+      "date": 1386387521609
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "72200c4944db907e"
+      },
+      "id": "72200c4944db907e",
+      "type": "add",
+      "after": "cc14b3fc54d65eb2",
+      "date": 1386387812847
+    },
+    {
+      "type": "move",
+      "order": [
+        "3d2a7d7436fba26b",
+        "8b4e5b8dd93b2cce",
+        "eb15baa5c91a0ab7",
+        "e514a6d796402f7a",
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2"
+      ],
+      "id": "72200c4944db907e",
+      "date": 1386387817265
+    },
+    {
+      "type": "edit",
+      "id": "72200c4944db907e",
+      "item": {
+        "type": "pagefold",
+        "id": "72200c4944db907e",
+        "text": "Top Level"
+      },
+      "date": 1386387860256
+    },
+    {
+      "type": "edit",
+      "id": "cc14b3fc54d65eb2",
+      "item": {
+        "type": "code",
+        "id": "cc14b3fc54d65eb2",
+        "text": "ndn://<global-prefix>/wiki/page/"
+      },
+      "date": 1386387892373
+    },
+    {
+      "type": "edit",
+      "id": "72200c4944db907e",
+      "item": {
+        "type": "pagefold",
+        "id": "72200c4944db907e",
+        "text": "Page Prefix"
+      },
+      "date": 1386387898199
+    },
+    {
+      "type": "move",
+      "order": [
+        "3d2a7d7436fba26b",
+        "8b4e5b8dd93b2cce",
+        "e514a6d796402f7a",
+        "eb15baa5c91a0ab7",
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2"
+      ],
+      "id": "e514a6d796402f7a",
+      "date": 1386387901804
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "aa792bfb10069a7a"
+      },
+      "id": "aa792bfb10069a7a",
+      "type": "add",
+      "after": "cc14b3fc54d65eb2",
+      "date": 1386387913227
+    },
+    {
+      "type": "edit",
+      "id": "aa792bfb10069a7a",
+      "item": {
+        "type": "paragraph",
+        "id": "aa792bfb10069a7a",
+        "text": "the page namespace is populated by page slugs corresponding to wiki pages. "
+      },
+      "date": 1386387964652
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e5f53b079ef5ce42",
+        "text": ""
+      },
+      "id": "e5f53b079ef5ce42",
+      "type": "add",
+      "after": "eb15baa5c91a0ab7",
+      "date": 1386387966842
+    },
+    {
+      "type": "edit",
+      "id": "e5f53b079ef5ce42",
+      "item": {
+        "type": "paragraph",
+        "id": "e5f53b079ef5ce42",
+        "text": "Beneath wiki are 4 primary namespaces"
+      },
+      "date": 1386388073834
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0221c9abca52848f",
+        "text": ""
+      },
+      "id": "0221c9abca52848f",
+      "type": "add",
+      "after": "e5f53b079ef5ce42",
+      "date": 1386388074353
+    },
+    {
+      "type": "edit",
+      "id": "0221c9abca52848f",
+      "item": {
+        "type": "paragraph",
+        "id": "0221c9abca52848f",
+        "text": "[[Wiki Page Namespace]]"
+      },
+      "date": 1386388092589
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": ""
+      },
+      "id": "d90753638e708b04",
+      "type": "add",
+      "after": "0221c9abca52848f",
+      "date": 1386388093110
+    },
+    {
+      "type": "edit",
+      "id": "d90753638e708b04",
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": "[[Wiki System Namespace]]"
+      },
+      "date": 1386388100303
+    },
+    {
+      "type": "move",
+      "order": [
+        "3d2a7d7436fba26b",
+        "8b4e5b8dd93b2cce",
+        "e514a6d796402f7a",
+        "eb15baa5c91a0ab7",
+        "e5f53b079ef5ce42",
+        "d90753638e708b04",
+        "0221c9abca52848f",
+        "72200c4944db907e",
+        "cc14b3fc54d65eb2",
+        "aa792bfb10069a7a"
+      ],
+      "id": "d90753638e708b04",
+      "date": 1386388102436
+    },
+    {
+      "type": "edit",
+      "id": "d90753638e708b04",
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": "[[Wiki System Namespace]] - sitemaps, favicons, etc."
+      },
+      "date": 1386388126315
+    },
+    {
+      "type": "edit",
+      "id": "d90753638e708b04",
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": "[[Wiki System Namespace]] - sitemaps, flags, etc."
+      },
+      "date": 1386388134481
+    },
+    {
+      "type": "edit",
+      "id": "0221c9abca52848f",
+      "item": {
+        "type": "paragraph",
+        "id": "0221c9abca52848f",
+        "text": "[[Wiki Page Namespace]] - page json, headers, journals"
+      },
+      "date": 1386388187207
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": ""
+      },
+      "id": "8a0d3721b81c6792",
+      "type": "add",
+      "after": "0221c9abca52848f",
+      "date": 1386388187723
+    },
+    {
+      "type": "edit",
+      "id": "8a0d3721b81c6792",
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": "[[Wiki MIME Namespace]]"
+      },
+      "date": 1386388258533
+    },
+    {
+      "type": "edit",
+      "id": "8a0d3721b81c6792",
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": "[[Wiki MIME Namespace]] - handling "
+      },
+      "date": 1386388278899
+    },
+    {
+      "type": "edit",
+      "id": "8a0d3721b81c6792",
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": "[[Wiki mime Namespace]] - images. video, audio, any data that is better referenced than bundled in a page"
+      },
+      "date": 1386388687480
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "766452e92086dce8",
+        "text": ""
+      },
+      "id": "766452e92086dce8",
+      "type": "add",
+      "after": "8a0d3721b81c6792",
+      "date": 1386388687999
+    },
+    {
+      "type": "remove",
+      "id": "766452e92086dce8",
+      "date": 1386388693090
+    },
+    {
+      "type": "edit",
+      "id": "8a0d3721b81c6792",
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": "[[Wiki MIME Namespace]] - images. video, audio, any data that is better referenced than bundled in a page"
+      },
+      "date": 1386388696942
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b6c5a633ae6f74ca",
+        "text": ""
+      },
+      "id": "b6c5a633ae6f74ca",
+      "type": "add",
+      "after": "8a0d3721b81c6792",
+      "date": 1386388704136
+    },
+    {
+      "type": "edit",
+      "id": "b6c5a633ae6f74ca",
+      "item": {
+        "type": "paragraph",
+        "id": "b6c5a633ae6f74ca",
+        "text": "[[]]"
+      },
+      "date": 1386388714378
+    },
+    {
+      "type": "edit",
+      "id": "d90753638e708b04",
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": "[[Wiki /System Namespace]] - sitemaps, flags, etc."
+      },
+      "date": 1386388718360
+    },
+    {
+      "type": "edit",
+      "id": "0221c9abca52848f",
+      "item": {
+        "type": "paragraph",
+        "id": "0221c9abca52848f",
+        "text": "[[Wiki /page Namespace]] - page json, headers, journals"
+      },
+      "date": 1386388725064
+    },
+    {
+      "type": "edit",
+      "id": "d90753638e708b04",
+      "item": {
+        "type": "paragraph",
+        "id": "d90753638e708b04",
+        "text": "[[Wiki /system Namespace]] - sitemaps, flags, etc."
+      },
+      "date": 1386388728750
+    },
+    {
+      "type": "edit",
+      "id": "8a0d3721b81c6792",
+      "item": {
+        "type": "paragraph",
+        "id": "8a0d3721b81c6792",
+        "text": "[[Wiki /MIME Namespace]] - images. video, audio, any data that is better referenced than bundled in a page"
+      },
+      "date": 1386388737634
+    },
+    {
+      "type": "edit",
+      "id": "b6c5a633ae6f74ca",
+      "item": {
+        "type": "paragraph",
+        "id": "b6c5a633ae6f74ca",
+        "text": "[[Wiki /plugins Namespace]] - plugin javascript"
+      },
+      "date": 1386389476973
+    },
+    {
+      "type": "remove",
+      "id": "cc14b3fc54d65eb2",
+      "date": 1386391483624
+    },
+    {
+      "type": "remove",
+      "id": "72200c4944db907e",
+      "date": 1386391486714
+    }
+  ]
+}

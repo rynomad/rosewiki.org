@@ -1,0 +1,39 @@
+{
+  "title": "Ethical and Moral Problems",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "2ef49ac49c6dff4f",
+      "text": "[[Pop Quizes]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Ethical and Moral Problems",
+        "story": []
+      },
+      "date": 1391014958625
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2ef49ac49c6dff4f"
+      },
+      "id": "2ef49ac49c6dff4f",
+      "type": "add",
+      "date": 1391014960794
+    },
+    {
+      "type": "edit",
+      "id": "2ef49ac49c6dff4f",
+      "item": {
+        "type": "paragraph",
+        "id": "2ef49ac49c6dff4f",
+        "text": "[[Pop Quizes]]"
+      },
+      "date": 1391014972796
+    }
+  ]
+}

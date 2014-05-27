@@ -1,0 +1,403 @@
+{
+  "title": "Gripes about Version Control",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f8a80bb7ea4afec1",
+      "text": "As we move forward building [[WIK DVCS]], we recall the problems we have with version control methodologies both within and without our systems, so that we may avoid building a user/developer experience that frustrates us."
+    },
+    {
+      "type": "pagefold",
+      "id": "bd4211e76ffcaf96",
+      "text": "General Gripes"
+    },
+    {
+      "type": "paragraph",
+      "id": "83671fa1fc2dac2f",
+      "text": "Learning curve: It's been a year and I still don't know how to use git properly. I've lost data and butchered merges more times than I like to admit"
+    },
+    {
+      "type": "paragraph",
+      "id": "505db9ea1ae2f499",
+      "text": "'decentralized': Git is a decentralized system which is used most often in a centralized fashion (GitHub). Kind of defeats the purpose?"
+    },
+    {
+      "type": "paragraph",
+      "id": "6b0a583fb5020f20",
+      "text": "All or nothing merges: This doesn't apply to [[Patch Based Version Control]] (which is largely why I think we should use it), but with Git and similar DVCS's you either pull in a branch entirely or you don't (I could be wrong on this, see Learning curve above)"
+    },
+    {
+      "type": "pagefold",
+      "id": "27613c296c3c0e3e",
+      "text": "Wiki Gripes"
+    },
+    {
+      "type": "paragraph",
+      "id": "228526e3edde30e0",
+      "text": "We're a young project, and nothing's finished, so I'll not be too harsh here, but there are a few issues with our current workflow and UX that are relevant to the version control discussion."
+    },
+    {
+      "type": "paragraph",
+      "id": "8fdb06bc6adbf72d",
+      "text": "Inconsistent State Awareness: My ability to follow links through the wiki changes on a per session basis as I follow different paths to a page. Intuition tells me that if a link exists, and it's target exists, the link should *always* resolve. This might be addressed if we properly [[Semanticize Wik]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "065acd03d9c07fae",
+      "text": "Fragile Data: There are a number of scenario's where it is frighteningly easy to delete/corrupt data with no fallback. This is a known problem ([[Deleting me Softly]]), but one that should be front-of-mind when building WIK. We [[Secure Wik]] not just against spammers, but also against ourselves"
+    },
+    {
+      "type": "paragraph",
+      "id": "45e9565e8afe339a",
+      "text": "Federating: We have a notion of federation, but the process of manually 'entangling' wikis to be aware of one another is cumbersome at best. Hence the motivation to [[Socialize Wik]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Gripes about Version Control",
+        "story": []
+      },
+      "date": 1393886225500
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f8a80bb7ea4afec1"
+      },
+      "id": "f8a80bb7ea4afec1",
+      "type": "add",
+      "date": 1393886227697
+    },
+    {
+      "type": "edit",
+      "id": "f8a80bb7ea4afec1",
+      "item": {
+        "type": "paragraph",
+        "id": "f8a80bb7ea4afec1",
+        "text": "As we move forward building [[WIK DVCS]], we recall the problems we have with version control methodologies both within and without our systems, so that we may avoid building a user/developer "
+      },
+      "date": 1393886334853
+    },
+    {
+      "type": "edit",
+      "id": "f8a80bb7ea4afec1",
+      "item": {
+        "type": "paragraph",
+        "id": "f8a80bb7ea4afec1",
+        "text": "As we move forward building [[WIK DVCS]], we recall the problems we have with version control methodologies both within and without our systems, so that we may avoid building a user/developer experience "
+      },
+      "date": 1393886453767
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bd4211e76ffcaf96"
+      },
+      "id": "bd4211e76ffcaf96",
+      "type": "add",
+      "after": "f8a80bb7ea4afec1",
+      "date": 1393886455071
+    },
+    {
+      "type": "edit",
+      "id": "bd4211e76ffcaf96",
+      "item": {
+        "type": "pagefold",
+        "id": "bd4211e76ffcaf96",
+        "text": "General Gripes"
+      },
+      "date": 1393886465980
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "83671fa1fc2dac2f"
+      },
+      "id": "83671fa1fc2dac2f",
+      "type": "add",
+      "after": "bd4211e76ffcaf96",
+      "date": 1393886468145
+    },
+    {
+      "type": "edit",
+      "id": "83671fa1fc2dac2f",
+      "item": {
+        "type": "paragraph",
+        "id": "83671fa1fc2dac2f",
+        "text": "Learning curve: It's been a year and I still don't know how to use git properly. I've lost data and butchered merges more times than I like to admit"
+      },
+      "date": 1393886524662
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "505db9ea1ae2f499",
+        "text": ""
+      },
+      "id": "505db9ea1ae2f499",
+      "type": "add",
+      "after": "83671fa1fc2dac2f",
+      "date": 1393886525181
+    },
+    {
+      "type": "edit",
+      "id": "505db9ea1ae2f499",
+      "item": {
+        "type": "paragraph",
+        "id": "505db9ea1ae2f499",
+        "text": "'decentralized': Git is a decentralized system which is used most often in a centralized fashion (GitHub). Kind of defeats the purpose?"
+      },
+      "date": 1393886613396
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6b0a583fb5020f20",
+        "text": ""
+      },
+      "id": "6b0a583fb5020f20",
+      "type": "add",
+      "after": "505db9ea1ae2f499",
+      "date": 1393886613916
+    },
+    {
+      "type": "edit",
+      "id": "6b0a583fb5020f20",
+      "item": {
+        "type": "paragraph",
+        "id": "6b0a583fb5020f20",
+        "text": "All or nothing merges: This doesn't apply to [[Patch Based Version Control]] (which is largely why I think we should use it), but with Git and similar DVCS's you either pull in a branch entirely or you don't (I could be wrong on this, see Learning curve above)"
+      },
+      "date": 1393886706238
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "040d2f2fe4e24678",
+        "text": ""
+      },
+      "id": "040d2f2fe4e24678",
+      "type": "add",
+      "after": "6b0a583fb5020f20",
+      "date": 1393886706757
+    },
+    {
+      "type": "remove",
+      "id": "040d2f2fe4e24678",
+      "date": 1393886720765
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "95ac3b9170c36c29"
+      },
+      "id": "95ac3b9170c36c29",
+      "type": "add",
+      "after": "6b0a583fb5020f20",
+      "date": 1393886730356
+    },
+    {
+      "type": "remove",
+      "id": "95ac3b9170c36c29",
+      "date": 1393886737808
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "27613c296c3c0e3e"
+      },
+      "id": "27613c296c3c0e3e",
+      "type": "add",
+      "after": "6b0a583fb5020f20",
+      "date": 1393886740378
+    },
+    {
+      "type": "edit",
+      "id": "27613c296c3c0e3e",
+      "item": {
+        "type": "pagefold",
+        "id": "27613c296c3c0e3e",
+        "text": "Wiki Gripes"
+      },
+      "date": 1393886760124
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "228526e3edde30e0"
+      },
+      "id": "228526e3edde30e0",
+      "type": "add",
+      "after": "27613c296c3c0e3e",
+      "date": 1393886761348
+    },
+    {
+      "type": "edit",
+      "id": "228526e3edde30e0",
+      "item": {
+        "type": "paragraph",
+        "id": "228526e3edde30e0",
+        "text": "We're a young project, and nothing's finished, so I'll not be too harsh here, but there are a few issues with our current workflow and UX that are relevant to the version control discussion."
+      },
+      "date": 1393886826601
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8fdb06bc6adbf72d",
+        "text": ""
+      },
+      "id": "8fdb06bc6adbf72d",
+      "type": "add",
+      "after": "228526e3edde30e0",
+      "date": 1393886827123
+    },
+    {
+      "type": "edit",
+      "id": "8fdb06bc6adbf72d",
+      "item": {
+        "type": "paragraph",
+        "id": "8fdb06bc6adbf72d",
+        "text": "Inconsistent State Awareness"
+      },
+      "date": 1393886871323
+    },
+    {
+      "type": "edit",
+      "id": "8fdb06bc6adbf72d",
+      "item": {
+        "type": "paragraph",
+        "id": "8fdb06bc6adbf72d",
+        "text": "Inconsistent State Awareness: My ability to follow links through the wiki changes on a per session basis as I follow different "
+      },
+      "date": 1393886981969
+    },
+    {
+      "type": "edit",
+      "id": "8fdb06bc6adbf72d",
+      "item": {
+        "type": "paragraph",
+        "id": "8fdb06bc6adbf72d",
+        "text": "Inconsistent State Awareness: My ability to follow links through the wiki changes on a per session basis as I follow different paths to a page. Intuition tells me that if a link exists, and it's target exists, the link should *always* resolve. This might be addressed if we properly [[Semanticize Wik]]"
+      },
+      "date": 1393887065181
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "065acd03d9c07fae",
+        "text": ""
+      },
+      "id": "065acd03d9c07fae",
+      "type": "add",
+      "after": "8fdb06bc6adbf72d",
+      "date": 1393887065700
+    },
+    {
+      "type": "edit",
+      "id": "065acd03d9c07fae",
+      "item": {
+        "type": "paragraph",
+        "id": "065acd03d9c07fae",
+        "text": "Fragile Data: There are a number of scenario's where it is frighteningly easy to "
+      },
+      "date": 1393887142759
+    },
+    {
+      "type": "edit",
+      "id": "065acd03d9c07fae",
+      "item": {
+        "type": "paragraph",
+        "id": "065acd03d9c07fae",
+        "text": "Fragile Data: There are a number of scenario's where it is frighteningly easy to delete/corrupt data with no fallback. This is a known problem ([[Deleting me Softly]]), but one that should be front-of-mind when building WIK."
+      },
+      "date": 1393887239275
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "45e9565e8afe339a"
+      },
+      "id": "45e9565e8afe339a",
+      "type": "add",
+      "after": "065acd03d9c07fae",
+      "date": 1393887279310
+    },
+    {
+      "type": "edit",
+      "id": "45e9565e8afe339a",
+      "item": {
+        "type": "paragraph",
+        "id": "45e9565e8afe339a",
+        "text": "Federating: We have a notion of federation, but the process of manually 'entangling' wikis to be aware of one another is cumbersome at best. Hence the motivation to [[Socialize Wik]]"
+      },
+      "date": 1393887355856
+    },
+    {
+      "type": "edit",
+      "id": "065acd03d9c07fae",
+      "item": {
+        "type": "paragraph",
+        "id": "065acd03d9c07fae",
+        "text": "Fragile Data: There are a number of scenario's where it is frighteningly easy to delete/corrupt data with no fallback. This is a known problem ([[Deleting me Softly]]), but one that should be front-of-mind when building WIK. See [[Secure Wik]]"
+      },
+      "date": 1393887417069
+    },
+    {
+      "type": "edit",
+      "id": "065acd03d9c07fae",
+      "item": {
+        "type": "paragraph",
+        "id": "065acd03d9c07fae",
+        "text": "Fragile Data: There are a number of scenario's where it is frighteningly easy to delete/corrupt data with no fallback. This is a known problem ([[Deleting me Softly]]), but one that should be front-of-mind when building WIK. We [[Secure Wik]] not just against spammers, but also against ourselves"
+      },
+      "date": 1393887448883
+    },
+    {
+      "type": "edit",
+      "id": "f8a80bb7ea4afec1",
+      "item": {
+        "type": "paragraph",
+        "id": "f8a80bb7ea4afec1",
+        "text": "As we move forward building [[WIK DVCS]], we recall the problems we have with version control methodologies both within and without our systems, so that we may avoid building a user/developer experience that frustrates us."
+      },
+      "date": 1393971343181
+    },
+    {
+      "type": "move",
+      "order": [
+        "f8a80bb7ea4afec1",
+        "bd4211e76ffcaf96",
+        "83671fa1fc2dac2f",
+        "505db9ea1ae2f499",
+        "6b0a583fb5020f20",
+        "27613c296c3c0e3e",
+        "8fdb06bc6adbf72d",
+        "228526e3edde30e0",
+        "065acd03d9c07fae",
+        "45e9565e8afe339a"
+      ],
+      "id": "8fdb06bc6adbf72d",
+      "date": 1399013956499
+    },
+    {
+      "type": "move",
+      "order": [
+        "f8a80bb7ea4afec1",
+        "bd4211e76ffcaf96",
+        "83671fa1fc2dac2f",
+        "505db9ea1ae2f499",
+        "6b0a583fb5020f20",
+        "27613c296c3c0e3e",
+        "228526e3edde30e0",
+        "8fdb06bc6adbf72d",
+        "065acd03d9c07fae",
+        "45e9565e8afe339a"
+      ],
+      "id": "228526e3edde30e0",
+      "date": 1399013988082
+    }
+  ]
+}

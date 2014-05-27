@@ -1,0 +1,630 @@
+{
+  "title": "Socialize Wik",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d87671530289505d",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "9f24ea4a79b21fd7",
+      "text": "Here we brainstorm social aspects of [[WIC DVCS]], examining both the features we'd like to see and a little of why we want them"
+    },
+    {
+      "type": "pagefold",
+      "id": "dc0b33f0cc6808b0",
+      "text": "Want's"
+    },
+    {
+      "type": "paragraph",
+      "id": "b7b4c79ee7cbaf47",
+      "text": "-[[complementary notice on fork]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "bc677cdb5820bc38",
+      "text": "-[[Subscribe based on Author]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "78aacfe1a59cc031",
+      "text": "-[[Subscribe based on wik]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "34a20e58fad3325c",
+      "text": "Why we want it"
+    },
+    {
+      "type": "paragraph",
+      "id": "034053a4860f6371",
+      "text": " One of the everpresent questions in Federated Wiki is \"How do I know when my page has been forked?\" generally followed shortly thereafter by \"How do I keep apprised of changes to my peers pages?\""
+    },
+    {
+      "type": "paragraph",
+      "id": "e01fd62c16cdbaef",
+      "text": "Currently, these questions are answered by a series of methods that have evolved as the project has grown over it's history. an example may look like this:"
+    },
+    {
+      "type": "paragraph",
+      "id": "0e3ed91b56dae4e7",
+      "text": "-Alice writes a page, Bob forks it"
+    },
+    {
+      "type": "paragraph",
+      "id": "d903a969ae3bbfff",
+      "text": "-Bob is now aware of Alice's changes whenever he visits his version, or views [[Recent Changes]] (but only if Alice is in his neighborhood for that session)"
+    },
+    {
+      "type": "paragraph",
+      "id": "6ef4c3d3c4be035a",
+      "text": "-Alice remains unaware of Bob's activity unless she has already federated with him elsewhere or he explicitely alerts her via some other mechanism"
+    },
+    {
+      "type": "paragraph",
+      "id": "f5a9a6318a56758c",
+      "text": "-To subscribe to bob's activity, she forks back his change."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Socialize Wik",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1393970178895,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e8191b9923543d7b"
+      },
+      "id": "e8191b9923543d7b",
+      "type": "add",
+      "date": 1393970179993
+    },
+    {
+      "type": "remove",
+      "id": "e8191b9923543d7b",
+      "date": 1393970379769
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d87671530289505d"
+      },
+      "id": "d87671530289505d",
+      "type": "add",
+      "date": 1393970719210
+    },
+    {
+      "type": "edit",
+      "id": "d87671530289505d",
+      "item": {
+        "type": "paragraph",
+        "id": "d87671530289505d",
+        "text": " One of the everpresent questions in Federated Wiki is \"How do I know when my page has been forked?\" generally followed shortly thereafter by \"How do I keep apprised of changes to my peers pages?\""
+      },
+      "date": 1393970830597
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e01fd62c16cdbaef",
+        "text": ""
+      },
+      "id": "e01fd62c16cdbaef",
+      "type": "add",
+      "after": "d87671530289505d",
+      "date": 1393970831121
+    },
+    {
+      "type": "edit",
+      "id": "e01fd62c16cdbaef",
+      "item": {
+        "type": "paragraph",
+        "id": "e01fd62c16cdbaef",
+        "text": "Currently, these questions are answered by a series of methods that have evolved as the project has grown over it's history. an example may look like this:"
+      },
+      "date": 1393970939622
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0e3ed91b56dae4e7",
+        "text": ""
+      },
+      "id": "0e3ed91b56dae4e7",
+      "type": "add",
+      "after": "e01fd62c16cdbaef",
+      "date": 1393970940143
+    },
+    {
+      "type": "edit",
+      "id": "0e3ed91b56dae4e7",
+      "item": {
+        "type": "paragraph",
+        "id": "0e3ed91b56dae4e7",
+        "text": "Alice writes a page, Bob forks it"
+      },
+      "date": 1393970954488
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d903a969ae3bbfff",
+        "text": ""
+      },
+      "id": "d903a969ae3bbfff",
+      "type": "add",
+      "after": "0e3ed91b56dae4e7",
+      "date": 1393970955009
+    },
+    {
+      "type": "edit",
+      "id": "d903a969ae3bbfff",
+      "item": {
+        "type": "paragraph",
+        "id": "d903a969ae3bbfff",
+        "text": "Bob is now aware of Alice's changes whenever he visits his version, or views [[Recent Changes]] (but only if Alice is in his [[neighborhood]] for that session)"
+      },
+      "date": 1393971015745
+    },
+    {
+      "type": "edit",
+      "id": "d903a969ae3bbfff",
+      "item": {
+        "type": "paragraph",
+        "id": "d903a969ae3bbfff",
+        "text": "Bob is now aware of Alice's changes whenever he visits his version, or views [[Recent Changes]] (but only if Alice is in his neighborhood for that session)"
+      },
+      "date": 1393971178481
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6ef4c3d3c4be035a",
+        "text": ""
+      },
+      "id": "6ef4c3d3c4be035a",
+      "type": "add",
+      "after": "d903a969ae3bbfff",
+      "date": 1393971181086
+    },
+    {
+      "type": "edit",
+      "id": "6ef4c3d3c4be035a",
+      "item": {
+        "type": "paragraph",
+        "id": "6ef4c3d3c4be035a",
+        "text": "Alice remains unaware of Bob's activity unless she has already federated with him elsewhere or he explicitely alerts her via some other mechanism"
+      },
+      "date": 1393971213514
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f5a9a6318a56758c",
+        "text": ""
+      },
+      "id": "f5a9a6318a56758c",
+      "type": "add",
+      "after": "6ef4c3d3c4be035a",
+      "date": 1393971214037
+    },
+    {
+      "type": "edit",
+      "id": "f5a9a6318a56758c",
+      "item": {
+        "type": "paragraph",
+        "id": "f5a9a6318a56758c",
+        "text": "To subscribe to bob's activity, she must fork back his change."
+      },
+      "date": 1393971229410
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "837d1c37421744ea",
+        "text": ""
+      },
+      "id": "837d1c37421744ea",
+      "type": "add",
+      "after": "f5a9a6318a56758c",
+      "date": 1393971229926
+    },
+    {
+      "type": "remove",
+      "id": "837d1c37421744ea",
+      "date": 1393971230771
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dc0b33f0cc6808b0"
+      },
+      "id": "dc0b33f0cc6808b0",
+      "type": "add",
+      "after": "f5a9a6318a56758c",
+      "date": 1393971253428
+    },
+    {
+      "type": "edit",
+      "id": "dc0b33f0cc6808b0",
+      "item": {
+        "type": "pagefold",
+        "id": "dc0b33f0cc6808b0",
+        "text": "A Better Way"
+      },
+      "date": 1393971262437
+    },
+    {
+      "type": "fork",
+      "date": 1393971426856
+    },
+    {
+      "type": "edit",
+      "id": "f5a9a6318a56758c",
+      "item": {
+        "type": "paragraph",
+        "id": "f5a9a6318a56758c",
+        "text": "To subscribe to bob's activity, she forks back his change."
+      },
+      "date": 1393971611342
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ffcdffb7dd5304a8"
+      },
+      "id": "ffcdffb7dd5304a8",
+      "type": "add",
+      "after": "dc0b33f0cc6808b0",
+      "date": 1393971615576
+    },
+    {
+      "type": "remove",
+      "id": "ffcdffb7dd5304a8",
+      "date": 1393971618559
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b7b4c79ee7cbaf47"
+      },
+      "id": "b7b4c79ee7cbaf47",
+      "type": "add",
+      "after": "dc0b33f0cc6808b0",
+      "date": 1393971694920
+    },
+    {
+      "type": "edit",
+      "id": "b7b4c79ee7cbaf47",
+      "item": {
+        "type": "paragraph",
+        "id": "b7b4c79ee7cbaf47",
+        "text": "At a most basic level, [[WIK DVCS]] could support a [[complementary notice on fork]]"
+      },
+      "date": 1393971729754
+    },
+    {
+      "type": "move",
+      "order": [
+        "d87671530289505d",
+        "e01fd62c16cdbaef",
+        "dc0b33f0cc6808b0",
+        "0e3ed91b56dae4e7",
+        "d903a969ae3bbfff",
+        "6ef4c3d3c4be035a",
+        "f5a9a6318a56758c",
+        "b7b4c79ee7cbaf47"
+      ],
+      "id": "dc0b33f0cc6808b0",
+      "date": 1393971805441
+    },
+    {
+      "type": "edit",
+      "id": "d87671530289505d",
+      "item": {
+        "type": "paragraph",
+        "id": "d87671530289505d",
+        "text": " "
+      },
+      "date": 1393971812573
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "034053a4860f6371",
+        "text": " One of the everpresent questions in Federated Wiki is \"How do I know when my page has been forked?\" generally followed shortly thereafter by \"How do I keep apprised of changes to my peers pages?\""
+      },
+      "id": "034053a4860f6371",
+      "type": "add",
+      "after": "d87671530289505d",
+      "date": 1393971813092
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9f24ea4a79b21fd7",
+        "text": ""
+      },
+      "id": "9f24ea4a79b21fd7",
+      "type": "add",
+      "after": "d87671530289505d",
+      "date": 1393971813104
+    },
+    {
+      "type": "move",
+      "order": [
+        "d87671530289505d",
+        "9f24ea4a79b21fd7",
+        "dc0b33f0cc6808b0",
+        "034053a4860f6371",
+        "e01fd62c16cdbaef",
+        "0e3ed91b56dae4e7",
+        "d903a969ae3bbfff",
+        "6ef4c3d3c4be035a",
+        "f5a9a6318a56758c",
+        "b7b4c79ee7cbaf47"
+      ],
+      "id": "dc0b33f0cc6808b0",
+      "date": 1393971869121
+    },
+    {
+      "type": "edit",
+      "id": "9f24ea4a79b21fd7",
+      "item": {
+        "type": "paragraph",
+        "id": "9f24ea4a79b21fd7",
+        "text": "Here we brainstorm social aspects of [[WIC DVCS]], examining both the features we'd like to see and a little of why we want them"
+      },
+      "date": 1393971869950
+    },
+    {
+      "type": "edit",
+      "id": "dc0b33f0cc6808b0",
+      "item": {
+        "type": "pagefold",
+        "id": "dc0b33f0cc6808b0",
+        "text": "Want's"
+      },
+      "date": 1393971873670
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "34a20e58fad3325c"
+      },
+      "id": "34a20e58fad3325c",
+      "type": "add",
+      "after": "b7b4c79ee7cbaf47",
+      "date": 1393971879197
+    },
+    {
+      "type": "edit",
+      "id": "34a20e58fad3325c",
+      "item": {
+        "type": "pagefold",
+        "id": "34a20e58fad3325c",
+        "text": "Why we want it"
+      },
+      "date": 1393971887626
+    },
+    {
+      "type": "move",
+      "order": [
+        "d87671530289505d",
+        "9f24ea4a79b21fd7",
+        "dc0b33f0cc6808b0",
+        "34a20e58fad3325c",
+        "034053a4860f6371",
+        "e01fd62c16cdbaef",
+        "0e3ed91b56dae4e7",
+        "d903a969ae3bbfff",
+        "6ef4c3d3c4be035a",
+        "f5a9a6318a56758c",
+        "b7b4c79ee7cbaf47"
+      ],
+      "id": "34a20e58fad3325c",
+      "date": 1393971891249
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f558e7b9600b0fcc",
+        "text": ""
+      },
+      "id": "f558e7b9600b0fcc",
+      "type": "add",
+      "after": "9f24ea4a79b21fd7",
+      "date": 1393971895839
+    },
+    {
+      "type": "remove",
+      "id": "f558e7b9600b0fcc",
+      "date": 1393971899238
+    },
+    {
+      "type": "move",
+      "order": [
+        "d87671530289505d",
+        "9f24ea4a79b21fd7",
+        "dc0b33f0cc6808b0",
+        "b7b4c79ee7cbaf47",
+        "34a20e58fad3325c",
+        "034053a4860f6371",
+        "e01fd62c16cdbaef",
+        "0e3ed91b56dae4e7",
+        "d903a969ae3bbfff",
+        "6ef4c3d3c4be035a",
+        "f5a9a6318a56758c"
+      ],
+      "id": "b7b4c79ee7cbaf47",
+      "date": 1393971904789
+    },
+    {
+      "type": "edit",
+      "id": "b7b4c79ee7cbaf47",
+      "item": {
+        "type": "paragraph",
+        "id": "b7b4c79ee7cbaf47",
+        "text": "-[[complementary notice on fork]]"
+      },
+      "date": 1393971912545
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f17c35609b2ddf17",
+        "text": ""
+      },
+      "id": "f17c35609b2ddf17",
+      "type": "add",
+      "after": "b7b4c79ee7cbaf47",
+      "date": 1393971913065
+    },
+    {
+      "type": "remove",
+      "id": "f17c35609b2ddf17",
+      "date": 1393971921715
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "319d89c33ff2d772",
+        "text": ""
+      },
+      "id": "319d89c33ff2d772",
+      "type": "add",
+      "after": "f5a9a6318a56758c",
+      "date": 1393971923031
+    },
+    {
+      "type": "remove",
+      "id": "319d89c33ff2d772",
+      "date": 1393971925539
+    },
+    {
+      "type": "edit",
+      "id": "0e3ed91b56dae4e7",
+      "item": {
+        "type": "paragraph",
+        "id": "0e3ed91b56dae4e7",
+        "text": "-Alice writes a page, Bob forks it"
+      },
+      "date": 1393971928867
+    },
+    {
+      "type": "edit",
+      "id": "d903a969ae3bbfff",
+      "item": {
+        "type": "paragraph",
+        "id": "d903a969ae3bbfff",
+        "text": "-Bob is now aware of Alice's changes whenever he visits his version, or views [[Recent Changes]] (but only if Alice is in his neighborhood for that session)"
+      },
+      "date": 1393971931366
+    },
+    {
+      "type": "edit",
+      "id": "6ef4c3d3c4be035a",
+      "item": {
+        "type": "paragraph",
+        "id": "6ef4c3d3c4be035a",
+        "text": "-Alice remains unaware of Bob's activity unless she has already federated with him elsewhere or he explicitely alerts her via some other mechanism"
+      },
+      "date": 1393971935225
+    },
+    {
+      "type": "edit",
+      "id": "f5a9a6318a56758c",
+      "item": {
+        "type": "paragraph",
+        "id": "f5a9a6318a56758c",
+        "text": "-To subscribe to bob's activity, she forks back his change."
+      },
+      "date": 1393971943567
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "eb6a13897e04d965"
+      },
+      "id": "eb6a13897e04d965",
+      "type": "add",
+      "after": "f5a9a6318a56758c",
+      "date": 1393971947649
+    },
+    {
+      "type": "edit",
+      "id": "eb6a13897e04d965",
+      "item": {
+        "type": "paragraph",
+        "id": "eb6a13897e04d965",
+        "text": "[[Obscure Workarounds]]"
+      },
+      "date": 1393971958727
+    },
+    {
+      "type": "remove",
+      "id": "eb6a13897e04d965",
+      "date": 1393972045392
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bc677cdb5820bc38",
+        "text": ""
+      },
+      "id": "bc677cdb5820bc38",
+      "type": "add",
+      "after": "b7b4c79ee7cbaf47",
+      "date": 1393972099113
+    },
+    {
+      "type": "edit",
+      "id": "bc677cdb5820bc38",
+      "item": {
+        "type": "paragraph",
+        "id": "bc677cdb5820bc38",
+        "text": "-[[Subscribe based on Author]]"
+      },
+      "date": 1393972143815
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "78aacfe1a59cc031",
+        "text": ""
+      },
+      "id": "78aacfe1a59cc031",
+      "type": "add",
+      "after": "bc677cdb5820bc38",
+      "date": 1393972144338
+    },
+    {
+      "type": "edit",
+      "id": "78aacfe1a59cc031",
+      "item": {
+        "type": "paragraph",
+        "id": "78aacfe1a59cc031",
+        "text": "-[[Subscribe based on Page]]"
+      },
+      "date": 1393972154868
+    },
+    {
+      "type": "edit",
+      "id": "78aacfe1a59cc031",
+      "item": {
+        "type": "paragraph",
+        "id": "78aacfe1a59cc031",
+        "text": "-[[Subscribe based on wik]]"
+      },
+      "date": 1393972165485
+    }
+  ]
+}

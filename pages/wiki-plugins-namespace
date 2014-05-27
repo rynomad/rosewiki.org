@@ -1,0 +1,473 @@
+{
+  "title": "Wiki /plugins Namespace",
+  "story": [
+    {
+      "type": "pagefold",
+      "id": "ab8da09c247d8182",
+      "text": "plugin Prefix"
+    },
+    {
+      "type": "code",
+      "id": "f7e2ea8adcbd69d7",
+      "text": "ndn:/<global-prefix>/wiki/plugins/"
+    },
+    {
+      "type": "paragraph",
+      "id": "05bffb0bdc34efe2",
+      "text": "the plugin namespace is subnamed with plugin names, each of which serves as a bucket for all resources necessary for a plugin, namely: javascript and css"
+    },
+    {
+      "type": "pagefold",
+      "id": "16d67ff76c68ac68",
+      "text": "js"
+    },
+    {
+      "type": "paragraph",
+      "id": "4d10afc3e376d7f0",
+      "text": "js is the raw javascript of the plugin, defining emit, bind, etc"
+    },
+    {
+      "type": "pagefold",
+      "id": "b82ada706b20fa93",
+      "text": "css"
+    },
+    {
+      "type": "paragraph",
+      "id": "5ce48eacde9e0e7a",
+      "text": "css string for plugin"
+    },
+    {
+      "type": "pagefold",
+      "id": "46745bc638b6a4b3",
+      "text": "plugin Suffix"
+    },
+    {
+      "type": "paragraph",
+      "id": "0064e41f24e68b7c",
+      "text": "plugins are suffixed with custodian hash/domain name and single version"
+    },
+    {
+      "type": "code",
+      "id": "743b2d4db664ff81",
+      "text": "ndn:/.../plugin/calculator/<hash>/<%FD>"
+    },
+    {
+      "type": "pagefold",
+      "id": "3e0d5133803cd6ca",
+      "text": "Plugin Freshness"
+    },
+    {
+      "type": "paragraph",
+      "id": "3a76783f6cf2f211",
+      "text": "plugin js may change frequently enough to be updated, but remain stable enough to be cached when a plugin becomes popular, for now, strike a compromise, perhaps a day. later we may devise clever algorithms for predictive content freshness"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki /plugins Namespace",
+        "story": []
+      },
+      "date": 1386395926343
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ab8da09c247d8182"
+      },
+      "id": "ab8da09c247d8182",
+      "type": "add",
+      "date": 1386395929033
+    },
+    {
+      "type": "edit",
+      "id": "ab8da09c247d8182",
+      "item": {
+        "type": "pagefold",
+        "id": "ab8da09c247d8182",
+        "text": "plugin Prefix"
+      },
+      "date": 1386395941827
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f7e2ea8adcbd69d7"
+      },
+      "id": "f7e2ea8adcbd69d7",
+      "type": "add",
+      "after": "ab8da09c247d8182",
+      "date": 1386395943018
+    },
+    {
+      "type": "edit",
+      "id": "f7e2ea8adcbd69d7",
+      "item": {
+        "type": "code",
+        "id": "f7e2ea8adcbd69d7",
+        "text": "ndn:/<global-prefix>/wiki/plugin/"
+      },
+      "date": 1386396023370
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "05bffb0bdc34efe2"
+      },
+      "id": "05bffb0bdc34efe2",
+      "type": "add",
+      "after": "f7e2ea8adcbd69d7",
+      "date": 1386396024455
+    },
+    {
+      "type": "edit",
+      "id": "05bffb0bdc34efe2",
+      "item": {
+        "type": "paragraph",
+        "id": "05bffb0bdc34efe2",
+        "text": "the plugin namespace is subnamed with plugin names, each of which serves as a bucket for all resources necessary for a plugin"
+      },
+      "date": 1386396170950
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1bd07187beb90c36"
+      },
+      "id": "1bd07187beb90c36",
+      "type": "add",
+      "after": "05bffb0bdc34efe2",
+      "date": 1386396205625
+    },
+    {
+      "type": "edit",
+      "id": "05bffb0bdc34efe2",
+      "item": {
+        "type": "paragraph",
+        "id": "05bffb0bdc34efe2",
+        "text": "the plugin namespace is subnamed with plugin names, each of which serves as a bucket for all resources necessary for a plugin, namely: javascript and css"
+      },
+      "date": 1386396242328
+    },
+    {
+      "type": "remove",
+      "id": "1bd07187beb90c36",
+      "date": 1386396247227
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "16d67ff76c68ac68"
+      },
+      "id": "16d67ff76c68ac68",
+      "type": "add",
+      "after": "05bffb0bdc34efe2",
+      "date": 1386396248191
+    },
+    {
+      "type": "edit",
+      "id": "16d67ff76c68ac68",
+      "item": {
+        "type": "pagefold",
+        "id": "16d67ff76c68ac68",
+        "text": "js"
+      },
+      "date": 1386396257783
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f5b8f5e98e9283a5"
+      },
+      "id": "f5b8f5e98e9283a5",
+      "type": "add",
+      "after": "16d67ff76c68ac68",
+      "date": 1386396258921
+    },
+    {
+      "type": "remove",
+      "id": "f5b8f5e98e9283a5",
+      "date": 1386396264247
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b82ada706b20fa93"
+      },
+      "id": "b82ada706b20fa93",
+      "type": "add",
+      "after": "16d67ff76c68ac68",
+      "date": 1386396265598
+    },
+    {
+      "type": "edit",
+      "id": "b82ada706b20fa93",
+      "item": {
+        "type": "pagefold",
+        "id": "b82ada706b20fa93",
+        "text": "css"
+      },
+      "date": 1386396274314
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f917bc4af0ac77d5"
+      },
+      "id": "f917bc4af0ac77d5",
+      "type": "add",
+      "after": "b82ada706b20fa93",
+      "date": 1386396275543
+    },
+    {
+      "type": "move",
+      "order": [
+        "ab8da09c247d8182",
+        "f7e2ea8adcbd69d7",
+        "05bffb0bdc34efe2",
+        "16d67ff76c68ac68",
+        "f917bc4af0ac77d5",
+        "b82ada706b20fa93"
+      ],
+      "id": "f917bc4af0ac77d5",
+      "date": 1386396277104
+    },
+    {
+      "type": "remove",
+      "id": "f917bc4af0ac77d5",
+      "date": 1386396348785
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4d10afc3e376d7f0"
+      },
+      "id": "4d10afc3e376d7f0",
+      "type": "add",
+      "after": "b82ada706b20fa93",
+      "date": 1386396375005
+    },
+    {
+      "type": "move",
+      "order": [
+        "ab8da09c247d8182",
+        "f7e2ea8adcbd69d7",
+        "05bffb0bdc34efe2",
+        "4d10afc3e376d7f0",
+        "16d67ff76c68ac68",
+        "b82ada706b20fa93"
+      ],
+      "id": "4d10afc3e376d7f0",
+      "date": 1386396376454
+    },
+    {
+      "type": "move",
+      "order": [
+        "ab8da09c247d8182",
+        "f7e2ea8adcbd69d7",
+        "05bffb0bdc34efe2",
+        "16d67ff76c68ac68",
+        "4d10afc3e376d7f0",
+        "b82ada706b20fa93"
+      ],
+      "id": "4d10afc3e376d7f0",
+      "date": 1386396379738
+    },
+    {
+      "type": "edit",
+      "id": "4d10afc3e376d7f0",
+      "item": {
+        "type": "paragraph",
+        "id": "4d10afc3e376d7f0",
+        "text": "js must contain the raw javascript string"
+      },
+      "date": 1386396422946
+    },
+    {
+      "type": "edit",
+      "id": "4d10afc3e376d7f0",
+      "item": {
+        "type": "paragraph",
+        "id": "4d10afc3e376d7f0",
+        "text": "js is the raw javascript of the plugin, defining emit, bind, etc"
+      },
+      "date": 1386396466642
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "948d062cc9aa77ea",
+        "text": ""
+      },
+      "id": "948d062cc9aa77ea",
+      "type": "add",
+      "after": "4d10afc3e376d7f0",
+      "date": 1386396467160
+    },
+    {
+      "type": "remove",
+      "id": "948d062cc9aa77ea",
+      "date": 1386396468524
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5ce48eacde9e0e7a"
+      },
+      "id": "5ce48eacde9e0e7a",
+      "type": "add",
+      "after": "b82ada706b20fa93",
+      "date": 1386396471939
+    },
+    {
+      "type": "edit",
+      "id": "5ce48eacde9e0e7a",
+      "item": {
+        "type": "paragraph",
+        "id": "5ce48eacde9e0e7a",
+        "text": "css string"
+      },
+      "date": 1386396482063
+    },
+    {
+      "type": "edit",
+      "id": "5ce48eacde9e0e7a",
+      "item": {
+        "type": "paragraph",
+        "id": "5ce48eacde9e0e7a",
+        "text": "css string for plugin"
+      },
+      "date": 1386396501979
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "46745bc638b6a4b3"
+      },
+      "id": "46745bc638b6a4b3",
+      "type": "add",
+      "after": "5ce48eacde9e0e7a",
+      "date": 1386396523129
+    },
+    {
+      "type": "edit",
+      "id": "46745bc638b6a4b3",
+      "item": {
+        "type": "pagefold",
+        "id": "46745bc638b6a4b3",
+        "text": "plugin Suffix"
+      },
+      "date": 1386396541346
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0064e41f24e68b7c"
+      },
+      "id": "0064e41f24e68b7c",
+      "type": "add",
+      "after": "46745bc638b6a4b3",
+      "date": 1386396544101
+    },
+    {
+      "type": "edit",
+      "id": "f7e2ea8adcbd69d7",
+      "item": {
+        "type": "code",
+        "id": "f7e2ea8adcbd69d7",
+        "text": "ndn:/<global-prefix>/wiki/plugins/"
+      },
+      "date": 1386396552366
+    },
+    {
+      "type": "edit",
+      "id": "0064e41f24e68b7c",
+      "item": {
+        "type": "paragraph",
+        "id": "0064e41f24e68b7c",
+        "text": "plugins are suffixed with custodian hash/domain name and single version"
+      },
+      "date": 1386396590665
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3e0d5133803cd6ca"
+      },
+      "id": "3e0d5133803cd6ca",
+      "type": "add",
+      "after": "0064e41f24e68b7c",
+      "date": 1386396592142
+    },
+    {
+      "type": "edit",
+      "id": "3e0d5133803cd6ca",
+      "item": {
+        "type": "pagefold",
+        "id": "3e0d5133803cd6ca",
+        "text": "Plugin Freshness"
+      },
+      "date": 1386396599763
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3a76783f6cf2f211"
+      },
+      "id": "3a76783f6cf2f211",
+      "type": "add",
+      "after": "3e0d5133803cd6ca",
+      "date": 1386396602649
+    },
+    {
+      "type": "edit",
+      "id": "3a76783f6cf2f211",
+      "item": {
+        "type": "paragraph",
+        "id": "3a76783f6cf2f211",
+        "text": "plugin js may change frequently enough to be updated, but remain stable enough to be cached when a plugin becomes popular, for now, strike a compromise, perhaps a day. later we may devise clever algorithms for predictive content freshness"
+      },
+      "date": 1386396808340
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "743b2d4db664ff81"
+      },
+      "id": "743b2d4db664ff81",
+      "type": "add",
+      "after": "3a76783f6cf2f211",
+      "date": 1386396840649
+    },
+    {
+      "type": "move",
+      "order": [
+        "ab8da09c247d8182",
+        "f7e2ea8adcbd69d7",
+        "05bffb0bdc34efe2",
+        "16d67ff76c68ac68",
+        "4d10afc3e376d7f0",
+        "b82ada706b20fa93",
+        "5ce48eacde9e0e7a",
+        "46745bc638b6a4b3",
+        "0064e41f24e68b7c",
+        "743b2d4db664ff81",
+        "3e0d5133803cd6ca",
+        "3a76783f6cf2f211"
+      ],
+      "id": "743b2d4db664ff81",
+      "date": 1386396845090
+    },
+    {
+      "type": "edit",
+      "id": "743b2d4db664ff81",
+      "item": {
+        "type": "code",
+        "id": "743b2d4db664ff81",
+        "text": "ndn:/.../plugin/calculator/<hash>/<%FD>"
+      },
+      "date": 1386396906776
+    }
+  ]
+}

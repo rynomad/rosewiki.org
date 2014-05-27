@@ -1,0 +1,72 @@
+{
+  "title": "Hume",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "155e6f06dadb661a",
+      "text": "The veil of ignorance"
+    },
+    {
+      "type": "paragraph",
+      "id": "4316c078dbd7a79d",
+      "text": "he was very Hume-an, get it?"
+    },
+    {
+      "type": "paragraph",
+      "id": "5e6b443cc2024a1a",
+      "text": "that is a lame joke"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Hume",
+        "story": []
+      },
+      "date": 1389989975929
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "155e6f06dadb661a",
+        "text": "The veil of ignorance"
+      },
+      "id": "155e6f06dadb661a",
+      "date": 1389989984547
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "4316c078dbd7a79d",
+        "text": "he was very Hume-an, get it?"
+      },
+      "after": "155e6f06dadb661a",
+      "id": "4316c078dbd7a79d",
+      "date": 1389990263437
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5e6b443cc2024a1a",
+        "text": ""
+      },
+      "id": "5e6b443cc2024a1a",
+      "type": "add",
+      "after": "4316c078dbd7a79d",
+      "date": 1389990268873
+    },
+    {
+      "type": "edit",
+      "id": "5e6b443cc2024a1a",
+      "item": {
+        "type": "paragraph",
+        "id": "5e6b443cc2024a1a",
+        "text": "that is a lame joke"
+      },
+      "date": 1389990273399
+    }
+  ]
+}

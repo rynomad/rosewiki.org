@@ -1,0 +1,78 @@
+{
+  "title": "Important Philosophers",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "3a9d7bdcbba324b2",
+      "text": "[[Rene Descartes]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "3e27ad116ca8b45f",
+      "text": "[[Hume]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "46f643ba1f027f9e",
+      "text": "[[Aristotle]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "feb6f27c3ffb9a5f",
+      "text": "[[Plato]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Important Philosophers",
+        "story": []
+      },
+      "date": 1389989756880
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "3a9d7bdcbba324b2",
+        "text": "[[Rene Descartes]]"
+      },
+      "id": "3a9d7bdcbba324b2",
+      "date": 1389989760845
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "3e27ad116ca8b45f",
+        "text": "[[Hume]]"
+      },
+      "after": "3a9d7bdcbba324b2",
+      "id": "3e27ad116ca8b45f",
+      "date": 1389989763601
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "46f643ba1f027f9e",
+        "text": "[[Aristotle]]"
+      },
+      "after": "3e27ad116ca8b45f",
+      "id": "46f643ba1f027f9e",
+      "date": 1389989765717
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "feb6f27c3ffb9a5f",
+        "text": "[[Plato]]"
+      },
+      "after": "46f643ba1f027f9e",
+      "id": "feb6f27c3ffb9a5f",
+      "date": 1389990440210
+    }
+  ]
+}

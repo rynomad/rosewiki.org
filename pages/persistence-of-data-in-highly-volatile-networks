@@ -1,0 +1,496 @@
+{
+  "title": "Persistence of Data in highly volatile Networks",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "48cddd7835ff6c8a",
+      "text": "Of the many services a server provides in the context of large, rich media social web applications is the persistence of large amounts of user data (such that a friend can see your profile while you are offline)."
+    },
+    {
+      "type": "paragraph",
+      "id": "d25c8619ec08a1db",
+      "text": "However, consumers are becoming increasingly concerned with the privacy and provenance of their data. This begets a move towards distributed networks and applications."
+    },
+    {
+      "type": "paragraph",
+      "id": "75ce2d9bbfd1e7c5",
+      "text": "We would like to explore the secure replication of user data through ephemeral networks, as illustrated by the following user story:"
+    },
+    {
+      "type": "paragraph",
+      "id": "0966dd7386541066",
+      "text": "David, Tony, and Thor are all from different parts of the world and met while staying at the same hostel, adding each other as friends on a popular social site. To to the timezone differences between their homes, any two of them are seldom online at the same time and have no other friends in common. "
+    },
+    {
+      "type": "paragraph",
+      "id": "85e29fffeca3ed94",
+      "text": "Our challenge is to allow David, Tony, and thor to see posts from each other even though none of them is online at the time to serve each other the data directly. "
+    },
+    {
+      "type": "paragraph",
+      "id": "35d13faff41859a1",
+      "text": "As [[NDN]] allows for network layer awareness of identified data, we believe it suitable for the task of managing a flow of replication through online users such that the collective sum of user data remains available at all times."
+    },
+    {
+      "type": "paragraph",
+      "id": "5083997f198f58fa",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "7960373043b6808d",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "14d98a6cccc1a316",
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "id": "a82e9ed6755f83c6",
+      "text": ""
+    },
+    {
+      "type": "pagefold",
+      "id": "85e3849a60cdb34f",
+      "text": "Questions"
+    },
+    {
+      "type": "paragraph",
+      "id": "5dbe28d42afcd752",
+      "text": "How do we secure privacy when others are persisting our data?"
+    },
+    {
+      "type": "paragraph",
+      "id": "eaf6a6347392f8f0",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "c50722777ac999c4",
+      "text": "How do we balance data persistence with byte-bloat? Though the masses have storage, it is not unlimited, and rich media is heavy."
+    },
+    {
+      "type": "paragraph",
+      "id": "84fe4913b7230496",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Persistence of Data in highly volatile Networks",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1391015885204,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "48cddd7835ff6c8a"
+      },
+      "id": "48cddd7835ff6c8a",
+      "type": "add",
+      "date": 1391015886277
+    },
+    {
+      "type": "edit",
+      "id": "48cddd7835ff6c8a",
+      "item": {
+        "type": "paragraph",
+        "id": "48cddd7835ff6c8a",
+        "text": "Of the many services a server provides in the context of large, rich media social web applications is the persistence of large amounts of user data (such that a friend can see your profile while you are offline)."
+      },
+      "date": 1391015963978
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "40f5bc1af98ebc07",
+        "text": ""
+      },
+      "id": "40f5bc1af98ebc07",
+      "type": "add",
+      "after": "48cddd7835ff6c8a",
+      "date": 1391015964487
+    },
+    {
+      "type": "remove",
+      "id": "40f5bc1af98ebc07",
+      "date": 1391015968529
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d25c8619ec08a1db",
+        "text": ""
+      },
+      "id": "d25c8619ec08a1db",
+      "type": "add",
+      "after": "48cddd7835ff6c8a",
+      "date": 1391015970325
+    },
+    {
+      "type": "edit",
+      "id": "d25c8619ec08a1db",
+      "item": {
+        "type": "paragraph",
+        "id": "d25c8619ec08a1db",
+        "text": "Howe"
+      },
+      "date": 1391015973000
+    },
+    {
+      "type": "edit",
+      "id": "d25c8619ec08a1db",
+      "item": {
+        "type": "paragraph",
+        "id": "d25c8619ec08a1db",
+        "text": "However, consumers are becoming increasingly concerned with the privacy and provenance of their data. T"
+      },
+      "date": 1391016027510
+    },
+    {
+      "type": "edit",
+      "id": "d25c8619ec08a1db",
+      "item": {
+        "type": "paragraph",
+        "id": "d25c8619ec08a1db",
+        "text": "However, consumers are becoming increasingly concerned with the privacy and provenance of their data. This begets a move towards distributed networks and applications."
+      },
+      "date": 1391016078627
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "75ce2d9bbfd1e7c5",
+        "text": ""
+      },
+      "id": "75ce2d9bbfd1e7c5",
+      "type": "add",
+      "after": "d25c8619ec08a1db",
+      "date": 1391016079136
+    },
+    {
+      "type": "edit",
+      "id": "75ce2d9bbfd1e7c5",
+      "item": {
+        "type": "paragraph",
+        "id": "75ce2d9bbfd1e7c5",
+        "text": "We would like to explore the secure replication of user data through ephemeral networks, as illustrated by the following use case."
+      },
+      "date": 1391016127402
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "50bc794a024cb51b",
+        "text": ""
+      },
+      "id": "50bc794a024cb51b",
+      "type": "add",
+      "after": "75ce2d9bbfd1e7c5",
+      "date": 1391016127910
+    },
+    {
+      "type": "remove",
+      "id": "50bc794a024cb51b",
+      "date": 1391016128390
+    },
+    {
+      "type": "edit",
+      "id": "75ce2d9bbfd1e7c5",
+      "item": {
+        "type": "paragraph",
+        "id": "75ce2d9bbfd1e7c5",
+        "text": "We would like to explore the secure replication of user data through ephemeral networks, as illustrated by the following user story:"
+      },
+      "date": 1391016132919
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a82e9ed6755f83c6",
+        "text": ""
+      },
+      "id": "a82e9ed6755f83c6",
+      "type": "add",
+      "after": "75ce2d9bbfd1e7c5",
+      "date": 1391016133428
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0966dd7386541066",
+        "text": ""
+      },
+      "id": "0966dd7386541066",
+      "type": "add",
+      "after": "75ce2d9bbfd1e7c5",
+      "date": 1391016532152
+    },
+    {
+      "type": "edit",
+      "id": "0966dd7386541066",
+      "item": {
+        "type": "paragraph",
+        "id": "0966dd7386541066",
+        "text": "Bob and Alice are friends on a popular social site. The have 3 friends in common."
+      },
+      "date": 1391016589103
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "db9e42d4b6e4220b",
+        "text": ""
+      },
+      "id": "db9e42d4b6e4220b",
+      "type": "add",
+      "after": "0966dd7386541066",
+      "date": 1391016589613
+    },
+    {
+      "type": "remove",
+      "id": "db9e42d4b6e4220b",
+      "date": 1391016593088
+    },
+    {
+      "type": "edit",
+      "id": "0966dd7386541066",
+      "item": {
+        "type": "paragraph",
+        "id": "0966dd7386541066",
+        "text": "David, Tony, and Thor are all from different parts of the world and met while staying at the same hostel, adding each other as friends on a popular social site. To to the timezone differences between their homes, any two of them are seldom online at the same time and have no other friends in common."
+      },
+      "date": 1391016772145
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "14d98a6cccc1a316",
+        "text": ""
+      },
+      "id": "14d98a6cccc1a316",
+      "type": "add",
+      "after": "0966dd7386541066",
+      "date": 1391016772654
+    },
+    {
+      "type": "remove",
+      "id": "14d98a6cccc1a316",
+      "date": 1391016790863
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "85e29fffeca3ed94",
+        "text": ""
+      },
+      "id": "85e29fffeca3ed94",
+      "type": "add",
+      "after": "0966dd7386541066",
+      "date": 1391016911587
+    },
+    {
+      "type": "edit",
+      "id": "85e29fffeca3ed94",
+      "item": {
+        "type": "paragraph",
+        "id": "85e29fffeca3ed94",
+        "text": "Our challenge is to allo"
+      },
+      "date": 1391016930098
+    },
+    {
+      "type": "edit",
+      "id": "0966dd7386541066",
+      "item": {
+        "type": "paragraph",
+        "id": "0966dd7386541066",
+        "text": "David, Tony, and Thor are all from different parts of the world and met while staying at the same hostel, adding each other as friends on a popular social site. To to the timezone differences between their homes, any two of them are seldom online at the same time and have no other friends in common. "
+      },
+      "date": 1391016940763
+    },
+    {
+      "type": "edit",
+      "id": "85e29fffeca3ed94",
+      "item": {
+        "type": "paragraph",
+        "id": "85e29fffeca3ed94",
+        "text": "Our challenge is to allow David, Tony, and thor to see posts from each other even though none of them is online at the time to serve each other the data directly. "
+      },
+      "date": 1391016976029
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "35d13faff41859a1",
+        "text": ""
+      },
+      "id": "35d13faff41859a1",
+      "type": "add",
+      "after": "85e29fffeca3ed94",
+      "date": 1391016976542
+    },
+    {
+      "type": "edit",
+      "id": "35d13faff41859a1",
+      "item": {
+        "type": "paragraph",
+        "id": "35d13faff41859a1",
+        "text": "As [[NDN]] allows for network layer awareness of identified data, we believe it suitable for the task of managing a flow of replication through online users such that the collective sum of user data remains available at all times."
+      },
+      "date": 1391017275942
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7960373043b6808d",
+        "text": " "
+      },
+      "id": "7960373043b6808d",
+      "type": "add",
+      "after": "35d13faff41859a1",
+      "date": 1391017276457
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5083997f198f58fa",
+        "text": ""
+      },
+      "id": "5083997f198f58fa",
+      "type": "add",
+      "after": "35d13faff41859a1",
+      "date": 1391017285759
+    },
+    {
+      "type": "remove",
+      "id": "5083997f198f58fa",
+      "date": 1391017314191
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "85e3849a60cdb34f"
+      },
+      "id": "85e3849a60cdb34f",
+      "type": "add",
+      "after": "a82e9ed6755f83c6",
+      "date": 1391017891807
+    },
+    {
+      "type": "edit",
+      "id": "85e3849a60cdb34f",
+      "item": {
+        "type": "pagefold",
+        "id": "85e3849a60cdb34f",
+        "text": "Questions"
+      },
+      "date": 1391017898852
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5dbe28d42afcd752"
+      },
+      "id": "5dbe28d42afcd752",
+      "type": "add",
+      "after": "85e3849a60cdb34f",
+      "date": 1391017900091
+    },
+    {
+      "type": "edit",
+      "id": "5dbe28d42afcd752",
+      "item": {
+        "type": "paragraph",
+        "id": "5dbe28d42afcd752",
+        "text": "How do we secure privacy when others are persisting our data?"
+      },
+      "date": 1391017937811
+    },
+    {
+      "type": "edit",
+      "id": "eaf6a6347392f8f0",
+      "item": {
+        "type": "paragraph",
+        "id": "eaf6a6347392f8f0",
+        "text": " "
+      },
+      "date": 1391017937934
+    },
+    {
+      "type": "remove",
+      "id": "eac85aac7371adf0",
+      "date": 1391017937950
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eaf6a6347392f8f0",
+        "text": " "
+      },
+      "id": "eaf6a6347392f8f0",
+      "type": "add",
+      "after": "5dbe28d42afcd752",
+      "date": 1391017938334
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eac85aac7371adf0",
+        "text": ""
+      },
+      "id": "eac85aac7371adf0",
+      "type": "add",
+      "after": "eaf6a6347392f8f0",
+      "date": 1391017938450
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c50722777ac999c4",
+        "text": ""
+      },
+      "id": "c50722777ac999c4",
+      "type": "add",
+      "after": "eaf6a6347392f8f0",
+      "date": 1391017938459
+    },
+    {
+      "type": "edit",
+      "id": "c50722777ac999c4",
+      "item": {
+        "type": "paragraph",
+        "id": "c50722777ac999c4",
+        "text": "How do we balance data persistence with byte-bloat? Though the masses have storage, it is not unlimited, and rich media is heavy."
+      },
+      "date": 1391017985429
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "84fe4913b7230496",
+        "text": ""
+      },
+      "id": "84fe4913b7230496",
+      "type": "add",
+      "after": "c50722777ac999c4",
+      "date": 1391017985939
+    },
+    {
+      "type": "remove",
+      "id": "84fe4913b7230496",
+      "date": 1391017996853
+    },
+    {
+      "type": "fork",
+      "date": 1391019252306
+    }
+  ]
+}

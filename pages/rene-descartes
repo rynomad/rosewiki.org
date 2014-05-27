@@ -1,0 +1,78 @@
+{
+  "title": "Rene Descartes",
+  "story": [
+    {
+      "type": "pagefold",
+      "id": "b4fb9d9a1f5f8a95",
+      "text": "I Think"
+    },
+    {
+      "type": "paragraph",
+      "id": "965071c1966da537",
+      "text": "...Therefor I am"
+    },
+    {
+      "type": "factory",
+      "id": "7e8e54e18a3dd86a"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Rene Descartes",
+        "story": []
+      },
+      "date": 1389989706679
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b4fb9d9a1f5f8a95"
+      },
+      "id": "b4fb9d9a1f5f8a95",
+      "type": "add",
+      "date": 1389989707789
+    },
+    {
+      "type": "edit",
+      "id": "b4fb9d9a1f5f8a95",
+      "item": {
+        "type": "pagefold",
+        "id": "b4fb9d9a1f5f8a95",
+        "text": "I Think"
+      },
+      "date": 1389989718186
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "965071c1966da537"
+      },
+      "id": "965071c1966da537",
+      "type": "add",
+      "after": "b4fb9d9a1f5f8a95",
+      "date": 1389989719333
+    },
+    {
+      "type": "edit",
+      "id": "965071c1966da537",
+      "item": {
+        "type": "paragraph",
+        "id": "965071c1966da537",
+        "text": "...Therefor I am"
+      },
+      "date": 1389989726678
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7e8e54e18a3dd86a"
+      },
+      "id": "7e8e54e18a3dd86a",
+      "type": "add",
+      "after": "965071c1966da537",
+      "date": 1389989727594
+    }
+  ]
+}

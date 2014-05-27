@@ -1,0 +1,138 @@
+{
+  "title": "Wiki as a Protocol",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "e0956c4c0f0207db",
+      "text": "Though not explicitely defined, wiki bears resemblance to a protocol for exchanging and collecting discreet information within a page 'story'"
+    },
+    {
+      "type": "paragraph",
+      "id": "e93eebd61d008033",
+      "text": "something loc"
+    },
+    {
+      "type": "paragraph",
+      "id": "eefe88000592e7ce",
+      "text": "try here again"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki as a Protocol",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1386717457408,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0ac75d3400c48030"
+      },
+      "id": "0ac75d3400c48030",
+      "type": "add",
+      "date": 1386717708543
+    },
+    {
+      "type": "fork",
+      "site": "NDN_cxslcxslcwsbcwcagoeoqgarujqcgshcabfqmogctvkaybuz2dbvsxgkuclkb9mz",
+      "date": 1386718582948
+    },
+    {
+      "type": "fork",
+      "date": 1386718604860
+    },
+    {
+      "type": "edit",
+      "id": "eefe88000592e7ce",
+      "item": {
+        "type": "paragraph",
+        "id": "eefe88000592e7ce",
+        "text": "try here again"
+      },
+      "date": 1386718643001
+    },
+    {
+      "type": "move",
+      "order": [
+        "eefe88000592e7ce",
+        "e0956c4c0f0207db"
+      ],
+      "id": "eefe88000592e7ce",
+      "date": 1386718676480
+    },
+    {
+      "type": "move",
+      "order": [
+        "e0956c4c0f0207db",
+        "eefe88000592e7ce"
+      ],
+      "id": "e0956c4c0f0207db",
+      "date": 1386718705879
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1386718753651
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e93eebd61d008033"
+      },
+      "id": "e93eebd61d008033",
+      "type": "add",
+      "after": "eefe88000592e7ce",
+      "site": "rosewiki.org",
+      "date": 1386718753651
+    },
+    {
+      "type": "edit",
+      "id": "e93eebd61d008033",
+      "item": {
+        "type": "paragraph",
+        "id": "e93eebd61d008033",
+        "text": "something local"
+      },
+      "date": 1386718758915
+    },
+    {
+      "type": "fork",
+      "date": 1386718775924
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1386719207310
+    },
+    {
+      "type": "edit",
+      "id": "e93eebd61d008033",
+      "item": {
+        "type": "paragraph",
+        "id": "e93eebd61d008033",
+        "text": "something loc"
+      },
+      "site": "rosewiki.org",
+      "date": 1386719207310
+    },
+    {
+      "type": "move",
+      "order": [
+        "e0956c4c0f0207db",
+        "e93eebd61d008033",
+        "eefe88000592e7ce"
+      ],
+      "id": "e93eebd61d008033",
+      "date": 1386719236159
+    },
+    {
+      "type": "fork",
+      "date": 1386719238179
+    }
+  ]
+}

@@ -1,0 +1,408 @@
+{
+  "title": "Semanticize Wik",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "6dd2ebcdc81deec2",
+      "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype and so little action. When I say we should Semanticize Wik, I don't mean that all of our actual content should be semantic (It certainly *could* be, but that is up to individual curators)"
+    },
+    {
+      "type": "paragraph",
+      "id": "a4e79742f6cbc8ac",
+      "text": "Rather, our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]], ensure a robust UX, and help us to organically [[Socialize Wik]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "2f7ce5615dd555ae",
+      "text": "Semantic Rules (rough)"
+    },
+    {
+      "type": "paragraph",
+      "id": "a1b1368e71d234f4",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "e5497630da16961e",
+      "text": "-Always [[Version Semantic links]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "eec6b3f84254e35d",
+      "text": "-Always link to the author of a patch"
+    },
+    {
+      "type": "paragraph",
+      "id": "b3a74db3f935d76c",
+      "text": "-Always link to the dependencies of a patch"
+    },
+    {
+      "type": "paragraph",
+      "id": "308a3a2422795d03",
+      "text": "-Always link to the plugin used to render/evaluate a given Story Item"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Semanticize Wik",
+        "story": []
+      },
+      "date": 1393888998164
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6dd2ebcdc81deec2"
+      },
+      "id": "6dd2ebcdc81deec2",
+      "type": "add",
+      "date": 1393888999455
+    },
+    {
+      "type": "edit",
+      "id": "6dd2ebcdc81deec2",
+      "item": {
+        "type": "paragraph",
+        "id": "6dd2ebcdc81deec2",
+        "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype."
+      },
+      "date": 1393889062774
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b92bb585a2053c36",
+        "text": ""
+      },
+      "id": "b92bb585a2053c36",
+      "type": "add",
+      "after": "6dd2ebcdc81deec2",
+      "date": 1393889063292
+    },
+    {
+      "type": "remove",
+      "id": "b92bb585a2053c36",
+      "date": 1393889064816
+    },
+    {
+      "type": "edit",
+      "id": "6dd2ebcdc81deec2",
+      "item": {
+        "type": "paragraph",
+        "id": "6dd2ebcdc81deec2",
+        "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype. When I say we should Semanticize Wik, I don't mean that all of our actual content should be semantic (It *could* be, if that was the authors desire), but rather that our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]] and help us to organically [[Socialize Wik]]"
+      },
+      "date": 1393889385897
+    },
+    {
+      "type": "edit",
+      "id": "6dd2ebcdc81deec2",
+      "item": {
+        "type": "paragraph",
+        "id": "6dd2ebcdc81deec2",
+        "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype. When I say we should Semanticize Wik, I don't mean that all of our actual content should be semantic (It *could* be, if that was the authors desire)"
+      },
+      "date": 1393889508646
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a4e79742f6cbc8ac",
+        "text": " rather that our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]] and help us to organically [[Socialize Wik]]"
+      },
+      "id": "a4e79742f6cbc8ac",
+      "type": "add",
+      "after": "6dd2ebcdc81deec2",
+      "date": 1393889509167
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7d7c542b3f571de7",
+        "text": ", but"
+      },
+      "id": "7d7c542b3f571de7",
+      "type": "add",
+      "after": "6dd2ebcdc81deec2",
+      "date": 1393889509181
+    },
+    {
+      "type": "remove",
+      "id": "7d7c542b3f571de7",
+      "date": 1393889513222
+    },
+    {
+      "type": "edit",
+      "id": "a4e79742f6cbc8ac",
+      "item": {
+        "type": "paragraph",
+        "id": "a4e79742f6cbc8ac",
+        "text": "Rather that our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]] and help us to organically [[Socialize Wik]]"
+      },
+      "date": 1393889547035
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2f7ce5615dd555ae"
+      },
+      "id": "2f7ce5615dd555ae",
+      "type": "add",
+      "after": "a4e79742f6cbc8ac",
+      "date": 1393889548393
+    },
+    {
+      "type": "edit",
+      "id": "2f7ce5615dd555ae",
+      "item": {
+        "type": "pagefold",
+        "id": "2f7ce5615dd555ae",
+        "text": "Desired Semantic Features"
+      },
+      "date": 1393889563906
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a1b1368e71d234f4"
+      },
+      "id": "a1b1368e71d234f4",
+      "type": "add",
+      "after": "2f7ce5615dd555ae",
+      "date": 1393889568014
+    },
+    {
+      "type": "edit",
+      "id": "a1b1368e71d234f4",
+      "item": {
+        "type": "paragraph",
+        "id": "a1b1368e71d234f4",
+        "text": "-Always know the Authorship of a patch"
+      },
+      "date": 1393889587771
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b3a74db3f935d76c",
+        "text": ""
+      },
+      "id": "b3a74db3f935d76c",
+      "type": "add",
+      "after": "a1b1368e71d234f4",
+      "date": 1393889588294
+    },
+    {
+      "type": "edit",
+      "id": "b3a74db3f935d76c",
+      "item": {
+        "type": "paragraph",
+        "id": "b3a74db3f935d76c",
+        "text": "-Always link to "
+      },
+      "date": 1393889603224
+    },
+    {
+      "type": "edit",
+      "id": "a1b1368e71d234f4",
+      "item": {
+        "type": "paragraph",
+        "id": "a1b1368e71d234f4",
+        "text": "-Always link to the author of a patch"
+      },
+      "date": 1393889609672
+    },
+    {
+      "type": "edit",
+      "id": "6dd2ebcdc81deec2",
+      "item": {
+        "type": "paragraph",
+        "id": "6dd2ebcdc81deec2",
+        "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype. When I say we should Semanticize Wik, I don't mean that all of our actual content should be semantic (It certainly *could* be, but that is up to individual curators)"
+      },
+      "date": 1393889643615
+    },
+    {
+      "type": "edit",
+      "id": "a4e79742f6cbc8ac",
+      "item": {
+        "type": "paragraph",
+        "id": "a4e79742f6cbc8ac",
+        "text": "Rather, our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]] and help us to organically [[Socialize Wik]]"
+      },
+      "date": 1393889652947
+    },
+    {
+      "type": "edit",
+      "id": "6dd2ebcdc81deec2",
+      "item": {
+        "type": "paragraph",
+        "id": "6dd2ebcdc81deec2",
+        "text": "I get a headache when I think about Semantic Web projects; mostly because there so much hype and so little action. When I say we should Semanticize Wik, I don't mean that all of our actual content should be semantic (It certainly *could* be, but that is up to individual curators)"
+      },
+      "date": 1393889678618
+    },
+    {
+      "type": "edit",
+      "id": "b3a74db3f935d76c",
+      "item": {
+        "type": "paragraph",
+        "id": "b3a74db3f935d76c",
+        "text": "-Always link to the dependencies of a patch"
+      },
+      "date": 1393889695302
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "cd8ed1b05e0e242b",
+        "text": ""
+      },
+      "id": "cd8ed1b05e0e242b",
+      "type": "add",
+      "after": "b3a74db3f935d76c",
+      "date": 1393889695823
+    },
+    {
+      "type": "remove",
+      "id": "cd8ed1b05e0e242b",
+      "date": 1393889856886
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "308a3a2422795d03"
+      },
+      "id": "308a3a2422795d03",
+      "type": "add",
+      "after": "b3a74db3f935d76c",
+      "date": 1393889869491
+    },
+    {
+      "type": "edit",
+      "id": "308a3a2422795d03",
+      "item": {
+        "type": "paragraph",
+        "id": "308a3a2422795d03",
+        "text": "-Always link to the plugin used to render/evaluate a given Story Item"
+      },
+      "date": 1393889889621
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "74c02b935c036fbc",
+        "text": ""
+      },
+      "id": "74c02b935c036fbc",
+      "type": "add",
+      "after": "308a3a2422795d03",
+      "date": 1393889890140
+    },
+    {
+      "type": "remove",
+      "id": "74c02b935c036fbc",
+      "date": 1393889916991
+    },
+    {
+      "type": "edit",
+      "id": "a4e79742f6cbc8ac",
+      "item": {
+        "type": "paragraph",
+        "id": "a4e79742f6cbc8ac",
+        "text": "Rather, our Patches and Plugins should be semantic in their construction, to simplify [[Patch Dependency Management]], ensure a robust UX, and help us to organically [[Socialize Wik]]"
+      },
+      "date": 1393889931867
+    },
+    {
+      "type": "edit",
+      "id": "a1b1368e71d234f4",
+      "item": {
+        "type": "paragraph",
+        "id": "a1b1368e71d234f4",
+        "text": " "
+      },
+      "date": 1393889974865
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eec6b3f84254e35d",
+        "text": "-Always link to the author of a patch"
+      },
+      "id": "eec6b3f84254e35d",
+      "type": "add",
+      "after": "a1b1368e71d234f4",
+      "date": 1393889975382
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e5497630da16961e",
+        "text": ""
+      },
+      "id": "e5497630da16961e",
+      "type": "add",
+      "after": "a1b1368e71d234f4",
+      "date": 1393889975395
+    },
+    {
+      "type": "edit",
+      "id": "e5497630da16961e",
+      "item": {
+        "type": "paragraph",
+        "id": "e5497630da16961e",
+        "text": "-Always [[Version Semantic links]]"
+      },
+      "date": 1393889990177
+    },
+    {
+      "type": "edit",
+      "id": "2f7ce5615dd555ae",
+      "item": {
+        "type": "pagefold",
+        "id": "2f7ce5615dd555ae",
+        "text": "Semantic Link Rules (rough)"
+      },
+      "date": 1393890088638
+    },
+    {
+      "type": "edit",
+      "id": "2f7ce5615dd555ae",
+      "item": {
+        "type": "pagefold",
+        "id": "2f7ce5615dd555ae",
+        "text": "Semantic Rules (rough)"
+      },
+      "date": 1393890103206
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9dea05bb9e4362f5",
+        "text": ""
+      },
+      "id": "9dea05bb9e4362f5",
+      "type": "add",
+      "after": "308a3a2422795d03",
+      "date": 1393972195975
+    },
+    {
+      "type": "edit",
+      "id": "9dea05bb9e4362f5",
+      "item": {
+        "type": "paragraph",
+        "id": "9dea05bb9e4362f5",
+        "text": "-Always link to "
+      },
+      "date": 1393972231137
+    },
+    {
+      "type": "remove",
+      "id": "9dea05bb9e4362f5",
+      "date": 1393972258545
+    }
+  ]
+}

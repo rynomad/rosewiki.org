@@ -1,0 +1,63 @@
+{
+  "title": "Pop Quizes",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "eea56ea00a02757e",
+      "text": "[[What is Maximizing act consequentialism?]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Pop Quizes",
+        "story": []
+      },
+      "date": 1391014974861
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "63607dcf3b6c6021"
+      },
+      "id": "63607dcf3b6c6021",
+      "type": "add",
+      "date": 1391014975743
+    },
+    {
+      "type": "remove",
+      "id": "63607dcf3b6c6021",
+      "date": 1391014987887
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "eea56ea00a02757e"
+      },
+      "id": "eea56ea00a02757e",
+      "type": "add",
+      "date": 1391015001221
+    },
+    {
+      "type": "edit",
+      "id": "eea56ea00a02757e",
+      "item": {
+        "type": "paragraph",
+        "id": "eea56ea00a02757e",
+        "text": "[[What is ]]"
+      },
+      "date": 1391015029508
+    },
+    {
+      "type": "edit",
+      "id": "eea56ea00a02757e",
+      "item": {
+        "type": "paragraph",
+        "id": "eea56ea00a02757e",
+        "text": "[[What is Maximizing act consequentialism?]]"
+      },
+      "date": 1391015055518
+    }
+  ]
+}

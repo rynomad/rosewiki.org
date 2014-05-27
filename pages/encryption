@@ -1,0 +1,258 @@
+{
+  "title": "Encryption",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "4917e88a87491c03",
+      "text": "Recommended Reading For Ryan on Crypto"
+    },
+    {
+      "type": "paragraph",
+      "id": "36c5d23860ffe53f",
+      "text": "PGP - Phill Zimmerman"
+    },
+    {
+      "type": "paragraph",
+      "id": "da6d0a651705c031",
+      "text": "Cryptography Engineering - Bruce Schneier"
+    },
+    {
+      "type": "paragraph",
+      "id": "8cddba3e6209bfba",
+      "text": "Cryptonomicon - Neil Stevenson"
+    },
+    {
+      "type": "paragraph",
+      "id": "df64ff1f21647d51",
+      "text": "Woodfield Diffy"
+    },
+    {
+      "type": "paragraph",
+      "id": "bb898f3b607b3044",
+      "text": "Understanding Cryptography by Christof Paar"
+    },
+    {
+      "type": "paragraph",
+      "id": "52f50c8768bdc2af",
+      "text": "Try to find the CypherPunks Archive"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Encryption",
+        "story": []
+      },
+      "date": 1386727718930
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4917e88a87491c03"
+      },
+      "id": "4917e88a87491c03",
+      "type": "add",
+      "date": 1386727719966
+    },
+    {
+      "type": "edit",
+      "id": "4917e88a87491c03",
+      "item": {
+        "type": "paragraph",
+        "id": "4917e88a87491c03",
+        "text": "Recommended Reading"
+      },
+      "date": 1386727724897
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "da6d0a651705c031",
+        "text": ""
+      },
+      "id": "da6d0a651705c031",
+      "type": "add",
+      "after": "4917e88a87491c03",
+      "date": 1386727725408
+    },
+    {
+      "type": "edit",
+      "id": "da6d0a651705c031",
+      "item": {
+        "type": "paragraph",
+        "id": "da6d0a651705c031",
+        "text": "Cryptography Engineering - Bruce Schneir"
+      },
+      "date": 1386727741468
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6e6caf35eef07d1e",
+        "text": ""
+      },
+      "id": "6e6caf35eef07d1e",
+      "type": "add",
+      "after": "da6d0a651705c031",
+      "date": 1386727741975
+    },
+    {
+      "type": "remove",
+      "id": "6e6caf35eef07d1e",
+      "date": 1386727743412
+    },
+    {
+      "type": "edit",
+      "id": "da6d0a651705c031",
+      "item": {
+        "type": "paragraph",
+        "id": "da6d0a651705c031",
+        "text": "Cryptography Engineering - Bruce Schneier"
+      },
+      "date": 1386727745725
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "36c5d23860ffe53f"
+      },
+      "id": "36c5d23860ffe53f",
+      "type": "add",
+      "after": "da6d0a651705c031",
+      "date": 1386727750816
+    },
+    {
+      "type": "edit",
+      "id": "36c5d23860ffe53f",
+      "item": {
+        "type": "paragraph",
+        "id": "36c5d23860ffe53f",
+        "text": "PGP"
+      },
+      "date": 1386727754654
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8cddba3e6209bfba",
+        "text": ""
+      },
+      "id": "8cddba3e6209bfba",
+      "type": "add",
+      "after": "36c5d23860ffe53f",
+      "date": 1386727755161
+    },
+    {
+      "type": "edit",
+      "id": "8cddba3e6209bfba",
+      "item": {
+        "type": "paragraph",
+        "id": "8cddba3e6209bfba",
+        "text": "Cryptonomicon"
+      },
+      "date": 1386727761346
+    },
+    {
+      "type": "edit",
+      "id": "8cddba3e6209bfba",
+      "item": {
+        "type": "paragraph",
+        "id": "8cddba3e6209bfba",
+        "text": "Cryptonomicon - Neil Stevenson"
+      },
+      "date": 1386727770945
+    },
+    {
+      "type": "move",
+      "order": [
+        "4917e88a87491c03",
+        "36c5d23860ffe53f",
+        "da6d0a651705c031",
+        "8cddba3e6209bfba"
+      ],
+      "id": "36c5d23860ffe53f",
+      "date": 1386727772965
+    },
+    {
+      "type": "edit",
+      "id": "4917e88a87491c03",
+      "item": {
+        "type": "paragraph",
+        "id": "4917e88a87491c03",
+        "text": "Recommended Reading For Ryan on Crypto"
+      },
+      "date": 1386727784799
+    },
+    {
+      "type": "edit",
+      "id": "36c5d23860ffe53f",
+      "item": {
+        "type": "paragraph",
+        "id": "36c5d23860ffe53f",
+        "text": "PGP - Phill Zimmerman"
+      },
+      "date": 1386727789996
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "df64ff1f21647d51"
+      },
+      "id": "df64ff1f21647d51",
+      "type": "add",
+      "after": "8cddba3e6209bfba",
+      "date": 1386727790889
+    },
+    {
+      "type": "edit",
+      "id": "df64ff1f21647d51",
+      "item": {
+        "type": "paragraph",
+        "id": "df64ff1f21647d51",
+        "text": "Woodfield Diffy"
+      },
+      "date": 1386727798167
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bb898f3b607b3044"
+      },
+      "id": "bb898f3b607b3044",
+      "type": "add",
+      "after": "df64ff1f21647d51",
+      "date": 1386727832944
+    },
+    {
+      "type": "edit",
+      "id": "bb898f3b607b3044",
+      "item": {
+        "type": "paragraph",
+        "id": "bb898f3b607b3044",
+        "text": "Understanding Cryptography by Christof Paar"
+      },
+      "date": 1386727908116
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "52f50c8768bdc2af"
+      },
+      "id": "52f50c8768bdc2af",
+      "type": "add",
+      "after": "bb898f3b607b3044",
+      "date": 1386728126791
+    },
+    {
+      "type": "edit",
+      "id": "52f50c8768bdc2af",
+      "item": {
+        "type": "paragraph",
+        "id": "52f50c8768bdc2af",
+        "text": "Try to find the CypherPunks Archive"
+      },
+      "date": 1386728139207
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Wiki DNA",
+  "story": [],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki DNA",
+        "story": []
+      },
+      "date": 1386387260002
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f454ddc9058deea5"
+      },
+      "id": "f454ddc9058deea5",
+      "type": "add",
+      "date": 1386387261430
+    },
+    {
+      "type": "remove",
+      "id": "f454ddc9058deea5",
+      "date": 1386387264418
+    }
+  ]
+}

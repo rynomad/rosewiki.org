@@ -1,0 +1,704 @@
+{
+  "title": "Welcome Visitors",
+  "story": [
+    {
+      "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011. The pages on this particular site have been edited to describe how to get things done on many of the federated sites.",
+      "id": "7b56f22a4b9ee974",
+      "type": "paragraph"
+    },
+    {
+      "type": "reference",
+      "id": "8ec15100880178ba",
+      "site": "plugins.fed.wiki.org",
+      "slug": "about-plugins",
+      "title": "About Plugins",
+      "text": "We explain federated wiki plugins. We define their role interpreting content, recount our experience writing many, describe principles and strategies for future plugins, and offer a step-by-step guide for new plugin authors."
+    },
+    {
+      "type": "paragraph",
+      "id": "e5b797fb900ad4c0",
+      "text": "<h3>Featured Sites"
+    },
+    {
+      "type": "reference",
+      "id": "4b81e9e05d042557",
+      "site": "sites.fed.wiki.org",
+      "slug": "sitesfedwikiorg",
+      "title": "sites.fed.wiki.org",
+      "text": "A catalog of federated wiki sites with domain names for page titles and brief descriptions tuned to look good in search results. Know your federation."
+    },
+    {
+      "type": "paragraph",
+      "id": "f2064c81a434c06e",
+      "text": "<h3> Learn More"
+    },
+    {
+      "type": "paragraph",
+      "id": "07ef6b0e53a77dd2",
+      "text": "Read a little bit of [[How To Wiki]]. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout. Still confused? Look for answers in our [[Frequently Asked Questions]], updates in [[Recent Changes]]."
+    }
+  ],
+  "journal": [
+    {
+      "id": "7b56f22a4b9ee974",
+      "type": "edit",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already. See also [[",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "id": "7b56f22a4b9ee974",
+      "type": "edit",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. You are welcome to copy this page to any server you own and revise its welcoming message as you see fit. You can assume this has happened many times already, most likely among the [[List of Pioneers]].",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d88b9a104822256b"
+      },
+      "id": "d88b9a104822256b",
+      "type": "add",
+      "after": "7b56f22a4b9ee974"
+    },
+    {
+      "type": "edit",
+      "id": "d88b9a104822256b",
+      "item": {
+        "type": "paragraph",
+        "id": "d88b9a104822256b",
+        "text": "<h2>How To Edit"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "d88b9a104822256b",
+      "item": {
+        "type": "paragraph",
+        "id": "d88b9a104822256b",
+        "text": "<h3>How To Add Content"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1012dd3528d4c788"
+      },
+      "id": "1012dd3528d4c788",
+      "type": "add",
+      "after": "d88b9a104822256b"
+    },
+    {
+      "type": "edit",
+      "id": "1012dd3528d4c788",
+      "item": {
+        "type": "paragraph",
+        "id": "1012dd3528d4c788",
+        "text": "How to [[Add Text]] to an existing paragraph."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d03bcc1fd0278522"
+      },
+      "id": "d03bcc1fd0278522",
+      "type": "add",
+      "after": "1012dd3528d4c788"
+    },
+    {
+      "type": "edit",
+      "id": "d03bcc1fd0278522",
+      "item": {
+        "type": "paragraph",
+        "id": "d03bcc1fd0278522",
+        "text": "How to [[Move Paragraphs]] within and between wiki pages."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f2a7762b712791e5"
+      },
+      "id": "f2a7762b712791e5",
+      "type": "add",
+      "after": "d03bcc1fd0278522"
+    },
+    {
+      "type": "edit",
+      "id": "f2a7762b712791e5",
+      "item": {
+        "type": "paragraph",
+        "id": "f2a7762b712791e5",
+        "text": "How to [[Add Plugins]] to interpret new kinds of data."
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "fa3e22f363cd93d5"
+      },
+      "id": "fa3e22f363cd93d5",
+      "type": "add",
+      "after": "f2a7762b712791e5"
+    },
+    {
+      "type": "edit",
+      "id": "fa3e22f363cd93d5",
+      "item": {
+        "type": "paragraph",
+        "id": "fa3e22f363cd93d5",
+        "text": "How to [[Add Paragraphs]] or paragraph-like items to a story."
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "d88b9a104822256b",
+        "1012dd3528d4c788",
+        "fa3e22f363cd93d5",
+        "d03bcc1fd0278522",
+        "f2a7762b712791e5"
+      ],
+      "id": "fa3e22f363cd93d5"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d3a1bd6b0c947378"
+      },
+      "id": "d3a1bd6b0c947378",
+      "type": "add",
+      "after": "f2a7762b712791e5"
+    },
+    {
+      "type": "edit",
+      "id": "d3a1bd6b0c947378",
+      "item": {
+        "type": "paragraph",
+        "id": "d3a1bd6b0c947378",
+        "text": "<h3>How To Improve Wiki"
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "d88b9a104822256b",
+        "1012dd3528d4c788",
+        "fa3e22f363cd93d5",
+        "d03bcc1fd0278522",
+        "d3a1bd6b0c947378",
+        "f2a7762b712791e5"
+      ],
+      "id": "d3a1bd6b0c947378"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4cb87e0352907dfe"
+      },
+      "id": "4cb87e0352907dfe",
+      "type": "add",
+      "after": "f2a7762b712791e5"
+    },
+    {
+      "type": "edit",
+      "id": "4cb87e0352907dfe",
+      "item": {
+        "type": "paragraph",
+        "id": "4cb87e0352907dfe",
+        "text": "How to [[Add Pages]] by adding links to existing pages."
+      }
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "d88b9a104822256b",
+        "1012dd3528d4c788",
+        "fa3e22f363cd93d5",
+        "d03bcc1fd0278522",
+        "4cb87e0352907dfe",
+        "d3a1bd6b0c947378",
+        "f2a7762b712791e5"
+      ],
+      "id": "4cb87e0352907dfe"
+    },
+    {
+      "type": "edit",
+      "id": "7b56f22a4b9ee974",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011, at [[Indie Web Camp]]. These pages describe editing conventions common among the federated sites.",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "7b56f22a4b9ee974",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011. These pages describe editing conventions common among the federated sites.",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "type": "edit",
+      "id": "7b56f22a4b9ee974",
+      "item": {
+        "text": "Welcome to the [[Smallest Federated Wiki]]. This page was first drafted Sunday, June 26th, 2011. The pages on this particular site have been edited to describe how to get things done on many of the federated sites.",
+        "id": "7b56f22a4b9ee974",
+        "type": "paragraph"
+      }
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "07ef6b0e53a77dd2"
+      },
+      "id": "07ef6b0e53a77dd2",
+      "type": "add",
+      "after": "f2a7762b712791e5"
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "07ef6b0e53a77dd2",
+        "d88b9a104822256b",
+        "1012dd3528d4c788",
+        "fa3e22f363cd93d5",
+        "d03bcc1fd0278522",
+        "4cb87e0352907dfe",
+        "d3a1bd6b0c947378",
+        "f2a7762b712791e5"
+      ],
+      "id": "07ef6b0e53a77dd2"
+    },
+    {
+      "type": "edit",
+      "id": "07ef6b0e53a77dd2",
+      "item": {
+        "type": "paragraph",
+        "id": "07ef6b0e53a77dd2",
+        "text": "Read a little bit. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "07ef6b0e53a77dd2",
+      "item": {
+        "type": "paragraph",
+        "id": "07ef6b0e53a77dd2",
+        "text": "Read a little bit. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout. Still confused? Add something to our [[Frequently Asked Questions]]."
+      }
+    },
+    {
+      "type": "edit",
+      "id": "07ef6b0e53a77dd2",
+      "item": {
+        "type": "paragraph",
+        "id": "07ef6b0e53a77dd2",
+        "text": "Read a little bit of [[How To Wiki]]. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout. Still confused? Add something to our [[Frequently Asked Questions]]."
+      }
+    },
+    {
+      "type": "remove",
+      "id": "d88b9a104822256b"
+    },
+    {
+      "type": "remove",
+      "id": "1012dd3528d4c788"
+    },
+    {
+      "type": "remove",
+      "id": "fa3e22f363cd93d5"
+    },
+    {
+      "type": "remove",
+      "id": "d03bcc1fd0278522"
+    },
+    {
+      "type": "remove",
+      "id": "4cb87e0352907dfe"
+    },
+    {
+      "type": "remove",
+      "id": "d3a1bd6b0c947378"
+    },
+    {
+      "type": "remove",
+      "id": "f2a7762b712791e5"
+    },
+    {
+      "type": "edit",
+      "id": "07ef6b0e53a77dd2",
+      "item": {
+        "type": "paragraph",
+        "id": "07ef6b0e53a77dd2",
+        "text": "Read a little bit of [[How To Wiki]]. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout. Still confused? Look for answers in our [[Frequently Asked Questions]]."
+      }
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "e5b797fb900ad4c0",
+        "text": "<h3>Featured Sites"
+      },
+      "after": "7b56f22a4b9ee974",
+      "id": "e5b797fb900ad4c0",
+      "date": 1348775932557
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "reference",
+        "id": "1649c9bcb7c6287b",
+        "site": "oscon.fed.wiki.org",
+        "slug": "oscon-2012-demo-video",
+        "title": "OSCON 2012 Demo Video",
+        "text": "We recreate the calculation refactoring example from the open source conference and invite viewers to try it themselves."
+      },
+      "after": "e5b797fb900ad4c0",
+      "id": "1649c9bcb7c6287b",
+      "date": 1348775935845
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "reference",
+        "id": "279cd02d73ee30f0",
+        "site": "oscon.fed.wiki.org",
+        "slug": "oscon-2012-demo-pages",
+        "title": "OSCON 2012 Demo Pages",
+        "text": "I demonstrated running, editing and refactoring calculations in my [http://www.oscon.com/oscon2012/public/schedule/detail/23295 OSCON Talk]. I created this site so others could try duplicating the changes. "
+      },
+      "after": "1649c9bcb7c6287b",
+      "id": "279cd02d73ee30f0",
+      "date": 1348775939142
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "f2064c81a434c06e",
+        "text": "<h3> Learn More"
+      },
+      "after": "279cd02d73ee30f0",
+      "id": "f2064c81a434c06e",
+      "date": 1348775943319
+    },
+    {
+      "type": "edit",
+      "id": "07ef6b0e53a77dd2",
+      "item": {
+        "type": "paragraph",
+        "id": "07ef6b0e53a77dd2",
+        "text": "Read a little bit of [[How To Wiki]]. Then move on to our [http://sandbox.fed.wiki.org Sandbox] and give your new knowledge a workout. Still confused? Look for answers in our [[Frequently Asked Questions]], updates in [[Recent Changes]]."
+      },
+      "date": 1350431163851
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bf8e988ea18ae1c1"
+      },
+      "id": "bf8e988ea18ae1c1",
+      "type": "add",
+      "after": "07ef6b0e53a77dd2",
+      "date": 1354411434425
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "bf8e988ea18ae1c1",
+        "1649c9bcb7c6287b",
+        "279cd02d73ee30f0",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "bf8e988ea18ae1c1",
+      "date": 1354411438347
+    },
+    {
+      "type": "edit",
+      "id": "bf8e988ea18ae1c1",
+      "item": {
+        "type": "reference",
+        "id": "bf8e988ea18ae1c1",
+        "site": "hsi.fed.wiki.org",
+        "slug": "federated-contributors",
+        "title": "Federated Contributors",
+        "text": "We list the known contributors to the Westwind Patterns project and track their recent changes."
+      },
+      "date": 1354411521707
+    },
+    {
+      "type": "remove",
+      "id": "bf8e988ea18ae1c1",
+      "date": 1354411532414
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "31a93d867f66222b"
+      },
+      "id": "31a93d867f66222b",
+      "type": "add",
+      "after": "07ef6b0e53a77dd2",
+      "date": 1354411561483
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "31a93d867f66222b",
+        "1649c9bcb7c6287b",
+        "279cd02d73ee30f0",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "31a93d867f66222b",
+      "date": 1354411564295
+    },
+    {
+      "type": "edit",
+      "id": "31a93d867f66222b",
+      "item": {
+        "type": "reference",
+        "id": "31a93d867f66222b",
+        "site": "hsi.fed.wiki.org",
+        "slug": "hacking-social-impact",
+        "title": "Hacking Social Impact",
+        "text": "To bring together in a dynamic and collaborative environment the leaders in social impact, business, and venture capital investment innovation. [http://socialventuresociety.org/unconference/ website] [http://us6.campaign-archive2.com/?u=adeb969bbfd2716b2416778ac&id=93902578be details]"
+      },
+      "date": 1354411575802
+    },
+    {
+      "type": "edit",
+      "id": "31a93d867f66222b",
+      "item": {
+        "type": "reference",
+        "id": "31a93d867f66222b",
+        "site": "hsi.fed.wiki.org",
+        "slug": "hacking-social-impact",
+        "title": "Hacking Social Impact",
+        "text": "To bring together in a dynamic and collaborative environment the leaders in social impact ... Explain my influence over large problems. Translate that into something the audience can use. Preview how I'm making big problem solving easier."
+      },
+      "date": 1354411702295
+    },
+    {
+      "type": "remove",
+      "id": "279cd02d73ee30f0",
+      "date": 1354411720142
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c72b35290a454ec5"
+      },
+      "id": "c72b35290a454ec5",
+      "type": "add",
+      "after": "07ef6b0e53a77dd2",
+      "date": 1386664301197
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "c72b35290a454ec5",
+        "31a93d867f66222b",
+        "1649c9bcb7c6287b",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "c72b35290a454ec5",
+      "date": 1386664304875
+    },
+    {
+      "type": "edit",
+      "id": "c72b35290a454ec5",
+      "item": {
+        "type": "reference",
+        "id": "c72b35290a454ec5",
+        "site": "c2.fed.wiki.org",
+        "slug": "topic-based-subsets",
+        "title": "Topic Based Subsets",
+        "text": "We pick topics that have been of lasting interest and subset them into their own federated wiki sites. We've built this feature into c2 wiki's [[Subset Wiki]] bridge and only use it here. [https://github.com/WardCunningham/c2-sfw-script github]"
+      },
+      "date": 1386664312876
+    },
+    {
+      "type": "remove",
+      "id": "1649c9bcb7c6287b",
+      "date": 1386664318030
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "4b81e9e05d042557"
+      },
+      "id": "4b81e9e05d042557",
+      "type": "add",
+      "after": "07ef6b0e53a77dd2",
+      "date": 1387151556520
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "4b81e9e05d042557",
+        "c72b35290a454ec5",
+        "31a93d867f66222b",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "4b81e9e05d042557",
+      "date": 1387151559869
+    },
+    {
+      "type": "edit",
+      "id": "4b81e9e05d042557",
+      "item": {
+        "type": "reference",
+        "id": "4b81e9e05d042557",
+        "site": "sites.fed.wiki.org",
+        "slug": "sitesfedwikiorg",
+        "title": "sites.fed.wiki.org",
+        "text": "Catalog of federated wiki sites with brief descriptions tuned for search results and domain names for titles."
+      },
+      "date": 1387151630119
+    },
+    {
+      "type": "remove",
+      "id": "31a93d867f66222b",
+      "date": 1387151642387
+    },
+    {
+      "type": "edit",
+      "id": "4b81e9e05d042557",
+      "item": {
+        "type": "reference",
+        "id": "4b81e9e05d042557",
+        "site": "sites.fed.wiki.org",
+        "slug": "sitesfedwikiorg",
+        "title": "sites.fed.wiki.org",
+        "text": "A catalog of federated wiki sites with domain names for titles and brief descriptions tuned to look good in search results."
+      },
+      "date": 1387151710163
+    },
+    {
+      "type": "edit",
+      "id": "4b81e9e05d042557",
+      "item": {
+        "type": "reference",
+        "id": "4b81e9e05d042557",
+        "site": "sites.fed.wiki.org",
+        "slug": "sitesfedwikiorg",
+        "title": "sites.fed.wiki.org",
+        "text": "A catalog of federated wiki sites with domain names for page titles and brief descriptions tuned to look good in search results. Know your federation."
+      },
+      "date": 1387151744680
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8ec15100880178ba"
+      },
+      "id": "8ec15100880178ba",
+      "type": "add",
+      "after": "07ef6b0e53a77dd2",
+      "date": 1392496674456
+    },
+    {
+      "type": "edit",
+      "id": "8ec15100880178ba",
+      "item": {
+        "type": "reference",
+        "id": "8ec15100880178ba",
+        "site": "plugins.fed.wiki.org",
+        "slug": "about-plugins",
+        "title": "About Plugins",
+        "text": "We explain federated wiki plugins. We define their role interpreting content, recount our experience writing many, describe principles and strategies for future plugins, and offer a step-by-step guide for new plugin authors. We'll also collect pointers here to good plugins when they emerge."
+      },
+      "date": 1392496699222
+    },
+    {
+      "type": "edit",
+      "id": "8ec15100880178ba",
+      "item": {
+        "type": "reference",
+        "id": "8ec15100880178ba",
+        "site": "plugins.fed.wiki.org",
+        "slug": "about-plugins",
+        "title": "About Plugins",
+        "text": "We explain federated wiki plugins. We define their role interpreting content, recount our experience writing many, describe principles and strategies for future plugins, and offer a step-by-step guide for new plugin authors."
+      },
+      "date": 1392496714730
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "8ec15100880178ba",
+        "4b81e9e05d042557",
+        "c72b35290a454ec5",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "8ec15100880178ba",
+      "date": 1392496720537
+    },
+    {
+      "type": "remove",
+      "id": "c72b35290a454ec5",
+      "date": 1392496724432
+    },
+    {
+      "type": "fork",
+      "site": "fed.wiki.org",
+      "date": 1401021032479
+    },
+    {
+      "type": "move",
+      "order": [
+        "8ec15100880178ba",
+        "7b56f22a4b9ee974",
+        "e5b797fb900ad4c0",
+        "4b81e9e05d042557",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "8ec15100880178ba",
+      "date": 1401021690571
+    },
+    {
+      "type": "move",
+      "order": [
+        "7b56f22a4b9ee974",
+        "8ec15100880178ba",
+        "e5b797fb900ad4c0",
+        "4b81e9e05d042557",
+        "f2064c81a434c06e",
+        "07ef6b0e53a77dd2"
+      ],
+      "id": "7b56f22a4b9ee974",
+      "date": 1401021693240
+    }
+  ],
+  "synopsys": "The first federated wiki page written and often first page viewed."
+}

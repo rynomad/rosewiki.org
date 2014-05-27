@@ -1,0 +1,173 @@
+{
+  "title": "Bubbling Updates",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d27049bb61ea50b3",
+      "text": "This is a desired feature for WIK that is possible if we properly [[Semanticize Wik]]. It is best illustrated by example:"
+    },
+    {
+      "type": "paragraph",
+      "id": "78827c6272d13128",
+      "text": "A team of researchers gathers some experimental Data, and imports it into a wiki"
+    },
+    {
+      "type": "paragraph",
+      "id": "c27bf785a4252aa9",
+      "text": "various peers in the field reference the data, presenting it in new ways, combining it with other data sets"
+    },
+    {
+      "type": "paragraph",
+      "id": "bf69cd8fbb42c022",
+      "text": "The original Team decides to rerun their experiment with an improved methodology, they update their data-set. Alternately, other teams replicate the experiment as part of peer review. "
+    },
+    {
+      "type": "paragraph",
+      "id": "db29292f5bf0c953",
+      "text": "The change in data state should \"Bubble Up\" to the dependent graphs and data sets."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Bubbling Updates",
+        "story": []
+      },
+      "date": 1393892942538
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d27049bb61ea50b3"
+      },
+      "id": "d27049bb61ea50b3",
+      "type": "add",
+      "date": 1393892944066
+    },
+    {
+      "type": "edit",
+      "id": "d27049bb61ea50b3",
+      "item": {
+        "type": "paragraph",
+        "id": "d27049bb61ea50b3",
+        "text": "This is a desired feature for WIK that is best illustrated by example:"
+      },
+      "date": 1393892963400
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "78827c6272d13128",
+        "text": ""
+      },
+      "id": "78827c6272d13128",
+      "type": "add",
+      "after": "d27049bb61ea50b3",
+      "date": 1393892963917
+    },
+    {
+      "type": "edit",
+      "id": "78827c6272d13128",
+      "item": {
+        "type": "paragraph",
+        "id": "78827c6272d13128",
+        "text": "A team of researchers gathers some experimental Data, and imports it into a wiki"
+      },
+      "date": 1393892985759
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c27bf785a4252aa9",
+        "text": ""
+      },
+      "id": "c27bf785a4252aa9",
+      "type": "add",
+      "after": "78827c6272d13128",
+      "date": 1393892986276
+    },
+    {
+      "type": "edit",
+      "id": "c27bf785a4252aa9",
+      "item": {
+        "type": "paragraph",
+        "id": "c27bf785a4252aa9",
+        "text": "various peers in the field reference the data, presenting it in new ways, combining it with other data sets"
+      },
+      "date": 1393893045218
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bf69cd8fbb42c022",
+        "text": ""
+      },
+      "id": "bf69cd8fbb42c022",
+      "type": "add",
+      "after": "c27bf785a4252aa9",
+      "date": 1393893045737
+    },
+    {
+      "type": "edit",
+      "id": "bf69cd8fbb42c022",
+      "item": {
+        "type": "paragraph",
+        "id": "bf69cd8fbb42c022",
+        "text": "The original Team decides to rerun their experiment with an improved methodology, they update their data-set"
+      },
+      "date": 1393893107775
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "db29292f5bf0c953",
+        "text": ""
+      },
+      "id": "db29292f5bf0c953",
+      "type": "add",
+      "after": "bf69cd8fbb42c022",
+      "date": 1393893108295
+    },
+    {
+      "type": "edit",
+      "id": "db29292f5bf0c953",
+      "item": {
+        "type": "paragraph",
+        "id": "db29292f5bf0c953",
+        "text": "All dependant graphs and datasets should automatically re"
+      },
+      "date": 1393893120836
+    },
+    {
+      "type": "edit",
+      "id": "bf69cd8fbb42c022",
+      "item": {
+        "type": "paragraph",
+        "id": "bf69cd8fbb42c022",
+        "text": "The original Team decides to rerun their experiment with an improved methodology, they update their data-set. Alternately, other teams replicate the experiment as part of peer review. "
+      },
+      "date": 1393893149132
+    },
+    {
+      "type": "edit",
+      "id": "db29292f5bf0c953",
+      "item": {
+        "type": "paragraph",
+        "id": "db29292f5bf0c953",
+        "text": "The change in data state should \"Bubble Up\" to the dependent graphs and data sets."
+      },
+      "date": 1393893196573
+    },
+    {
+      "type": "edit",
+      "id": "d27049bb61ea50b3",
+      "item": {
+        "type": "paragraph",
+        "id": "d27049bb61ea50b3",
+        "text": "This is a desired feature for WIK that is possible if we properly [[Semanticize Wik]]. It is best illustrated by example:"
+      },
+      "date": 1393893226913
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "title": "NDN Patterns",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c79b08731eac5dc8",
+      "text": "There are very few established best practices in [[Named Data Networking]]. Here I will document idioms that I find myself using, so as to explore the design space."
+    },
+    {
+      "type": "paragraph",
+      "id": "da74026c14d56521",
+      "text": "[[NDN Version trees]] - how do we identify and select based on trusted  contributors "
+    },
+    {
+      "type": "paragraph",
+      "id": "8f47205afcc20dea",
+      "text": "[[fake push]] request data from a spoofed interface to seed a remote ndnd cache"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Patterns",
+        "story": []
+      },
+      "date": 1384970210025
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c79b08731eac5dc8"
+      },
+      "id": "c79b08731eac5dc8",
+      "type": "add",
+      "date": 1384970211117
+    },
+    {
+      "type": "edit",
+      "id": "c79b08731eac5dc8",
+      "item": {
+        "type": "paragraph",
+        "id": "c79b08731eac5dc8",
+        "text": "There are very few established best practices in [[Named Data Networking]]. Here I will document idioms that I find myself using, so as to explore the design space."
+      },
+      "date": 1384970272984
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "da74026c14d56521"
+      },
+      "id": "da74026c14d56521",
+      "type": "add",
+      "after": "c79b08731eac5dc8",
+      "date": 1385569349859
+    },
+    {
+      "type": "edit",
+      "id": "da74026c14d56521",
+      "item": {
+        "type": "paragraph",
+        "id": "da74026c14d56521",
+        "text": "[[NDN Version trees]] - how do we identify and select based on trusted  contributors "
+      },
+      "date": 1385569426220
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8f47205afcc20dea",
+        "text": ""
+      },
+      "id": "8f47205afcc20dea",
+      "type": "add",
+      "after": "da74026c14d56521",
+      "date": 1385569426742
+    },
+    {
+      "type": "edit",
+      "id": "8f47205afcc20dea",
+      "item": {
+        "type": "paragraph",
+        "id": "8f47205afcc20dea",
+        "text": "[[fake push]] request data from a spoofed interface to seed a remote ndnd cache"
+      },
+      "date": 1385569517528
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "50439ecc4069f206",
+        "text": ""
+      },
+      "id": "50439ecc4069f206",
+      "type": "add",
+      "after": "8f47205afcc20dea",
+      "date": 1385569518042
+    },
+    {
+      "type": "remove",
+      "id": "50439ecc4069f206",
+      "date": 1385569520717
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org",
+      "date": 1386249617903
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c441a3760aa068f7"
+      },
+      "id": "c441a3760aa068f7",
+      "type": "add",
+      "after": "8f47205afcc20dea",
+      "date": 1386387237286
+    },
+    {
+      "type": "edit",
+      "id": "c441a3760aa068f7",
+      "item": {
+        "type": "paragraph",
+        "id": "c441a3760aa068f7",
+        "text": "[[Wiki DNA]]"
+      },
+      "date": 1386387257663
+    },
+    {
+      "type": "edit",
+      "id": "c441a3760aa068f7",
+      "item": {
+        "type": "paragraph",
+        "id": "c441a3760aa068f7",
+        "text": "[[Wiki Data Name Abstraction]]"
+      },
+      "date": 1386387272779
+    },
+    {
+      "type": "edit",
+      "id": "c441a3760aa068f7",
+      "item": {
+        "type": "paragraph",
+        "id": "c441a3760aa068f7",
+        "text": "[[Wiki Data Naming Abstraction]]"
+      },
+      "date": 1386387280261
+    },
+    {
+      "type": "remove",
+      "id": "c441a3760aa068f7",
+      "date": 1386395042850
+    }
+  ]
+}

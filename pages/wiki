@@ -1,0 +1,486 @@
+{
+  "title": "wiki",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "1e39fdfc742bde7f",
+      "text": "This page collects topics directly related to the [[Federated Wiki]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "a2419d1b514825a6",
+      "text": "[[Minutes]] from the weekly google hangouts"
+    },
+    {
+      "type": "paragraph",
+      "id": "f6e9e78d7313e5c2",
+      "text": "[[best practices]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "c441a3760aa068f7",
+      "text": "[[Wiki Data Naming Abstraction]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "35746ca8986bf2c5",
+      "text": "[[Literate Wiki]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "ca353c5bf61661aa",
+      "text": "[[Wiki Version Control]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "044d4f37d113580b",
+      "text": "[[WIK DVCS]]"
+    },
+    {
+      "id": "cbbaf322fd524cfe",
+      "type": "reference",
+      "site": "wiki-paul90.rhcloud.com",
+      "slug": "security",
+      "title": "Security",
+      "text": "While we are chiefly concerned with site access we should not loose sight of any requirements at the farm level."
+    },
+    {
+      "type": "paragraph",
+      "id": "816775b52839b1be",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "wiki"
+      },
+      "date": 1384990295494
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9582d9658d31d6cf"
+      },
+      "id": "9582d9658d31d6cf",
+      "type": "add",
+      "date": 1384990303806
+    },
+    {
+      "type": "edit",
+      "id": "9582d9658d31d6cf",
+      "item": {
+        "type": "paragraph",
+        "id": "9582d9658d31d6cf",
+        "text": "[[concept]]"
+      },
+      "date": 1384990309181
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a2419d1b514825a6",
+        "text": ""
+      },
+      "id": "a2419d1b514825a6",
+      "type": "add",
+      "after": "9582d9658d31d6cf",
+      "date": 1384990309681
+    },
+    {
+      "type": "edit",
+      "id": "a2419d1b514825a6",
+      "item": {
+        "type": "paragraph",
+        "id": "a2419d1b514825a6",
+        "text": "[[minutes]]"
+      },
+      "date": 1384990337244
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "94af577a85f0bd9b",
+        "text": ""
+      },
+      "id": "94af577a85f0bd9b",
+      "type": "add",
+      "after": "a2419d1b514825a6",
+      "date": 1384990337744
+    },
+    {
+      "type": "edit",
+      "id": "94af577a85f0bd9b",
+      "item": {
+        "type": "paragraph",
+        "id": "94af577a85f0bd9b",
+        "text": "[[ideas]]"
+      },
+      "date": 1384990354545
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2c5e7f44f26f3648",
+        "text": ""
+      },
+      "id": "2c5e7f44f26f3648",
+      "type": "add",
+      "after": "94af577a85f0bd9b",
+      "date": 1384990355045
+    },
+    {
+      "type": "remove",
+      "id": "2c5e7f44f26f3648",
+      "date": 1384990359732
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f6e9e78d7313e5c2"
+      },
+      "id": "f6e9e78d7313e5c2",
+      "type": "add",
+      "after": "94af577a85f0bd9b",
+      "date": 1385577479248
+    },
+    {
+      "type": "edit",
+      "id": "f6e9e78d7313e5c2",
+      "item": {
+        "type": "paragraph",
+        "id": "f6e9e78d7313e5c2",
+        "text": "[[best practices]]"
+      },
+      "date": 1385577485779
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1e39fdfc742bde7f"
+      },
+      "id": "1e39fdfc742bde7f",
+      "type": "add",
+      "after": "f6e9e78d7313e5c2",
+      "date": 1385577496264
+    },
+    {
+      "type": "edit",
+      "id": "1e39fdfc742bde7f",
+      "item": {
+        "type": "paragraph",
+        "id": "1e39fdfc742bde7f",
+        "text": "This page collects topics directly related to the Federated Wiki."
+      },
+      "date": 1385577513713
+    },
+    {
+      "type": "move",
+      "order": [
+        "1e39fdfc742bde7f",
+        "9582d9658d31d6cf",
+        "a2419d1b514825a6",
+        "94af577a85f0bd9b",
+        "f6e9e78d7313e5c2"
+      ],
+      "id": "1e39fdfc742bde7f",
+      "date": 1385577516385
+    },
+    {
+      "type": "fork",
+      "site": "yala.fed.wiki.org",
+      "date": 1386226035919
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "816775b52839b1be"
+      },
+      "id": "816775b52839b1be",
+      "type": "add",
+      "after": "f6e9e78d7313e5c2",
+      "date": 1386226225765
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki as a Protocol]]"
+      },
+      "date": 1386226241400
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki API]]"
+      },
+      "date": 1386226250195
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki as Protocol]]"
+      },
+      "date": 1386226260552
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1386228614776
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki Name Protocol]]"
+      },
+      "site": "rosewiki.org",
+      "date": 1386228614776
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki Namespace ]]"
+      },
+      "date": 1386229752003
+    },
+    {
+      "type": "edit",
+      "id": "816775b52839b1be",
+      "item": {
+        "type": "paragraph",
+        "id": "816775b52839b1be",
+        "text": "[[Wiki]]"
+      },
+      "date": 1386229933013
+    },
+    {
+      "type": "remove",
+      "id": "816775b52839b1be",
+      "date": 1386229937094
+    },
+    {
+      "type": "fork",
+      "date": 1386233821810
+    },
+    {
+      "type": "edit",
+      "id": "1e39fdfc742bde7f",
+      "item": {
+        "type": "paragraph",
+        "id": "1e39fdfc742bde7f",
+        "text": "This page collects topics directly related to the [[Federated Wiki]]."
+      },
+      "date": 1386249890778
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "c441a3760aa068f7",
+        "text": "[[Wiki Data Naming Abstraction]]"
+      },
+      "after": "f6e9e78d7313e5c2",
+      "id": "c441a3760aa068f7",
+      "date": 1386395048999
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "30ee48d87cf98bf0",
+        "text": "[[Wiki as a Protocol]]"
+      },
+      "after": "c441a3760aa068f7",
+      "id": "30ee48d87cf98bf0",
+      "date": 1386717225152
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "35746ca8986bf2c5",
+        "text": ""
+      },
+      "id": "35746ca8986bf2c5",
+      "type": "add",
+      "after": "30ee48d87cf98bf0",
+      "date": 1391624563875
+    },
+    {
+      "type": "edit",
+      "id": "35746ca8986bf2c5",
+      "item": {
+        "type": "paragraph",
+        "id": "35746ca8986bf2c5",
+        "text": "[[Literate Wiki]]"
+      },
+      "date": 1391624570900
+    },
+    {
+      "type": "fork",
+      "site": "rosewiki.org",
+      "date": 1393878490155
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "995c97549bd8bb5d"
+      },
+      "id": "995c97549bd8bb5d",
+      "type": "add",
+      "after": "816775b52839b1be",
+      "site": "rosewiki.org",
+      "date": 1393878490155
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "[[WIK DCVS]]"
+      },
+      "date": 1393878510331
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "[[WIK DVCS]]"
+      },
+      "date": 1393878532855
+    },
+    {
+      "type": "fork",
+      "date": 1393878649049
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "ca353c5bf61661aa",
+        "text": "[[Wiki Version Control]]"
+      },
+      "after": "35746ca8986bf2c5",
+      "id": "ca353c5bf61661aa",
+      "date": 1393881149217
+    },
+    {
+      "type": "remove",
+      "id": "995c97549bd8bb5d",
+      "date": 1393881167192
+    },
+    {
+      "type": "remove",
+      "id": "9582d9658d31d6cf",
+      "date": 1394441003641
+    },
+    {
+      "type": "edit",
+      "id": "1e39fdfc742bde7f",
+      "item": {
+        "type": "paragraph",
+        "id": "1e39fdfc742bde7f",
+        "text": "This page collects topics directly related to the [[Federated Wiki]]"
+      },
+      "date": 1394441006599
+    },
+    {
+      "type": "edit",
+      "id": "a2419d1b514825a6",
+      "item": {
+        "type": "paragraph",
+        "id": "a2419d1b514825a6",
+        "text": "[[Minutes]] from the weekly google hangouts"
+      },
+      "date": 1394441028525
+    },
+    {
+      "type": "remove",
+      "id": "94af577a85f0bd9b",
+      "date": 1394441040110
+    },
+    {
+      "type": "remove",
+      "id": "30ee48d87cf98bf0",
+      "date": 1394441086730
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c68f4cf798c7c698",
+        "text": ""
+      },
+      "id": "c68f4cf798c7c698",
+      "type": "add",
+      "after": "ca353c5bf61661aa",
+      "date": 1396317601859
+    },
+    {
+      "type": "edit",
+      "id": "c68f4cf798c7c698",
+      "item": {
+        "type": "paragraph",
+        "id": "c68f4cf798c7c698",
+        "text": "[[security]]"
+      },
+      "date": 1396317606453
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "cbbaf322fd524cfe",
+        "type": "reference",
+        "site": "wiki-paul90.rhcloud.com",
+        "slug": "security",
+        "title": "Security",
+        "text": "While we are chiefly concerned with site access we should not loose sight of any requirements at the farm level."
+      },
+      "after": "ca353c5bf61661aa",
+      "id": "cbbaf322fd524cfe",
+      "date": 1396317612480
+    },
+    {
+      "type": "remove",
+      "id": "c68f4cf798c7c698",
+      "date": 1396317616837
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "044d4f37d113580b",
+        "text": ""
+      },
+      "id": "044d4f37d113580b",
+      "type": "add",
+      "after": "ca353c5bf61661aa",
+      "date": 1399007263630
+    },
+    {
+      "type": "edit",
+      "id": "044d4f37d113580b",
+      "item": {
+        "type": "paragraph",
+        "id": "044d4f37d113580b",
+        "text": "[[WIK DVCS]]"
+      },
+      "date": 1399007269461
+    }
+  ]
+}

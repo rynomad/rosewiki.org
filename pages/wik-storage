@@ -1,0 +1,206 @@
+{
+  "title": "Wik Storage",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "60ca6cc10ef4b87e",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "1c9a34370d1a7bb5",
+      "text": "This is a preliminary discussion of building storage modules for [[WIK DVCS]]."
+    },
+    {
+      "type": "paragraph",
+      "id": "bf35cb9dece7617e",
+      "text": "As with [[Wik Transport]], we envision a large number of potential storage options, including indexedDB/Filesystem on web clients, SD cards on phones via native app, levelDB, flat files, server farms..."
+    },
+    {
+      "type": "pagefold",
+      "id": "a53a6cd446f325e1",
+      "text": "Module API"
+    },
+    {
+      "type": "paragraph",
+      "id": "010a9ffe072cc592",
+      "text": "Any Wik Storage module should present the following API"
+    },
+    {
+      "type": "code",
+      "id": "215fe76dcebd1525",
+      "text": "var storage = require('wik-http-remote-storage')\n\nstorage.store(uri, callback, failCallback)\n\nstorage.get(uri, callback, failCallback)"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Storage",
+        "story": []
+      },
+      "date": 1394820011090
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "60ca6cc10ef4b87e"
+      },
+      "id": "60ca6cc10ef4b87e",
+      "type": "add",
+      "date": 1394820012739
+    },
+    {
+      "type": "edit",
+      "id": "60ca6cc10ef4b87e",
+      "item": {
+        "type": "paragraph",
+        "id": "60ca6cc10ef4b87e",
+        "text": " "
+      },
+      "date": 1394820096478
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bf35cb9dece7617e",
+        "text": "As with [[Wik Transport]], we envision a large number of potential storage options, including indexedDB/Filesystem on web clients, SD cards on phones via native app, levelDB, flat files, server farms..."
+      },
+      "id": "bf35cb9dece7617e",
+      "type": "add",
+      "after": "60ca6cc10ef4b87e",
+      "date": 1394820096998
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "1c9a34370d1a7bb5",
+        "text": ""
+      },
+      "id": "1c9a34370d1a7bb5",
+      "type": "add",
+      "after": "60ca6cc10ef4b87e",
+      "date": 1394820097012
+    },
+    {
+      "type": "edit",
+      "id": "1c9a34370d1a7bb5",
+      "item": {
+        "type": "paragraph",
+        "id": "1c9a34370d1a7bb5",
+        "text": "This is a preliminary discussion of Wik storage modules."
+      },
+      "date": 1394820120120
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a53a6cd446f325e1"
+      },
+      "id": "a53a6cd446f325e1",
+      "type": "add",
+      "after": "bf35cb9dece7617e",
+      "date": 1394820163335
+    },
+    {
+      "type": "edit",
+      "id": "a53a6cd446f325e1",
+      "item": {
+        "type": "pagefold",
+        "id": "a53a6cd446f325e1",
+        "text": "Module API"
+      },
+      "date": 1394820170476
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "010a9ffe072cc592"
+      },
+      "id": "010a9ffe072cc592",
+      "type": "add",
+      "after": "a53a6cd446f325e1",
+      "date": 1394820172213
+    },
+    {
+      "type": "edit",
+      "id": "010a9ffe072cc592",
+      "item": {
+        "type": "paragraph",
+        "id": "010a9ffe072cc592",
+        "text": "To be used by [[]]"
+      },
+      "date": 1394820184787
+    },
+    {
+      "type": "edit",
+      "id": "1c9a34370d1a7bb5",
+      "item": {
+        "type": "paragraph",
+        "id": "1c9a34370d1a7bb5",
+        "text": "This is a preliminary discussion of building storage modules for [[WIK DVCS]]."
+      },
+      "date": 1394820325231
+    },
+    {
+      "type": "edit",
+      "id": "010a9ffe072cc592",
+      "item": {
+        "type": "paragraph",
+        "id": "010a9ffe072cc592",
+        "text": "Any Wik Storage module should present the following API"
+      },
+      "date": 1394820362791
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "215fe76dcebd1525"
+      },
+      "id": "215fe76dcebd1525",
+      "type": "add",
+      "after": "010a9ffe072cc592",
+      "date": 1394820364233
+    },
+    {
+      "type": "edit",
+      "id": "215fe76dcebd1525",
+      "item": {
+        "type": "code",
+        "id": "215fe76dcebd1525",
+        "text": "k"
+      },
+      "date": 1394820370257
+    },
+    {
+      "type": "edit",
+      "id": "215fe76dcebd1525",
+      "item": {
+        "type": "code",
+        "id": "215fe76dcebd1525",
+        "text": "var storage = require('wik-http-storage')\n\nstorage.publish(uri, object)\n\nstorage."
+      },
+      "date": 1394820470370
+    },
+    {
+      "type": "edit",
+      "id": "215fe76dcebd1525",
+      "item": {
+        "type": "code",
+        "id": "215fe76dcebd1525",
+        "text": "var storage = require('wik-http-remote-storage')\n\nstorage.publish(uri, object)\n\nstorage.annound"
+      },
+      "date": 1394820533040
+    },
+    {
+      "type": "edit",
+      "id": "215fe76dcebd1525",
+      "item": {
+        "type": "code",
+        "id": "215fe76dcebd1525",
+        "text": "var storage = require('wik-http-remote-storage')\n\nstorage.store(uri, callback, failCallback)\n\nstorage.get(uri, callback, failCallback)"
+      },
+      "date": 1394820934577
+    }
+  ]
+}

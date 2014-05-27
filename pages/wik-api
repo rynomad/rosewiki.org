@@ -1,0 +1,1869 @@
+{
+  "title": "Wik API",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "18e29534210574f6",
+      "text": "Here we describe a desired API for [[WIK DVCS]], so as to properly abstract it from [[Federated Wiki]] while presenting enough functionality to serve a growing ecosystem of [[Wiki Plugins]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "210c771076a8d228",
+      "text": "Including wik"
+    },
+    {
+      "type": "paragraph",
+      "id": "a546304ce2f39c6d",
+      "text": "wik will be published as an npm module, and must be initialized with an options argument which sets the preferred transport and storage methods."
+    },
+    {
+      "type": "code",
+      "id": "86f8a443b13db471",
+      "text": "var wik = require('wik')\n\nwik.init({transport: 'ndn', storage: 'local'})\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "f443e2013753a535",
+      "text": "For more, see [[Wik Transport]] and [[Wik Storage]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "adaad97e58cf364c",
+      "text": "Create a new wik"
+    },
+    {
+      "type": "code",
+      "id": "507e3ff2a531a867",
+      "text": "var myWik = wik.create({}, opts)\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "754756cd87da7710",
+      "text": "This will create a new wik object with a unique ID, and a first [[Wik Patch]] that will serve as the root for all subsequent patches to this wik"
+    },
+    {
+      "type": "code",
+      "id": "8b00b0e8c163ead2",
+      "text": "myWik == {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"story\": [],\n  \"journal\": [\n    \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  ]\n}\n\n"
+    },
+    {
+      "type": "paragraph",
+      "id": "270120084d3e0ea3",
+      "text": "calling wik.create with an object of the old [[JSON Schema]] as the first argument will convert it to the [[Wik JSON Schema]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "f8c55bc5c83b5283",
+      "text": "opts is an object with the following properties"
+    },
+    {
+      "type": "code",
+      "id": "53462612bb6a0161",
+      "text": "{\n  \"transport\": \"http|https|ndn|...\" \n  \"Storage\": \"local|remote\" \n}"
+    },
+    {
+      "type": "paragraph",
+      "id": "cebdc1ce1d14b0c7",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "863efeec2feb6406",
+      "text": "see [[Wik Transport]] and [[Wik Storage]] for more"
+    },
+    {
+      "type": "pagefold",
+      "id": "8673bab07c5cb19f",
+      "text": "fetch/resolve a URI"
+    },
+    {
+      "type": "code",
+      "id": "cfa270c495abfd35",
+      "text": "function callback (patch) {\n  // do something with your patch\n}\nwik.fetch(\"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\", callback)"
+    },
+    {
+      "type": "paragraph",
+      "id": "ed75286edf370dba",
+      "text": "All URI's in Wik point to a [[Wik patch]], which is returned to the callback function"
+    },
+    {
+      "type": "code",
+      "id": "a485ff4acc4da0f0",
+      "text": "patch == {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"parentUri\": null\n  \"operation\": {\n    \"type\": \"create\"\n  }\n}"
+    },
+    {
+      "type": "paragraph",
+      "id": "a2c829e86aa1baf3",
+      "text": " to assemble a wik or a thread, one recursively walks up the patch chain to the first patch."
+    },
+    {
+      "type": "code",
+      "id": "89a8f8816f260ef2",
+      "text": "function callback (wik/thread) {\n  //do something with your fully assembled wik/thread\n}\nwik.resolve(uri, callback)"
+    },
+    {
+      "type": "pagefold",
+      "id": "8affe682bbe218e0",
+      "text": "Insert and Update Items"
+    },
+    {
+      "type": "code",
+      "id": "912c473d885fe2b7",
+      "text": "myWik.addFactory(callback)"
+    },
+    {
+      "type": "paragraph",
+      "id": "f868549857cbba53",
+      "text": "generates and applies a patch to a wik that references a factory "
+    },
+    {
+      "type": "code",
+      "id": "44d6cd1dddb2bd47",
+      "text": "myWik.update(int, uri)"
+    },
+    {
+      "type": "paragraph",
+      "id": "0761a9a579c17096",
+      "text": "generates and applies patch(es) to update the uri at a given position"
+    },
+    {
+      "type": "code",
+      "id": "7f05cf17886b7d54",
+      "text": "myWik.remove(int)"
+    },
+    {
+      "type": "paragraph",
+      "id": "75f9c67609616278",
+      "text": "generates and applies patch that removes a thread from the story"
+    },
+    {
+      "type": "code",
+      "id": "d77791feccd1ed44",
+      "text": "myWik.addItem(int, uri)"
+    },
+    {
+      "type": "paragraph",
+      "id": "769f6b4ab0b6adc6",
+      "text": "generates and applies patch that adds a uri to the story (used internally by addFactory)"
+    },
+    {
+      "type": "pagefold",
+      "id": "de12a9eb5d02950c",
+      "text": "Patching Threads"
+    },
+    {
+      "type": "paragraph",
+      "id": "9a45cabbc6ed7714",
+      "text": "Since all edits to a story item are made by various plugins, generating patches to threads is done by comparing two versions of an item"
+    },
+    {
+      "type": "code",
+      "id": "bfaf051be3346903",
+      "text": "var myThread = wik.thread.create(oldItemURI)\n\nmyThread.twist(newItem, myWik)"
+    },
+    {
+      "type": "paragraph",
+      "id": "4c6016bbdda3cf3e",
+      "text": "The twist method will generate an object diff, convert it into a patch, and recursively generate another patch to update the URI field in myWik to point to the new patch."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik API",
+        "story": []
+      },
+      "date": 1393983934132
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "18e29534210574f6"
+      },
+      "id": "18e29534210574f6",
+      "type": "add",
+      "date": 1393983935460
+    },
+    {
+      "type": "edit",
+      "id": "18e29534210574f6",
+      "item": {
+        "type": "paragraph",
+        "id": "18e29534210574f6",
+        "text": "What functions should a Wik module export?"
+      },
+      "date": 1393983956612
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "577e57387d168053",
+        "text": ""
+      },
+      "id": "577e57387d168053",
+      "type": "add",
+      "after": "18e29534210574f6",
+      "date": 1393983957135
+    },
+    {
+      "type": "remove",
+      "id": "577e57387d168053",
+      "date": 1393983957726
+    },
+    {
+      "type": "edit",
+      "id": "18e29534210574f6",
+      "item": {
+        "type": "paragraph",
+        "id": "18e29534210574f6",
+        "text": "Here we describe a desired API for [[WIK DVCS]], so as to properly abstract it from [[Federated Wiki]] while presenting enough functionality to serve a growing ecosystem of [[Wiki Plugins]]"
+      },
+      "date": 1394745939181
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3a8083f1f50b8e24"
+      },
+      "id": "3a8083f1f50b8e24",
+      "type": "add",
+      "after": "18e29534210574f6",
+      "date": 1394746093363
+    },
+    {
+      "type": "remove",
+      "id": "3a8083f1f50b8e24",
+      "date": 1394746097873
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "86f8a443b13db471"
+      },
+      "id": "86f8a443b13db471",
+      "type": "add",
+      "after": "18e29534210574f6",
+      "date": 1394746111078
+    },
+    {
+      "type": "edit",
+      "id": "86f8a443b13db471",
+      "item": {
+        "type": "code",
+        "id": "86f8a443b13db471",
+        "text": "var wik = require('wik')\n"
+      },
+      "date": 1394746151466
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "210c771076a8d228"
+      },
+      "id": "210c771076a8d228",
+      "type": "add",
+      "after": "86f8a443b13db471",
+      "date": 1394746154408
+    },
+    {
+      "type": "edit",
+      "id": "210c771076a8d228",
+      "item": {
+        "type": "pagefold",
+        "id": "210c771076a8d228",
+        "text": "Including wik"
+      },
+      "date": 1394746160962
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "86f8a443b13db471"
+      ],
+      "id": "210c771076a8d228",
+      "date": 1394746162757
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a546304ce2f39c6d"
+      },
+      "id": "a546304ce2f39c6d",
+      "type": "add",
+      "after": "86f8a443b13db471",
+      "date": 1394746163851
+    },
+    {
+      "type": "edit",
+      "id": "a546304ce2f39c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "a546304ce2f39c6d",
+        "text": "wik will be published as an npm module"
+      },
+      "date": 1394746189303
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471"
+      ],
+      "id": "a546304ce2f39c6d",
+      "date": 1394746194385
+    },
+    {
+      "type": "edit",
+      "id": "a546304ce2f39c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "a546304ce2f39c6d",
+        "text": "wik will be published as an npm module."
+      },
+      "date": 1394746215255
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "adaad97e58cf364c"
+      },
+      "id": "adaad97e58cf364c",
+      "type": "add",
+      "after": "86f8a443b13db471",
+      "date": 1394746245124
+    },
+    {
+      "type": "edit",
+      "id": "adaad97e58cf364c",
+      "item": {
+        "type": "pagefold",
+        "id": "adaad97e58cf364c",
+        "text": "Create a new wik"
+      },
+      "date": 1394746259921
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "754756cd87da7710"
+      },
+      "id": "754756cd87da7710",
+      "type": "add",
+      "after": "adaad97e58cf364c",
+      "date": 1394746263014
+    },
+    {
+      "type": "edit",
+      "id": "754756cd87da7710",
+      "item": {
+        "type": "paragraph",
+        "id": "754756cd87da7710",
+        "text": "Rather than code for all use cases, WIK will provide a handler for wikii, as well as a set of hooks for various plugins"
+      },
+      "date": 1394746320688
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "507e3ff2a531a867"
+      },
+      "id": "507e3ff2a531a867",
+      "type": "add",
+      "after": "754756cd87da7710",
+      "date": 1394746323719
+    },
+    {
+      "type": "edit",
+      "id": "507e3ff2a531a867",
+      "item": {
+        "type": "code",
+        "id": "507e3ff2a531a867",
+        "text": "var newWik = wik.create()"
+      },
+      "date": 1394746348286
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710"
+      ],
+      "id": "507e3ff2a531a867",
+      "date": 1394746367333
+    },
+    {
+      "type": "edit",
+      "id": "754756cd87da7710",
+      "item": {
+        "type": "paragraph",
+        "id": "754756cd87da7710",
+        "text": "This will create a new wik object with a unique ID, and a first [[Wik Patch]] that will serve as the root for all subsequent patches to this wik"
+      },
+      "date": 1394746504990
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8b00b0e8c163ead2"
+      },
+      "id": "8b00b0e8c163ead2",
+      "type": "add",
+      "after": "754756cd87da7710",
+      "date": 1394746506901
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "newWik = {\n\n}"
+      },
+      "date": 1394746515038
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "newWik = {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n\n}"
+      },
+      "date": 1394746670037
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "newWik = {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"story\": [],\n  \"journal\": [\n    \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  ]\n}"
+      },
+      "date": 1394746730406
+    },
+    {
+      "type": "edit",
+      "id": "507e3ff2a531a867",
+      "item": {
+        "type": "code",
+        "id": "507e3ff2a531a867",
+        "text": "var newWik = wik.create()\n"
+      },
+      "date": 1394746768874
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "newWik = {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"story\": [],\n  \"journal\": [\n    \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  ]\n}\n\n"
+      },
+      "date": 1394746808373
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "932e7acb087a4b0d"
+      },
+      "id": "932e7acb087a4b0d",
+      "type": "add",
+      "after": "8b00b0e8c163ead2",
+      "date": 1394746819669
+    },
+    {
+      "type": "remove",
+      "id": "932e7acb087a4b0d",
+      "date": 1394746826129
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8673bab07c5cb19f"
+      },
+      "id": "8673bab07c5cb19f",
+      "type": "add",
+      "after": "8b00b0e8c163ead2",
+      "date": 1394746829881
+    },
+    {
+      "type": "edit",
+      "id": "8673bab07c5cb19f",
+      "item": {
+        "type": "pagefold",
+        "id": "8673bab07c5cb19f",
+        "text": "Resolve a URI"
+      },
+      "date": 1394746838836
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6e726632ee78dfea"
+      },
+      "id": "6e726632ee78dfea",
+      "type": "add",
+      "after": "8673bab07c5cb19f",
+      "date": 1394746841419
+    },
+    {
+      "type": "edit",
+      "id": "6e726632ee78dfea",
+      "item": {
+        "type": "paragraph",
+        "id": "6e726632ee78dfea",
+        "text": "var patch = wik.fetch"
+      },
+      "date": 1394746876276
+    },
+    {
+      "type": "edit",
+      "id": "8673bab07c5cb19f",
+      "item": {
+        "type": "pagefold",
+        "id": "8673bab07c5cb19f",
+        "text": "fetch a URI"
+      },
+      "date": 1394746884582
+    },
+    {
+      "type": "remove",
+      "id": "6e726632ee78dfea",
+      "date": 1394746890887
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "cfa270c495abfd35"
+      },
+      "id": "cfa270c495abfd35",
+      "type": "add",
+      "after": "8673bab07c5cb19f",
+      "date": 1394746890904
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "var patch = wik.fetch"
+      },
+      "date": 1394746896709
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "var patch = wik.fetch()"
+      },
+      "date": 1394746902824
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "var patch = wik.fetch(\"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\")"
+      },
+      "date": 1394746921779
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ed75286edf370dba"
+      },
+      "id": "ed75286edf370dba",
+      "type": "add",
+      "after": "cfa270c495abfd35",
+      "date": 1394746942452
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "8673bab07c5cb19f",
+        "ed75286edf370dba",
+        "cfa270c495abfd35"
+      ],
+      "id": "ed75286edf370dba",
+      "date": 1394746943683
+    },
+    {
+      "type": "edit",
+      "id": "ed75286edf370dba",
+      "item": {
+        "type": "paragraph",
+        "id": "ed75286edf370dba",
+        "text": "All URI's in Wik point to a [[Wik patch]], to assemble a wik or a thread, one recursively walks up the patch chain to the first patch."
+      },
+      "date": 1394747000015
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba"
+      ],
+      "id": "cfa270c495abfd35",
+      "date": 1394747006996
+    },
+    {
+      "type": "edit",
+      "id": "ed75286edf370dba",
+      "item": {
+        "type": "paragraph",
+        "id": "ed75286edf370dba",
+        "text": "All URI's in Wik point to a [[Wik patch]]"
+      },
+      "date": 1394747019549
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a2c829e86aa1baf3",
+        "text": " to assemble a wik or a thread, one recursively walks up the patch chain to the first patch."
+      },
+      "id": "a2c829e86aa1baf3",
+      "type": "add",
+      "after": "ed75286edf370dba",
+      "date": 1394747020067
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a485ff4acc4da0f0"
+      },
+      "id": "a485ff4acc4da0f0",
+      "type": "add",
+      "after": "a2c829e86aa1baf3",
+      "date": 1394747023259
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "dagf"
+      },
+      "date": 1394747027528
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "patch =="
+      },
+      "date": 1394747039480
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "newWik == {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"story\": [],\n  \"journal\": [\n    \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  ]\n}\n\n"
+      },
+      "date": 1394747049012
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "patch == {\n\n\n}"
+      },
+      "date": 1394747059632
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "patch == {\n  \"uri\": \"/wiki/wik/<wik-id>/<steward-id>/<timestamp-0>\"\n  \"parentUri\": null\n  \"operation\": {\n\n}\n}"
+      },
+      "date": 1394747231609
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "patch == {\n  \"uri\": \"/wiki/wik/<wik-id>/<steward-id>/<timestamp-0>\"\n  \"parentUri\": null\n  \"operation\": {\n    \"type\": \"create\"\n  }\n}"
+      },
+      "date": 1394747342898
+    },
+    {
+      "type": "edit",
+      "id": "8673bab07c5cb19f",
+      "item": {
+        "type": "pagefold",
+        "id": "8673bab07c5cb19f",
+        "text": "fetch/resolve a URI"
+      },
+      "date": 1394747348546
+    },
+    {
+      "type": "edit",
+      "id": "507e3ff2a531a867",
+      "item": {
+        "type": "code",
+        "id": "507e3ff2a531a867",
+        "text": "var myWik = wik.create()\n"
+      },
+      "date": 1394747372247
+    },
+    {
+      "type": "edit",
+      "id": "8b00b0e8c163ead2",
+      "item": {
+        "type": "code",
+        "id": "8b00b0e8c163ead2",
+        "text": "myWik == {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"story\": [],\n  \"journal\": [\n    \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  ]\n}\n\n"
+      },
+      "date": 1394747378143
+    },
+    {
+      "type": "edit",
+      "id": "a485ff4acc4da0f0",
+      "item": {
+        "type": "code",
+        "id": "a485ff4acc4da0f0",
+        "text": "patch == {\n  \"uri\": \"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\"\n  \"parentUri\": null\n  \"operation\": {\n    \"type\": \"create\"\n  }\n}"
+      },
+      "date": 1394747400096
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3"
+      ],
+      "id": "a2c829e86aa1baf3",
+      "date": 1394747417866
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "001f6a72dea7fe97"
+      },
+      "id": "001f6a72dea7fe97",
+      "type": "add",
+      "after": "a2c829e86aa1baf3",
+      "date": 1394747465344
+    },
+    {
+      "type": "remove",
+      "id": "001f6a72dea7fe97",
+      "date": 1394747469687
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "89a8f8816f260ef2"
+      },
+      "id": "89a8f8816f260ef2",
+      "type": "add",
+      "after": "a2c829e86aa1baf3",
+      "date": 1394747471570
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "someOtherWik = "
+      },
+      "date": 1394747485239
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "var patch = wik.fetch(\"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\", callback)"
+      },
+      "date": 1394747519261
+    },
+    {
+      "type": "edit",
+      "id": "ed75286edf370dba",
+      "item": {
+        "type": "paragraph",
+        "id": "ed75286edf370dba",
+        "text": "All URI's in Wik point to a [[Wik patch]], which is returned to the callback function"
+      },
+      "date": 1394747546611
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "someOtherWik = wik.resolve(uri, callback)"
+      },
+      "date": 1394747568421
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "function callback (wik) {\n\n}\nwik.resolve(uri, callback)"
+      },
+      "date": 1394747621645
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "function callback (wik) {\n  //do something with your fully assembled wik\n}\nwik.resolve(uri, callback)"
+      },
+      "date": 1394747661221
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "function callback (patch) {\n\n}\nwik.fetch(\"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\", callback)"
+      },
+      "date": 1394747685450
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "function callback (wik/thread) {\n  //do something with your fully assembled wik\n}\nwik.resolve(uri, callback)"
+      },
+      "date": 1394747692108
+    },
+    {
+      "type": "edit",
+      "id": "89a8f8816f260ef2",
+      "item": {
+        "type": "code",
+        "id": "89a8f8816f260ef2",
+        "text": "function callback (wik/thread) {\n  //do something with your fully assembled wik/thread\n}\nwik.resolve(uri, callback)"
+      },
+      "date": 1394747697768
+    },
+    {
+      "type": "edit",
+      "id": "cfa270c495abfd35",
+      "item": {
+        "type": "code",
+        "id": "cfa270c495abfd35",
+        "text": "function callback (patch) {\n  // do something with your patch\n}\nwik.fetch(\"/wiki/wik/4035u0935409/<steward-id>/<timestamp-0>\", callback)"
+      },
+      "date": 1394747709743
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8affe682bbe218e0"
+      },
+      "id": "8affe682bbe218e0",
+      "type": "add",
+      "after": "89a8f8816f260ef2",
+      "date": 1394748509665
+    },
+    {
+      "type": "edit",
+      "id": "8affe682bbe218e0",
+      "item": {
+        "type": "pagefold",
+        "id": "8affe682bbe218e0",
+        "text": "Insert Story Item"
+      },
+      "date": 1394748605117
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "038ab33be6205d38"
+      },
+      "id": "038ab33be6205d38",
+      "type": "add",
+      "after": "8affe682bbe218e0",
+      "date": 1394748606368
+    },
+    {
+      "type": "remove",
+      "id": "038ab33be6205d38",
+      "date": 1394748615834
+    },
+    {
+      "type": "edit",
+      "id": "8affe682bbe218e0",
+      "item": {
+        "type": "pagefold",
+        "id": "8affe682bbe218e0",
+        "text": "Insert Factory"
+      },
+      "date": 1394748622656
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "912c473d885fe2b7"
+      },
+      "id": "912c473d885fe2b7",
+      "type": "add",
+      "after": "8affe682bbe218e0",
+      "date": 1394748792948
+    },
+    {
+      "type": "edit",
+      "id": "912c473d885fe2b7",
+      "item": {
+        "type": "code",
+        "id": "912c473d885fe2b7",
+        "text": "wik."
+      },
+      "date": 1394748798995
+    },
+    {
+      "type": "edit",
+      "id": "912c473d885fe2b7",
+      "item": {
+        "type": "code",
+        "id": "912c473d885fe2b7",
+        "text": "myWik.addFactory(callback)"
+      },
+      "date": 1394749098182
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f868549857cbba53"
+      },
+      "id": "f868549857cbba53",
+      "type": "add",
+      "after": "912c473d885fe2b7",
+      "date": 1394750137600
+    },
+    {
+      "type": "edit",
+      "id": "f868549857cbba53",
+      "item": {
+        "type": "paragraph",
+        "id": "f868549857cbba53",
+        "text": "generates and applies a patch to a wik that references a factory "
+      },
+      "date": 1394750174252
+    },
+    {
+      "type": "edit",
+      "id": "8affe682bbe218e0",
+      "item": {
+        "type": "pagefold",
+        "id": "8affe682bbe218e0",
+        "text": "Insert and Update Items"
+      },
+      "date": 1394750314498
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "44d6cd1dddb2bd47"
+      },
+      "id": "44d6cd1dddb2bd47",
+      "type": "add",
+      "after": "f868549857cbba53",
+      "date": 1394750348214
+    },
+    {
+      "type": "edit",
+      "id": "44d6cd1dddb2bd47",
+      "item": {
+        "type": "code",
+        "id": "44d6cd1dddb2bd47",
+        "text": "myWik.update(int, uri)"
+      },
+      "date": 1394750364167
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0761a9a579c17096"
+      },
+      "id": "0761a9a579c17096",
+      "type": "add",
+      "after": "44d6cd1dddb2bd47",
+      "date": 1394750367431
+    },
+    {
+      "type": "edit",
+      "id": "0761a9a579c17096",
+      "item": {
+        "type": "paragraph",
+        "id": "0761a9a579c17096",
+        "text": "generates and applies patch(es) to update the uri "
+      },
+      "date": 1394750406705
+    },
+    {
+      "type": "edit",
+      "id": "0761a9a579c17096",
+      "item": {
+        "type": "paragraph",
+        "id": "0761a9a579c17096",
+        "text": "generates and applies patch(es) to update the uri at a given position"
+      },
+      "date": 1394750588579
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7f05cf17886b7d54"
+      },
+      "id": "7f05cf17886b7d54",
+      "type": "add",
+      "after": "0761a9a579c17096",
+      "date": 1394750600522
+    },
+    {
+      "type": "edit",
+      "id": "7f05cf17886b7d54",
+      "item": {
+        "type": "code",
+        "id": "7f05cf17886b7d54",
+        "text": "myWik.remove(int)"
+      },
+      "date": 1394750612561
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "75f9c67609616278"
+      },
+      "id": "75f9c67609616278",
+      "type": "add",
+      "after": "7f05cf17886b7d54",
+      "date": 1394750714422
+    },
+    {
+      "type": "edit",
+      "id": "75f9c67609616278",
+      "item": {
+        "type": "paragraph",
+        "id": "75f9c67609616278",
+        "text": "generates and applies patch that removes a thread from the story"
+      },
+      "date": 1394750730559
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8826c4a9ef3b626d"
+      },
+      "id": "8826c4a9ef3b626d",
+      "type": "add",
+      "after": "75f9c67609616278",
+      "date": 1394750752665
+    },
+    {
+      "type": "edit",
+      "id": "8826c4a9ef3b626d",
+      "item": {
+        "type": "paragraph",
+        "id": "8826c4a9ef3b626d",
+        "text": "myWik.addItem(int, uri)"
+      },
+      "date": 1394750763696
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d77791feccd1ed44"
+      },
+      "id": "d77791feccd1ed44",
+      "type": "add",
+      "after": "8826c4a9ef3b626d",
+      "date": 1394750770051
+    },
+    {
+      "type": "edit",
+      "id": "d77791feccd1ed44",
+      "item": {
+        "type": "code",
+        "id": "d77791feccd1ed44",
+        "text": "m"
+      },
+      "date": 1394750774080
+    },
+    {
+      "type": "remove",
+      "id": "8826c4a9ef3b626d",
+      "date": 1394750779387
+    },
+    {
+      "type": "edit",
+      "id": "d77791feccd1ed44",
+      "item": {
+        "type": "code",
+        "id": "d77791feccd1ed44",
+        "text": "myWik.addItem(int, uri)"
+      },
+      "date": 1394750783415
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "769f6b4ab0b6adc6"
+      },
+      "id": "769f6b4ab0b6adc6",
+      "type": "add",
+      "after": "d77791feccd1ed44",
+      "date": 1394750804398
+    },
+    {
+      "type": "edit",
+      "id": "769f6b4ab0b6adc6",
+      "item": {
+        "type": "paragraph",
+        "id": "769f6b4ab0b6adc6",
+        "text": "generates and applies patch that adds a uri to the story (used internally by addFactory)"
+      },
+      "date": 1394750863842
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "de12a9eb5d02950c"
+      },
+      "id": "de12a9eb5d02950c",
+      "type": "add",
+      "after": "769f6b4ab0b6adc6",
+      "date": 1394767167786
+    },
+    {
+      "type": "edit",
+      "id": "de12a9eb5d02950c",
+      "item": {
+        "type": "pagefold",
+        "id": "de12a9eb5d02950c",
+        "text": "Patching Threads"
+      },
+      "date": 1394767182410
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7c88d7184eb24890"
+      },
+      "id": "7c88d7184eb24890",
+      "type": "add",
+      "after": "de12a9eb5d02950c",
+      "date": 1394767183952
+    },
+    {
+      "type": "edit",
+      "id": "7c88d7184eb24890",
+      "item": {
+        "type": "paragraph",
+        "id": "7c88d7184eb24890",
+        "text": "Patching threads is tricky, because as per Federated Wiki Semantics, each story Item has a type which is associated with a plugin that handles the rendering/editing of the object."
+      },
+      "date": 1394767295630
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "796207637d00ffa6",
+        "text": ""
+      },
+      "id": "796207637d00ffa6",
+      "type": "add",
+      "after": "7c88d7184eb24890",
+      "date": 1394767296150
+    },
+    {
+      "type": "edit",
+      "id": "796207637d00ffa6",
+      "item": {
+        "type": "paragraph",
+        "id": "796207637d00ffa6",
+        "text": "Since federated Wiki has an extensive plugin ecosystem already, it would be undesireable to have to port each existing plugin to have to use "
+      },
+      "date": 1394767493756
+    },
+    {
+      "type": "remove",
+      "id": "7c88d7184eb24890",
+      "date": 1394768348371
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "270120084d3e0ea3",
+        "text": ""
+      },
+      "id": "270120084d3e0ea3",
+      "type": "add",
+      "after": "754756cd87da7710",
+      "date": 1394768349502
+    },
+    {
+      "type": "edit",
+      "id": "270120084d3e0ea3",
+      "item": {
+        "type": "paragraph",
+        "id": "270120084d3e0ea3",
+        "text": "calling wik.create with an object of the old [[JSON Schema should generate and ]]"
+      },
+      "date": 1394768394814
+    },
+    {
+      "type": "edit",
+      "id": "507e3ff2a531a867",
+      "item": {
+        "type": "code",
+        "id": "507e3ff2a531a867",
+        "text": "var myWik = wik.create({}, opts)\n"
+      },
+      "date": 1394768430177
+    },
+    {
+      "type": "edit",
+      "id": "270120084d3e0ea3",
+      "item": {
+        "type": "paragraph",
+        "id": "270120084d3e0ea3",
+        "text": "calling wik.create with an object of the old [[JSON Schema]] as the first argument will convert it to the [[Wik JSON Schema]]"
+      },
+      "date": 1394768530864
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f8c55bc5c83b5283",
+        "text": ""
+      },
+      "id": "f8c55bc5c83b5283",
+      "type": "add",
+      "after": "270120084d3e0ea3",
+      "date": 1394768536688
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "796207637d00ffa6"
+      ],
+      "id": "8b00b0e8c163ead2",
+      "date": 1394768544868
+    },
+    {
+      "type": "edit",
+      "id": "f8c55bc5c83b5283",
+      "item": {
+        "type": "paragraph",
+        "id": "f8c55bc5c83b5283",
+        "text": "opts is an object with the following properties"
+      },
+      "date": 1394768556666
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "19861e3a9f44c2d5"
+      },
+      "id": "19861e3a9f44c2d5",
+      "type": "add",
+      "after": "796207637d00ffa6",
+      "date": 1394768562062
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "19861e3a9f44c2d5",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "796207637d00ffa6"
+      ],
+      "id": "19861e3a9f44c2d5",
+      "date": 1394768567579
+    },
+    {
+      "type": "edit",
+      "id": "19861e3a9f44c2d5",
+      "item": {
+        "type": "paragraph",
+        "id": "19861e3a9f44c2d5",
+        "text": "{"
+      },
+      "date": 1394768572231
+    },
+    {
+      "type": "edit",
+      "id": "cebdc1ce1d14b0c7",
+      "item": {
+        "type": "paragraph",
+        "id": "cebdc1ce1d14b0c7",
+        "text": " "
+      },
+      "date": 1394768572446
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "cebdc1ce1d14b0c7",
+        "text": " "
+      },
+      "id": "cebdc1ce1d14b0c7",
+      "type": "add",
+      "after": "19861e3a9f44c2d5",
+      "date": 1394768572810
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "863efeec2feb6406",
+        "text": "}"
+      },
+      "id": "863efeec2feb6406",
+      "type": "add",
+      "after": "cebdc1ce1d14b0c7",
+      "date": 1394768572971
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b6f094d5dfdfaad3",
+        "text": ""
+      },
+      "id": "b6f094d5dfdfaad3",
+      "type": "add",
+      "after": "cebdc1ce1d14b0c7",
+      "date": 1394768572984
+    },
+    {
+      "type": "remove",
+      "id": "b6f094d5dfdfaad3",
+      "date": 1394768577287
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "53462612bb6a0161"
+      },
+      "id": "53462612bb6a0161",
+      "type": "add",
+      "after": "796207637d00ffa6",
+      "date": 1394768577311
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "19861e3a9f44c2d5",
+        "53462612bb6a0161",
+        "cebdc1ce1d14b0c7",
+        "863efeec2feb6406",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "796207637d00ffa6"
+      ],
+      "id": "53462612bb6a0161",
+      "date": 1394768582217
+    },
+    {
+      "type": "edit",
+      "id": "53462612bb6a0161",
+      "item": {
+        "type": "code",
+        "id": "53462612bb6a0161",
+        "text": "dfd"
+      },
+      "date": 1394768586482
+    },
+    {
+      "type": "edit",
+      "id": "53462612bb6a0161",
+      "item": {
+        "type": "code",
+        "id": "53462612bb6a0161",
+        "text": "{\n\n}"
+      },
+      "date": 1394768592535
+    },
+    {
+      "type": "edit",
+      "id": "53462612bb6a0161",
+      "item": {
+        "type": "code",
+        "id": "53462612bb6a0161",
+        "text": "{\n  \"transport\": \"http|https|ndn|...\"\n\n}"
+      },
+      "date": 1394768713780
+    },
+    {
+      "type": "edit",
+      "id": "53462612bb6a0161",
+      "item": {
+        "type": "code",
+        "id": "53462612bb6a0161",
+        "text": "{\n  \"transport\": \"http|https|ndn|...\" // dictates uri scheme\n  \"Storage\": \"local|remote\" // \n}"
+      },
+      "date": 1394768989729
+    },
+    {
+      "type": "edit",
+      "id": "53462612bb6a0161",
+      "item": {
+        "type": "code",
+        "id": "53462612bb6a0161",
+        "text": "{\n  \"transport\": \"http|https|ndn|...\" \n  \"Storage\": \"local|remote\" \n}"
+      },
+      "date": 1394769002809
+    },
+    {
+      "type": "remove",
+      "id": "19861e3a9f44c2d5",
+      "date": 1394769006142
+    },
+    {
+      "type": "edit",
+      "id": "863efeec2feb6406",
+      "item": {
+        "type": "paragraph",
+        "id": "863efeec2feb6406",
+        "text": "see [[Wik Transport]] and [[Wik Storage]] for more"
+      },
+      "date": 1394769028137
+    },
+    {
+      "type": "remove",
+      "id": "796207637d00ffa6",
+      "date": 1394769225543
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "bfaf051be3346903"
+      },
+      "id": "bfaf051be3346903",
+      "type": "add",
+      "after": "de12a9eb5d02950c",
+      "date": 1394769226818
+    },
+    {
+      "type": "edit",
+      "id": "bfaf051be3346903",
+      "item": {
+        "type": "code",
+        "id": "bfaf051be3346903",
+        "text": "var myThread = wik.createThread({},)"
+      },
+      "date": 1394769294927
+    },
+    {
+      "type": "edit",
+      "id": "bfaf051be3346903",
+      "item": {
+        "type": "code",
+        "id": "bfaf051be3346903",
+        "text": "var myThread = wik.thread.create({})"
+      },
+      "date": 1394769359262
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9a45cabbc6ed7714"
+      },
+      "id": "9a45cabbc6ed7714",
+      "type": "add",
+      "after": "bfaf051be3346903",
+      "date": 1394769425324
+    },
+    {
+      "type": "edit",
+      "id": "9a45cabbc6ed7714",
+      "item": {
+        "type": "paragraph",
+        "id": "9a45cabbc6ed7714",
+        "text": "will create a new thread that you "
+      },
+      "date": 1394769590734
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "53462612bb6a0161",
+        "cebdc1ce1d14b0c7",
+        "863efeec2feb6406",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "9a45cabbc6ed7714",
+        "bfaf051be3346903"
+      ],
+      "id": "9a45cabbc6ed7714",
+      "date": 1394770533232
+    },
+    {
+      "type": "edit",
+      "id": "9a45cabbc6ed7714",
+      "item": {
+        "type": "paragraph",
+        "id": "9a45cabbc6ed7714",
+        "text": "Since all edits to a story item are made by various plugins, generating patches to threads is done by comparing two versions of an item"
+      },
+      "date": 1394770688811
+    },
+    {
+      "type": "edit",
+      "id": "bfaf051be3346903",
+      "item": {
+        "type": "code",
+        "id": "bfaf051be3346903",
+        "text": "var myThread = wik.thread.create(oldItem)\n\nmyThread.twist(newItem)"
+      },
+      "date": 1394770714535
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "4c6016bbdda3cf3e",
+        "text": ""
+      },
+      "id": "4c6016bbdda3cf3e",
+      "type": "add",
+      "after": "9a45cabbc6ed7714",
+      "date": 1394770717452
+    },
+    {
+      "type": "edit",
+      "id": "4c6016bbdda3cf3e",
+      "item": {
+        "type": "paragraph",
+        "id": "4c6016bbdda3cf3e",
+        "text": "The twist method will generate an object diff, convert it into a patch, and update the URI field of the "
+      },
+      "date": 1394770845674
+    },
+    {
+      "type": "edit",
+      "id": "bfaf051be3346903",
+      "item": {
+        "type": "code",
+        "id": "bfaf051be3346903",
+        "text": "var myThread = wik.thread.create(oldItem)\n\nmyThread.twist(newItem, myWik)"
+      },
+      "date": 1394770883470
+    },
+    {
+      "type": "edit",
+      "id": "4c6016bbdda3cf3e",
+      "item": {
+        "type": "paragraph",
+        "id": "4c6016bbdda3cf3e",
+        "text": "The twist method will generate an object diff, convert it into a patch, and update the URI field in myWik to point to it."
+      },
+      "date": 1394770906907
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "53462612bb6a0161",
+        "cebdc1ce1d14b0c7",
+        "863efeec2feb6406",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "9a45cabbc6ed7714",
+        "bfaf051be3346903",
+        "4c6016bbdda3cf3e"
+      ],
+      "id": "4c6016bbdda3cf3e",
+      "date": 1394770908974
+    },
+    {
+      "type": "edit",
+      "id": "4c6016bbdda3cf3e",
+      "item": {
+        "type": "paragraph",
+        "id": "4c6016bbdda3cf3e",
+        "text": "The twist method will generate an object diff, convert it into a patch, and recursively generate another patch to update the URI field in myWik to point to the new patch."
+      },
+      "date": 1394770975577
+    },
+    {
+      "type": "edit",
+      "id": "bfaf051be3346903",
+      "item": {
+        "type": "code",
+        "id": "bfaf051be3346903",
+        "text": "var myThread = wik.thread.create(oldItemURI)\n\nmyThread.twist(newItem, myWik)"
+      },
+      "date": 1394771027471
+    },
+    {
+      "type": "edit",
+      "id": "a546304ce2f39c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "a546304ce2f39c6d",
+        "text": "wik will be published as an npm module, and must be initialized with an options argument which sets the preferred transport and storage methods"
+      },
+      "date": 1394819874312
+    },
+    {
+      "type": "edit",
+      "id": "86f8a443b13db471",
+      "item": {
+        "type": "code",
+        "id": "86f8a443b13db471",
+        "text": "var wik = require('wik')\n\nwik.init({transport: 'ndn', storage: 'local'})\n"
+      },
+      "date": 1394819923472
+    },
+    {
+      "type": "edit",
+      "id": "a546304ce2f39c6d",
+      "item": {
+        "type": "paragraph",
+        "id": "a546304ce2f39c6d",
+        "text": "wik will be published as an npm module, and must be initialized with an options argument which sets the preferred transport and storage methods."
+      },
+      "date": 1394819927430
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f443e2013753a535",
+        "text": ""
+      },
+      "id": "f443e2013753a535",
+      "type": "add",
+      "after": "a546304ce2f39c6d",
+      "date": 1394819927944
+    },
+    {
+      "type": "edit",
+      "id": "f443e2013753a535",
+      "item": {
+        "type": "paragraph",
+        "id": "f443e2013753a535",
+        "text": "For more, see [[Wik Transport]] and [[Wik Storage]]"
+      },
+      "date": 1394819948082
+    },
+    {
+      "type": "move",
+      "order": [
+        "18e29534210574f6",
+        "210c771076a8d228",
+        "a546304ce2f39c6d",
+        "86f8a443b13db471",
+        "f443e2013753a535",
+        "adaad97e58cf364c",
+        "507e3ff2a531a867",
+        "754756cd87da7710",
+        "8b00b0e8c163ead2",
+        "270120084d3e0ea3",
+        "f8c55bc5c83b5283",
+        "53462612bb6a0161",
+        "cebdc1ce1d14b0c7",
+        "863efeec2feb6406",
+        "8673bab07c5cb19f",
+        "cfa270c495abfd35",
+        "ed75286edf370dba",
+        "a485ff4acc4da0f0",
+        "a2c829e86aa1baf3",
+        "89a8f8816f260ef2",
+        "8affe682bbe218e0",
+        "912c473d885fe2b7",
+        "f868549857cbba53",
+        "44d6cd1dddb2bd47",
+        "0761a9a579c17096",
+        "7f05cf17886b7d54",
+        "75f9c67609616278",
+        "d77791feccd1ed44",
+        "769f6b4ab0b6adc6",
+        "de12a9eb5d02950c",
+        "9a45cabbc6ed7714",
+        "bfaf051be3346903",
+        "4c6016bbdda3cf3e"
+      ],
+      "id": "f443e2013753a535",
+      "date": 1394819950264
+    }
+  ]
+}

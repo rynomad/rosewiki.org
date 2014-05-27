@@ -1,0 +1,55 @@
+{
+  "title": "Wik Link Index",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "a4c12baa33a9cc75",
+      "text": "As a starter to solve the problem of [[Wik Links]], we create a wik with the title \"index\" and populate it with sitemap threads. each entry in the sitemap maps a page slug to a uri"
+    },
+    {
+      "type": "paragraph",
+      "id": "8781399dcc4eb9b0",
+      "text": " "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Link Index",
+        "story": []
+      },
+      "date": 1396318016855
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a4c12baa33a9cc75"
+      },
+      "id": "a4c12baa33a9cc75",
+      "type": "add",
+      "date": 1396318018108
+    },
+    {
+      "type": "edit",
+      "id": "a4c12baa33a9cc75",
+      "item": {
+        "type": "paragraph",
+        "id": "a4c12baa33a9cc75",
+        "text": "As a starter to solve the problem of [[Wik Links]], we create a wik with the title \"index\" and populate it with sitemap threads. each entry in the sitemap maps a page slug to a uri"
+      },
+      "date": 1396318163415
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8781399dcc4eb9b0",
+        "text": " "
+      },
+      "id": "8781399dcc4eb9b0",
+      "type": "add",
+      "after": "a4c12baa33a9cc75",
+      "date": 1396318163936
+    }
+  ]
+}

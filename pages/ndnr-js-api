@@ -1,0 +1,325 @@
+{
+  "title": "NDNR-js API",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "8e801e39541c4e13",
+      "text": "These are preliminary API Goals for [http://github.com/rynomad/ndnr-js NDNR-js]. The build is not passing muster at the moment but I'm getting closer..."
+    },
+    {
+      "type": "pagefold",
+      "id": "2dfc1e8fb57467c9",
+      "text": "var repo = new ndnr(prefix)"
+    },
+    {
+      "type": "paragraph",
+      "id": "abc4145ddc41db71",
+      "text": "'prefix' is a URI string (normalized internally to prevent typo errors). All subsequent actions on the ndnr object will store and serve data relative to this prefix."
+    },
+    {
+      "type": "code",
+      "id": "766d9986d3f971e7",
+      "text": "repo.put(name, data, callback)"
+    },
+    {
+      "type": "paragraph",
+      "id": "180ea164b9a8238a",
+      "text": "where name is a URI string, data is any file/blob/object/string, and callback recieves a success or error event."
+    },
+    {
+      "type": "code",
+      "id": "f27d16464e191fe8",
+      "text": "repo.get(name, callback)"
+    },
+    {
+      "type": "paragraph",
+      "id": "0e54a9e43b33cc73",
+      "text": "name is again a URI string, callback receives a file/blob/object/string"
+    },
+    {
+      "type": "pagefold",
+      "id": "ac59592ad982d762",
+      "text": "NDN Commands"
+    },
+    {
+      "type": "paragraph",
+      "id": "86c71a1b60a31902",
+      "text": "The repo should respond to an expandable list of defined command markers, stored in "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDNR-js API",
+        "story": []
+      },
+      "date": 1385084290906
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2dfc1e8fb57467c9"
+      },
+      "id": "2dfc1e8fb57467c9",
+      "type": "add",
+      "date": 1385084291913
+    },
+    {
+      "type": "edit",
+      "id": "2dfc1e8fb57467c9",
+      "item": {
+        "type": "pagefold",
+        "id": "2dfc1e8fb57467c9",
+        "text": "var repo = new ndnr(prefix)"
+      },
+      "date": 1385084314355
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "766d9986d3f971e7"
+      },
+      "id": "766d9986d3f971e7",
+      "type": "add",
+      "after": "2dfc1e8fb57467c9",
+      "date": 1385084316621
+    },
+    {
+      "type": "edit",
+      "id": "766d9986d3f971e7",
+      "item": {
+        "type": "code",
+        "id": "766d9986d3f971e7",
+        "text": "repo.put(data, callback)"
+      },
+      "date": 1385084342301
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "180ea164b9a8238a"
+      },
+      "id": "180ea164b9a8238a",
+      "type": "add",
+      "after": "766d9986d3f971e7",
+      "date": 1385084347767
+    },
+    {
+      "type": "edit",
+      "id": "180ea164b9a8238a",
+      "item": {
+        "type": "paragraph",
+        "id": "180ea164b9a8238a",
+        "text": "where data is any file/bloc"
+      },
+      "date": 1385084360507
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8e801e39541c4e13"
+      },
+      "id": "8e801e39541c4e13",
+      "type": "add",
+      "after": "180ea164b9a8238a",
+      "date": 1385084361865
+    },
+    {
+      "type": "move",
+      "order": [
+        "8e801e39541c4e13",
+        "2dfc1e8fb57467c9",
+        "766d9986d3f971e7",
+        "180ea164b9a8238a"
+      ],
+      "id": "8e801e39541c4e13",
+      "date": 1385084363342
+    },
+    {
+      "type": "edit",
+      "id": "8e801e39541c4e13",
+      "item": {
+        "type": "paragraph",
+        "id": "8e801e39541c4e13",
+        "text": "These are preliminary API Goals for [http://github.com/rynomad/ndnr-js NDNR-js]. The build is not passing muster at the moment but I'm getting closer..."
+      },
+      "date": 1385084443464
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "abc4145ddc41db71"
+      },
+      "id": "abc4145ddc41db71",
+      "type": "add",
+      "after": "180ea164b9a8238a",
+      "date": 1385084452374
+    },
+    {
+      "type": "move",
+      "order": [
+        "8e801e39541c4e13",
+        "abc4145ddc41db71",
+        "2dfc1e8fb57467c9",
+        "766d9986d3f971e7",
+        "180ea164b9a8238a"
+      ],
+      "id": "abc4145ddc41db71",
+      "date": 1385084453369
+    },
+    {
+      "type": "move",
+      "order": [
+        "8e801e39541c4e13",
+        "2dfc1e8fb57467c9",
+        "abc4145ddc41db71",
+        "766d9986d3f971e7",
+        "180ea164b9a8238a"
+      ],
+      "id": "abc4145ddc41db71",
+      "date": 1385084455751
+    },
+    {
+      "type": "edit",
+      "id": "abc4145ddc41db71",
+      "item": {
+        "type": "paragraph",
+        "id": "abc4145ddc41db71",
+        "text": "'prefix' is a URI string (normalized internally to prevent typo errors). All subsequent actions on the ndnr object will store and serve data relative to this prefix."
+      },
+      "date": 1385084522775
+    },
+    {
+      "type": "edit",
+      "id": "180ea164b9a8238a",
+      "item": {
+        "type": "paragraph",
+        "id": "180ea164b9a8238a",
+        "text": "where data is any file/blob/object/string, "
+      },
+      "date": 1385084540659
+    },
+    {
+      "type": "edit",
+      "id": "766d9986d3f971e7",
+      "item": {
+        "type": "code",
+        "id": "766d9986d3f971e7",
+        "text": "repo.put(name, data, callback)"
+      },
+      "date": 1385084545019
+    },
+    {
+      "type": "edit",
+      "id": "180ea164b9a8238a",
+      "item": {
+        "type": "paragraph",
+        "id": "180ea164b9a8238a",
+        "text": "where name is a URI string, data is any file/blob/object/string, and callback recieves a success or error event."
+      },
+      "date": 1385084642141
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8f9d15db6495d1eb",
+        "text": ""
+      },
+      "id": "8f9d15db6495d1eb",
+      "type": "add",
+      "after": "180ea164b9a8238a",
+      "date": 1385084642668
+    },
+    {
+      "type": "remove",
+      "id": "8f9d15db6495d1eb",
+      "date": 1385084643742
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f27d16464e191fe8"
+      },
+      "id": "f27d16464e191fe8",
+      "type": "add",
+      "after": "180ea164b9a8238a",
+      "date": 1385084691673
+    },
+    {
+      "type": "edit",
+      "id": "f27d16464e191fe8",
+      "item": {
+        "type": "code",
+        "id": "f27d16464e191fe8",
+        "text": "repo.get(name, callback)"
+      },
+      "date": 1385084713660
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0e54a9e43b33cc73"
+      },
+      "id": "0e54a9e43b33cc73",
+      "type": "add",
+      "after": "f27d16464e191fe8",
+      "date": 1385084724363
+    },
+    {
+      "type": "edit",
+      "id": "0e54a9e43b33cc73",
+      "item": {
+        "type": "paragraph",
+        "id": "0e54a9e43b33cc73",
+        "text": "name is again a URI string, callback receives a file/blob/object/string"
+      },
+      "date": 1385084765902
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ac59592ad982d762"
+      },
+      "id": "ac59592ad982d762",
+      "type": "add",
+      "after": "0e54a9e43b33cc73",
+      "date": 1385084778436
+    },
+    {
+      "type": "edit",
+      "id": "ac59592ad982d762",
+      "item": {
+        "type": "pagefold",
+        "id": "ac59592ad982d762",
+        "text": "NDN Commands"
+      },
+      "date": 1385084822612
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "86c71a1b60a31902"
+      },
+      "id": "86c71a1b60a31902",
+      "type": "add",
+      "after": "ac59592ad982d762",
+      "date": 1385084824174
+    },
+    {
+      "type": "edit",
+      "id": "86c71a1b60a31902",
+      "item": {
+        "type": "paragraph",
+        "id": "86c71a1b60a31902",
+        "text": "The repo should respond to an expandable list of defined command markers, stored in "
+      },
+      "date": 1385084880992
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org",
+      "date": 1386234032320
+    }
+  ]
+}

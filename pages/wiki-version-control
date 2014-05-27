@@ -1,0 +1,642 @@
+{
+  "title": "Wiki Version Control",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "03669feef2f78242",
+      "text": "Version control is an aspect of Federated Wiki that deserves some quality consideration and design. These pages are an attempt to identify what we need, what solutions exist, and what we might want to build."
+    },
+    {
+      "type": "paragraph",
+      "id": "c819748b2f844a01",
+      "text": "For quite a while now we've been pondering notions of merge tools for wiki pages, as well as discovery mechanism for federated sites, and access policies for private/semi-private wikis. "
+    },
+    {
+      "type": "paragraph",
+      "id": "9453d5ac3b466be6",
+      "text": "TL;DR Ryan wants to build [[WIK DVCS]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "e67b34cc88838bf7",
+      "text": "Relevant Pages"
+    },
+    {
+      "id": "823eed582b46ae75",
+      "type": "reference",
+      "site": "smallest-federated-wiki.issues.fed.wiki.org",
+      "slug": "discussion-operational-transformations",
+      "title": "Discussion: Operational Transformations",
+      "text": "Patch based versioning discussion."
+    },
+    {
+      "id": "987b07d248062f8e",
+      "type": "reference",
+      "site": "smallest-federated-wiki.issues.fed.wiki.org",
+      "slug": "look-at-json-patch-to-build-the-journal",
+      "title": "Look at Json-Patch to Build the Journal",
+      "text": "[http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03 http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03]"
+    },
+    {
+      "type": "paragraph",
+      "id": "2d72296fe4bd2c1e",
+      "text": "[https://github.com/fedwiki/wiki-node-server/issues/53#issuecomment-36519631 SSL/TLS Support]"
+    },
+    {
+      "id": "7c9aa9d4f4084f9e",
+      "type": "reference",
+      "site": "ward.fed.wiki.org",
+      "slug": "wants-and-needs",
+      "title": "Wants and Needs",
+      "text": "See [[Complimentary Notice on Fork]]; [[Move vs. Copy on Drag]]; [[Deleting Me Softly]]; [[Rename Pages]] "
+    },
+    {
+      "type": "pagefold",
+      "id": "af0fb8797b18dcd4",
+      "text": "What We Have"
+    },
+    {
+      "id": "f81a1789352fffcb",
+      "type": "reference",
+      "site": "ward.fed.wiki.org",
+      "slug": "json-schema",
+      "title": "JSON Schema",
+      "text": "The Current JSON scheme for all Wiki pages. Offers branching/forking with our editor, but all merging is manual, and we have little protection against mistakes (See [[Deleting Me Softly]])"
+    },
+    {
+      "type": "pagefold",
+      "id": "c674ef5145a3de44",
+      "text": "Considered Solutions"
+    },
+    {
+      "type": "paragraph",
+      "id": "c7daf34a5b2d7797",
+      "text": "Git comes up fairly often in discussions of the Federated Wiki collaboration model, Darcs has also come up (see [[Discussion: Operational Transformations]])"
+    },
+    {
+      "type": "paragraph",
+      "id": "cb18d6e3fe92dbcb",
+      "text": "A commonality of modern DVCS's is that they are all built to primarily for arbitrary text files. As we use an object-oriented and expandable data format capable of holding rich and diverse media, serializing and diff/merging our pages with an existing system could get very ugly, very fast. "
+    },
+    {
+      "type": "paragraph",
+      "id": "640cacedd8d51009",
+      "text": "[http://jelv.is/cow/ Cow] is a semantic version control system that includes a language parser, and while not applicable to our project directly, it does illustrate some possibilities as far as semantic-aware version control."
+    },
+    {
+      "type": "paragraph",
+      "id": "3976b332ca300352",
+      "text": "Furthermore, our current reference server and of course the client code is all Javascript, and though there is a project for JavaScript git, it is still very young: Using an existing VCS would likely require  some sort of server-side hook for managing our diffs and merges, in addition to managing server-server communication (unless we want to route our pulls through the client)."
+    },
+    {
+      "type": "pagefold",
+      "id": "7130ab6895cea43d",
+      "text": "Starting (Almost) From Scratch"
+    },
+    {
+      "type": "paragraph",
+      "id": "995c97549bd8bb5d",
+      "text": "As Federated Wiki currently has a minimal versioning system that has served us well up to this point, and integrating traditional text based revision management looks to be both technically challenging and operationally restricting, it may be more suitable for us to roll our own DVCS. "
+    },
+    {
+      "type": "paragraph",
+      "id": "8728c1baa0e0bf9a",
+      "text": "Preliminary design discussion at [[WIK DVCS]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "ccd69c1bc44d031b",
+      "text": "Movi"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wiki Version Control",
+        "story": []
+      },
+      "date": 1393880092878
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "03669feef2f78242",
+        "text": "Version control is an aspect of Federated Wiki that deserves some quality consideration and design. These pages are an attempt to identify what we need, what solutions exist, and what we might want to build."
+      },
+      "id": "03669feef2f78242",
+      "date": 1393880094550
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "c819748b2f844a01",
+        "text": "For quite a while now we've been pondering notions of merge tools for wiki pages, as well as discovery mechanism for federated sites, and access policies for private/semi-private wikis. "
+      },
+      "after": "03669feef2f78242",
+      "id": "c819748b2f844a01",
+      "date": 1393880096400
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "pagefold",
+        "id": "e67b34cc88838bf7",
+        "text": "Relevant Pages"
+      },
+      "after": "c819748b2f844a01",
+      "id": "e67b34cc88838bf7",
+      "date": 1393880098901
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "823eed582b46ae75",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "discussion-operational-transformations",
+        "title": "Discussion: Operational Transformations",
+        "text": "I was just reminded of the concept of Operational Transformation"
+      },
+      "after": "e67b34cc88838bf7",
+      "id": "823eed582b46ae75",
+      "date": 1393880101021
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "987b07d248062f8e",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "look-at-json-patch-to-build-the-journal",
+        "title": "Look at Json-Patch to Build the Journal",
+        "text": "[http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03 http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03]"
+      },
+      "after": "823eed582b46ae75",
+      "id": "987b07d248062f8e",
+      "date": 1393880104513
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "2d72296fe4bd2c1e",
+        "text": "[https://github.com/fedwiki/wiki-node-server/issues/53#issuecomment-36519631 SSL/TLS Support]"
+      },
+      "after": "987b07d248062f8e",
+      "id": "2d72296fe4bd2c1e",
+      "date": 1393880107121
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "7c9aa9d4f4084f9e",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "wants-and-needs",
+        "title": "Wants and Needs",
+        "text": "See [[Complimentary Notice on Fork]]; [[Move vs. Copy on Drag]]; [[Deleting Me Softly]]; [[Rename Pages]] "
+      },
+      "after": "2d72296fe4bd2c1e",
+      "id": "7c9aa9d4f4084f9e",
+      "date": 1393880111083
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "pagefold",
+        "id": "af0fb8797b18dcd4",
+        "text": "What We Have"
+      },
+      "after": "7c9aa9d4f4084f9e",
+      "id": "af0fb8797b18dcd4",
+      "date": 1393880113816
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "f81a1789352fffcb",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "json-schema",
+        "title": "JSON Schema",
+        "text": "The Current JSON scheme for all Wiki pages. Offers branching/forking with our editor, but all merging is manual, and offers little protection against mistakes (See [[Deleting Me Softly]])"
+      },
+      "after": "af0fb8797b18dcd4",
+      "id": "f81a1789352fffcb",
+      "date": 1393880118935
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c674ef5145a3de44"
+      },
+      "id": "c674ef5145a3de44",
+      "type": "add",
+      "after": "f81a1789352fffcb",
+      "date": 1393880124169
+    },
+    {
+      "type": "edit",
+      "id": "c674ef5145a3de44",
+      "item": {
+        "type": "pagefold",
+        "id": "c674ef5145a3de44",
+        "text": "Suggested Futures"
+      },
+      "date": 1393880132818
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c7daf34a5b2d7797"
+      },
+      "id": "c7daf34a5b2d7797",
+      "type": "add",
+      "after": "c674ef5145a3de44",
+      "date": 1393880134447
+    },
+    {
+      "type": "edit",
+      "id": "c7daf34a5b2d7797",
+      "item": {
+        "type": "paragraph",
+        "id": "c7daf34a5b2d7797",
+        "text": "Git comes up fairly often in discussions of the Federated Wiki "
+      },
+      "date": 1393880154624
+    },
+    {
+      "type": "edit",
+      "id": "c7daf34a5b2d7797",
+      "item": {
+        "type": "paragraph",
+        "id": "c7daf34a5b2d7797",
+        "text": "Git comes up fairly often in discussions of the Federated Wiki collaboration model"
+      },
+      "date": 1393880163493
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "54e5966e6572ef42",
+        "text": ""
+      },
+      "id": "54e5966e6572ef42",
+      "type": "add",
+      "after": "c7daf34a5b2d7797",
+      "date": 1393880164015
+    },
+    {
+      "type": "remove",
+      "id": "54e5966e6572ef42",
+      "date": 1393880164634
+    },
+    {
+      "type": "edit",
+      "id": "c7daf34a5b2d7797",
+      "item": {
+        "type": "paragraph",
+        "id": "c7daf34a5b2d7797",
+        "text": "Git comes up fairly often in discussions of the Federated Wiki collaboration model, "
+      },
+      "date": 1393880203391
+    },
+    {
+      "type": "edit",
+      "id": "823eed582b46ae75",
+      "item": {
+        "id": "823eed582b46ae75",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "discussion-operational-transformations",
+        "title": "Discussion: Operational Transformations",
+        "text": "Patch based versioning discussion."
+      },
+      "date": 1393880225301
+    },
+    {
+      "type": "edit",
+      "id": "c7daf34a5b2d7797",
+      "item": {
+        "type": "paragraph",
+        "id": "c7daf34a5b2d7797",
+        "text": "Git comes up fairly often in discussions of the Federated Wiki collaboration model, Darcs has also come up (see [[Discussion: Operational Transformations]])"
+      },
+      "date": 1393880291845
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "cb18d6e3fe92dbcb",
+        "text": ""
+      },
+      "id": "cb18d6e3fe92dbcb",
+      "type": "add",
+      "after": "c7daf34a5b2d7797",
+      "date": 1393880315775
+    },
+    {
+      "type": "edit",
+      "id": "cb18d6e3fe92dbcb",
+      "item": {
+        "type": "paragraph",
+        "id": "cb18d6e3fe92dbcb",
+        "text": "A commonality of modern DVCS's is that they are all built to primarily for arbitrary text files. "
+      },
+      "date": 1393880364852
+    },
+    {
+      "type": "edit",
+      "id": "c674ef5145a3de44",
+      "item": {
+        "type": "pagefold",
+        "id": "c674ef5145a3de44",
+        "text": "Considered Solutions"
+      },
+      "date": 1393880375737
+    },
+    {
+      "type": "edit",
+      "id": "f81a1789352fffcb",
+      "item": {
+        "id": "f81a1789352fffcb",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "json-schema",
+        "title": "JSON Schema",
+        "text": "The Current JSON scheme for all Wiki pages. Offers branching/forking with our editor, but all merging is manual, and we have little protection against mistakes (See [[Deleting Me Softly]])"
+      },
+      "date": 1393880434786
+    },
+    {
+      "type": "edit",
+      "id": "cb18d6e3fe92dbcb",
+      "item": {
+        "type": "paragraph",
+        "id": "cb18d6e3fe92dbcb",
+        "text": "A commonality of modern DVCS's is that they are all built to primarily for arbitrary text files. As we use an object-oriented and plugin-expandable data format for our pages, serializing and diff/merging our pages with an existing system could get very ugly, very fast."
+      },
+      "date": 1393880513609
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "3976b332ca300352",
+        "text": ""
+      },
+      "id": "3976b332ca300352",
+      "type": "add",
+      "after": "cb18d6e3fe92dbcb",
+      "date": 1393880514128
+    },
+    {
+      "type": "edit",
+      "id": "3976b332ca300352",
+      "item": {
+        "type": "paragraph",
+        "id": "3976b332ca300352",
+        "text": "What's more, our current reference server and of course the client code is all javascript, and though there is a project for JavaScript git, it is still very young"
+      },
+      "date": 1393880576319
+    },
+    {
+      "type": "edit",
+      "id": "cb18d6e3fe92dbcb",
+      "item": {
+        "type": "paragraph",
+        "id": "cb18d6e3fe92dbcb",
+        "text": "A commonality of modern DVCS's is that they are all built to primarily for arbitrary text files. As we use an object-oriented and expandable data format for our pages, potentially capable of holding rich and diverse media, serializing and diff/merging our pages with an existing system could get very ugly, very fast. "
+      },
+      "date": 1393880636012
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "640cacedd8d51009",
+        "text": "[http://jelv.is/cow/ Cow] is a semantic version control system that includes a language parser, and while not applicabl"
+      },
+      "id": "640cacedd8d51009",
+      "type": "add",
+      "after": "cb18d6e3fe92dbcb",
+      "date": 1393880680454
+    },
+    {
+      "type": "edit",
+      "id": "640cacedd8d51009",
+      "item": {
+        "type": "paragraph",
+        "id": "640cacedd8d51009",
+        "text": "[http://jelv.is/cow/ Cow] is a semantic version control system that includes a language parser, and while not applicable to our project directly, it does illustrate some possible"
+      },
+      "date": 1393880712380
+    },
+    {
+      "type": "edit",
+      "id": "cb18d6e3fe92dbcb",
+      "item": {
+        "type": "paragraph",
+        "id": "cb18d6e3fe92dbcb",
+        "text": "A commonality of modern DVCS's is that they are all built to primarily for arbitrary text files. As we use an object-oriented and expandable data format capable of holding rich and diverse media, serializing and diff/merging our pages with an existing system could get very ugly, very fast. "
+      },
+      "date": 1393880739272
+    },
+    {
+      "type": "edit",
+      "id": "640cacedd8d51009",
+      "item": {
+        "type": "paragraph",
+        "id": "640cacedd8d51009",
+        "text": "[http://jelv.is/cow/ Cow] is a semantic version control system that includes a language parser, and while not applicable to our project directly, it does illustrate some possibilities as far as semantic-aware version control."
+      },
+      "date": 1393880759128
+    },
+    {
+      "type": "edit",
+      "id": "3976b332ca300352",
+      "item": {
+        "type": "paragraph",
+        "id": "3976b332ca300352",
+        "text": "Furthermore, our current reference server and of course the client code is all Javascript, and though there is a project for JavaScript git, it is still very young: Using an existing VCS would likely require  some sort of server-side hook for managing our diffs and merges, in addition to managing server-server communication (unless we want to route our pulls through the client)."
+      },
+      "date": 1393881117335
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "976ff9720a88b7f8"
+      },
+      "id": "976ff9720a88b7f8",
+      "type": "add",
+      "after": "3976b332ca300352",
+      "date": 1393881128505
+    },
+    {
+      "type": "remove",
+      "id": "976ff9720a88b7f8",
+      "date": 1393881136158
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ccd69c1bc44d031b"
+      },
+      "id": "ccd69c1bc44d031b",
+      "type": "add",
+      "after": "3976b332ca300352",
+      "date": 1393881138958
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "pagefold",
+        "id": "7130ab6895cea43d",
+        "text": "Moving Forward"
+      },
+      "after": "3976b332ca300352",
+      "id": "7130ab6895cea43d",
+      "date": 1393881163866
+    },
+    {
+      "type": "edit",
+      "id": "ccd69c1bc44d031b",
+      "item": {
+        "type": "pagefold",
+        "id": "ccd69c1bc44d031b",
+        "text": "Movi"
+      },
+      "date": 1393881165013
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "[[WIK DVCS]]"
+      },
+      "after": "7130ab6895cea43d",
+      "id": "995c97549bd8bb5d",
+      "date": 1393881167197
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9453d5ac3b466be6",
+        "text": ""
+      },
+      "id": "9453d5ac3b466be6",
+      "type": "add",
+      "after": "c819748b2f844a01",
+      "date": 1393881194074
+    },
+    {
+      "type": "edit",
+      "id": "9453d5ac3b466be6",
+      "item": {
+        "type": "paragraph",
+        "id": "9453d5ac3b466be6",
+        "text": "TL;DR Ryan is trying to design and build [[WIK DVCS]]"
+      },
+      "date": 1393881226476
+    },
+    {
+      "type": "edit",
+      "id": "7130ab6895cea43d",
+      "item": {
+        "type": "pagefold",
+        "id": "7130ab6895cea43d",
+        "text": "Starting (Almost) From Scratch"
+      },
+      "date": 1393881250246
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "As Federated Wiki currently has a minimal versioning system that has served us well up to this point; and integrating traditional text based revision managment would be both technically challenging and operationally restricting, "
+      },
+      "date": 1393881365174
+    },
+    {
+      "type": "edit",
+      "id": "9453d5ac3b466be6",
+      "item": {
+        "type": "paragraph",
+        "id": "9453d5ac3b466be6",
+        "text": "TL;DR Ryan wants to build [[WIK DVCS]]"
+      },
+      "date": 1393881371635
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "As Federated Wiki currently has a minimal versioning system that has served us well up to this point, and integrating traditional text based revision management would be both technically challenging and operationally restricting, it may be advisable to build our own DVCS."
+      },
+      "date": 1393881488176
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "105b8c2aff6da9f1",
+        "text": ""
+      },
+      "id": "105b8c2aff6da9f1",
+      "type": "add",
+      "after": "995c97549bd8bb5d",
+      "date": 1393881488693
+    },
+    {
+      "type": "remove",
+      "id": "105b8c2aff6da9f1",
+      "date": 1393881513042
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "As Federated Wiki currently has a minimal versioning system that has served us well up to this point, and integrating traditional text based revision management would be both technically challenging and operationally restricting, it may be more suitable for us to roll our own DVCS. "
+      },
+      "date": 1393881586137
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8728c1baa0e0bf9a",
+        "text": ""
+      },
+      "id": "8728c1baa0e0bf9a",
+      "type": "add",
+      "after": "995c97549bd8bb5d",
+      "date": 1393881655166
+    },
+    {
+      "type": "edit",
+      "id": "8728c1baa0e0bf9a",
+      "item": {
+        "type": "paragraph",
+        "id": "8728c1baa0e0bf9a",
+        "text": "Preliminary design discussion at [[WIK DVCS]]"
+      },
+      "date": 1393881686638
+    },
+    {
+      "type": "edit",
+      "id": "995c97549bd8bb5d",
+      "item": {
+        "type": "paragraph",
+        "id": "995c97549bd8bb5d",
+        "text": "As Federated Wiki currently has a minimal versioning system that has served us well up to this point, and integrating traditional text based revision management looks to be both technically challenging and operationally restricting, it may be more suitable for us to roll our own DVCS. "
+      },
+      "date": 1393882022386
+    }
+  ]
+}

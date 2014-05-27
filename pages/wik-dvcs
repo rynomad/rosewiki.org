@@ -1,0 +1,1433 @@
+{
+  "title": "WIK DVCS",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "535255ba1000a3f3",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "e088be5fc91a9e69",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "6285b145c064a28b",
+      "text": "Version Control is an involved and complex domain, and building a new DVCS is a hefty undertaking that requires prioritization of features and enough forethought to avoid coding ourselves into a corner. Here we outline where we are, where we want to be, and how we might get there."
+    },
+    {
+      "type": "paragraph",
+      "id": "37bb0459cdd7f81c",
+      "text": "Related: "
+    },
+    {
+      "type": "paragraph",
+      "id": "eb05bd02740965ab",
+      "text": "[[Gripes about Version Control]], both within wiki and in other systems."
+    },
+    {
+      "type": "paragraph",
+      "id": "c22424602c3756eb",
+      "text": "[[WIK Etymology]] - Why WIK is the best DVCS name ever"
+    },
+    {
+      "type": "pagefold",
+      "id": "637f83843b62685e",
+      "text": "Status Quo"
+    },
+    {
+      "type": "paragraph",
+      "id": "0121a68cc633e280",
+      "text": "Our [[JSON Schema]] defines a simple, yet versatile object scheme for managing revisions to a page and documenting fork actions. "
+    },
+    {
+      "type": "paragraph",
+      "id": "9b1abfd7016e9588",
+      "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]. "
+    },
+    {
+      "type": "paragraph",
+      "id": "b1c0a72c7a96484a",
+      "text": "This seems like a good idea in light of Federated Wikis notion of a [[Chorus of Voices]] that may remix content in a non-linear fashion."
+    },
+    {
+      "type": "pagefold",
+      "id": "3c8d203451601fe7",
+      "text": "Design Goals"
+    },
+    {
+      "type": "paragraph",
+      "id": "e91e4a6d1a164846",
+      "text": "[[Abstract Wik]] to the point that other wiki implementations can retain compatibility (Unhosted apps, mobile apps, embedded apps, etc.)"
+    },
+    {
+      "type": "paragraph",
+      "id": "c662b563ac431a84",
+      "text": "[[Semanticize Wik]] so that distributed content can be traversed pragmatically in a decentralized fashion (ie. avoid the necessity of 'WikHub'). Also allows for [[Bubbling Updates]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "cf9504ef9267b138",
+      "text": "[[Socialize Wik]] to naturally foster federation between curators (once again, trying to avoid 'WikHub')"
+    },
+    {
+      "type": "paragraph",
+      "id": "3f90c164a1c72c55",
+      "text": "[[Secure Wik]] against mistakes, spam, and unauthorized access, without hindering free exchange of ideas and exploration of content."
+    },
+    {
+      "type": "pagefold",
+      "id": "69f8cc427dd33d49",
+      "text": "WIK Work In Progress"
+    },
+    {
+      "type": "paragraph",
+      "id": "789436c806ade361",
+      "text": "[[Wik Data Model]] - How should we think about pages, paragraphs, and plugins?"
+    },
+    {
+      "type": "paragraph",
+      "id": "558e5d6bd4a2d370",
+      "text": "[[Wik API]] - What methods do developers need to interact with and publish wik objects?"
+    },
+    {
+      "type": "paragraph",
+      "id": "ced4bb235184f8ab",
+      "text": "[[Wik Patch]] - What constitutes a patch, how is it identified and stored?"
+    },
+    {
+      "type": "paragraph",
+      "id": "bf77c270dbb8227f",
+      "text": "[[Wik Architecture]] - all these features sound awesome... but how is this thing going to be built?"
+    },
+    {
+      "type": "paragraph",
+      "id": "b3323fe06f4983c8",
+      "text": "[[Wik Transport]] - Abstracting use of various different transports and networking paradigms"
+    },
+    {
+      "type": "paragraph",
+      "id": "6b256747e675412f",
+      "text": "[[Wik Storage]] - Abstracting use of various storage methods so as to allow client/server/nativeApp storage"
+    },
+    {
+      "type": "paragraph",
+      "id": "8a73754442fe64d6",
+      "text": "[[Wik Links]] - changing from a page slug to a URI for wik ID's means we can specify more exactly where we want a link to point, but it also means we have to know how to generate these pointers"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "WIK DVCS",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1393878535104,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "535255ba1000a3f3"
+      },
+      "id": "535255ba1000a3f3",
+      "type": "add",
+      "date": 1393878536006
+    },
+    {
+      "type": "edit",
+      "id": "535255ba1000a3f3",
+      "item": {
+        "type": "paragraph",
+        "id": "535255ba1000a3f3",
+        "text": "Version control is integral "
+      },
+      "date": 1393878544985
+    },
+    {
+      "type": "fork",
+      "date": 1393878646994
+    },
+    {
+      "type": "edit",
+      "id": "535255ba1000a3f3",
+      "item": {
+        "type": "paragraph",
+        "id": "535255ba1000a3f3",
+        "text": "For quite a while now we've been pondering notions of merge tools for wiki pages, as well as discovery mechanism for federated sites, and access policies for private/semi-private wikis. "
+      },
+      "date": 1393878888370
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "da7f4025840e8aac",
+        "text": ""
+      },
+      "id": "da7f4025840e8aac",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393878888891
+    },
+    {
+      "type": "remove",
+      "id": "da7f4025840e8aac",
+      "date": 1393878893518
+    },
+    {
+      "type": "edit",
+      "id": "535255ba1000a3f3",
+      "item": {
+        "type": "paragraph",
+        "id": "535255ba1000a3f3",
+        "text": " "
+      },
+      "date": 1393878896136
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c819748b2f844a01",
+        "text": "For quite a while now we've been pondering notions of merge tools for wiki pages, as well as discovery mechanism for federated sites, and access policies for private/semi-private wikis. "
+      },
+      "id": "c819748b2f844a01",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393878896653
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "03669feef2f78242",
+        "text": ""
+      },
+      "id": "03669feef2f78242",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393878896663
+    },
+    {
+      "type": "edit",
+      "id": "03669feef2f78242",
+      "item": {
+        "type": "paragraph",
+        "id": "03669feef2f78242",
+        "text": "Version control is an aspect of Federated Wiki that deserves some quality consideration and design. These pages are an attempt to identify what we need, what solutions exist, and what we might want to build."
+      },
+      "date": 1393879003311
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "823eed582b46ae75",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "discussion-operational-transformations",
+        "title": "Discussion: Operational Transformations",
+        "text": "I was just reminded of the concept of Operational Transformation"
+      },
+      "after": "c819748b2f844a01",
+      "id": "823eed582b46ae75",
+      "date": 1393879220356
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e67b34cc88838bf7"
+      },
+      "id": "e67b34cc88838bf7",
+      "type": "add",
+      "after": "823eed582b46ae75",
+      "date": 1393879222948
+    },
+    {
+      "type": "move",
+      "order": [
+        "535255ba1000a3f3",
+        "03669feef2f78242",
+        "c819748b2f844a01",
+        "e67b34cc88838bf7",
+        "823eed582b46ae75"
+      ],
+      "id": "e67b34cc88838bf7",
+      "date": 1393879224307
+    },
+    {
+      "type": "edit",
+      "id": "e67b34cc88838bf7",
+      "item": {
+        "type": "pagefold",
+        "id": "e67b34cc88838bf7",
+        "text": "Relevant Issues"
+      },
+      "date": 1393879236665
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "2d72296fe4bd2c1e"
+      },
+      "id": "2d72296fe4bd2c1e",
+      "type": "add",
+      "after": "823eed582b46ae75",
+      "date": 1393879422823
+    },
+    {
+      "type": "edit",
+      "id": "2d72296fe4bd2c1e",
+      "item": {
+        "type": "paragraph",
+        "id": "2d72296fe4bd2c1e",
+        "text": "[https://github.com/fedwiki/wiki-node-server/issues/53#issuecomment-36519631 SSL/TLS Support]"
+      },
+      "date": 1393879432581
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "960412137e0c19de",
+        "text": ""
+      },
+      "id": "960412137e0c19de",
+      "type": "add",
+      "after": "2d72296fe4bd2c1e",
+      "date": 1393879433099
+    },
+    {
+      "type": "remove",
+      "id": "960412137e0c19de",
+      "date": 1393879446952
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "7c9aa9d4f4084f9e",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "wants-and-needs",
+        "title": "Wants and Needs",
+        "text": "These are ideas that we've thought about over and over but not done yet. Soon. See also [[Finished Work]]. Colleagues are welcome to [[Submit Changes]]."
+      },
+      "after": "2d72296fe4bd2c1e",
+      "id": "7c9aa9d4f4084f9e",
+      "date": 1393879504526
+    },
+    {
+      "type": "edit",
+      "id": "e67b34cc88838bf7",
+      "item": {
+        "type": "pagefold",
+        "id": "e67b34cc88838bf7",
+        "text": "Relevant Pages"
+      },
+      "date": 1393879512929
+    },
+    {
+      "type": "edit",
+      "id": "7c9aa9d4f4084f9e",
+      "item": {
+        "id": "7c9aa9d4f4084f9e",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "wants-and-needs",
+        "title": "Wants and Needs",
+        "text": "These are ideas that we've thought about over and over but not done yet. Soon. See also [[Finished Work]]. Colleagues are welcome to [[Submit Changes]].\n\nSee [[Complimentary Notice on Fork]]"
+      },
+      "date": 1393879603961
+    },
+    {
+      "type": "edit",
+      "id": "7c9aa9d4f4084f9e",
+      "item": {
+        "id": "7c9aa9d4f4084f9e",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "wants-and-needs",
+        "title": "Wants and Needs",
+        "text": "See [[Complimentary Notice on Fork]]; [[Move vs. Copy on Drag]]; [[Deleting Me Softly]]; [[Rename Pages]] "
+      },
+      "date": 1393879697878
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "317e8ec46970e84c"
+      },
+      "id": "317e8ec46970e84c",
+      "type": "add",
+      "after": "7c9aa9d4f4084f9e",
+      "date": 1393879730116
+    },
+    {
+      "type": "remove",
+      "id": "317e8ec46970e84c",
+      "date": 1393879739228
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "af0fb8797b18dcd4"
+      },
+      "id": "af0fb8797b18dcd4",
+      "type": "add",
+      "after": "7c9aa9d4f4084f9e",
+      "date": 1393879766511
+    },
+    {
+      "type": "edit",
+      "id": "af0fb8797b18dcd4",
+      "item": {
+        "type": "pagefold",
+        "id": "af0fb8797b18dcd4",
+        "text": "What We Have"
+      },
+      "date": 1393879776657
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a96fd2d912fcdbad"
+      },
+      "id": "a96fd2d912fcdbad",
+      "type": "add",
+      "after": "af0fb8797b18dcd4",
+      "date": 1393879780610
+    },
+    {
+      "type": "remove",
+      "id": "a96fd2d912fcdbad",
+      "date": 1393879792686
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "987b07d248062f8e",
+        "type": "reference",
+        "site": "smallest-federated-wiki.issues.fed.wiki.org",
+        "slug": "look-at-json-patch-to-build-the-journal",
+        "title": "Look at Json-Patch to Build the Journal",
+        "text": "[http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03 http://tools.ietf.org/html/draft-ietf-appsawg-json-patch-03]"
+      },
+      "after": "823eed582b46ae75",
+      "id": "987b07d248062f8e",
+      "date": 1393879824431
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "f81a1789352fffcb",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "json-schema",
+        "title": "JSON Schema",
+        "text": "We define the schema for federated wiki pages to the depth that we know it. We use a BNF-like notation to suggest JSON elements. Any ambiguity will be resolved by examining the example. We close with a brief reflection on the successes of the format."
+      },
+      "after": "7c9aa9d4f4084f9e",
+      "id": "f81a1789352fffcb",
+      "date": 1393879852510
+    },
+    {
+      "type": "move",
+      "order": [
+        "535255ba1000a3f3",
+        "03669feef2f78242",
+        "c819748b2f844a01",
+        "e67b34cc88838bf7",
+        "823eed582b46ae75",
+        "987b07d248062f8e",
+        "2d72296fe4bd2c1e",
+        "7c9aa9d4f4084f9e",
+        "af0fb8797b18dcd4",
+        "f81a1789352fffcb"
+      ],
+      "id": "f81a1789352fffcb",
+      "date": 1393879856962
+    },
+    {
+      "type": "edit",
+      "id": "f81a1789352fffcb",
+      "item": {
+        "id": "f81a1789352fffcb",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "json-schema",
+        "title": "JSON Schema",
+        "text": "The Current JSON scheme for all Wiki pages. Offers branching/forking with our editor, but all merging is manual, and offers little protection against mistakes (See [[Deleting Me Softly]])"
+      },
+      "date": 1393879976097
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7130ab6895cea43d"
+      },
+      "id": "7130ab6895cea43d",
+      "type": "add",
+      "after": "f81a1789352fffcb",
+      "date": 1393879988078
+    },
+    {
+      "type": "edit",
+      "id": "7130ab6895cea43d",
+      "item": {
+        "type": "pagefold",
+        "id": "7130ab6895cea43d",
+        "text": "Moving Forward"
+      },
+      "date": 1393880000877
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ca353c5bf61661aa"
+      },
+      "id": "ca353c5bf61661aa",
+      "type": "add",
+      "after": "7130ab6895cea43d",
+      "date": 1393880020038
+    },
+    {
+      "type": "edit",
+      "id": "ca353c5bf61661aa",
+      "item": {
+        "type": "paragraph",
+        "id": "ca353c5bf61661aa",
+        "text": "[[Wiki Version Control]]"
+      },
+      "date": 1393880086469
+    },
+    {
+      "type": "remove",
+      "id": "03669feef2f78242",
+      "date": 1393880094539
+    },
+    {
+      "type": "remove",
+      "id": "c819748b2f844a01",
+      "date": 1393880096394
+    },
+    {
+      "type": "remove",
+      "id": "e67b34cc88838bf7",
+      "date": 1393880098896
+    },
+    {
+      "type": "remove",
+      "id": "823eed582b46ae75",
+      "date": 1393880101013
+    },
+    {
+      "type": "remove",
+      "id": "987b07d248062f8e",
+      "date": 1393880104507
+    },
+    {
+      "type": "remove",
+      "id": "2d72296fe4bd2c1e",
+      "date": 1393880107112
+    },
+    {
+      "type": "remove",
+      "id": "7c9aa9d4f4084f9e",
+      "date": 1393880111078
+    },
+    {
+      "type": "remove",
+      "id": "af0fb8797b18dcd4",
+      "date": 1393880113807
+    },
+    {
+      "type": "remove",
+      "id": "f81a1789352fffcb",
+      "date": 1393880118929
+    },
+    {
+      "type": "remove",
+      "id": "ca353c5bf61661aa",
+      "date": 1393881149211
+    },
+    {
+      "type": "remove",
+      "id": "7130ab6895cea43d",
+      "date": 1393881163858
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a4be901c5ab89dd6"
+      },
+      "id": "a4be901c5ab89dd6",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393881708310
+    },
+    {
+      "type": "remove",
+      "id": "a4be901c5ab89dd6",
+      "date": 1393881715718
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "08019cab9920dd2f"
+      },
+      "id": "08019cab9920dd2f",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393883505675
+    },
+    {
+      "type": "remove",
+      "id": "08019cab9920dd2f",
+      "date": 1393883553425
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e088be5fc91a9e69"
+      },
+      "id": "e088be5fc91a9e69",
+      "type": "add",
+      "after": "535255ba1000a3f3",
+      "date": 1393883674780
+    },
+    {
+      "type": "edit",
+      "id": "e088be5fc91a9e69",
+      "item": {
+        "type": "paragraph",
+        "id": "e088be5fc91a9e69",
+        "text": "Version Control is an involved and complex domain. Building a new DVCS is a hefty undertaking that requires prioritization of features and enough forethought to avoid coding ourselves into a corner. Here we outline where we are, where we want to be, and how we might get there."
+      },
+      "date": 1393883876654
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a703e9d6916c1a5c",
+        "text": ""
+      },
+      "id": "a703e9d6916c1a5c",
+      "type": "add",
+      "after": "e088be5fc91a9e69",
+      "date": 1393883877171
+    },
+    {
+      "type": "remove",
+      "id": "a703e9d6916c1a5c",
+      "date": 1393883881578
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "637f83843b62685e"
+      },
+      "id": "637f83843b62685e",
+      "type": "add",
+      "after": "e088be5fc91a9e69",
+      "date": 1393883885641
+    },
+    {
+      "type": "edit",
+      "id": "637f83843b62685e",
+      "item": {
+        "type": "pagefold",
+        "id": "637f83843b62685e",
+        "text": "Status Quo"
+      },
+      "date": 1393883895555
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0121a68cc633e280"
+      },
+      "id": "0121a68cc633e280",
+      "type": "add",
+      "after": "637f83843b62685e",
+      "date": 1393883896744
+    },
+    {
+      "type": "edit",
+      "id": "0121a68cc633e280",
+      "item": {
+        "type": "paragraph",
+        "id": "0121a68cc633e280",
+        "text": "Our [[JSON Schema]] defines a simple, yet versatile object scheme for "
+      },
+      "date": 1393883956415
+    },
+    {
+      "type": "edit",
+      "id": "0121a68cc633e280",
+      "item": {
+        "type": "paragraph",
+        "id": "0121a68cc633e280",
+        "text": "Our [[JSON Schema]] defines a simple, yet versatile object scheme for managing revisions to a page and documenting fork actions. "
+      },
+      "date": 1393883999628
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": ""
+      },
+      "id": "9b1abfd7016e9588",
+      "type": "add",
+      "after": "0121a68cc633e280",
+      "date": 1393884000146
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The [[Page Journal]]"
+      },
+      "date": 1393884007505
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]"
+      },
+      "date": 1393884279158
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]. This seems like a good idea in light of Federated Wikis notion of divergent "
+      },
+      "date": 1393884361226
+    },
+    {
+      "type": "edit",
+      "id": "e088be5fc91a9e69",
+      "item": {
+        "type": "paragraph",
+        "id": "e088be5fc91a9e69",
+        "text": " "
+      },
+      "date": 1393884411948
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6285b145c064a28b",
+        "text": "Version Control is an involved and complex domain. Building a new DVCS is a hefty undertaking that requires prioritization of features and enough forethought to avoid coding ourselves into a corner. Here we outline where we are, where we want to be, and how we might get there."
+      },
+      "id": "6285b145c064a28b",
+      "type": "add",
+      "after": "e088be5fc91a9e69",
+      "date": 1393884412464
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e41470296f3025b7",
+        "text": ""
+      },
+      "id": "e41470296f3025b7",
+      "type": "add",
+      "after": "e088be5fc91a9e69",
+      "date": 1393884412476
+    },
+    {
+      "type": "remove",
+      "id": "e41470296f3025b7",
+      "date": 1393884461096
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]. This seems like a good idea in light of Federated Wikis notion of a [[Chorus of Voices]]"
+      },
+      "date": 1393884476490
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "0866351c9f4914d5"
+      },
+      "id": "0866351c9f4914d5",
+      "type": "add",
+      "after": "9b1abfd7016e9588",
+      "date": 1393884551898
+    },
+    {
+      "type": "remove",
+      "id": "0866351c9f4914d5",
+      "date": 1393884607566
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "37bb0459cdd7f81c",
+        "text": ""
+      },
+      "id": "37bb0459cdd7f81c",
+      "type": "add",
+      "after": "6285b145c064a28b",
+      "date": 1393884609526
+    },
+    {
+      "type": "edit",
+      "id": "37bb0459cdd7f81c",
+      "item": {
+        "type": "paragraph",
+        "id": "37bb0459cdd7f81c",
+        "text": "Related: [[Gripes about Version Control]], both within wiki and in other systems"
+      },
+      "date": 1393884755393
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]. This seems like a good idea in light of Federated Wikis notion of a [[Chorus of Voices]] that may remix content in a non-linear fashion."
+      },
+      "date": 1393884777022
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "a883f99b46b97129",
+        "text": ""
+      },
+      "id": "a883f99b46b97129",
+      "type": "add",
+      "after": "37bb0459cdd7f81c",
+      "date": 1393884798411
+    },
+    {
+      "type": "remove",
+      "id": "a883f99b46b97129",
+      "date": 1393884809735
+    },
+    {
+      "type": "edit",
+      "id": "37bb0459cdd7f81c",
+      "item": {
+        "type": "paragraph",
+        "id": "37bb0459cdd7f81c",
+        "text": "Related: "
+      },
+      "date": 1393884878205
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "eb05bd02740965ab",
+        "text": "[[Gripes about Version Control]], both within wiki and in other systems"
+      },
+      "id": "eb05bd02740965ab",
+      "type": "add",
+      "after": "37bb0459cdd7f81c",
+      "date": 1393884878720
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c22424602c3756eb",
+        "text": ""
+      },
+      "id": "c22424602c3756eb",
+      "type": "add",
+      "after": "eb05bd02740965ab",
+      "date": 1393884880977
+    },
+    {
+      "type": "edit",
+      "id": "c22424602c3756eb",
+      "item": {
+        "type": "paragraph",
+        "id": "c22424602c3756eb",
+        "text": "[[Why WIK is the best name for a DVCS ever]]"
+      },
+      "date": 1393884908286
+    },
+    {
+      "type": "edit",
+      "id": "c22424602c3756eb",
+      "item": {
+        "type": "paragraph",
+        "id": "c22424602c3756eb",
+        "text": "[[WIK Etymology]]"
+      },
+      "date": 1393884983752
+    },
+    {
+      "type": "edit",
+      "id": "c22424602c3756eb",
+      "item": {
+        "type": "paragraph",
+        "id": "c22424602c3756eb",
+        "text": "[[WIK Etymology]] - Why WIK is the best DVCS name ever"
+      },
+      "date": 1393885177254
+    },
+    {
+      "type": "edit",
+      "id": "eb05bd02740965ab",
+      "item": {
+        "type": "paragraph",
+        "id": "eb05bd02740965ab",
+        "text": "[[Gripes about Version Control]], both within wiki and in other systems."
+      },
+      "date": 1393885270386
+    },
+    {
+      "type": "edit",
+      "id": "6285b145c064a28b",
+      "item": {
+        "type": "paragraph",
+        "id": "6285b145c064a28b",
+        "text": "Version Control is an involved and complex domain, and building a new DVCS is a hefty undertaking that requires prioritization of features and enough forethought to avoid coding ourselves into a corner. Here we outline where we are, where we want to be, and how we might get there."
+      },
+      "date": 1393885297415
+    },
+    {
+      "type": "edit",
+      "id": "9b1abfd7016e9588",
+      "item": {
+        "type": "paragraph",
+        "id": "9b1abfd7016e9588",
+        "text": "The Page Journal and it's ability to reconstruct the present version of a page suggest that our schema is tending towards [[Patch Based Version Control]]. "
+      },
+      "date": 1393885317049
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b1c0a72c7a96484a",
+        "text": "This seems like a good idea in light of Federated Wikis notion of a [[Chorus of Voices]] that may remix content in a non-linear fashion."
+      },
+      "id": "b1c0a72c7a96484a",
+      "type": "add",
+      "after": "9b1abfd7016e9588",
+      "date": 1393885317569
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3c8d203451601fe7"
+      },
+      "id": "3c8d203451601fe7",
+      "type": "add",
+      "after": "b1c0a72c7a96484a",
+      "date": 1393885395264
+    },
+    {
+      "type": "edit",
+      "id": "3c8d203451601fe7",
+      "item": {
+        "type": "pagefold",
+        "id": "3c8d203451601fe7",
+        "text": "Design Goals"
+      },
+      "date": 1393885404678
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e91e4a6d1a164846"
+      },
+      "id": "e91e4a6d1a164846",
+      "type": "add",
+      "after": "3c8d203451601fe7",
+      "date": 1393885415986
+    },
+    {
+      "type": "edit",
+      "id": "e91e4a6d1a164846",
+      "item": {
+        "type": "paragraph",
+        "id": "e91e4a6d1a164846",
+        "text": "[[Abstract Wik]] to the point that other compatible wiki implementations can retain compatibility (Unhosted apps, mobile apps, sensor data publishers, etc.)"
+      },
+      "date": 1393885531147
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c662b563ac431a84",
+        "text": ""
+      },
+      "id": "c662b563ac431a84",
+      "type": "add",
+      "after": "e91e4a6d1a164846",
+      "date": 1393885531667
+    },
+    {
+      "type": "edit",
+      "id": "c662b563ac431a84",
+      "item": {
+        "type": "paragraph",
+        "id": "c662b563ac431a84",
+        "text": "[[Semanticize Wik]] so that relationships between curators and content can be traversed pragmatically in a decentralized fashion (ie. avoid the necessity of 'WikHub')"
+      },
+      "date": 1393885697489
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "cf9504ef9267b138"
+      },
+      "id": "cf9504ef9267b138",
+      "type": "add",
+      "after": "c662b563ac431a84",
+      "date": 1393885740586
+    },
+    {
+      "type": "edit",
+      "id": "cf9504ef9267b138",
+      "item": {
+        "type": "paragraph",
+        "id": "cf9504ef9267b138",
+        "text": "[[]]"
+      },
+      "date": 1393885807318
+    },
+    {
+      "type": "edit",
+      "id": "e91e4a6d1a164846",
+      "item": {
+        "type": "paragraph",
+        "id": "e91e4a6d1a164846",
+        "text": "[[Abstract Wik]] to the point that other compatible wiki implementations can retain compatibility (Unhosted apps, mobile apps, embedded apps, etc.)"
+      },
+      "date": 1393885816050
+    },
+    {
+      "type": "edit",
+      "id": "e91e4a6d1a164846",
+      "item": {
+        "type": "paragraph",
+        "id": "e91e4a6d1a164846",
+        "text": "[[Abstract Wik]] to the point that other wiki implementations can retain compatibility (Unhosted apps, mobile apps, embedded apps, etc.)"
+      },
+      "date": 1393885826731
+    },
+    {
+      "type": "edit",
+      "id": "c662b563ac431a84",
+      "item": {
+        "type": "paragraph",
+        "id": "c662b563ac431a84",
+        "text": "[[Semanticize Wik]] so that distributed content can be traversed pragmatically in a decentralized fashion (ie. avoid the necessity of 'WikHub')"
+      },
+      "date": 1393885979826
+    },
+    {
+      "type": "edit",
+      "id": "cf9504ef9267b138",
+      "item": {
+        "type": "paragraph",
+        "id": "cf9504ef9267b138",
+        "text": "[[Socialize Wik]] to naturally foster federation between curators (once again, trying to avoid 'WikHub')"
+      },
+      "date": 1393886140627
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "3f90c164a1c72c55",
+        "text": ""
+      },
+      "id": "3f90c164a1c72c55",
+      "type": "add",
+      "after": "cf9504ef9267b138",
+      "date": 1393886148666
+    },
+    {
+      "type": "edit",
+      "id": "3f90c164a1c72c55",
+      "item": {
+        "type": "paragraph",
+        "id": "3f90c164a1c72c55",
+        "text": "[[Secure Wik]] against spam and unauthorized access, without hindering free exchange of ideas and exploration of content."
+      },
+      "date": 1393886212807
+    },
+    {
+      "type": "edit",
+      "id": "3f90c164a1c72c55",
+      "item": {
+        "type": "paragraph",
+        "id": "3f90c164a1c72c55",
+        "text": "[[Secure Wik]] against mistakes, spam, and unauthorized access, without hindering free exchange of ideas and exploration of content."
+      },
+      "date": 1393887267344
+    },
+    {
+      "type": "edit",
+      "id": "c662b563ac431a84",
+      "item": {
+        "type": "paragraph",
+        "id": "c662b563ac431a84",
+        "text": "[[Semanticize Wik]] so that distributed content can be traversed pragmatically in a decentralized fashion (ie. avoid the necessity of 'WikHub'). Also allows for [[Bubbled Updates]]"
+      },
+      "date": 1393890123411
+    },
+    {
+      "type": "edit",
+      "id": "c662b563ac431a84",
+      "item": {
+        "type": "paragraph",
+        "id": "c662b563ac431a84",
+        "text": "[[Semanticize Wik]] so that distributed content can be traversed pragmatically in a decentralized fashion (ie. avoid the necessity of 'WikHub'). Also allows for [[Bubbling Updates]]"
+      },
+      "date": 1393892939785
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "69f8cc427dd33d49"
+      },
+      "id": "69f8cc427dd33d49",
+      "type": "add",
+      "after": "3f90c164a1c72c55",
+      "date": 1394733825388
+    },
+    {
+      "type": "move",
+      "order": [
+        "535255ba1000a3f3",
+        "e088be5fc91a9e69",
+        "6285b145c064a28b",
+        "69f8cc427dd33d49",
+        "37bb0459cdd7f81c",
+        "eb05bd02740965ab",
+        "c22424602c3756eb",
+        "637f83843b62685e",
+        "0121a68cc633e280",
+        "9b1abfd7016e9588",
+        "b1c0a72c7a96484a",
+        "3c8d203451601fe7",
+        "e91e4a6d1a164846",
+        "c662b563ac431a84",
+        "cf9504ef9267b138",
+        "3f90c164a1c72c55"
+      ],
+      "id": "69f8cc427dd33d49",
+      "date": 1394733830144
+    },
+    {
+      "type": "edit",
+      "id": "69f8cc427dd33d49",
+      "item": {
+        "type": "pagefold",
+        "id": "69f8cc427dd33d49",
+        "text": "WIK Work In Progress"
+      },
+      "date": 1394733848914
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3d69479727b37653"
+      },
+      "id": "3d69479727b37653",
+      "type": "add",
+      "after": "3f90c164a1c72c55",
+      "date": 1394733858268
+    },
+    {
+      "type": "move",
+      "order": [
+        "535255ba1000a3f3",
+        "e088be5fc91a9e69",
+        "6285b145c064a28b",
+        "69f8cc427dd33d49",
+        "37bb0459cdd7f81c",
+        "3d69479727b37653",
+        "eb05bd02740965ab",
+        "c22424602c3756eb",
+        "637f83843b62685e",
+        "0121a68cc633e280",
+        "9b1abfd7016e9588",
+        "b1c0a72c7a96484a",
+        "3c8d203451601fe7",
+        "e91e4a6d1a164846",
+        "c662b563ac431a84",
+        "cf9504ef9267b138",
+        "3f90c164a1c72c55"
+      ],
+      "id": "3d69479727b37653",
+      "date": 1394733864038
+    },
+    {
+      "type": "remove",
+      "id": "3d69479727b37653",
+      "date": 1394733870836
+    },
+    {
+      "type": "move",
+      "order": [
+        "535255ba1000a3f3",
+        "e088be5fc91a9e69",
+        "6285b145c064a28b",
+        "37bb0459cdd7f81c",
+        "eb05bd02740965ab",
+        "c22424602c3756eb",
+        "637f83843b62685e",
+        "0121a68cc633e280",
+        "9b1abfd7016e9588",
+        "b1c0a72c7a96484a",
+        "3c8d203451601fe7",
+        "e91e4a6d1a164846",
+        "c662b563ac431a84",
+        "cf9504ef9267b138",
+        "3f90c164a1c72c55",
+        "69f8cc427dd33d49"
+      ],
+      "id": "69f8cc427dd33d49",
+      "date": 1394733881568
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "789436c806ade361"
+      },
+      "id": "789436c806ade361",
+      "type": "add",
+      "after": "69f8cc427dd33d49",
+      "date": 1394733884791
+    },
+    {
+      "type": "edit",
+      "id": "789436c806ade361",
+      "item": {
+        "type": "paragraph",
+        "id": "789436c806ade361",
+        "text": "[[Wik Data Model]] - How should we think about pages, paragraphs, and plugins"
+      },
+      "date": 1394733924723
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "558e5d6bd4a2d370",
+        "text": " "
+      },
+      "id": "558e5d6bd4a2d370",
+      "type": "add",
+      "after": "789436c806ade361",
+      "date": 1394733925244
+    },
+    {
+      "type": "edit",
+      "id": "558e5d6bd4a2d370",
+      "item": {
+        "type": "paragraph",
+        "id": "558e5d6bd4a2d370",
+        "text": "[[Wik API]] - What methods do developers need  "
+      },
+      "date": 1394733948382
+    },
+    {
+      "type": "edit",
+      "id": "789436c806ade361",
+      "item": {
+        "type": "paragraph",
+        "id": "789436c806ade361",
+        "text": "[[Wik Data Model]] - How should we think about pages, paragraphs, and plugins?"
+      },
+      "date": 1394733951150
+    },
+    {
+      "type": "edit",
+      "id": "558e5d6bd4a2d370",
+      "item": {
+        "type": "paragraph",
+        "id": "558e5d6bd4a2d370",
+        "text": "[[Wik API]] - What methods do developers need to interact with and publish wik objects?"
+      },
+      "date": 1394733978649
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "ced4bb235184f8ab",
+        "text": ""
+      },
+      "id": "ced4bb235184f8ab",
+      "type": "add",
+      "after": "558e5d6bd4a2d370",
+      "date": 1394733979167
+    },
+    {
+      "type": "edit",
+      "id": "ced4bb235184f8ab",
+      "item": {
+        "type": "paragraph",
+        "id": "ced4bb235184f8ab",
+        "text": "[[Wik Operations]] - What constitutes a patch, how is it identified and stored?"
+      },
+      "date": 1394734018084
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c08b1a9a366e21e2",
+        "text": ""
+      },
+      "id": "c08b1a9a366e21e2",
+      "type": "add",
+      "after": "ced4bb235184f8ab",
+      "date": 1394734018611
+    },
+    {
+      "type": "remove",
+      "id": "c08b1a9a366e21e2",
+      "date": 1394734021616
+    },
+    {
+      "type": "edit",
+      "id": "ced4bb235184f8ab",
+      "item": {
+        "type": "paragraph",
+        "id": "ced4bb235184f8ab",
+        "text": "[[Wik Patch]] - What constitutes a patch, how is it identified and stored?"
+      },
+      "date": 1394736771567
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f33c995352be1345"
+      },
+      "id": "f33c995352be1345",
+      "type": "add",
+      "after": "ced4bb235184f8ab",
+      "date": 1394746189341
+    },
+    {
+      "type": "remove",
+      "id": "f33c995352be1345",
+      "date": 1394746197413
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "bf77c270dbb8227f",
+        "text": ""
+      },
+      "id": "bf77c270dbb8227f",
+      "type": "add",
+      "after": "ced4bb235184f8ab",
+      "date": 1394746216770
+    },
+    {
+      "type": "edit",
+      "id": "bf77c270dbb8227f",
+      "item": {
+        "type": "paragraph",
+        "id": "bf77c270dbb8227f",
+        "text": "[[Wik Architecture]] - all these features sound awesome... but how is this thing going to be built?"
+      },
+      "date": 1394746240122
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b3323fe06f4983c8"
+      },
+      "id": "b3323fe06f4983c8",
+      "type": "add",
+      "after": "bf77c270dbb8227f",
+      "date": 1394750406751
+    },
+    {
+      "type": "edit",
+      "id": "b3323fe06f4983c8",
+      "item": {
+        "type": "paragraph",
+        "id": "b3323fe06f4983c8",
+        "text": "[[Wik Transport]] - Abstracting use of various different transports and networking paradigms"
+      },
+      "date": 1394750454869
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6b256747e675412f"
+      },
+      "id": "6b256747e675412f",
+      "type": "add",
+      "after": "b3323fe06f4983c8",
+      "date": 1394750871274
+    },
+    {
+      "type": "edit",
+      "id": "6b256747e675412f",
+      "item": {
+        "type": "paragraph",
+        "id": "6b256747e675412f",
+        "text": "[[Wik Storage]] - Abstracting use of various storage methods so as to allow client/server/nativeApp storage"
+      },
+      "date": 1394750907556
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ec51e10b1ef151c2"
+      },
+      "id": "ec51e10b1ef151c2",
+      "type": "add",
+      "after": "6b256747e675412f",
+      "date": 1394766183892
+    },
+    {
+      "type": "remove",
+      "id": "ec51e10b1ef151c2",
+      "date": 1394766198569
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8a73754442fe64d6"
+      },
+      "id": "8a73754442fe64d6",
+      "type": "add",
+      "after": "6b256747e675412f",
+      "date": 1394772368849
+    },
+    {
+      "type": "edit",
+      "id": "8a73754442fe64d6",
+      "item": {
+        "type": "paragraph",
+        "id": "8a73754442fe64d6",
+        "text": "[[Wik Links]] - changing from a page slug to a URI for wik ID's means we can specify more exactly where we want a link to point, but it also means we need a way to flow from double bracketed text to an actual page uri."
+      },
+      "date": 1394772453573
+    },
+    {
+      "type": "edit",
+      "id": "8a73754442fe64d6",
+      "item": {
+        "type": "paragraph",
+        "id": "8a73754442fe64d6",
+        "text": "[[Wik Links]] - changing from a page slug to a URI for wik ID's means we can specify more exactly where we want a link to point, but it also means we have to know how to generate these pointers"
+      },
+      "date": 1394772486276
+    }
+  ]
+}

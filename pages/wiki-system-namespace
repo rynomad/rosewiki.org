@@ -1,0 +1,504 @@
+{
+  "title": "wiki-system-namespace",
+  "story": [
+    {
+      "type": "pagefold",
+      "id": "88642fdeee2c9044",
+      "text": "system Prefix"
+    },
+    {
+      "type": "code",
+      "id": "f62cf19f51287ee8",
+      "text": "ndn://<global-prefix>/wiki/system/"
+    },
+    {
+      "type": "paragraph",
+      "id": "72a8d13da1315a18",
+      "text": "The system namespace holds various suplimentary data to facilitate federation. it's really the swiss army namespace"
+    },
+    {
+      "type": "paragraph",
+      "id": "0832822e0b36c748",
+      "text": "The first round of coding defines sitemap and favicon."
+    },
+    {
+      "type": "pagefold",
+      "id": "040d8220dbfdf2d0",
+      "text": "sitemap"
+    },
+    {
+      "type": "paragraph",
+      "id": "f1bd7f96a8058719",
+      "text": "sitemap contains a array of objects with properties slug, title, date, and synopsis"
+    },
+    {
+      "type": "pagefold",
+      "id": "f77706bbf47bcb1c",
+      "text": "favicon"
+    },
+    {
+      "type": "paragraph",
+      "id": "ed1977f7250dcc5d",
+      "text": "favicon contains a dataURl of a flag"
+    },
+    {
+      "type": "pagefold",
+      "id": "ae630f702c8cef5a",
+      "text": "sysem Suffix"
+    },
+    {
+      "type": "paragraph",
+      "id": "34cbcfe1f20648e1",
+      "text": "system Data is suffixed as page data, with hash/domain name and single version component"
+    },
+    {
+      "type": "code",
+      "id": "8cefcc6cc22923af",
+      "text": "ndn:/.../system/favicon/<domain>/<%FD>\nndn:/.../system/favicon/<hash>/<%fd>"
+    },
+    {
+      "type": "pagefold",
+      "id": "56e073a9fdae01a3",
+      "text": "system Freshness"
+    },
+    {
+      "type": "paragraph",
+      "id": "5856010b7aa2f88e",
+      "text": "as a variable use namespace, freshness seconds of system objects will vary widely; for instance, sitemap should be expected to go out of date quickly and must therefor go stale quickly. favicon however will likely be valid indefinitely."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "wiki-system-namespace",
+        "story": []
+      },
+      "date": 1386393436839
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b38712540d62209c"
+      },
+      "id": "b38712540d62209c",
+      "type": "add",
+      "date": 1386393437818
+    },
+    {
+      "type": "remove",
+      "id": "b38712540d62209c",
+      "date": 1386393442741
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1179706c1e0f3468"
+      },
+      "id": "1179706c1e0f3468",
+      "type": "add",
+      "date": 1386393454279
+    },
+    {
+      "type": "remove",
+      "id": "1179706c1e0f3468",
+      "date": 1386393481486
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "88642fdeee2c9044"
+      },
+      "id": "88642fdeee2c9044",
+      "type": "add",
+      "date": 1386393502806
+    },
+    {
+      "type": "edit",
+      "id": "88642fdeee2c9044",
+      "item": {
+        "type": "pagefold",
+        "id": "88642fdeee2c9044",
+        "text": "system Prefix"
+      },
+      "date": 1386393519061
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f62cf19f51287ee8"
+      },
+      "id": "f62cf19f51287ee8",
+      "type": "add",
+      "after": "88642fdeee2c9044",
+      "date": 1386393520296
+    },
+    {
+      "type": "edit",
+      "id": "f62cf19f51287ee8",
+      "item": {
+        "type": "code",
+        "id": "f62cf19f51287ee8",
+        "text": "ndn://<global-prefix>/wiki/system/"
+      },
+      "date": 1386393603043
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "72a8d13da1315a18"
+      },
+      "id": "72a8d13da1315a18",
+      "type": "add",
+      "after": "f62cf19f51287ee8",
+      "date": 1386393604296
+    },
+    {
+      "type": "edit",
+      "id": "72a8d13da1315a18",
+      "item": {
+        "type": "paragraph",
+        "id": "72a8d13da1315a18",
+        "text": "System information resides in the "
+      },
+      "date": 1386393663326
+    },
+    {
+      "type": "edit",
+      "id": "72a8d13da1315a18",
+      "item": {
+        "type": "paragraph",
+        "id": "72a8d13da1315a18",
+        "text": "The system namespace holds various suplimentary data"
+      },
+      "date": 1386393819593
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0832822e0b36c748",
+        "text": " sitemap"
+      },
+      "id": "0832822e0b36c748",
+      "type": "add",
+      "after": "72a8d13da1315a18",
+      "date": 1386393820112
+    },
+    {
+      "type": "edit",
+      "id": "0832822e0b36c748",
+      "item": {
+        "type": "paragraph",
+        "id": "0832822e0b36c748",
+        "text": "sitemap"
+      },
+      "date": 1386393829659
+    },
+    {
+      "type": "edit",
+      "id": "72a8d13da1315a18",
+      "item": {
+        "type": "paragraph",
+        "id": "72a8d13da1315a18",
+        "text": "The system namespace holds various suplimentary data to facilitate federation, "
+      },
+      "date": 1386393872467
+    },
+    {
+      "type": "edit",
+      "id": "0832822e0b36c748",
+      "item": {
+        "type": "paragraph",
+        "id": "0832822e0b36c748",
+        "text": "The first round of coding defines sitemap, favicon, and"
+      },
+      "date": 1386393941201
+    },
+    {
+      "type": "edit",
+      "id": "0832822e0b36c748",
+      "item": {
+        "type": "paragraph",
+        "id": "0832822e0b36c748",
+        "text": "The first round of coding defines sitemap and favicon."
+      },
+      "date": 1386394049165
+    },
+    {
+      "type": "edit",
+      "id": "72a8d13da1315a18",
+      "item": {
+        "type": "paragraph",
+        "id": "72a8d13da1315a18",
+        "text": "The system namespace holds various suplimentary data to facilitate federation. it's really the swiss army namespace"
+      },
+      "date": 1386394060236
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "040d8220dbfdf2d0"
+      },
+      "id": "040d8220dbfdf2d0",
+      "type": "add",
+      "after": "0832822e0b36c748",
+      "date": 1386394063295
+    },
+    {
+      "type": "edit",
+      "id": "040d8220dbfdf2d0",
+      "item": {
+        "type": "pagefold",
+        "id": "040d8220dbfdf2d0",
+        "text": "sitemap"
+      },
+      "date": 1386394091518
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f1bd7f96a8058719"
+      },
+      "id": "f1bd7f96a8058719",
+      "type": "add",
+      "after": "040d8220dbfdf2d0",
+      "date": 1386394092586
+    },
+    {
+      "type": "edit",
+      "id": "f1bd7f96a8058719",
+      "item": {
+        "type": "paragraph",
+        "id": "f1bd7f96a8058719",
+        "text": "sitemap"
+      },
+      "date": 1386394102856
+    },
+    {
+      "type": "edit",
+      "id": "f1bd7f96a8058719",
+      "item": {
+        "type": "paragraph",
+        "id": "f1bd7f96a8058719",
+        "text": "sitemap contains a array of objects with properties slug, title, date, and synopsis"
+      },
+      "date": 1386394219019
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ed1977f7250dcc5d"
+      },
+      "id": "ed1977f7250dcc5d",
+      "type": "add",
+      "after": "f1bd7f96a8058719",
+      "date": 1386394220243
+    },
+    {
+      "type": "edit",
+      "id": "ed1977f7250dcc5d",
+      "item": {
+        "type": "paragraph",
+        "id": "ed1977f7250dcc5d",
+        "text": "favicon"
+      },
+      "date": 1386394243196
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "f77706bbf47bcb1c"
+      },
+      "id": "f77706bbf47bcb1c",
+      "type": "add",
+      "after": "ed1977f7250dcc5d",
+      "date": 1386394249216
+    },
+    {
+      "type": "edit",
+      "id": "f77706bbf47bcb1c",
+      "item": {
+        "type": "pagefold",
+        "id": "f77706bbf47bcb1c",
+        "text": "favicon"
+      },
+      "date": 1386394262700
+    },
+    {
+      "type": "move",
+      "order": [
+        "88642fdeee2c9044",
+        "f62cf19f51287ee8",
+        "72a8d13da1315a18",
+        "0832822e0b36c748",
+        "040d8220dbfdf2d0",
+        "f1bd7f96a8058719",
+        "f77706bbf47bcb1c",
+        "ed1977f7250dcc5d"
+      ],
+      "id": "ed1977f7250dcc5d",
+      "date": 1386394265537
+    },
+    {
+      "type": "edit",
+      "id": "ed1977f7250dcc5d",
+      "item": {
+        "type": "paragraph",
+        "id": "ed1977f7250dcc5d",
+        "text": "favicon contains a dataURl of a flag"
+      },
+      "date": 1386394281586
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ae630f702c8cef5a"
+      },
+      "id": "ae630f702c8cef5a",
+      "type": "add",
+      "after": "ed1977f7250dcc5d",
+      "date": 1386394283812
+    },
+    {
+      "type": "edit",
+      "id": "ae630f702c8cef5a",
+      "item": {
+        "type": "pagefold",
+        "id": "ae630f702c8cef5a",
+        "text": "sysem Suffix"
+      },
+      "date": 1386394302479
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "34cbcfe1f20648e1"
+      },
+      "id": "34cbcfe1f20648e1",
+      "type": "add",
+      "after": "ae630f702c8cef5a",
+      "date": 1386394372096
+    },
+    {
+      "type": "edit",
+      "id": "34cbcfe1f20648e1",
+      "item": {
+        "type": "paragraph",
+        "id": "34cbcfe1f20648e1",
+        "text": "system Data is suffixed as page data, with hash/domain name and single version component"
+      },
+      "date": 1386394428925
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "code",
+        "id": "01fa5c383e634163",
+        "text": "ndn:/.../page/<slug>/head/<hash>/<%FD>\nndn:/,,,/page/<slug>/story/<hash>/<%FD>\nndn:/.../page/<slug>/journal/<hash><%FD>"
+      },
+      "after": "34cbcfe1f20648e1",
+      "id": "01fa5c383e634163",
+      "date": 1386394436019
+    },
+    {
+      "type": "remove",
+      "id": "01fa5c383e634163",
+      "date": 1386394446599
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9320e49dec7dea17"
+      },
+      "id": "9320e49dec7dea17",
+      "type": "add",
+      "after": "34cbcfe1f20648e1",
+      "date": 1386394450600
+    },
+    {
+      "type": "edit",
+      "id": "9320e49dec7dea17",
+      "item": {
+        "type": "paragraph",
+        "id": "9320e49dec7dea17",
+        "text": "ndn:/.../system/favicon/<hash>/<%fd>"
+      },
+      "date": 1386394578419
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "8cefcc6cc22923af"
+      },
+      "id": "8cefcc6cc22923af",
+      "type": "add",
+      "after": "9320e49dec7dea17",
+      "date": 1386394584406
+    },
+    {
+      "type": "edit",
+      "id": "8cefcc6cc22923af",
+      "item": {
+        "type": "code",
+        "id": "8cefcc6cc22923af",
+        "text": "ndn:/.../system/favicon/<%FD>"
+      },
+      "date": 1386394606783
+    },
+    {
+      "type": "remove",
+      "id": "9320e49dec7dea17",
+      "date": 1386394609334
+    },
+    {
+      "type": "edit",
+      "id": "8cefcc6cc22923af",
+      "item": {
+        "type": "code",
+        "id": "8cefcc6cc22923af",
+        "text": "ndn:/.../system/favicon/<domain>/<%FD>\nndn:/.../system/favicon/<hash>/<%fd>"
+      },
+      "date": 1386394630803
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "56e073a9fdae01a3"
+      },
+      "id": "56e073a9fdae01a3",
+      "type": "add",
+      "after": "8cefcc6cc22923af",
+      "date": 1386394648953
+    },
+    {
+      "type": "edit",
+      "id": "56e073a9fdae01a3",
+      "item": {
+        "type": "pagefold",
+        "id": "56e073a9fdae01a3",
+        "text": "system Freshness"
+      },
+      "date": 1386394661587
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5856010b7aa2f88e"
+      },
+      "id": "5856010b7aa2f88e",
+      "type": "add",
+      "after": "56e073a9fdae01a3",
+      "date": 1386394662535
+    },
+    {
+      "type": "edit",
+      "id": "5856010b7aa2f88e",
+      "item": {
+        "type": "paragraph",
+        "id": "5856010b7aa2f88e",
+        "text": "as a variable use namespace, freshness seconds of system objects will vary widely; for instance, sitemap should be expected to go out of date quickly and must therefor go stale quickly. favicon however will likely be valid indefinitely."
+      },
+      "date": 1386394732780
+    }
+  ]
+}

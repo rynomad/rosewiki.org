@@ -1,0 +1,509 @@
+{
+  "title": "NDN Browserkit",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "e345a0cc5a91b86f",
+      "text": "NDN Browserkit is envisioned as a midlayer between UCLA's [[NDN-js]] and a variety of [[NDN]] enabled webapps"
+    },
+    {
+      "type": "paragraph",
+      "id": "47a4c2dab00050a7",
+      "text": "Core:"
+    },
+    {
+      "type": "paragraph",
+      "id": "95c40919c2f75493",
+      "text": "[[NDN Browser Shim]] - square peg and round hole, reminding myself how to update the npm module"
+    },
+    {
+      "type": "paragraph",
+      "id": "5167bd1fad34b544",
+      "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser. respond to interests with the data if available. WORKING PROTOTYPE"
+    },
+    {
+      "type": "paragraph",
+      "id": "844c8b5bb235a0b1",
+      "text": "[[NDN-io]] - from MIME to segmented, versioned, signed content. Bits and pieces of this functionality currently reside in the NDNR-js code. Needs to be abstracted out and refined."
+    },
+    {
+      "type": "paragraph",
+      "id": "2dac73732ad57b47",
+      "text": "[[nfd-js]] - manage and register multiple faces, basic routing functionality. NOT STARTED"
+    },
+    {
+      "type": "pagefold",
+      "id": "1f8bd5b9ae53c29e",
+      "text": "burn list"
+    },
+    {
+      "type": "paragraph",
+      "id": "7ee90db94ed85e06",
+      "text": "extract io from wiki-client"
+    },
+    {
+      "type": "paragraph",
+      "id": "df85bb37c3b86fe7",
+      "text": "publish npm module"
+    },
+    {
+      "type": "paragraph",
+      "id": "e38be33d9f008e2d",
+      "text": "build simple daemon (check cache -> repo - > network and visa versa)"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Browserkit",
+        "story": []
+      },
+      "site": "localhost:3000",
+      "date": 1386230889509,
+      "fork": "localhost:3000"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "66800bf9b1dd41a7"
+      },
+      "id": "66800bf9b1dd41a7",
+      "type": "add",
+      "date": 1386230896217
+    },
+    {
+      "type": "remove",
+      "id": "66800bf9b1dd41a7",
+      "date": 1386230902767
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "5167bd1fad34b544",
+        "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser"
+      },
+      "id": "5167bd1fad34b544",
+      "date": 1386230906440
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e345a0cc5a91b86f"
+      },
+      "id": "e345a0cc5a91b86f",
+      "type": "add",
+      "after": "5167bd1fad34b544",
+      "date": 1386230907382
+    },
+    {
+      "type": "move",
+      "order": [
+        "e345a0cc5a91b86f",
+        "5167bd1fad34b544"
+      ],
+      "id": "e345a0cc5a91b86f",
+      "date": 1386230908152
+    },
+    {
+      "type": "edit",
+      "id": "e345a0cc5a91b86f",
+      "item": {
+        "type": "paragraph",
+        "id": "e345a0cc5a91b86f",
+        "text": "NDN Browserkit is envisioned as a simply exposed Api that allows "
+      },
+      "date": 1386230954149
+    },
+    {
+      "type": "edit",
+      "id": "e345a0cc5a91b86f",
+      "item": {
+        "type": "paragraph",
+        "id": "e345a0cc5a91b86f",
+        "text": "NDN Browserkit is envisioned as a midlayer between UCLA's [[NDN-js]] and a variety of [[NDN]] enabled webapps"
+      },
+      "date": 1386231239498
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "47a4c2dab00050a7",
+        "text": ""
+      },
+      "id": "47a4c2dab00050a7",
+      "type": "add",
+      "after": "e345a0cc5a91b86f",
+      "date": 1386231240009
+    },
+    {
+      "type": "edit",
+      "id": "47a4c2dab00050a7",
+      "item": {
+        "type": "paragraph",
+        "id": "47a4c2dab00050a7",
+        "text": "Core:"
+      },
+      "date": 1386231245015
+    },
+    {
+      "type": "edit",
+      "id": "5167bd1fad34b544",
+      "item": {
+        "type": "paragraph",
+        "id": "5167bd1fad34b544",
+        "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser. respond to interests with the data if available"
+      },
+      "date": 1386231283180
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": ""
+      },
+      "id": "2dac73732ad57b47",
+      "type": "add",
+      "after": "5167bd1fad34b544",
+      "date": 1386231283689
+    },
+    {
+      "type": "edit",
+      "id": "2dac73732ad57b47",
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": "[[]]"
+      },
+      "date": 1386231316473
+    },
+    {
+      "type": "edit",
+      "id": "2dac73732ad57b47",
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": "[[ndnd-js]] - manage and register multiple faces"
+      },
+      "date": 1386231403197
+    },
+    {
+      "type": "edit",
+      "id": "2dac73732ad57b47",
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": "[[ndnd-js]] - manage and register multiple faces, basic routing functionality."
+      },
+      "date": 1386231439653
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7685ddf940dbf845",
+        "text": ""
+      },
+      "id": "7685ddf940dbf845",
+      "type": "add",
+      "after": "2dac73732ad57b47",
+      "date": 1386231440163
+    },
+    {
+      "type": "edit",
+      "id": "7685ddf940dbf845",
+      "item": {
+        "type": "paragraph",
+        "id": "7685ddf940dbf845",
+        "text": "[[]]"
+      },
+      "date": 1386231442279
+    },
+    {
+      "type": "edit",
+      "id": "2dac73732ad57b47",
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": "[[ndnd-js]] - manage and register multiple faces, basic routing functionality. NOT STARTED"
+      },
+      "date": 1386231446799
+    },
+    {
+      "type": "edit",
+      "id": "5167bd1fad34b544",
+      "item": {
+        "type": "paragraph",
+        "id": "5167bd1fad34b544",
+        "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser. respond to interests with the data if available. CONCEPT PROVEN"
+      },
+      "date": 1386231456387
+    },
+    {
+      "type": "edit",
+      "id": "7685ddf940dbf845",
+      "item": {
+        "type": "paragraph",
+        "id": "7685ddf940dbf845",
+        "text": "[[Wiki Namespace]] - constructor for quickly defining and interacting with a naming and caching schema."
+      },
+      "date": 1386231661671
+    },
+    {
+      "type": "remove",
+      "id": "7685ddf940dbf845",
+      "date": 1386231870586
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "844c8b5bb235a0b1"
+      },
+      "id": "844c8b5bb235a0b1",
+      "type": "add",
+      "after": "2dac73732ad57b47",
+      "date": 1386231878435
+    },
+    {
+      "type": "edit",
+      "id": "844c8b5bb235a0b1",
+      "item": {
+        "type": "paragraph",
+        "id": "844c8b5bb235a0b1",
+        "text": "[[NDN-io]] - from MIME to segmented, versioned, signed content"
+      },
+      "date": 1386231918903
+    },
+    {
+      "type": "edit",
+      "id": "844c8b5bb235a0b1",
+      "item": {
+        "type": "paragraph",
+        "id": "844c8b5bb235a0b1",
+        "text": "[[NDN-io]] - from MIME to segmented, versioned, signed content. NOT STARTED"
+      },
+      "date": 1386231930419
+    },
+    {
+      "type": "fork",
+      "site": "NDN_haqhqfmxtwccodd4eam5uzqczgudsuxke9aos1p2jskvmqcnll9v7x7uxc9tujiz",
+      "date": 1386233583085
+    },
+    {
+      "type": "fork",
+      "date": 1386233836276
+    },
+    {
+      "type": "edit",
+      "id": "5167bd1fad34b544",
+      "item": {
+        "type": "paragraph",
+        "id": "5167bd1fad34b544",
+        "text": "[[NDNR-js]] - IndexedDB based NDN database in the browser. respond to interests with the data if available. WORKING PROTOTYPE"
+      },
+      "date": 1386248886081
+    },
+    {
+      "type": "move",
+      "order": [
+        "e345a0cc5a91b86f",
+        "47a4c2dab00050a7",
+        "5167bd1fad34b544",
+        "844c8b5bb235a0b1",
+        "2dac73732ad57b47"
+      ],
+      "id": "844c8b5bb235a0b1",
+      "date": 1386248897857
+    },
+    {
+      "type": "edit",
+      "id": "844c8b5bb235a0b1",
+      "item": {
+        "type": "paragraph",
+        "id": "844c8b5bb235a0b1",
+        "text": "[[NDN-io]] - from MIME to segmented, versioned, signed content. Bits and pieces of this functionality currently reside in the NDNR-js code. Needs to be abstracted out and refined."
+      },
+      "date": 1386248946347
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b2101624bba52386"
+      },
+      "id": "b2101624bba52386",
+      "type": "add",
+      "after": "2dac73732ad57b47",
+      "date": 1386397184180
+    },
+    {
+      "type": "edit",
+      "id": "b2101624bba52386",
+      "item": {
+        "type": "paragraph",
+        "id": "b2101624bba52386",
+        "text": "[[ndn-mask]]"
+      },
+      "date": 1386397230930
+    },
+    {
+      "type": "edit",
+      "id": "b2101624bba52386",
+      "item": {
+        "type": "paragraph",
+        "id": "b2101624bba52386",
+        "text": "[[ndn-mask]] - facade your application data relative to the local globally routed prefix, bridge connections"
+      },
+      "date": 1386397259961
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1f8bd5b9ae53c29e"
+      },
+      "id": "1f8bd5b9ae53c29e",
+      "type": "add",
+      "after": "b2101624bba52386",
+      "date": 1387360120661
+    },
+    {
+      "type": "edit",
+      "id": "1f8bd5b9ae53c29e",
+      "item": {
+        "type": "pagefold",
+        "id": "1f8bd5b9ae53c29e",
+        "text": "burn list"
+      },
+      "date": 1387360133761
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7ee90db94ed85e06"
+      },
+      "id": "7ee90db94ed85e06",
+      "type": "add",
+      "after": "1f8bd5b9ae53c29e",
+      "date": 1387360134868
+    },
+    {
+      "type": "edit",
+      "id": "7ee90db94ed85e06",
+      "item": {
+        "type": "paragraph",
+        "id": "7ee90db94ed85e06",
+        "text": "extract io from wiki-client"
+      },
+      "date": 1387360154129
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e38be33d9f008e2d",
+        "text": ""
+      },
+      "id": "e38be33d9f008e2d",
+      "type": "add",
+      "after": "7ee90db94ed85e06",
+      "date": 1387360154642
+    },
+    {
+      "type": "edit",
+      "id": "e38be33d9f008e2d",
+      "item": {
+        "type": "paragraph",
+        "id": "e38be33d9f008e2d",
+        "text": "build simple daemon (check cache -> repo - > network and visa versa)"
+      },
+      "date": 1387360183815
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "66a381e968faa3f0",
+        "text": ""
+      },
+      "id": "66a381e968faa3f0",
+      "type": "add",
+      "after": "e38be33d9f008e2d",
+      "date": 1387360184324
+    },
+    {
+      "type": "remove",
+      "id": "66a381e968faa3f0",
+      "date": 1387360187586
+    },
+    {
+      "type": "remove",
+      "id": "b2101624bba52386",
+      "date": 1387360191926
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "df85bb37c3b86fe7",
+        "text": ""
+      },
+      "id": "df85bb37c3b86fe7",
+      "type": "add",
+      "after": "7ee90db94ed85e06",
+      "date": 1387360204462
+    },
+    {
+      "type": "edit",
+      "id": "df85bb37c3b86fe7",
+      "item": {
+        "type": "paragraph",
+        "id": "df85bb37c3b86fe7",
+        "text": "publish npm module"
+      },
+      "date": 1387360216846
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "95c40919c2f75493"
+      },
+      "id": "95c40919c2f75493",
+      "type": "add",
+      "after": "e38be33d9f008e2d",
+      "date": 1387481062313
+    },
+    {
+      "type": "move",
+      "order": [
+        "e345a0cc5a91b86f",
+        "47a4c2dab00050a7",
+        "95c40919c2f75493",
+        "5167bd1fad34b544",
+        "844c8b5bb235a0b1",
+        "2dac73732ad57b47",
+        "1f8bd5b9ae53c29e",
+        "7ee90db94ed85e06",
+        "df85bb37c3b86fe7",
+        "e38be33d9f008e2d"
+      ],
+      "id": "95c40919c2f75493",
+      "date": 1387481065052
+    },
+    {
+      "type": "edit",
+      "id": "95c40919c2f75493",
+      "item": {
+        "type": "paragraph",
+        "id": "95c40919c2f75493",
+        "text": "[[NDN Browser Shim]] - square peg and round hole, reminding myself how to update the npm module"
+      },
+      "date": 1387481111716
+    },
+    {
+      "type": "edit",
+      "id": "2dac73732ad57b47",
+      "item": {
+        "type": "paragraph",
+        "id": "2dac73732ad57b47",
+        "text": "[[nfd-js]] - manage and register multiple faces, basic routing functionality. NOT STARTED"
+      },
+      "date": 1398495927501
+    }
+  ]
+}

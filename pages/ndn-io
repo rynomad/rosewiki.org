@@ -1,0 +1,39 @@
+{
+  "title": "NDN-io",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "008b521ffdad2b7c",
+      "text": "NDN-io is "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN-io",
+        "story": []
+      },
+      "date": 1386383576546
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "008b521ffdad2b7c"
+      },
+      "id": "008b521ffdad2b7c",
+      "type": "add",
+      "date": 1386383585075
+    },
+    {
+      "type": "edit",
+      "id": "008b521ffdad2b7c",
+      "item": {
+        "type": "paragraph",
+        "id": "008b521ffdad2b7c",
+        "text": "NDN-io is "
+      },
+      "date": 1386383625035
+    }
+  ]
+}

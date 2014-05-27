@@ -1,0 +1,230 @@
+{
+  "title": "Federated Wiki",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "89046cbc4c61225e",
+      "text": "[[Smallest Federated Wiki]] is the first project I ever contributed code to, and occupies most of my creative coding attention."
+    },
+    {
+      "type": "paragraph",
+      "id": "5fda6bed2b82835f",
+      "text": "I spend most of my time working on [[NDN Wiki]] - Federated Wiki powered by Named Data Networking."
+    },
+    {
+      "type": "paragraph",
+      "id": "ef21b9f5b4cf5086",
+      "text": "[[Federation Mechanisms]] - how do we build and grow the federation?"
+    },
+    {
+      "type": "paragraph",
+      "id": "b874269dddcf5139",
+      "text": "[[Wiki Buildings]] - If a neighborhood is a collection of sites, a building is a single site with one or more participants."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Federated Wiki",
+        "story": []
+      },
+      "date": 1385068483360
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "89046cbc4c61225e"
+      },
+      "id": "89046cbc4c61225e",
+      "type": "add",
+      "date": 1385068484464
+    },
+    {
+      "type": "edit",
+      "id": "89046cbc4c61225e",
+      "item": {
+        "type": "paragraph",
+        "id": "89046cbc4c61225e",
+        "text": "[[Smallest Federated Wiki]] is the first project I ever contributed code to, and occupies most of my creative coding attention."
+      },
+      "date": 1385068538762
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5fda6bed2b82835f",
+        "text": ""
+      },
+      "id": "5fda6bed2b82835f",
+      "type": "add",
+      "after": "89046cbc4c61225e",
+      "date": 1385068539280
+    },
+    {
+      "type": "add",
+      "item": {
+        "type": "paragraph",
+        "id": "05e2fa92643677ca",
+        "prompt": "Create pages about things you do on this wiki. Type a descriptive name of something you will be writing about. Enclose it in square brackets. Then press Command/ALT-S to save.",
+        "text": "[[Wiki-NDN]] - Federated Wiki powered by Named Data Networking"
+      },
+      "after": "5fda6bed2b82835f",
+      "id": "05e2fa92643677ca",
+      "date": 1385068551723
+    },
+    {
+      "type": "edit",
+      "id": "5fda6bed2b82835f",
+      "item": {
+        "type": "paragraph",
+        "id": "5fda6bed2b82835f",
+        "text": "I spend most of my time working on "
+      },
+      "date": 1385068560508
+    },
+    {
+      "type": "remove",
+      "id": "05e2fa92643677ca",
+      "date": 1385068562866
+    },
+    {
+      "type": "edit",
+      "id": "5fda6bed2b82835f",
+      "item": {
+        "type": "paragraph",
+        "id": "5fda6bed2b82835f",
+        "text": "I spend most of my time working on [[Wiki-NDN]] - Federated Wiki powered by Named Data Networking."
+      },
+      "date": 1385068570764
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "49d582d6bb9ae6f4",
+        "text": ""
+      },
+      "id": "49d582d6bb9ae6f4",
+      "type": "add",
+      "after": "5fda6bed2b82835f",
+      "date": 1385068571284
+    },
+    {
+      "type": "remove",
+      "id": "49d582d6bb9ae6f4",
+      "date": 1385068614334
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "ef21b9f5b4cf5086"
+      },
+      "id": "ef21b9f5b4cf5086",
+      "type": "add",
+      "after": "5fda6bed2b82835f",
+      "date": 1385086800723
+    },
+    {
+      "type": "edit",
+      "id": "ef21b9f5b4cf5086",
+      "item": {
+        "type": "paragraph",
+        "id": "ef21b9f5b4cf5086",
+        "text": "[[Federation Mechanisms]]"
+      },
+      "date": 1385086809360
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "022474590bf33290",
+        "text": ""
+      },
+      "id": "022474590bf33290",
+      "type": "add",
+      "after": "ef21b9f5b4cf5086",
+      "date": 1385086809870
+    },
+    {
+      "type": "remove",
+      "id": "022474590bf33290",
+      "date": 1385086814998
+    },
+    {
+      "type": "edit",
+      "id": "ef21b9f5b4cf5086",
+      "item": {
+        "type": "paragraph",
+        "id": "ef21b9f5b4cf5086",
+        "text": "[[Federation Mechanisms]] - how do we build and grow the federation?"
+      },
+      "date": 1385086826980
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b874269dddcf5139",
+        "text": ""
+      },
+      "id": "b874269dddcf5139",
+      "type": "add",
+      "after": "ef21b9f5b4cf5086",
+      "date": 1385086827490
+    },
+    {
+      "type": "edit",
+      "id": "b874269dddcf5139",
+      "item": {
+        "type": "paragraph",
+        "id": "b874269dddcf5139",
+        "text": "[[Wiki Family]] - If a neighborhood is a collection of sites, a family is the community of a single site "
+      },
+      "date": 1385086883695
+    },
+    {
+      "type": "edit",
+      "id": "b874269dddcf5139",
+      "item": {
+        "type": "paragraph",
+        "id": "b874269dddcf5139",
+        "text": "[[Wiki Roof]] - If a neighborhood is a collection of sites, a roof is a single site with one or more participants."
+      },
+      "date": 1385086938009
+    },
+    {
+      "type": "edit",
+      "id": "b874269dddcf5139",
+      "item": {
+        "type": "paragraph",
+        "id": "b874269dddcf5139",
+        "text": "[[Wiki Buildings]] - If a neighborhood is a collection of sites, a roof is a single site with one or more participants."
+      },
+      "date": 1385087050007
+    },
+    {
+      "type": "edit",
+      "id": "b874269dddcf5139",
+      "item": {
+        "type": "paragraph",
+        "id": "b874269dddcf5139",
+        "text": "[[Wiki Buildings]] - If a neighborhood is a collection of sites, a building is a single site with one or more participants."
+      },
+      "date": 1385087065350
+    },
+    {
+      "type": "fork",
+      "site": "ccndev.org",
+      "date": 1386226005565
+    },
+    {
+      "type": "edit",
+      "id": "5fda6bed2b82835f",
+      "item": {
+        "type": "paragraph",
+        "id": "5fda6bed2b82835f",
+        "text": "I spend most of my time working on [[NDN Wiki]] - Federated Wiki powered by Named Data Networking."
+      },
+      "date": 1386254392719
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Subscribe based on Author",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "b34371a1d8f156ac",
+      "text": "This is a desired feature of [[WIK DVCS]] that we illustrate with a user story. it applies to our desire to [[Socialize Wik]]"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Subscribe based on Author",
+        "story": []
+      },
+      "date": 1393994497097
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "b34371a1d8f156ac"
+      },
+      "id": "b34371a1d8f156ac",
+      "type": "add",
+      "date": 1393994498333
+    },
+    {
+      "type": "edit",
+      "id": "b34371a1d8f156ac",
+      "item": {
+        "type": "paragraph",
+        "id": "b34371a1d8f156ac",
+        "text": "This is a desired feature of [[WIK DVCS]] that we illustrate with a user story. it applies to our desire to [[Socialize Wik]]"
+      },
+      "date": 1393994551793
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9b21357f98e6a01c",
+        "text": ""
+      },
+      "id": "9b21357f98e6a01c",
+      "type": "add",
+      "after": "b34371a1d8f156ac",
+      "date": 1393994552312
+    },
+    {
+      "type": "remove",
+      "id": "9b21357f98e6a01c",
+      "date": 1393994623402
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "81ed8a4ed675e04d",
+        "text": ""
+      },
+      "id": "81ed8a4ed675e04d",
+      "type": "add",
+      "after": "b34371a1d8f156ac",
+      "date": 1393994722240
+    },
+    {
+      "type": "remove",
+      "id": "81ed8a4ed675e04d",
+      "date": 1393995097020
+    }
+  ]
+}

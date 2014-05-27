@@ -1,0 +1,90 @@
+{
+  "title": "NDN Conference Calls",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "dd606fa9c3708631",
+      "text": "[[NDN Call 12/20/13]] - Interest Selectors in Core Routers."
+    },
+    {
+      "type": "paragraph",
+      "id": "35ea45e665a37f2f",
+      "text": "[[NDN Call 12/30/13]] 12pm"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Conference Calls",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1387566288345,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dd606fa9c3708631"
+      },
+      "id": "dd606fa9c3708631",
+      "type": "add",
+      "date": 1387566289693
+    },
+    {
+      "type": "edit",
+      "id": "dd606fa9c3708631",
+      "item": {
+        "type": "paragraph",
+        "id": "dd606fa9c3708631",
+        "text": "[[NDN Call 12/]]"
+      },
+      "date": 1387566349190
+    },
+    {
+      "type": "edit",
+      "id": "dd606fa9c3708631",
+      "item": {
+        "type": "paragraph",
+        "id": "dd606fa9c3708631",
+        "text": "[[NDN Call 12/20/13]]"
+      },
+      "date": 1387566357199
+    },
+    {
+      "type": "edit",
+      "id": "dd606fa9c3708631",
+      "item": {
+        "type": "paragraph",
+        "id": "dd606fa9c3708631",
+        "text": "[[NDN Call 12/20/13]] - Interest Selectors in Core Routers."
+      },
+      "date": 1387566425766
+    },
+    {
+      "type": "fork",
+      "date": 1387568091986
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "35ea45e665a37f2f"
+      },
+      "id": "35ea45e665a37f2f",
+      "type": "add",
+      "after": "dd606fa9c3708631",
+      "date": 1387569534436
+    },
+    {
+      "type": "edit",
+      "id": "35ea45e665a37f2f",
+      "item": {
+        "type": "paragraph",
+        "id": "35ea45e665a37f2f",
+        "text": "[[NDN Call 12/30/13]] 12pm"
+      },
+      "date": 1387569569827
+    }
+  ]
+}

@@ -1,0 +1,1528 @@
+{
+  "title": "hangout 131204",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "f757a046180df132",
+      "text": "Hangout notes from 4th December 2013. Why federation. Seattle. Tests in ruby. Personas. GitHub issues aggregated. Unit conversions. Node pipes. Reference implementation. Ruby gem. Move db out of core. wiSticky."
+    },
+    {
+      "type": "paragraph",
+      "id": "2f9b899f6799e276",
+      "text": "<i> Thank you Jon for creating these notes. May I suggest a keyword laden first paragraph, notes on notes, to help search find them later? I've added an example."
+    },
+    {
+      "type": "paragraph",
+      "id": "7f14208f7d7c61f7",
+      "text": "We now federate github issues by importing them into wikis. Chat about this starts in 15 min. [https://twitter.com/WardCunningham/status/408290426215354368 initial tweet]"
+    },
+    {
+      "type": "pagefold",
+      "id": "3bc1da437111e1c1",
+      "text": "notes"
+    },
+    {
+      "type": "paragraph",
+      "id": "5a1974a215a66a03",
+      "text": "Allen is being explained the Federation aspect. no neutral point of view. benefits of technology for healthcare."
+    },
+    {
+      "type": "paragraph",
+      "id": "37b8e1449be647f5",
+      "text": "Jeff joined back in after being off of independent work for a while. Seattle."
+    },
+    {
+      "type": "paragraph",
+      "id": "78ea7fbf3d6c1685",
+      "text": "Unit testing of Wiki with specs. Unit tests are implemented in Ruby. Strange loops."
+    },
+    {
+      "type": "paragraph",
+      "id": "7b8f566df5ee7b72",
+      "text": "Personas of ideal Wiki users:"
+    },
+    {
+      "type": "reference",
+      "id": "3e3797996565fc34",
+      "site": "ward.fed.wiki.org",
+      "slug": "personas",
+      "title": "Personas",
+      "text": "We'll be developing and refining personas who will be the imagined actors as we develop more advanced uses cases. (Shift-click to see multiple personas.)"
+    },
+    {
+      "type": "paragraph",
+      "id": "8e87145baa5a304e",
+      "text": "GitHub Issues imported into Wiki : "
+    },
+    {
+      "id": "379256b1ac439810",
+      "type": "reference",
+      "site": "ward.fed.wiki.org",
+      "slug": "import-issues",
+      "title": "Import Issues",
+      "text": "Use the github api to retrieve issues and post them to read-only sites, one page per issue. [https://github.com/WardCunningham/import-issues github]"
+    },
+    {
+      "type": "reference",
+      "id": "3915277ec2f74e8e",
+      "site": "issues.fed.wiki.org",
+      "slug": "aggregated-github-issues",
+      "title": "Aggregated GitHub Issues",
+      "text": "We list sites with pages mechanically generated from the github API. These provide a broad view of multiple federated wiki related repositories and a reference for ongoing conversation within the federation."
+    },
+    {
+      "type": "paragraph",
+      "id": "aaf2768a0393632f",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "8f0743f1c0a82cce",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "12d19b264c7ac806",
+      "text": "<blockquote>\"Nice and readable for browsing.\"</blockquote> Jeff"
+    },
+    {
+      "type": "paragraph",
+      "id": "6f6d3a6b13b9a193",
+      "text": "Unit conversions :"
+    },
+    {
+      "type": "reference",
+      "id": "598d0655593b48c0",
+      "site": "ward.fed.wiki.org",
+      "slug": "method-unit-conversions",
+      "title": "Method Unit Conversions",
+      "text": "We propose to extend the Method plugin's calculation with measurement unit tracking, checking, formatting and some implicit conversions. Unit nomenclature and allowed conversions will be written explicitly on nearby pages."
+    },
+    {
+      "type": "paragraph",
+      "id": "3e2056b099cca7de",
+      "text": "<code>a.pipe(b).pipe(a)</code> < What does that mean? I didn't get it. See [[Duplex Stream]]"
+    },
+    {
+      "type": "paragraph",
+      "id": "914a57af33051510",
+      "text": "Ruby/Sinatra is no longer the reference implementation, as Node/Express/npm is far superior about plugins, etc. <> [http://www.unlimitednovelty.com/2011/10/nodejs-has-jumped-shark.html Node Rant] via [http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/ Yesod Tutorial]"
+    },
+    {
+      "type": "paragraph",
+      "id": "411d75784008abc9",
+      "text": "Appearantly we need a Node expert. Communication between plugins (on pages) as powerful as pipes would be lovely."
+    },
+    {
+      "type": "paragraph",
+      "id": "2bbac6bcdebfcce9",
+      "text": "Wiki as a medium for Workflow. Interface for Coordinated Sharing and Workflow."
+    },
+    {
+      "type": "paragraph",
+      "id": "cb178768c1138360",
+      "text": "Daniel volunteers turning Wiki into a <code>gem</code>. Followed by discussions about packaging in general, also with Node."
+    },
+    {
+      "type": "paragraph",
+      "id": "132e83c3a0f90cf2",
+      "text": "\"Smallest\" has been dropped kind of, as it was getting complicated. Still KISS is a guideline (?)."
+    },
+    {
+      "type": "paragraph",
+      "id": "90d6213e2060a42e",
+      "text": "Bits in the server code that seem to be abandoned have been commented by Paul system calls. system call json? > Plugin that lists installed Plugins for federation. front door for any server. seems useful to leave in. how to page, list of plugins, populated dynamically. and go into the federation what plugins are available."
+    },
+    {
+      "type": "paragraph",
+      "id": "e95de281562b91bf",
+      "text": "<blockquote>The Federated notion then lends itself to an agglomeration process; architect in view of supporting a subsequent agglomeration is a tricky and important aspect to consider when designing Federation. Central organization is natural because its an effective way to reduce entropy; chaotic decentralization will always lose to the low entropy tree structure. To succeed with Federated decentralization also requires a low entropy tree structure; but without entrenching a root that is non-responsive to external reticulation.</blockquote> via [http://meta.discourse.org/t/federation-of-article-links-between-discourse-instances/11260/4?u=almereyda meta.discourse.org]"
+    },
+    {
+      "type": "paragraph",
+      "id": "63574e5a7fc1e1d6",
+      "text": "npm node modules plugin installs are quite tricky (?). William works in a Node / Ember context."
+    },
+    {
+      "type": "paragraph",
+      "id": "59e2c7f8836dfbbc",
+      "text": "Paul has almost all the wiki code in his mind. Getting the DB layer out of \"core\" should also be quite simple, as plugin experiments always turned out to be easy."
+    },
+    {
+      "type": "reference",
+      "id": "6ad8c297d43da018",
+      "site": "ward.fed.wiki.org",
+      "slug": "wisticky",
+      "title": "wiSticky",
+      "text": "The [http://goo.gl/SrKzfY wiSticky] is the size of a credit card and about three times as thick. Thickness comes from layering an e-ink display with battery, circuit board and a refrigerator magnet used to stick the board where it will be seen."
+    },
+    {
+      "type": "pagefold",
+      "id": "c0b9afdd74279ac6",
+      "text": "Addendum"
+    },
+    {
+      "type": "paragraph",
+      "id": "6d8eb9cc64596b2b",
+      "text": "Following the thoughts from the federation quote led to [http://en.wikipedia.org/wiki/User%3AHaeB/Timeline_of_distributed_Wikipedia_proposals Timeline of distributed Wikipedia proposals]. Can be a source of philosophical thought."
+    },
+    {
+      "id": "89ced691a9bbd5b4",
+      "type": "reference",
+      "site": "ward.fed.wiki.org",
+      "slug": "folk-concepts",
+      "title": "Folk Concepts",
+      "text": "Specific modules and algorithms were considered for a speculative realization of [[Folk Memory]]. I now reflect on now wiki differs from the vision."
+    },
+    {
+      "type": "paragraph",
+      "id": "fcf706fa8bb1c974",
+      "text": "Additionally : if the DB layer gets plugin'ified, will I be able to use git as a source and enable another kind of UI approach that supports forking? Or even something [http://darcs.net darcs]ish or [http://projects.haskell.org/camp/unique camp]ish?"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "hangout 131204",
+        "story": []
+      },
+      "date": 1386179430103
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "7f14208f7d7c61f7"
+      },
+      "id": "7f14208f7d7c61f7",
+      "type": "add",
+      "date": 1386179434424
+    },
+    {
+      "type": "edit",
+      "id": "7f14208f7d7c61f7",
+      "item": {
+        "type": "paragraph",
+        "id": "7f14208f7d7c61f7",
+        "text": "[https://twitter.com/WardCunningham/status/408290426215354368 initial tweet]"
+      },
+      "date": 1386179444065
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f757a046180df132",
+        "text": ""
+      },
+      "id": "f757a046180df132",
+      "type": "add",
+      "after": "7f14208f7d7c61f7",
+      "date": 1386179444564
+    },
+    {
+      "type": "edit",
+      "id": "f757a046180df132",
+      "item": {
+        "type": "paragraph",
+        "id": "f757a046180df132",
+        "text": "Hangout notes from 4th December 2013."
+      },
+      "date": 1386179470122
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3bc1da437111e1c1"
+      },
+      "id": "3bc1da437111e1c1",
+      "type": "add",
+      "after": "f757a046180df132",
+      "date": 1386180063889
+    },
+    {
+      "type": "edit",
+      "id": "3bc1da437111e1c1",
+      "item": {
+        "type": "pagefold",
+        "id": "3bc1da437111e1c1",
+        "text": "notes"
+      },
+      "date": 1386180070878
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5a1974a215a66a03"
+      },
+      "id": "5a1974a215a66a03",
+      "type": "add",
+      "after": "3bc1da437111e1c1",
+      "date": 1386180076088
+    },
+    {
+      "type": "edit",
+      "id": "5a1974a215a66a03",
+      "item": {
+        "type": "paragraph",
+        "id": "5a1974a215a66a03",
+        "text": "Allen is being explained the Federation aspect. no neutral point of view."
+      },
+      "date": 1386180100050
+    },
+    {
+      "type": "edit",
+      "id": "5a1974a215a66a03",
+      "item": {
+        "type": "paragraph",
+        "id": "5a1974a215a66a03",
+        "text": "Allen is being explained the Federation aspect. no neutral point of view. benefits of technology for healthcare."
+      },
+      "date": 1386180175646
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "78ea7fbf3d6c1685"
+      },
+      "id": "78ea7fbf3d6c1685",
+      "type": "add",
+      "after": "5a1974a215a66a03",
+      "date": 1386180706440
+    },
+    {
+      "type": "edit",
+      "id": "78ea7fbf3d6c1685",
+      "item": {
+        "type": "paragraph",
+        "id": "78ea7fbf3d6c1685",
+        "text": "Unit testing of Wiki."
+      },
+      "date": 1386180715363
+    },
+    {
+      "type": "edit",
+      "id": "78ea7fbf3d6c1685",
+      "item": {
+        "type": "paragraph",
+        "id": "78ea7fbf3d6c1685",
+        "text": "Unit testing of Wiki. http://ward.fed.wiki.org/view/method-unit-conversions"
+      },
+      "date": 1386180842524
+    },
+    {
+      "type": "edit",
+      "id": "78ea7fbf3d6c1685",
+      "item": {
+        "type": "paragraph",
+        "id": "78ea7fbf3d6c1685",
+        "text": "Unit testing of Wiki with specs."
+      },
+      "date": 1386180869684
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "http://ward.fed.wiki.org/view/method-unit-conversions"
+      },
+      "id": "aaf2768a0393632f",
+      "type": "add",
+      "after": "78ea7fbf3d6c1685",
+      "date": 1386180870199
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "Unit conversions : http://ward.fed.wiki.org/view/method-unit-conversions"
+      },
+      "date": 1386180879949
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "Unit conversions : [http://ward.fed.wiki.org/view/method-unit-conversions fed.wiki"
+      },
+      "date": 1386180892476
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "Unit conversions : [http://ward.fed.wiki.org/view/method-unit-conversions fed.wiki]"
+      },
+      "date": 1386180910727
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "Unit conversions : [http://ward.fed.wiki.org/view/method-unit-conversions @fed.wiki.org]"
+      },
+      "date": 1386180917326
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8e87145baa5a304e",
+        "text": ""
+      },
+      "id": "8e87145baa5a304e",
+      "type": "add",
+      "after": "78ea7fbf3d6c1685",
+      "date": 1386180946077
+    },
+    {
+      "type": "edit",
+      "id": "8e87145baa5a304e",
+      "item": {
+        "type": "paragraph",
+        "id": "8e87145baa5a304e",
+        "text": "GitHub Issues imported into Wiki : "
+      },
+      "date": 1386180959696
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "80e20e837cef3cf1"
+      },
+      "id": "80e20e837cef3cf1",
+      "type": "add",
+      "after": "aaf2768a0393632f",
+      "date": 1386180961209
+    },
+    {
+      "type": "move",
+      "order": [
+        "7f14208f7d7c61f7",
+        "f757a046180df132",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "78ea7fbf3d6c1685",
+        "8e87145baa5a304e",
+        "80e20e837cef3cf1",
+        "aaf2768a0393632f"
+      ],
+      "id": "80e20e837cef3cf1",
+      "date": 1386180962816
+    },
+    {
+      "type": "edit",
+      "id": "80e20e837cef3cf1",
+      "item": {
+        "type": "reference",
+        "id": "80e20e837cef3cf1",
+        "site": "ward.fed.wiki.org",
+        "slug": "aggregated-github-issues",
+        "title": "Aggregated GitHub Issues",
+        "text": "We list sites with pages mechanically generated from the github API. These provide a broad view of multiple federated wiki related repositories and a reference for ongoing conversation within the federation."
+      },
+      "date": 1386180968245
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": "Unit conversions :"
+      },
+      "date": 1386181024485
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "598d0655593b48c0"
+      },
+      "id": "598d0655593b48c0",
+      "type": "add",
+      "after": "aaf2768a0393632f",
+      "date": 1386181026248
+    },
+    {
+      "type": "edit",
+      "id": "598d0655593b48c0",
+      "item": {
+        "type": "reference",
+        "id": "598d0655593b48c0",
+        "site": "ward.fed.wiki.org",
+        "slug": "method-unit-conversions",
+        "title": "Method Unit Conversions",
+        "text": "We propose to extend the Method plugin's calculation with measurement unit tracking, checking, formatting and some implicit conversions. Unit nomenclature and allowed conversions will be written explicitly on nearby pages."
+      },
+      "date": 1386181033274
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "37b8e1449be647f5",
+        "text": ""
+      },
+      "id": "37b8e1449be647f5",
+      "type": "add",
+      "after": "5a1974a215a66a03",
+      "date": 1386181047251
+    },
+    {
+      "type": "edit",
+      "id": "37b8e1449be647f5",
+      "item": {
+        "type": "paragraph",
+        "id": "37b8e1449be647f5",
+        "text": "Jeff joined back in after being off of independent work for a while. Seattle."
+      },
+      "date": 1386181060543
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7b8f566df5ee7b72",
+        "text": ""
+      },
+      "id": "7b8f566df5ee7b72",
+      "type": "add",
+      "after": "78ea7fbf3d6c1685",
+      "date": 1386181117295
+    },
+    {
+      "type": "edit",
+      "id": "7b8f566df5ee7b72",
+      "item": {
+        "type": "paragraph",
+        "id": "7b8f566df5ee7b72",
+        "text": "Personas of ideal Wiki users:"
+      },
+      "date": 1386181124581
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f2f2f5c70dd9ad55",
+        "text": ""
+      },
+      "id": "f2f2f5c70dd9ad55",
+      "type": "add",
+      "after": "7b8f566df5ee7b72",
+      "date": 1386181125080
+    },
+    {
+      "type": "remove",
+      "id": "f2f2f5c70dd9ad55",
+      "date": 1386181125205
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3e3797996565fc34"
+      },
+      "id": "3e3797996565fc34",
+      "type": "add",
+      "after": "598d0655593b48c0",
+      "date": 1386181126499
+    },
+    {
+      "type": "move",
+      "order": [
+        "7f14208f7d7c61f7",
+        "f757a046180df132",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "80e20e837cef3cf1",
+        "aaf2768a0393632f",
+        "598d0655593b48c0"
+      ],
+      "id": "3e3797996565fc34",
+      "date": 1386181129869
+    },
+    {
+      "type": "edit",
+      "id": "3e3797996565fc34",
+      "item": {
+        "type": "reference",
+        "id": "3e3797996565fc34",
+        "site": "ward.fed.wiki.org",
+        "slug": "personas",
+        "title": "Personas",
+        "text": "We'll be developing and refining personas who will be the imagined actors as we develop more advanced uses cases. (Shift-click to see multiple personas.)"
+      },
+      "date": 1386181136109
+    },
+    {
+      "type": "remove",
+      "id": "80e20e837cef3cf1",
+      "date": 1386181330681
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "dffb37503d73e464"
+      },
+      "id": "dffb37503d73e464",
+      "type": "add",
+      "after": "598d0655593b48c0",
+      "date": 1386181332772
+    },
+    {
+      "type": "move",
+      "order": [
+        "7f14208f7d7c61f7",
+        "f757a046180df132",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "dffb37503d73e464",
+        "aaf2768a0393632f",
+        "598d0655593b48c0"
+      ],
+      "id": "dffb37503d73e464",
+      "date": 1386181334644
+    },
+    {
+      "type": "edit",
+      "id": "dffb37503d73e464",
+      "item": {
+        "type": "reference",
+        "id": "dffb37503d73e464",
+        "site": "issues.fed.wiki.org",
+        "slug": "aggregated-github-issues",
+        "title": "Aggregated GitHub Issues",
+        "text": "We list sites with pages mechanically generated from the github API. These provide a broad view of multiple federated wiki related repositories and a reference for ongoing conversation within the federation."
+      },
+      "date": 1386181339558
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3915277ec2f74e8e"
+      },
+      "id": "3915277ec2f74e8e",
+      "type": "add",
+      "after": "598d0655593b48c0",
+      "date": 1386181365251
+    },
+    {
+      "type": "move",
+      "order": [
+        "7f14208f7d7c61f7",
+        "f757a046180df132",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "dffb37503d73e464",
+        "3915277ec2f74e8e",
+        "aaf2768a0393632f",
+        "598d0655593b48c0"
+      ],
+      "id": "3915277ec2f74e8e",
+      "date": 1386181366655
+    },
+    {
+      "type": "edit",
+      "id": "3915277ec2f74e8e",
+      "item": {
+        "type": "reference",
+        "id": "3915277ec2f74e8e",
+        "site": "issues.fed.wiki.org",
+        "slug": "aggregated-github-issues",
+        "title": "Aggregated GitHub Issues",
+        "text": "We list sites with pages mechanically generated from the github API. These provide a broad view of multiple federated wiki related repositories and a reference for ongoing conversation within the federation."
+      },
+      "date": 1386181369737
+    },
+    {
+      "type": "remove",
+      "id": "dffb37503d73e464",
+      "date": 1386181376336
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3e2056b099cca7de"
+      },
+      "id": "3e2056b099cca7de",
+      "type": "add",
+      "after": "598d0655593b48c0",
+      "date": 1386181492542
+    },
+    {
+      "type": "edit",
+      "id": "3e2056b099cca7de",
+      "item": {
+        "type": "paragraph",
+        "id": "3e2056b099cca7de",
+        "text": "a.pipe(b).pipe(a)"
+      },
+      "date": 1386181501903
+    },
+    {
+      "type": "edit",
+      "id": "78ea7fbf3d6c1685",
+      "item": {
+        "type": "paragraph",
+        "id": "78ea7fbf3d6c1685",
+        "text": "Unit testing of Wiki with specs. Unit tests are implemented in Ruby. Strange loops."
+      },
+      "date": 1386181736689
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": ""
+      },
+      "id": "914a57af33051510",
+      "type": "add",
+      "after": "3e2056b099cca7de",
+      "date": 1386181870373
+    },
+    {
+      "type": "edit",
+      "id": "914a57af33051510",
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": "Ruby/Sinatra is no longer the reference implementation, as npm is far superior about plugins, etc."
+      },
+      "date": 1386181891075
+    },
+    {
+      "type": "edit",
+      "id": "914a57af33051510",
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": "Ruby/Sinatra is no longer the reference implementation, as Node/Express/npm is far superior about plugins, etc."
+      },
+      "date": 1386182009215
+    },
+    {
+      "type": "edit",
+      "id": "914a57af33051510",
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": "Ruby/Sinatra is no longer the reference implementation, as Node/Express/npm is far superior about plugins, etc. [http://www.unlimitednovelty.com/2011/10/nodejs-has-jumped-shark.html Node Rant] via"
+      },
+      "date": 1386182026984
+    },
+    {
+      "type": "edit",
+      "id": "914a57af33051510",
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": "Ruby/Sinatra is no longer the reference implementation, as Node/Express/npm is far superior about plugins, etc. [http://www.unlimitednovelty.com/2011/10/nodejs-has-jumped-shark.html Node Rant] via [http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/ Yesod Tutorial]"
+      },
+      "date": 1386182039308
+    },
+    {
+      "type": "edit",
+      "id": "914a57af33051510",
+      "item": {
+        "type": "paragraph",
+        "id": "914a57af33051510",
+        "text": "Ruby/Sinatra is no longer the reference implementation, as Node/Express/npm is far superior about plugins, etc. <> [http://www.unlimitednovelty.com/2011/10/nodejs-has-jumped-shark.html Node Rant] via [http://yannesposito.com/Scratch/en/blog/Yesod-tutorial-for-newbies/ Yesod Tutorial]"
+      },
+      "date": 1386182046187
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "411d75784008abc9",
+        "text": ""
+      },
+      "id": "411d75784008abc9",
+      "type": "add",
+      "after": "914a57af33051510",
+      "date": 1386182052256
+    },
+    {
+      "type": "edit",
+      "id": "411d75784008abc9",
+      "item": {
+        "type": "paragraph",
+        "id": "411d75784008abc9",
+        "text": "Appearantly we need a Node expert."
+      },
+      "date": 1386182058711
+    },
+    {
+      "type": "edit",
+      "id": "411d75784008abc9",
+      "item": {
+        "type": "paragraph",
+        "id": "411d75784008abc9",
+        "text": "Appearantly we need a Node expert. Communication between plugins (on pages) as powerful as pipes would be ovely."
+      },
+      "date": 1386182084170
+    },
+    {
+      "type": "edit",
+      "id": "411d75784008abc9",
+      "item": {
+        "type": "paragraph",
+        "id": "411d75784008abc9",
+        "text": "Appearantly we need a Node expert. Communication between plugins (on pages) as powerful as pipes would be lovely."
+      },
+      "date": 1386182087820
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2bbac6bcdebfcce9",
+        "text": ""
+      },
+      "id": "2bbac6bcdebfcce9",
+      "type": "add",
+      "after": "411d75784008abc9",
+      "date": 1386182249378
+    },
+    {
+      "type": "edit",
+      "id": "2bbac6bcdebfcce9",
+      "item": {
+        "type": "paragraph",
+        "id": "2bbac6bcdebfcce9",
+        "text": "Wiki as a medium for Workflow. Interface for Coordinated Sharing and Workflow."
+      },
+      "date": 1386182269549
+    },
+    {
+      "type": "edit",
+      "id": "3e2056b099cca7de",
+      "item": {
+        "type": "paragraph",
+        "id": "3e2056b099cca7de",
+        "text": "<code>a.pipe(b).pipe(a)</code> < might need update."
+      },
+      "date": 1386182291576
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "cb178768c1138360",
+        "text": ""
+      },
+      "id": "cb178768c1138360",
+      "type": "add",
+      "after": "2bbac6bcdebfcce9",
+      "date": 1386182336032
+    },
+    {
+      "type": "edit",
+      "id": "cb178768c1138360",
+      "item": {
+        "type": "paragraph",
+        "id": "cb178768c1138360",
+        "text": "Daniel volunteers turning Wiki into a gem."
+      },
+      "date": 1386182347638
+    },
+    {
+      "type": "edit",
+      "id": "cb178768c1138360",
+      "item": {
+        "type": "paragraph",
+        "id": "cb178768c1138360",
+        "text": "Daniel volunteers turning Wiki into a <code>gem</code>."
+      },
+      "date": 1386182362209
+    },
+    {
+      "type": "edit",
+      "id": "3e2056b099cca7de",
+      "item": {
+        "type": "paragraph",
+        "id": "3e2056b099cca7de",
+        "text": "<code>a.pipe(b).pipe(a)</code> < What does that mean? I didn't get it."
+      },
+      "date": 1386182397126
+    },
+    {
+      "type": "edit",
+      "id": "aaf2768a0393632f",
+      "item": {
+        "type": "paragraph",
+        "id": "aaf2768a0393632f",
+        "text": " "
+      },
+      "date": 1386182413537
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8f0743f1c0a82cce",
+        "text": "Unit conversions :"
+      },
+      "id": "8f0743f1c0a82cce",
+      "type": "add",
+      "after": "aaf2768a0393632f",
+      "date": 1386182414036
+    },
+    {
+      "type": "edit",
+      "id": "8f0743f1c0a82cce",
+      "item": {
+        "type": "paragraph",
+        "id": "8f0743f1c0a82cce",
+        "text": " "
+      },
+      "date": 1386182506290
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6f6d3a6b13b9a193",
+        "text": "Unit conversions :"
+      },
+      "id": "6f6d3a6b13b9a193",
+      "type": "add",
+      "after": "8f0743f1c0a82cce",
+      "date": 1386182506804
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "12d19b264c7ac806",
+        "text": ""
+      },
+      "id": "12d19b264c7ac806",
+      "type": "add",
+      "after": "8f0743f1c0a82cce",
+      "date": 1386182506804
+    },
+    {
+      "type": "edit",
+      "id": "12d19b264c7ac806",
+      "item": {
+        "type": "paragraph",
+        "id": "12d19b264c7ac806",
+        "text": "\"Nice and readable for browsing.\" Jeff"
+      },
+      "date": 1386182511110
+    },
+    {
+      "type": "edit",
+      "id": "12d19b264c7ac806",
+      "item": {
+        "type": "paragraph",
+        "id": "12d19b264c7ac806",
+        "text": "> \"Nice and readable for browsing.\" Jeff"
+      },
+      "date": 1386182515119
+    },
+    {
+      "type": "edit",
+      "id": "12d19b264c7ac806",
+      "item": {
+        "type": "paragraph",
+        "id": "12d19b264c7ac806",
+        "text": "<blockquote>\"Nice and readable for browsing.\"</blockquote> Jeff"
+      },
+      "date": 1386182527882
+    },
+    {
+      "type": "edit",
+      "id": "cb178768c1138360",
+      "item": {
+        "type": "paragraph",
+        "id": "cb178768c1138360",
+        "text": "Daniel volunteers turning Wiki into a <code>gem</code>. Followed by discussions about packaging in general, also with Node."
+      },
+      "date": 1386182559800
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "132e83c3a0f90cf2"
+      },
+      "id": "132e83c3a0f90cf2",
+      "type": "add",
+      "after": "cb178768c1138360",
+      "date": 1386182576804
+    },
+    {
+      "type": "edit",
+      "id": "132e83c3a0f90cf2",
+      "item": {
+        "type": "paragraph",
+        "id": "132e83c3a0f90cf2",
+        "text": "\"Smallest\" has been dropped kind of as it was getting complicated."
+      },
+      "date": 1386182592014
+    },
+    {
+      "type": "edit",
+      "id": "132e83c3a0f90cf2",
+      "item": {
+        "type": "paragraph",
+        "id": "132e83c3a0f90cf2",
+        "text": "\"Smallest\" has been dropped kind of, as it was getting complicated."
+      },
+      "date": 1386182600251
+    },
+    {
+      "type": "edit",
+      "id": "132e83c3a0f90cf2",
+      "item": {
+        "type": "paragraph",
+        "id": "132e83c3a0f90cf2",
+        "text": "\"Smallest\" has been dropped kind of, as it was getting complicated. Still KISS is a guideline(?)."
+      },
+      "date": 1386182615351
+    },
+    {
+      "type": "edit",
+      "id": "132e83c3a0f90cf2",
+      "item": {
+        "type": "paragraph",
+        "id": "132e83c3a0f90cf2",
+        "text": "\"Smallest\" has been dropped kind of, as it was getting complicated. Still KISS is a guideline (?)."
+      },
+      "date": 1386182620609
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "90d6213e2060a42e"
+      },
+      "id": "90d6213e2060a42e",
+      "type": "add",
+      "after": "132e83c3a0f90cf2",
+      "date": 1386182866236
+    },
+    {
+      "type": "edit",
+      "id": "90d6213e2060a42e",
+      "item": {
+        "type": "paragraph",
+        "id": "90d6213e2060a42e",
+        "text": "Bits in the server code that seem to be abandoned have been commented by Paul system calls. system call json?"
+      },
+      "date": 1386182893349
+    },
+    {
+      "type": "edit",
+      "id": "90d6213e2060a42e",
+      "item": {
+        "type": "paragraph",
+        "id": "90d6213e2060a42e",
+        "text": "Bits in the server code that seem to be abandoned have been commented by Paul system calls. system call json? > Plugin that lists installed Plugins for federation. front door for any server."
+      },
+      "date": 1386182984676
+    },
+    {
+      "type": "edit",
+      "id": "90d6213e2060a42e",
+      "item": {
+        "type": "paragraph",
+        "id": "90d6213e2060a42e",
+        "text": "Bits in the server code that seem to be abandoned have been commented by Paul system calls. system call json? > Plugin that lists installed Plugins for federation. front door for any server. seems useful to leave in. how to page, list of plugins, populated dynamically. and go into the federation what plugins are available."
+      },
+      "date": 1386183014737
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "63574e5a7fc1e1d6"
+      },
+      "id": "63574e5a7fc1e1d6",
+      "type": "add",
+      "after": "90d6213e2060a42e",
+      "date": 1386183325772
+    },
+    {
+      "type": "edit",
+      "id": "63574e5a7fc1e1d6",
+      "item": {
+        "type": "paragraph",
+        "id": "63574e5a7fc1e1d6",
+        "text": "npm node modules plugin installs are quite tricky (?). William works in a Node / Ember context."
+      },
+      "date": 1386183352901
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "59e2c7f8836dfbbc"
+      },
+      "id": "59e2c7f8836dfbbc",
+      "type": "add",
+      "after": "63574e5a7fc1e1d6",
+      "date": 1386183366442
+    },
+    {
+      "type": "edit",
+      "id": "59e2c7f8836dfbbc",
+      "item": {
+        "type": "paragraph",
+        "id": "59e2c7f8836dfbbc",
+        "text": "Paul has almost all the wiki code in his mind. Getting the DB layer out of \"core\" should also be quite simple, as plugin experiments always turned out to be easy."
+      },
+      "date": 1386183406187
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6ad8c297d43da018"
+      },
+      "id": "6ad8c297d43da018",
+      "type": "add",
+      "after": "59e2c7f8836dfbbc",
+      "date": 1386183763135
+    },
+    {
+      "type": "edit",
+      "id": "6ad8c297d43da018",
+      "item": {
+        "type": "reference",
+        "id": "6ad8c297d43da018",
+        "site": "ward.fed.wiki.org",
+        "slug": "wisticky",
+        "title": "wiSticky",
+        "text": "The [http://goo.gl/SrKzfY wiSticky] is the size of a credit card and about three times as thick. Thickness comes from layering an e-ink display with battery, circuit board and a refrigerator magnet used to stick the board where it will be seen."
+      },
+      "date": 1386183781388
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "e95de281562b91bf"
+      },
+      "id": "e95de281562b91bf",
+      "type": "add",
+      "after": "6ad8c297d43da018",
+      "date": 1386183896926
+    },
+    {
+      "type": "move",
+      "order": [
+        "7f14208f7d7c61f7",
+        "f757a046180df132",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "3915277ec2f74e8e",
+        "aaf2768a0393632f",
+        "8f0743f1c0a82cce",
+        "12d19b264c7ac806",
+        "6f6d3a6b13b9a193",
+        "598d0655593b48c0",
+        "3e2056b099cca7de",
+        "914a57af33051510",
+        "411d75784008abc9",
+        "2bbac6bcdebfcce9",
+        "cb178768c1138360",
+        "132e83c3a0f90cf2",
+        "90d6213e2060a42e",
+        "e95de281562b91bf",
+        "63574e5a7fc1e1d6",
+        "59e2c7f8836dfbbc",
+        "6ad8c297d43da018"
+      ],
+      "id": "e95de281562b91bf",
+      "date": 1386183899142
+    },
+    {
+      "type": "edit",
+      "id": "e95de281562b91bf",
+      "item": {
+        "type": "paragraph",
+        "id": "e95de281562b91bf",
+        "text": "<blockquote>The Federated notion then lends itself to an agglomeration process; architect in view of supporting a subsequent agglomeration is a tricky and important aspect to consider when designing Federation. Central organization is natural because its an effective way to reduce entropy; chaotic decentralization will always lose to the low entropy tree structure. To succeed with Federated decentralization also requires a low entropy tree structure; but without entrenching a root that is non-responsive to external reticulation.</blockquote>"
+      },
+      "date": 1386183919656
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f2b8b1aa7e272a5b",
+        "text": ""
+      },
+      "id": "f2b8b1aa7e272a5b",
+      "type": "add",
+      "after": "e95de281562b91bf",
+      "date": 1386183920155
+    },
+    {
+      "type": "remove",
+      "id": "f2b8b1aa7e272a5b",
+      "date": 1386183921278
+    },
+    {
+      "type": "edit",
+      "id": "e95de281562b91bf",
+      "item": {
+        "type": "paragraph",
+        "id": "e95de281562b91bf",
+        "text": "<blockquote>The Federated notion then lends itself to an agglomeration process; architect in view of supporting a subsequent agglomeration is a tricky and important aspect to consider when designing Federation. Central organization is natural because its an effective way to reduce entropy; chaotic decentralization will always lose to the low entropy tree structure. To succeed with Federated decentralization also requires a low entropy tree structure; but without entrenching a root that is non-responsive to external reticulation.</blockquote> via [http://meta.discourse.org/t/federation-of-article-links-between-discourse-instances/11260/4?u=almereyda meta.discourse.org]"
+      },
+      "date": 1386183944866
+    },
+    {
+      "type": "fork",
+      "site": "yala.fed.wiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "c0b9afdd74279ac6"
+      },
+      "id": "c0b9afdd74279ac6",
+      "type": "add",
+      "after": "6ad8c297d43da018",
+      "site": "yala.fed.wiki.org",
+      "date": 1386184838310
+    },
+    {
+      "type": "edit",
+      "id": "c0b9afdd74279ac6",
+      "item": {
+        "type": "pagefold",
+        "id": "c0b9afdd74279ac6",
+        "text": "Addendum"
+      },
+      "date": 1386184842537
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "6d8eb9cc64596b2b"
+      },
+      "id": "6d8eb9cc64596b2b",
+      "type": "add",
+      "after": "c0b9afdd74279ac6",
+      "date": 1386184844815
+    },
+    {
+      "type": "edit",
+      "id": "6d8eb9cc64596b2b",
+      "item": {
+        "type": "paragraph",
+        "id": "6d8eb9cc64596b2b",
+        "text": "Following the thoughts from the federation quote led to [http://en.wikipedia.org/wiki/User%3AHaeB/Timeline_of_distributed_Wikipedia_proposals Timeline of distributed Wikipedia proposals]. Can be a source of philosophical thought."
+      },
+      "date": 1386184890601
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "fcf706fa8bb1c974",
+        "text": ""
+      },
+      "id": "fcf706fa8bb1c974",
+      "type": "add",
+      "after": "6d8eb9cc64596b2b",
+      "date": 1386184891116
+    },
+    {
+      "type": "edit",
+      "id": "fcf706fa8bb1c974",
+      "item": {
+        "type": "paragraph",
+        "id": "fcf706fa8bb1c974",
+        "text": "Additionally : if the DB layer gets plugin'ified, will I be able to use git as a source and enable another kind of UI approach that supports forking? Or even "
+      },
+      "date": 1386184934268
+    },
+    {
+      "type": "edit",
+      "id": "fcf706fa8bb1c974",
+      "item": {
+        "type": "paragraph",
+        "id": "fcf706fa8bb1c974",
+        "text": "Additionally : if the DB layer gets plugin'ified, will I be able to use git as a source and enable another kind of UI approach that supports forking? Or even something [http"
+      },
+      "date": 1386184960476
+    },
+    {
+      "type": "edit",
+      "id": "fcf706fa8bb1c974",
+      "item": {
+        "type": "paragraph",
+        "id": "fcf706fa8bb1c974",
+        "text": "Additionally : if the DB layer gets plugin'ified, will I be able to use git as a source and enable another kind of UI approach that supports forking? Or even something [http://darcs.net darcs]ish or [http://projects.haskell.org/camp/unique camp]ish?"
+      },
+      "date": 1386184980272
+    },
+    {
+      "type": "fork",
+      "date": 1386185023739
+    },
+    {
+      "type": "fork",
+      "site": "yala.fed.wiki.org",
+      "date": 1386257405108
+    },
+    {
+      "type": "edit",
+      "id": "f757a046180df132",
+      "item": {
+        "type": "paragraph",
+        "id": "f757a046180df132",
+        "text": "Hangout notes from 4th December 2013. Why federation. Seattle. Tests in ruby. Personas. GitHub issues aggregated. Unit conversions. Node pipes. Reference implementation. Ruby gem. Move db out of core. wiSticky."
+      },
+      "date": 1386257872419
+    },
+    {
+      "type": "move",
+      "order": [
+        "f757a046180df132",
+        "7f14208f7d7c61f7",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "3915277ec2f74e8e",
+        "aaf2768a0393632f",
+        "8f0743f1c0a82cce",
+        "12d19b264c7ac806",
+        "6f6d3a6b13b9a193",
+        "598d0655593b48c0",
+        "3e2056b099cca7de",
+        "914a57af33051510",
+        "411d75784008abc9",
+        "2bbac6bcdebfcce9",
+        "cb178768c1138360",
+        "132e83c3a0f90cf2",
+        "90d6213e2060a42e",
+        "e95de281562b91bf",
+        "63574e5a7fc1e1d6",
+        "59e2c7f8836dfbbc",
+        "6ad8c297d43da018",
+        "c0b9afdd74279ac6",
+        "6d8eb9cc64596b2b",
+        "fcf706fa8bb1c974"
+      ],
+      "id": "7f14208f7d7c61f7",
+      "date": 1386257885169
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "2f9b899f6799e276",
+        "text": ""
+      },
+      "id": "2f9b899f6799e276",
+      "type": "add",
+      "after": "f757a046180df132",
+      "date": 1386257911625
+    },
+    {
+      "type": "edit",
+      "id": "2f9b899f6799e276",
+      "item": {
+        "type": "paragraph",
+        "id": "2f9b899f6799e276",
+        "text": "<i> Thank you Jon for creating these notes. I suggest a keyword laden first paragraph, notes on notes, to help search find them later."
+      },
+      "date": 1386258019680
+    },
+    {
+      "type": "edit",
+      "id": "2f9b899f6799e276",
+      "item": {
+        "type": "paragraph",
+        "id": "2f9b899f6799e276",
+        "text": "<i> Thank you Jon for creating these notes. I suggest a keyword laden first paragraph, notes on notes, to help search find them later. I've added an example."
+      },
+      "date": 1386258040992
+    },
+    {
+      "type": "edit",
+      "id": "2f9b899f6799e276",
+      "item": {
+        "type": "paragraph",
+        "id": "2f9b899f6799e276",
+        "text": "<i> Thank you Jon for creating these notes. May I suggest a keyword laden first paragraph, notes on notes, to help search find them later. I've added an example."
+      },
+      "date": 1386258722702
+    },
+    {
+      "type": "edit",
+      "id": "2f9b899f6799e276",
+      "item": {
+        "type": "paragraph",
+        "id": "2f9b899f6799e276",
+        "text": "<i> Thank you Jon for creating these notes. May I suggest a keyword laden first paragraph, notes on notes, to help search find them later? I've added an example."
+      },
+      "date": 1386258739622
+    },
+    {
+      "type": "edit",
+      "id": "7f14208f7d7c61f7",
+      "item": {
+        "type": "paragraph",
+        "id": "7f14208f7d7c61f7",
+        "text": "We now federate github issues by importing them into wikis. Chat about this starts in 15 min. [https://twitter.com/WardCunningham/status/408290426215354368 initial tweet]"
+      },
+      "date": 1386258784892
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "3485dfee980a6ee6"
+      },
+      "id": "3485dfee980a6ee6",
+      "type": "add",
+      "after": "fcf706fa8bb1c974",
+      "date": 1386258947589
+    },
+    {
+      "type": "remove",
+      "id": "3485dfee980a6ee6",
+      "date": 1386258975272
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "379256b1ac439810",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "import-issues",
+        "title": "Import Issues",
+        "text": "Use the github api to retrieve issues and post them to read-only sites, one page per issue. [https://github.com/WardCunningham/import-issues github]"
+      },
+      "after": "12d19b264c7ac806",
+      "id": "379256b1ac439810",
+      "date": 1386258991693
+    },
+    {
+      "type": "move",
+      "order": [
+        "f757a046180df132",
+        "2f9b899f6799e276",
+        "7f14208f7d7c61f7",
+        "3bc1da437111e1c1",
+        "5a1974a215a66a03",
+        "37b8e1449be647f5",
+        "78ea7fbf3d6c1685",
+        "7b8f566df5ee7b72",
+        "3e3797996565fc34",
+        "8e87145baa5a304e",
+        "379256b1ac439810",
+        "3915277ec2f74e8e",
+        "aaf2768a0393632f",
+        "8f0743f1c0a82cce",
+        "12d19b264c7ac806",
+        "6f6d3a6b13b9a193",
+        "598d0655593b48c0",
+        "3e2056b099cca7de",
+        "914a57af33051510",
+        "411d75784008abc9",
+        "2bbac6bcdebfcce9",
+        "cb178768c1138360",
+        "132e83c3a0f90cf2",
+        "90d6213e2060a42e",
+        "e95de281562b91bf",
+        "63574e5a7fc1e1d6",
+        "59e2c7f8836dfbbc",
+        "6ad8c297d43da018",
+        "c0b9afdd74279ac6",
+        "6d8eb9cc64596b2b",
+        "fcf706fa8bb1c974"
+      ],
+      "id": "379256b1ac439810",
+      "date": 1386258999689
+    },
+    {
+      "type": "edit",
+      "id": "3e2056b099cca7de",
+      "item": {
+        "type": "paragraph",
+        "id": "3e2056b099cca7de",
+        "text": "<code>a.pipe(b).pipe(a)</code> < What does that mean? I didn't get it. ([[Duplex Stream]])"
+      },
+      "date": 1386259206638
+    },
+    {
+      "type": "edit",
+      "id": "3e2056b099cca7de",
+      "item": {
+        "type": "paragraph",
+        "id": "3e2056b099cca7de",
+        "text": "<code>a.pipe(b).pipe(a)</code> < What does that mean? I didn't get it. See [[Duplex Stream]]"
+      },
+      "date": 1386259219516
+    },
+    {
+      "type": "add",
+      "item": {
+        "id": "89ced691a9bbd5b4",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "folk-concepts",
+        "title": "Folk Concepts",
+        "text": "Specific modules and algorithms were considered for a speculative realization of [[Folk Memory]]."
+      },
+      "after": "6d8eb9cc64596b2b",
+      "id": "89ced691a9bbd5b4",
+      "date": 1386259696155
+    },
+    {
+      "type": "edit",
+      "id": "89ced691a9bbd5b4",
+      "item": {
+        "id": "89ced691a9bbd5b4",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "folk-concepts",
+        "title": "Folk Concepts",
+        "text": "Specific modules and algorithms were considered for a speculative realization of [[Folk Memory]]. I reflect on now wiki differs from the vision."
+      },
+      "date": 1386259786153
+    },
+    {
+      "type": "edit",
+      "id": "89ced691a9bbd5b4",
+      "item": {
+        "id": "89ced691a9bbd5b4",
+        "type": "reference",
+        "site": "ward.fed.wiki.org",
+        "slug": "folk-concepts",
+        "title": "Folk Concepts",
+        "text": "Specific modules and algorithms were considered for a speculative realization of [[Folk Memory]]. I now reflect on now wiki differs from the vision."
+      },
+      "date": 1386259793846
+    },
+    {
+      "type": "fork",
+      "site": "ward.fed.wiki.org",
+      "date": 1386785331798
+    },
+    {
+      "type": "fork",
+      "date": 1386785366108
+    }
+  ]
+}

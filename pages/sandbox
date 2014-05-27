@@ -1,0 +1,90 @@
+{
+  "title": "sandbox",
+  "story": [
+    {
+      "type": "video",
+      "id": "1a9ae28660c8eb0d",
+      "text": "something"
+    },
+    {
+      "type": "paragraph",
+      "id": "1d99dda46e82c16e",
+      "text": "EDIT THIS TEXT AND REFRESH!dfad"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "sandbox",
+        "story": []
+      },
+      "date": 1386783790098
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1a9ae28660c8eb0d"
+      },
+      "id": "1a9ae28660c8eb0d",
+      "type": "add",
+      "date": 1386783791100
+    },
+    {
+      "type": "edit",
+      "id": "1a9ae28660c8eb0d",
+      "item": {
+        "type": "video",
+        "id": "1a9ae28660c8eb0d",
+        "text": "something"
+      },
+      "date": 1386783798851
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1d99dda46e82c16e"
+      },
+      "id": "1d99dda46e82c16e",
+      "type": "add",
+      "after": "1a9ae28660c8eb0d",
+      "date": 1386783881431
+    },
+    {
+      "type": "edit",
+      "id": "1d99dda46e82c16e",
+      "item": {
+        "type": "paragraph",
+        "id": "1d99dda46e82c16e",
+        "text": "EDIT THIS TEXT AND REFRESH!"
+      },
+      "date": 1386783892867
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8a793ec7edc24f66",
+        "text": ""
+      },
+      "id": "8a793ec7edc24f66",
+      "type": "add",
+      "after": "1d99dda46e82c16e",
+      "date": 1386784246363
+    },
+    {
+      "type": "remove",
+      "id": "8a793ec7edc24f66",
+      "date": 1386784247409
+    },
+    {
+      "type": "edit",
+      "id": "1d99dda46e82c16e",
+      "item": {
+        "type": "paragraph",
+        "id": "1d99dda46e82c16e",
+        "text": "EDIT THIS TEXT AND REFRESH!dfad"
+      },
+      "date": 1386863015602
+    }
+  ]
+}

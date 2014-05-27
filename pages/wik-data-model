@@ -1,0 +1,551 @@
+{
+  "title": "Wik Data Model",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "d8c9db9d22624ef6",
+      "text": "This Page describes a potential data model for [[WIK DVCS]], aiming to address some of our desires for [[Wiki Version Control]]. This discussion assumes a level of familiarity with the current [[JSON Schema]] of Federated Wiki pages."
+    },
+    {
+      "type": "paragraph",
+      "id": "42259e04e85cf1e4",
+      "text": "We start with two primary types of data, a 'wik' which contains one or more other 'wik's or 'thread's. (see [[Wik Etymology]] for the metaphor being employed here)"
+    },
+    {
+      "type": "paragraph",
+      "id": "48e9e15daac15223",
+      "text": "For a more concrete example: "
+    },
+    {
+      "type": "paragraph",
+      "id": "61f54e2ff6e182aa",
+      "text": "[[Wik JSON Schema]]"
+    },
+    {
+      "type": "pagefold",
+      "id": "9df7f53599949cb4",
+      "text": "What's in a wik?"
+    },
+    {
+      "type": "paragraph",
+      "id": "5b6be30b6b20e2b5",
+      "text": "A wik most closely resembles a 'page' in our current [[JSON Schema]], with a few subtle differences:"
+    },
+    {
+      "type": "paragraph",
+      "id": "4dd0d989a1a72f0e",
+      "text": "-The addition of a URI as the primary ID for the wik, in contrast to the title in our present model. This allows for renaming of pages while retaining link cromulence."
+    },
+    {
+      "type": "paragraph",
+      "id": "d98ce0f3a9f2fddc",
+      "text": "-Journal actions are the same, except that they no longer record 'edit' actions, but instead 'update' actions, which simply modify the URI of a thread to ensure that it resolves to the proper version of an item. Actual edits are pushed down into the domain of individual threads (see below)."
+    },
+    {
+      "type": "paragraph",
+      "id": "6d2743ecffa12581",
+      "text": "-Story items, rather than being full objects which are rendered to the page, now consist of a [[Wik URI]] that references a thread or another wik."
+    },
+    {
+      "type": "paragraph",
+      "id": "046c43a35206270f",
+      "text": "-A wik may contain in it's story one or more URI's that resolve to another wik. "
+    },
+    {
+      "type": "pagefold",
+      "id": "aa1f980c2b268813",
+      "text": "Threads"
+    },
+    {
+      "type": "paragraph",
+      "id": "17141d8f49c3dba2",
+      "text": "Threads are essentially the story items from our existing [[JSON Schema]], and contain much the same information."
+    },
+    {
+      "type": "paragraph",
+      "id": "becc674095215b85",
+      "text": "One key difference is that edits to an individual thread are recorded relative to that thread, rather than relative to the page it resides within. "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Data Model",
+        "story": []
+      },
+      "date": 1394734023797
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "d8c9db9d22624ef6"
+      },
+      "id": "d8c9db9d22624ef6",
+      "type": "add",
+      "date": 1394734024882
+    },
+    {
+      "type": "edit",
+      "id": "d8c9db9d22624ef6",
+      "item": {
+        "type": "paragraph",
+        "id": "d8c9db9d22624ef6",
+        "text": "This Page describes a potential data model for [[WIK DVCS]], aiming to address some of our desires for [[Wiki Version Control]]."
+      },
+      "date": 1394734081249
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "9e130fe2a680fe7e",
+        "text": ""
+      },
+      "id": "9e130fe2a680fe7e",
+      "type": "add",
+      "after": "d8c9db9d22624ef6",
+      "date": 1394734081766
+    },
+    {
+      "type": "remove",
+      "id": "9e130fe2a680fe7e",
+      "date": 1394734092288
+    },
+    {
+      "type": "edit",
+      "id": "d8c9db9d22624ef6",
+      "item": {
+        "type": "paragraph",
+        "id": "d8c9db9d22624ef6",
+        "text": "This Page describes a potential data model for [[WIK DVCS]], aiming to address some of our desires for [[Wiki Version Control]]. Interested readers would do well to have an understanding of our current [[JSON Schema]] to know where we're coming from"
+      },
+      "date": 1394734121785
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "56a05a88a6742351",
+        "text": ""
+      },
+      "id": "56a05a88a6742351",
+      "type": "add",
+      "after": "d8c9db9d22624ef6",
+      "date": 1394734122302
+    },
+    {
+      "type": "remove",
+      "id": "56a05a88a6742351",
+      "date": 1394734125039
+    },
+    {
+      "type": "edit",
+      "id": "d8c9db9d22624ef6",
+      "item": {
+        "type": "paragraph",
+        "id": "d8c9db9d22624ef6",
+        "text": "This Page describes a potential data model for [[WIK DVCS]], aiming to address some of our desires for [[Wiki Version Control]]. This discussion assumes a level of familiarity with the current [[JSON Schema]] of Federated Wiki pages."
+      },
+      "date": 1394734163286
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "42259e04e85cf1e4",
+        "text": ""
+      },
+      "id": "42259e04e85cf1e4",
+      "type": "add",
+      "after": "d8c9db9d22624ef6",
+      "date": 1394734163807
+    },
+    {
+      "type": "edit",
+      "id": "42259e04e85cf1e4",
+      "item": {
+        "type": "paragraph",
+        "id": "42259e04e85cf1e4",
+        "text": "We start with two primary types of data, a 'wik' and a 'thread.' (see [[Wik Etymology]] for the analogy being employed here)"
+      },
+      "date": 1394734252846
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "8d7f9a79d832807a",
+        "text": ""
+      },
+      "id": "8d7f9a79d832807a",
+      "type": "add",
+      "after": "42259e04e85cf1e4",
+      "date": 1394734253365
+    },
+    {
+      "type": "remove",
+      "id": "8d7f9a79d832807a",
+      "date": 1394734260485
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9df7f53599949cb4"
+      },
+      "id": "9df7f53599949cb4",
+      "type": "add",
+      "after": "42259e04e85cf1e4",
+      "date": 1394734276306
+    },
+    {
+      "type": "edit",
+      "id": "9df7f53599949cb4",
+      "item": {
+        "type": "pagefold",
+        "id": "9df7f53599949cb4",
+        "text": "What's in a wik?"
+      },
+      "date": 1394734288100
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "5b6be30b6b20e2b5"
+      },
+      "id": "5b6be30b6b20e2b5",
+      "type": "add",
+      "after": "9df7f53599949cb4",
+      "date": 1394734291096
+    },
+    {
+      "type": "edit",
+      "id": "5b6be30b6b20e2b5",
+      "item": {
+        "type": "paragraph",
+        "id": "5b6be30b6b20e2b5",
+        "text": "A wik most closely resembles a 'page' in our current [[JSON Schema]], with a few subtle differences:"
+      },
+      "date": 1394734392501
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "4dd0d989a1a72f0e",
+        "text": ""
+      },
+      "id": "4dd0d989a1a72f0e",
+      "type": "add",
+      "after": "5b6be30b6b20e2b5",
+      "date": 1394734393019
+    },
+    {
+      "type": "edit",
+      "id": "4dd0d989a1a72f0e",
+      "item": {
+        "type": "paragraph",
+        "id": "4dd0d989a1a72f0e",
+        "text": "-The addition of a uuid as the primary ID for the wik, in contrast to the title in our present model"
+      },
+      "date": 1394734524559
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d98ce0f3a9f2fddc",
+        "text": ""
+      },
+      "id": "d98ce0f3a9f2fddc",
+      "type": "add",
+      "after": "4dd0d989a1a72f0e",
+      "date": 1394734525080
+    },
+    {
+      "type": "edit",
+      "id": "d98ce0f3a9f2fddc",
+      "item": {
+        "type": "paragraph",
+        "id": "d98ce0f3a9f2fddc",
+        "text": "-Journal actions, rather than reflecting the edit of "
+      },
+      "date": 1394734554464
+    },
+    {
+      "type": "edit",
+      "id": "42259e04e85cf1e4",
+      "item": {
+        "type": "paragraph",
+        "id": "42259e04e85cf1e4",
+        "text": "We start with two primary types of data, a 'wik' which contains one or more other 'wik's or 'thread's. (see [[Wik Etymology]] for the analogy being employed here)"
+      },
+      "date": 1394734603971
+    },
+    {
+      "type": "edit",
+      "id": "d98ce0f3a9f2fddc",
+      "item": {
+        "type": "paragraph",
+        "id": "d98ce0f3a9f2fddc",
+        "text": "-Journal actions are the same, except that they no longer record 'edit' actions, which are pushed down into the domain of individual threads (see below)."
+      },
+      "date": 1394734759469
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": ""
+      },
+      "id": "6d2743ecffa12581",
+      "type": "add",
+      "after": "d98ce0f3a9f2fddc",
+      "date": 1394734759989
+    },
+    {
+      "type": "edit",
+      "id": "6d2743ecffa12581",
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": "-Story items, rather than being full objects which are rendered to the page, now "
+      },
+      "date": 1394734797581
+    },
+    {
+      "type": "edit",
+      "id": "4dd0d989a1a72f0e",
+      "item": {
+        "type": "paragraph",
+        "id": "4dd0d989a1a72f0e",
+        "text": "-The addition of a uuid as the primary ID for the wik, in contrast to the title in our present model. This allows for renaming of pages while retaining link cromulence."
+      },
+      "date": 1394734838366
+    },
+    {
+      "type": "edit",
+      "id": "6d2743ecffa12581",
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": "-Story items, rather than being full objects which are rendered to the page, now consist of a [[Wik URI]] and a [[Steward ID]]"
+      },
+      "date": 1394734933858
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "d948359013c39ace",
+        "text": ""
+      },
+      "id": "d948359013c39ace",
+      "type": "add",
+      "after": "6d2743ecffa12581",
+      "date": 1394734934373
+    },
+    {
+      "type": "remove",
+      "id": "d948359013c39ace",
+      "date": 1394734951544
+    },
+    {
+      "type": "edit",
+      "id": "6d2743ecffa12581",
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": "-Story items, rather than being full objects which are rendered to the page, now consist of a [[Wik Thread URI]] that references a thread to be rendered."
+      },
+      "date": 1394734993516
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "aa1f980c2b268813"
+      },
+      "id": "aa1f980c2b268813",
+      "type": "add",
+      "after": "6d2743ecffa12581",
+      "date": 1394735003769
+    },
+    {
+      "type": "edit",
+      "id": "aa1f980c2b268813",
+      "item": {
+        "type": "pagefold",
+        "id": "aa1f980c2b268813",
+        "text": "Threads"
+      },
+      "date": 1394735013676
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "17141d8f49c3dba2"
+      },
+      "id": "17141d8f49c3dba2",
+      "type": "add",
+      "after": "aa1f980c2b268813",
+      "date": 1394735019185
+    },
+    {
+      "type": "edit",
+      "id": "17141d8f49c3dba2",
+      "item": {
+        "type": "paragraph",
+        "id": "17141d8f49c3dba2",
+        "text": "Threads are essentially the story items from our existing [[JSON Schema]], and contain much the same information."
+      },
+      "date": 1394735066813
+    },
+    {
+      "type": "edit",
+      "id": "6d2743ecffa12581",
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": "-Story items, rather than being full objects which are rendered to the page, now consist of a [[Wik URI]] that references a thread to be rendered."
+      },
+      "date": 1394735074638
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "046c43a35206270f",
+        "text": ""
+      },
+      "id": "046c43a35206270f",
+      "type": "add",
+      "after": "6d2743ecffa12581",
+      "date": 1394735087242
+    },
+    {
+      "type": "edit",
+      "id": "046c43a35206270f",
+      "item": {
+        "type": "paragraph",
+        "id": "046c43a35206270f",
+        "text": "-A wik may contain "
+      },
+      "date": 1394735108723
+    },
+    {
+      "type": "edit",
+      "id": "6d2743ecffa12581",
+      "item": {
+        "type": "paragraph",
+        "id": "6d2743ecffa12581",
+        "text": "-Story items, rather than being full objects which are rendered to the page, now consist of a [[Wik URI]] that references a thread or another wik."
+      },
+      "date": 1394735121080
+    },
+    {
+      "type": "edit",
+      "id": "046c43a35206270f",
+      "item": {
+        "type": "paragraph",
+        "id": "046c43a35206270f",
+        "text": "-A wik may contain in it's story one or more URI's that resolve to another wik. "
+      },
+      "date": 1394735193190
+    },
+    {
+      "type": "edit",
+      "id": "d98ce0f3a9f2fddc",
+      "item": {
+        "type": "paragraph",
+        "id": "d98ce0f3a9f2fddc",
+        "text": "-Journal actions are the same, except that they no longer record 'edit' actions, but instead 'update' actions, which simply modify the URI of a thread to ensure that it resolves to the proper version of an item. Actual edits are pushed down into the domain of individual threads (see below)."
+      },
+      "date": 1394735345592
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "becc674095215b85",
+        "text": ""
+      },
+      "id": "becc674095215b85",
+      "type": "add",
+      "after": "17141d8f49c3dba2",
+      "date": 1394735410215
+    },
+    {
+      "type": "edit",
+      "id": "becc674095215b85",
+      "item": {
+        "type": "paragraph",
+        "id": "becc674095215b85",
+        "text": "One key difference is that edits to an individual thread are recorded relative to that thread, rather than relative to the page it resides within. "
+      },
+      "date": 1394735459130
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "48e9e15daac15223",
+        "text": ""
+      },
+      "id": "48e9e15daac15223",
+      "type": "add",
+      "after": "42259e04e85cf1e4",
+      "date": 1394735468489
+    },
+    {
+      "type": "edit",
+      "id": "48e9e15daac15223",
+      "item": {
+        "type": "paragraph",
+        "id": "48e9e15daac15223",
+        "text": "For a more concrete example, take a look at [[Wik JSON Schema]]"
+      },
+      "date": 1394735540957
+    },
+    {
+      "type": "edit",
+      "id": "48e9e15daac15223",
+      "item": {
+        "type": "paragraph",
+        "id": "48e9e15daac15223",
+        "text": "For a more concrete example, see [[Wik JSON Schema]]"
+      },
+      "date": 1394735547604
+    },
+    {
+      "type": "edit",
+      "id": "48e9e15daac15223",
+      "item": {
+        "type": "paragraph",
+        "id": "48e9e15daac15223",
+        "text": "For a more concrete example: "
+      },
+      "date": 1394735564196
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "61f54e2ff6e182aa",
+        "text": "[[Wik JSON Schema]]"
+      },
+      "id": "61f54e2ff6e182aa",
+      "type": "add",
+      "after": "48e9e15daac15223",
+      "date": 1394735564712
+    },
+    {
+      "type": "edit",
+      "id": "4dd0d989a1a72f0e",
+      "item": {
+        "type": "paragraph",
+        "id": "4dd0d989a1a72f0e",
+        "text": "-The addition of a URI as the primary ID for the wik, in contrast to the title in our present model. This allows for renaming of pages while retaining link cromulence."
+      },
+      "date": 1394743787753
+    },
+    {
+      "type": "edit",
+      "id": "42259e04e85cf1e4",
+      "item": {
+        "type": "paragraph",
+        "id": "42259e04e85cf1e4",
+        "text": "We start with two primary types of data, a 'wik' which contains one or more other 'wik's or 'thread's. (see [[Wik Etymology]] for the metaphor being employed here)"
+      },
+      "date": 1395082148658
+    }
+  ]
+}

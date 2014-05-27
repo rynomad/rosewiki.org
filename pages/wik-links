@@ -1,0 +1,179 @@
+{
+  "title": "Wik Links",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "baf8e88aa2b4c79a",
+      "text": "how do we create a link that points where we want it to point, and nowhere else? This page is part of a larger discussion o m the design of [[WIK DVCS"
+    },
+    {
+      "type": "paragraph",
+      "id": "24b6214d5f0dbd4c",
+      "text": "Consider the following scenario: Paul is aware of a wiki page by name, but doesn't know anything else about it. He makes a link by enclosing the page title in double square brackets. "
+    },
+    {
+      "type": "paragraph",
+      "id": "7151196a6480849c",
+      "text": "In the traditional wiki model, his client will request the page by it's slug, and if it's owner is in his current context, the page will be returned. If it is in his current neighborhood, wiki will give him a reference to that page to click through."
+    },
+    {
+      "type": "paragraph",
+      "id": "581bda0d926f8b27",
+      "text": "In the [[Wik Data Model]], Paul's link has no semantic meaning yet, so we need some sort of [[Wik Link Index]] to lookup his link title and associate it with a patch uri"
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Wik Links",
+        "story": []
+      },
+      "date": 1395966213327
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "baf8e88aa2b4c79a"
+      },
+      "id": "baf8e88aa2b4c79a",
+      "type": "add",
+      "date": 1395966214869
+    },
+    {
+      "type": "edit",
+      "id": "baf8e88aa2b4c79a",
+      "item": {
+        "type": "paragraph",
+        "id": "baf8e88aa2b4c79a",
+        "text": "how do we create a link that points where we want it to point, and nowhere else?"
+      },
+      "date": 1395966248097
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "24b6214d5f0dbd4c",
+        "text": ""
+      },
+      "id": "24b6214d5f0dbd4c",
+      "type": "add",
+      "after": "baf8e88aa2b4c79a",
+      "date": 1395966248611
+    },
+    {
+      "type": "edit",
+      "id": "24b6214d5f0dbd4c",
+      "item": {
+        "type": "paragraph",
+        "id": "24b6214d5f0dbd4c",
+        "text": "Consider the following scenario: Paul is aware of a "
+      },
+      "date": 1395966284005
+    },
+    {
+      "type": "edit",
+      "id": "24b6214d5f0dbd4c",
+      "item": {
+        "type": "paragraph",
+        "id": "24b6214d5f0dbd4c",
+        "text": "Consider the following scenario: Paul is aware of a wiki page by name, but doesn't know anything else about it. He makes a link by enclosing the page title in double square brackets. "
+      },
+      "date": 1395967850132
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7151196a6480849c",
+        "text": ""
+      },
+      "id": "7151196a6480849c",
+      "type": "add",
+      "after": "24b6214d5f0dbd4c",
+      "date": 1395967850648
+    },
+    {
+      "type": "edit",
+      "id": "7151196a6480849c",
+      "item": {
+        "type": "paragraph",
+        "id": "7151196a6480849c",
+        "text": "In the traditional wiki model, his client will request the page by it's slug, and if it's owner is in his current context, the page will be returned. If it is in his current neighborhood, wiki will give him a reference to that page to click through."
+      },
+      "date": 1395967956496
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "581bda0d926f8b27",
+        "text": ""
+      },
+      "id": "581bda0d926f8b27",
+      "type": "add",
+      "after": "7151196a6480849c",
+      "date": 1395967957007
+    },
+    {
+      "type": "edit",
+      "id": "581bda0d926f8b27",
+      "item": {
+        "type": "paragraph",
+        "id": "581bda0d926f8b27",
+        "text": "In the [[Wik Data Model]], Paul's link has no semantic meaning yet, so we need some sort of [[Wik Link Index]] "
+      },
+      "date": 1395968005710
+    },
+    {
+      "type": "edit",
+      "id": "baf8e88aa2b4c79a",
+      "item": {
+        "type": "paragraph",
+        "id": "baf8e88aa2b4c79a",
+        "text": "how do we create a link that points where we want it to point, and nowhere else? This page is part of a larger discussion o m the design of [[WIK DVCS"
+      },
+      "date": 1395968029201
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "0a93be61082ee146",
+        "text": "]]"
+      },
+      "id": "0a93be61082ee146",
+      "type": "add",
+      "after": "baf8e88aa2b4c79a",
+      "date": 1395968029711
+    },
+    {
+      "type": "remove",
+      "id": "0a93be61082ee146",
+      "date": 1395968029862
+    },
+    {
+      "type": "edit",
+      "id": "581bda0d926f8b27",
+      "item": {
+        "type": "paragraph",
+        "id": "581bda0d926f8b27",
+        "text": "In the [[Wik Data Model]], Paul's link has no semantic meaning yet, so we need some sort of [[Wik Link Index]] to lookup his link title and associate it with a patch uri"
+      },
+      "date": 1395968094202
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c454d84d7ab3b828",
+        "text": ""
+      },
+      "id": "c454d84d7ab3b828",
+      "type": "add",
+      "after": "581bda0d926f8b27",
+      "date": 1395968094714
+    },
+    {
+      "type": "remove",
+      "id": "c454d84d7ab3b828",
+      "date": 1395968118681
+    }
+  ]
+}

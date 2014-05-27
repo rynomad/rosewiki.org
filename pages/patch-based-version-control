@@ -1,0 +1,269 @@
+{
+  "title": "Patch Based Version Control",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "c449765e8de1418e",
+      "text": "Patch Based Version Control is a likely suspect for use in [[WIK DVCS]], partly because it's what we've begun doing already, but mostly because it supports our use case."
+    },
+    {
+      "type": "paragraph",
+      "id": "13a22e4c7dbb1cfc",
+      "text": "For a detailed introduction to Patch theory see the [http://en.wikibooks.org/wiki/Understanding_Darcs/Patch_theory wiki book on Darcs]"
+    },
+    {
+      "type": "paragraph",
+      "id": "1f26d1251dbd069b",
+      "text": "Patch (or ChangeSet) Based versioning (ie, [http://darcs.net Darcs]) differs from Snapshot versioning (ie Git) in that instead of recording the state of a repository with each commit, one simply records the change, or 'patch' of that revision. This allows for some use cases that are highly relevant to the federated wiki use case:"
+    },
+    {
+      "type": "paragraph",
+      "id": "f9976ccd373eda18",
+      "text": "By regarding patches as a first class entity, we can cherry pick and rearrange changes from multiple sources without committing ourselves to merging an entire fork/branch. "
+    },
+    {
+      "type": "paragraph",
+      "id": "c7c3c2362fd49fab",
+      "text": "Assuming proper [[Patch Dependency Management]], we can reorder changes with minimal hassle, without breaking references that others have made to our patches."
+    },
+    {
+      "type": "paragraph",
+      "id": "e2f671ea54a3e674",
+      "text": " "
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "Patch Based Version Control",
+        "story": []
+      },
+      "date": 1393887589642
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "1f26d1251dbd069b"
+      },
+      "id": "1f26d1251dbd069b",
+      "type": "add",
+      "date": 1393887591652
+    },
+    {
+      "type": "edit",
+      "id": "1f26d1251dbd069b",
+      "item": {
+        "type": "paragraph",
+        "id": "1f26d1251dbd069b",
+        "text": "Patch (or ChangeSet) Based versioning (ie, [http://darcs.net Darcs]) differs from Snapshot versioning (ie Git) in that instead of recording the state of a repository with each commit, one simply records the change, or 'patch' of that revision. This allows for some use cases that are highly relevant to the federated wiki use case:"
+      },
+      "date": 1393887733992
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f9976ccd373eda18",
+        "text": ""
+      },
+      "id": "f9976ccd373eda18",
+      "type": "add",
+      "after": "1f26d1251dbd069b",
+      "date": 1393887734512
+    },
+    {
+      "type": "edit",
+      "id": "f9976ccd373eda18",
+      "item": {
+        "type": "paragraph",
+        "id": "f9976ccd373eda18",
+        "text": "By regarding patches as a first class entity, we can cherry pick and rearrange changes from multiple sources without committing ourselves to merging an entire fork/branch. "
+      },
+      "date": 1393887842711
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c7c3c2362fd49fab",
+        "text": ""
+      },
+      "id": "c7c3c2362fd49fab",
+      "type": "add",
+      "after": "f9976ccd373eda18",
+      "date": 1393887843230
+    },
+    {
+      "type": "edit",
+      "id": "c7c3c2362fd49fab",
+      "item": {
+        "type": "paragraph",
+        "id": "c7c3c2362fd49fab",
+        "text": "Assuming proper [[Patch Dependency Management]], we can reorder changes "
+      },
+      "date": 1393887985076
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "c449765e8de1418e",
+        "text": ""
+      },
+      "id": "c449765e8de1418e",
+      "type": "add",
+      "after": "1f26d1251dbd069b",
+      "date": 1393887986369
+    },
+    {
+      "type": "edit",
+      "id": "c449765e8de1418e",
+      "item": {
+        "type": "paragraph",
+        "id": "c449765e8de1418e",
+        "text": "Patch Based Version Control is a likely suspect for use in [[WIK DVCS]]"
+      },
+      "date": 1393888026656
+    },
+    {
+      "type": "move",
+      "order": [
+        "c449765e8de1418e",
+        "1f26d1251dbd069b",
+        "f9976ccd373eda18",
+        "c7c3c2362fd49fab"
+      ],
+      "id": "c449765e8de1418e",
+      "date": 1393888028842
+    },
+    {
+      "type": "edit",
+      "id": "c449765e8de1418e",
+      "item": {
+        "type": "paragraph",
+        "id": "c449765e8de1418e",
+        "text": "Patch Based Version Control is a likely suspect for use in [[WIK DVCS]], partly because it's what we've begun doing already, but mostly because it supports our use case."
+      },
+      "date": 1393888067731
+    },
+    {
+      "type": "edit",
+      "id": "c7c3c2362fd49fab",
+      "item": {
+        "type": "paragraph",
+        "id": "c7c3c2362fd49fab",
+        "text": "Assuming proper [[Patch Dependency Management]], we can reorder changes with minimal hassle, without breaking references that others have made to our patches."
+      },
+      "date": 1393888128876
+    },
+    {
+      "type": "edit",
+      "id": "e2f671ea54a3e674",
+      "item": {
+        "type": "paragraph",
+        "id": "e2f671ea54a3e674",
+        "text": " "
+      },
+      "date": 1393888139606
+    },
+    {
+      "type": "remove",
+      "id": "59d0937b7b58bcd6",
+      "date": 1393888139631
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e2f671ea54a3e674",
+        "text": " "
+      },
+      "id": "e2f671ea54a3e674",
+      "type": "add",
+      "after": "c7c3c2362fd49fab",
+      "date": 1393888139959
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "59d0937b7b58bcd6",
+        "text": ""
+      },
+      "id": "59d0937b7b58bcd6",
+      "type": "add",
+      "after": "e2f671ea54a3e674",
+      "date": 1393888140124
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": ""
+      },
+      "id": "13a22e4c7dbb1cfc",
+      "type": "add",
+      "after": "e2f671ea54a3e674",
+      "date": 1393888140139
+    },
+    {
+      "type": "edit",
+      "id": "13a22e4c7dbb1cfc",
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": "For a good introduction to Patch theory"
+      },
+      "date": 1393888147567
+    },
+    {
+      "type": "edit",
+      "id": "13a22e4c7dbb1cfc",
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": "For a good introduction to Patch theory see the [wiki book on Darcs]"
+      },
+      "date": 1393888163050
+    },
+    {
+      "type": "edit",
+      "id": "13a22e4c7dbb1cfc",
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": "For a good introduction to Patch theory see the [http://en.wikibooks.org/wiki/Understanding_Darcs/Patch_theory wiki book on Darcs]"
+      },
+      "date": 1393888205016
+    },
+    {
+      "type": "move",
+      "order": [
+        "c449765e8de1418e",
+        "13a22e4c7dbb1cfc",
+        "1f26d1251dbd069b",
+        "f9976ccd373eda18",
+        "c7c3c2362fd49fab",
+        "e2f671ea54a3e674"
+      ],
+      "id": "13a22e4c7dbb1cfc",
+      "date": 1393888213424
+    },
+    {
+      "type": "edit",
+      "id": "13a22e4c7dbb1cfc",
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": "For a d introduction to Patch theory see the [http://en.wikibooks.org/wiki/Understanding_Darcs/Patch_theory wiki book on Darcs]"
+      },
+      "date": 1393888217581
+    },
+    {
+      "type": "edit",
+      "id": "13a22e4c7dbb1cfc",
+      "item": {
+        "type": "paragraph",
+        "id": "13a22e4c7dbb1cfc",
+        "text": "For a detailed introduction to Patch theory see the [http://en.wikibooks.org/wiki/Understanding_Darcs/Patch_theory wiki book on Darcs]"
+      },
+      "date": 1393888227535
+    }
+  ]
+}

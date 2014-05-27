@@ -1,0 +1,370 @@
+{
+  "title": "NDN Call 12/20/13",
+  "story": [
+    {
+      "type": "paragraph",
+      "id": "17cc11730344c742",
+      "text": "Subject: Interest Selectors in Core Routers . Should core ISP NDN routers evaluate interest selectors? What is the performance hit of sophisticated lookups? What are the potential issues that may arise without core interest selectors?"
+    },
+    {
+      "type": "paragraph",
+      "id": "903dfb4cdff77897",
+      "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&ved=0CDQQFjAC&url=http%3A%2F%2Fwww.cse.wustl.edu%2F~yuanh%2Fpublications%2F2012_Yuan_ICCCN.pdf&ei=hZa0UsnzCImuyQGqioCwDw&usg=AFQjCNFSdvJwX3K2DOpQ_QvD1sw4i0GqYg&bvm=bv.58187178,d.aWc Relevant Paper] From WashU"
+    },
+    {
+      "type": "paragraph",
+      "id": "b3b44546a9c8646d",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "92ada062e92ba294",
+      "text": "without interest selectors, core routers would return exact matches only (incl version and segment)"
+    },
+    {
+      "type": "paragraph",
+      "id": "b340f52c37c1c47f",
+      "text": "between digest component, versioning, segmentation, and digest, there are a variety of situations where one would express an accurate, yet incomplete name in an interest and expect a cache hit from a core router, but not get it without selectors."
+    },
+    {
+      "type": "paragraph",
+      "id": "f4fd8e52f8b9f2fe",
+      "text": "also, an 'exact match' that doesn't take into account a [[minSuffixComponents]] selector will cause more rigorous nodes to drop the returned content and result in a Timeout for the user."
+    },
+    {
+      "type": "paragraph",
+      "id": "5e3db934207f64b5",
+      "text": "If two Interests are forwarded through a core router, on with and one without selection, and an object matching ONE will consume both interests (since they are the same minus selectors) and a subsequent object matching the second interest will be dropped for lack of a PIT entry."
+    },
+    {
+      "type": "paragraph",
+      "id": "b1aefee74d77fe03",
+      "text": " "
+    },
+    {
+      "type": "paragraph",
+      "id": "29f608eb2d631963",
+      "text": "If the above is implemented as an attack, the counter argument is that the interest lifetimes should be short, based on Round Trip time, and thus the window of opportunity for such an attack or random collision is very small."
+    },
+    {
+      "type": "paragraph",
+      "id": "e8d8016c7b6c2ff3",
+      "text": ""
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "NDN Call 12/20/13",
+        "story": []
+      },
+      "site": "rosewiki.org",
+      "date": 1387566359409,
+      "fork": "rosewiki.org"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "17cc11730344c742"
+      },
+      "id": "17cc11730344c742",
+      "type": "add",
+      "date": 1387566362269
+    },
+    {
+      "type": "edit",
+      "id": "17cc11730344c742",
+      "item": {
+        "type": "paragraph",
+        "id": "17cc11730344c742",
+        "text": "Subject: Interest Selectors in Core Routers ."
+      },
+      "date": 1387566414377
+    },
+    {
+      "type": "edit",
+      "id": "17cc11730344c742",
+      "item": {
+        "type": "paragraph",
+        "id": "17cc11730344c742",
+        "text": "Subject: Interest Selectors in Core Routers . Should core ISP NDN routers evaluate interest selectors? What is the performance hit of sophisticated lookups? What are the potential issues that may arise without core interest selectors. "
+      },
+      "date": 1387566651170
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "7c53a6f0909a6576",
+        "text": ""
+      },
+      "id": "7c53a6f0909a6576",
+      "type": "add",
+      "after": "17cc11730344c742",
+      "date": 1387566651688
+    },
+    {
+      "type": "remove",
+      "id": "7c53a6f0909a6576",
+      "date": 1387566652682
+    },
+    {
+      "type": "edit",
+      "id": "17cc11730344c742",
+      "item": {
+        "type": "paragraph",
+        "id": "17cc11730344c742",
+        "text": "Subject: Interest Selectors in Core Routers . Should core ISP NDN routers evaluate interest selectors? What is the performance hit of sophisticated lookups? What are the potential issues that may arise without core interest selectors?"
+      },
+      "date": 1387566654892
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b3b44546a9c8646d",
+        "text": ""
+      },
+      "id": "b3b44546a9c8646d",
+      "type": "add",
+      "after": "17cc11730344c742",
+      "date": 1387566655399
+    },
+    {
+      "type": "edit",
+      "id": "b3b44546a9c8646d",
+      "item": {
+        "type": "paragraph",
+        "id": "b3b44546a9c8646d",
+        "text": "Paper from Wash U: "
+      },
+      "date": 1387566669706
+    },
+    {
+      "type": "edit",
+      "id": "b3b44546a9c8646d",
+      "item": {
+        "type": "paragraph",
+        "id": "b3b44546a9c8646d",
+        "text": " "
+      },
+      "date": 1387567122376
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b340f52c37c1c47f",
+        "text": "between digest component, versioning, segmentation, there are a variety of situations where one would express an accurate, yet incomplete name in an interest and expect a cache hit from a core router."
+      },
+      "id": "b340f52c37c1c47f",
+      "type": "add",
+      "after": "b3b44546a9c8646d",
+      "date": 1387567122895
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "92ada062e92ba294",
+        "text": ""
+      },
+      "id": "92ada062e92ba294",
+      "type": "add",
+      "after": "b3b44546a9c8646d",
+      "date": 1387567122905
+    },
+    {
+      "type": "edit",
+      "id": "92ada062e92ba294",
+      "item": {
+        "type": "paragraph",
+        "id": "92ada062e92ba294",
+        "text": "without interest selectors, core routers would return exact matches only (incl version and segment)"
+      },
+      "date": 1387567148713
+    },
+    {
+      "type": "edit",
+      "id": "b340f52c37c1c47f",
+      "item": {
+        "type": "paragraph",
+        "id": "b340f52c37c1c47f",
+        "text": "between digest component, versioning, segmentation, and digest, there are a variety of situations where one would express an accurate, yet incomplete name in an interest and expect a cache hit from a core router."
+      },
+      "date": 1387567203972
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "f4fd8e52f8b9f2fe",
+        "text": ""
+      },
+      "id": "f4fd8e52f8b9f2fe",
+      "type": "add",
+      "after": "b340f52c37c1c47f",
+      "date": 1387567208631
+    },
+    {
+      "type": "edit",
+      "id": "f4fd8e52f8b9f2fe",
+      "item": {
+        "type": "paragraph",
+        "id": "f4fd8e52f8b9f2fe",
+        "text": "also, an 'exact match' that doesn't take into account a [[minSuffixComponents]] selector will cause more rigorous nodes to drop the returned content and result in a Timeout for the user."
+      },
+      "date": 1387567285869
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "5e3db934207f64b5",
+        "text": ""
+      },
+      "id": "5e3db934207f64b5",
+      "type": "add",
+      "after": "f4fd8e52f8b9f2fe",
+      "date": 1387567286383
+    },
+    {
+      "type": "edit",
+      "id": "5e3db934207f64b5",
+      "item": {
+        "type": "paragraph",
+        "id": "5e3db934207f64b5",
+        "text": "If two Interests are forwarded through a core router, on with and one without selection, and an object matching ONE will consume both interests (since they are the same minus selectors) and a subsequent object matching the second "
+      },
+      "date": 1387567808946
+    },
+    {
+      "type": "edit",
+      "id": "b340f52c37c1c47f",
+      "item": {
+        "type": "paragraph",
+        "id": "b340f52c37c1c47f",
+        "text": "between digest component, versioning, segmentation, and digest, there are a variety of situations where one would express an accurate, yet incomplete name in an interest and expect a cache hit from a core router, but not get it without selectors."
+      },
+      "date": 1387567823676
+    },
+    {
+      "type": "edit",
+      "id": "5e3db934207f64b5",
+      "item": {
+        "type": "paragraph",
+        "id": "5e3db934207f64b5",
+        "text": "If two Interests are forwarded through a core router, on with and one without selection, and an object matching ONE will consume both interests (since they are the same minus selectors) and a subsequent object matching the second interest will be dropped for lack of a PIT entry."
+      },
+      "date": 1387567967472
+    },
+    {
+      "type": "fork",
+      "date": 1387568096299
+    },
+    {
+      "type": "remove",
+      "id": "e8d8016c7b6c2ff3",
+      "date": 1387568148656
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "b1aefee74d77fe03",
+        "text": " "
+      },
+      "id": "b1aefee74d77fe03",
+      "type": "add",
+      "after": "5e3db934207f64b5",
+      "date": 1387568149559
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "e8d8016c7b6c2ff3",
+        "text": ""
+      },
+      "id": "e8d8016c7b6c2ff3",
+      "type": "add",
+      "after": "b1aefee74d77fe03",
+      "date": 1387568149562
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "29f608eb2d631963",
+        "text": ""
+      },
+      "id": "29f608eb2d631963",
+      "type": "add",
+      "after": "b1aefee74d77fe03",
+      "date": 1387568149565
+    },
+    {
+      "type": "edit",
+      "id": "29f608eb2d631963",
+      "item": {
+        "type": "paragraph",
+        "id": "29f608eb2d631963",
+        "text": "If the above is implemented as an attack, the counter argument is that "
+      },
+      "date": 1387568224836
+    },
+    {
+      "item": {
+        "type": "paragraph",
+        "id": "903dfb4cdff77897",
+        "text": ""
+      },
+      "id": "903dfb4cdff77897",
+      "type": "add",
+      "after": "17cc11730344c742",
+      "date": 1387568250069
+    },
+    {
+      "type": "edit",
+      "id": "903dfb4cdff77897",
+      "item": {
+        "type": "paragraph",
+        "id": "903dfb4cdff77897",
+        "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&ved=0CDAQFjAB&url=http%3A%2F%2Fnamed-data.net%2Fwp-content%2Fuploads%2F2013%2F08%2Fndn-proj-pub.pdf&ei=Ope0Uou_E6GYyAHnjoHYCw&usg=AFQjCNGwTJtGlb44XxggOGeblQdRGJbH1w&bvm=bv.58187178,d.aWc Relevant Paper]"
+      },
+      "date": 1387568261398
+    },
+    {
+      "type": "edit",
+      "id": "29f608eb2d631963",
+      "item": {
+        "type": "paragraph",
+        "id": "29f608eb2d631963",
+        "text": "If the above is implemented as an attack, the counter argument is that the interest lifetimes should be short, based on Round Trip time, and thus the window of opportunity for such an attack or random collision is very small."
+      },
+      "date": 1387568529920
+    },
+    {
+      "type": "edit",
+      "id": "903dfb4cdff77897",
+      "item": {
+        "type": "paragraph",
+        "id": "903dfb4cdff77897",
+        "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&ved=0CDQQFjAC&url=http%3A%2F%2Fwww.cse.wustl.edu%2F~yuanh%2Fpublications%2F2012_Yuan_ICCCN.pdf&ei=hZa0UsnzCImuyQGqioCwDw&usg=AFQjCNFSdvJwX3K2DOpQ_QvD1sw4i0GqYg&bvm=bv.58187178,d.aWc Relevant Paper]"
+      },
+      "date": 1387569616127
+    },
+    {
+      "type": "edit",
+      "id": "903dfb4cdff77897",
+      "item": {
+        "type": "paragraph",
+        "id": "903dfb4cdff77897",
+        "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&ved=0CDQQFjAC&url=http%3A%2F%2Fwww.cse.wustl.edu%2F~yuanh%2Fpublications%2F2012_Yuan_ICCCN.pdf&ei=hZa0UsnzCImuyQGqioCwDw&usg=AFQjCNFSdvJwX3K2DOpQ_QvD1sw4i0GqYg&bvm=bv.58187178,d.aWc Relevant Paper] From WashUw"
+      },
+      "date": 1387569625722
+    },
+    {
+      "type": "edit",
+      "id": "903dfb4cdff77897",
+      "item": {
+        "type": "paragraph",
+        "id": "903dfb4cdff77897",
+        "text": "[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&ved=0CDQQFjAC&url=http%3A%2F%2Fwww.cse.wustl.edu%2F~yuanh%2Fpublications%2F2012_Yuan_ICCCN.pdf&ei=hZa0UsnzCImuyQGqioCwDw&usg=AFQjCNFSdvJwX3K2DOpQ_QvD1sw4i0GqYg&bvm=bv.58187178,d.aWc Relevant Paper] From WashU"
+      },
+      "date": 1387569630121
+    }
+  ]
+}
